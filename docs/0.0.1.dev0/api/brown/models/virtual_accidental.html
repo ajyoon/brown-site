@@ -475,101 +475,163 @@
             <h2>
                 <span class="class-name">VirtualAccidental</span>
                 
+                    (<code>Enum</code>)
+                
             </h2>
         </div>
         <p class="summary"><p>A logical accidental descriptor.</p></p>
         
             <p class="details"><p>    These are used both in <code><a href="/docs/0.0.1.dev0/api/brown/models/pitch.html#Pitch">Pitch</a></code> manipulations and in
-    graphical <code><a href="/docs/0.0.1.dev0/api/brown/core/accidental.html#Accidental">Accidental</a></code> objects.
+    graphical <code><a href="/docs/0.0.1.dev0/api/brown/core/accidental.html#Accidental">Accidental</a></code> objects.</p><p>    The numeric values of each enum refer to the pitch class offset
+    associated with the accidental.
     </p></p>
         
         
         
-            <div>
-                <div class="method"
-     id="VirtualAccidental.__init__">
-    <p>
-        <span class="important-name">__init__</span>
         
-            <code>(value)</code>
-        
-        
-    <span class="permalink-and-source">
-        <a href="/docs/0.0.1.dev0/api/brown/models/virtual_accidental.html#VirtualAccidental.__init__">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/models/virtual_accidental.py#L12">view source</a>
-    </span>
-
-    </p>
-    <div class="body">
-        <p class="summary"><p>
-</p></p>
-        
-            <h4>arguments:</h4>
-            <div class="type-details-list">
-                
-                    <div class="arg">
-                        <p><p>value <code>(str or int or None)</code>: A description of the accidental.
-                <ul><li> <code>'f'</code> or <code>-1</code>: Flat
-                </li><li> <code>'n'</code> or  <code>0</code>: Natural (Explicit)
-                </li><li> <code>'s'</code> or  <code>1</code>: Sharp
-                </li><li> <code>None</code>       : No accidental, value depends on context.</li></ul></p></p>
-                    </div>
-                
-            </div>
-        
-        
-        
-        <p class="details"></p>
-        
-        
-        
-    </div>
-</div>
-            </div>
-        
-        
-        
-        
-            <h4 class="major-section-title">properties</h4>
+            <h4 class="major-section-title">class attributes</h4>
             <div class="major-section">
                 
-                    <div class="property"
-         id="VirtualAccidental.value">
+                    <div class="attribute"
+         id="VirtualAccidental.flat">
     <p>
-        <span class="important-name">value</span>:
-        <span class="type"><code>int or None</code></span>
-        &mdash;<span class="summary"> The value of the accidental.</span>
+        <span class="important-name">flat</span>:
+        <span class="type"></span>
+        &mdash;<span class="summary">A flat accidental</span>
         
     <span class="permalink-and-source">
-        <a href="/docs/0.0.1.dev0/api/brown/models/virtual_accidental.html#VirtualAccidental.value">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/models/virtual_accidental.py#L47">view source</a>
+        <a href="/docs/0.0.1.dev0/api/brown/models/virtual_accidental.html#VirtualAccidental.flat">permalink</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/models/virtual_accidental.py#L15">view source</a>
     </span>
 
     </p>
     <div class="body">
-        <div class="details"><p>        String values passed to this will be automatically converted
-        to their integer representations. None values will remain None.</p><p>        <ul><li> <code>'f'</code> or <code>-1</code>: Flat
-        </li><li> <code>'n'</code> or  <code>0</code>: Natural (Explicit)
-        </li><li> <code>'s'</code> or  <code>1</code>: Sharp
-        </li><li> <code>None</code>       : No accidental, value depends on context.
-        </li></ul></p></div>
+        <div class="details"></div>
         
+        
+            <p class="read-only-notice">
+                read-only.
+            </p>
         
         
         
     </div>
 </div>
                 
-                    <div class="property"
-         id="VirtualAccidental.value_as_str">
+                    <div class="attribute"
+         id="VirtualAccidental.natural">
     <p>
-        <span class="important-name">value_as_str</span>:
-        <span class="type"><code>str or None</code></span>
-        &mdash;<span class="summary"> The str (or None) version of the accidental value.</span>
+        <span class="important-name">natural</span>:
+        <span class="type"></span>
+        &mdash;<span class="summary">A natural accidental</span>
         
     <span class="permalink-and-source">
-        <a href="/docs/0.0.1.dev0/api/brown/models/virtual_accidental.html#VirtualAccidental.value_as_str">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/models/virtual_accidental.py#L84">view source</a>
+        <a href="/docs/0.0.1.dev0/api/brown/models/virtual_accidental.html#VirtualAccidental.natural">permalink</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/models/virtual_accidental.py#L18">view source</a>
+    </span>
+
+    </p>
+    <div class="body">
+        <div class="details"></div>
+        
+        
+            <p class="read-only-notice">
+                read-only.
+            </p>
+        
+        
+        
+    </div>
+</div>
+                
+                    <div class="attribute"
+         id="VirtualAccidental.sharp">
+    <p>
+        <span class="important-name">sharp</span>:
+        <span class="type"></span>
+        &mdash;<span class="summary">A sharp accidental</span>
+        
+    <span class="permalink-and-source">
+        <a href="/docs/0.0.1.dev0/api/brown/models/virtual_accidental.html#VirtualAccidental.sharp">permalink</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/models/virtual_accidental.py#L21">view source</a>
+    </span>
+
+    </p>
+    <div class="body">
+        <div class="details"></div>
+        
+        
+            <p class="read-only-notice">
+                read-only.
+            </p>
+        
+        
+        
+    </div>
+</div>
+                
+                    <div class="attribute"
+         id="VirtualAccidental.f">
+    <p>
+        <span class="important-name">f</span>:
+        <span class="type"></span>
+        &mdash;<span class="summary">Shorthand for <code><a href="/docs/0.0.1.dev0/api/brown/models/virtual_accidental.html#VirtualAccidental.flat">VirtualAccidental.flat</a></code></span>
+        
+    <span class="permalink-and-source">
+        <a href="/docs/0.0.1.dev0/api/brown/models/virtual_accidental.html#VirtualAccidental.f">permalink</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/models/virtual_accidental.py#L24">view source</a>
+    </span>
+
+    </p>
+    <div class="body">
+        <div class="details"></div>
+        
+        
+            <p class="read-only-notice">
+                read-only.
+            </p>
+        
+        
+        
+    </div>
+</div>
+                
+                    <div class="attribute"
+         id="VirtualAccidental.n">
+    <p>
+        <span class="important-name">n</span>:
+        <span class="type"></span>
+        &mdash;<span class="summary">Shorthand for <code><a href="/docs/0.0.1.dev0/api/brown/models/virtual_accidental.html#VirtualAccidental.natural">VirtualAccidental.natural</a></code></span>
+        
+    <span class="permalink-and-source">
+        <a href="/docs/0.0.1.dev0/api/brown/models/virtual_accidental.html#VirtualAccidental.n">permalink</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/models/virtual_accidental.py#L27">view source</a>
+    </span>
+
+    </p>
+    <div class="body">
+        <div class="details"></div>
+        
+        
+            <p class="read-only-notice">
+                read-only.
+            </p>
+        
+        
+        
+    </div>
+</div>
+                
+                    <div class="attribute"
+         id="VirtualAccidental.s">
+    <p>
+        <span class="important-name">s</span>:
+        <span class="type"></span>
+        &mdash;<span class="summary">Shorthand for <code><a href="/docs/0.0.1.dev0/api/brown/models/virtual_accidental.html#VirtualAccidental.sharp">VirtualAccidental.sharp</a></code></span>
+        
+    <span class="permalink-and-source">
+        <a href="/docs/0.0.1.dev0/api/brown/models/virtual_accidental.html#VirtualAccidental.s">permalink</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/models/virtual_accidental.py#L30">view source</a>
     </span>
 
     </p>
@@ -594,116 +656,7 @@
         
         
         
-            <h4 class="major-section-title">methods</h4>
-            <div class="major-section">
-                
-                    <div class="method"
-     id="VirtualAccidental.__repr__">
-    <p>
-        <span class="important-name">__repr__</span>
         
-            <code>()</code>
-        
-        
-    <span class="permalink-and-source">
-        <a href="/docs/0.0.1.dev0/api/brown/models/virtual_accidental.html#VirtualAccidental.__repr__">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/models/virtual_accidental.py#L25">view source</a>
-    </span>
-
-    </p>
-    <div class="body">
-        <p class="summary"><p>Represent the accidental as the code needed to instantiate it</p></p>
-        
-        
-        
-        <p class="details"></p>
-        
-        
-        
-    </div>
-</div>
-                
-                    <div class="method"
-     id="VirtualAccidental.__eq__">
-    <p>
-        <span class="important-name">__eq__</span>
-        
-            <code>(other)</code>
-        
-        
-    <span class="permalink-and-source">
-        <a href="/docs/0.0.1.dev0/api/brown/models/virtual_accidental.html#VirtualAccidental.__eq__">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/models/virtual_accidental.py#L30">view source</a>
-    </span>
-
-    </p>
-    <div class="body">
-        <p class="summary"><p>Two accidentals are equal if their values are equal</p></p>
-        
-        
-        
-        <p class="details"></p>
-        
-        
-        
-    </div>
-</div>
-                
-                    <div class="method"
-     id="VirtualAccidental.__hash__">
-    <p>
-        <span class="important-name">__hash__</span>
-        
-            <code>()</code>
-        
-        
-    <span class="permalink-and-source">
-        <a href="/docs/0.0.1.dev0/api/brown/models/virtual_accidental.html#VirtualAccidental.__hash__">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/models/virtual_accidental.py#L34">view source</a>
-    </span>
-
-    </p>
-    <div class="body">
-        <p class="summary"><p>Hash based on the __repr__() of the accidental.
-</p></p>
-        
-        
-        
-        <p class="details"><p>
-        VirtualAccidentals with different values will have different hashes</p></p>
-        
-        
-        
-    </div>
-</div>
-                
-                    <div class="method"
-     id="VirtualAccidental.__lt__">
-    <p>
-        <span class="important-name">__lt__</span>
-        
-            <code>(other)</code>
-        
-        
-    <span class="permalink-and-source">
-        <a href="/docs/0.0.1.dev0/api/brown/models/virtual_accidental.html#VirtualAccidental.__lt__">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/models/virtual_accidental.py#L40">view source</a>
-    </span>
-
-    </p>
-    <div class="body">
-        <p class="summary"><p>An accidental is less than another if its numeric value is</p></p>
-        
-        
-        
-        <p class="details"></p>
-        
-        
-        
-    </div>
-</div>
-                
-            </div>
         
         
 

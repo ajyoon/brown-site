@@ -477,7 +477,7 @@
                 
             </h2>
         </div>
-        <p class="summary"><p>A pitch with a letter, octave, and virtual accidental</p></p>
+        <p class="summary"><p>A pitch with a letter, octave, and accidental</p></p>
         
         
         
@@ -492,7 +492,7 @@
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/models/pitch.html#Pitch.__init__">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/models/pitch.py#L32">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/models/pitch.py#L33">view source</a>
     </span>
 
     </p>
@@ -512,7 +512,11 @@
         
         
         
-        <p class="details"></p>
+        <p class="details"><p>        Valid pitch accidentals suffixes are <code>s</code> for sharp, <code>f</code> for flat,
+        and <code>n</code> for explicit natural.</p><p>        Octaves are denoted by suffixes of commas or apostrophes,
+        where none is C below middle-C, and each comma / apostrophe
+        indicates an octave down or up, respectively.</p><p>        TODO: Explain better, needs examples - most users will not be
+              familiar with lilypond pitch notation</p></p>
         
         
         
@@ -540,7 +544,7 @@
 
     </p>
     <div class="body">
-        <div class="details"><p>        See __init__() documentation for a complete description.
+        <div class="details"><p>        See <code><a href="/docs/0.0.1.dev0/api/brown/models/pitch.html#Pitch.__init__">__init__</a></code> documentation for a complete description.
         </p></div>
         
         
@@ -558,7 +562,7 @@
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/models/pitch.html#Pitch.letter">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/models/pitch.py#L114">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/models/pitch.py#L117">view source</a>
     </span>
 
     </p>
@@ -579,22 +583,19 @@
          id="Pitch.virtual_accidental">
     <p>
         <span class="important-name">virtual_accidental</span>:
-        <span class="type"><code>str or None</code></span>
-        &mdash;<span class="summary"> A character representing the accidental.</span>
+        <span class="type"><code><a href="/docs/0.0.1.dev0/api/brown/models/virtual_accidental.html#VirtualAccidental">VirtualAccidental</a> or None</code></span>
+        &mdash;<span class="summary"> The accidental descriptor.</span>
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/models/pitch.html#Pitch.virtual_accidental">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/models/pitch.py#L119">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/models/pitch.py#L122">view source</a>
     </span>
 
     </p>
     <div class="body">
-        <div class="details"><p>        Supported values:
-        <ul><li> 'f': flat
-        </li><li> 'n': natural (explicit)
-        </li><li> 's': sharp
-        </li><li> None: no accidental
-        </li></ul></p></div>
+        <div class="details"><p>        If no accidental is needed for this pitch (e.g. C-natural in C Major),
+        this should be left as <code>None</code>.
+        </p></div>
         
         
             <p class="read-only-notice">
