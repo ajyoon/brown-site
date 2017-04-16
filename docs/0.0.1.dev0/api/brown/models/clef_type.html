@@ -290,7 +290,7 @@
                 <a href="/docs/0.0.1.dev0/api/brown/interface/path_interface.html">path_interface</a>
             </li>
         
-            <li id="toc-link-to-current-page">
+            <li >
                 <a href="/docs/0.0.1.dev0/api/brown/interface/pen_interface.html">pen_interface</a>
             </li>
         
@@ -342,7 +342,7 @@
                 <a href="/docs/0.0.1.dev0/api/brown/models/beat.html">beat</a>
             </li>
         
-            <li >
+            <li id="toc-link-to-current-page">
                 <a href="/docs/0.0.1.dev0/api/brown/models/clef_type.html">clef_type</a>
             </li>
         
@@ -456,7 +456,7 @@
             <div id="page-body">
                 
 
-    <h1 id="page-title">brown<wbr>.interface<wbr>.pen_interface</h1>
+    <h1 id="page-title">brown<wbr>.models<wbr>.clef_type</h1>
 
     <a id="show-inherited-toggle" href="javascript:void(toggleShowInheritence())"></a>
 
@@ -472,89 +472,44 @@
         <h3 class="major-section-title">classes</h3>
         
             <div class="class"
-         id="PenInterface">
+         id="ClefType">
         <div class="class-name-wrapper">
             
     <span class="permalink-and-source">
-        <a href="/docs/0.0.1.dev0/api/brown/interface/pen_interface.html#PenInterface">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/interface/pen_interface.py#L7">view source</a>
+        <a href="/docs/0.0.1.dev0/api/brown/models/clef_type.html#ClefType">permalink</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/models/clef_type.py#L4">view source</a>
     </span>
 
             <h2>
-                <span class="class-name">PenInterface</span>
+                <span class="class-name">ClefType</span>
+                
+                    (<code>Enum</code>)
                 
             </h2>
         </div>
-        <p class="summary"><p>Interface for a generic drawing pen controlling path outline appearance.</p></p>
+        <p class="summary"><p>Types of clefs.</p></p>
         
-            <p class="details"><p>    Currently only solid colors are supported.
+            <p class="details"><p>    The enumeration values are not meaningful.
     </p></p>
         
         
         
-            <div>
-                <div class="method"
-     id="PenInterface.__init__">
-    <p>
-        <span class="important-name">__init__</span>
         
-            <code>(color, thickness, pattern)</code>
-        
-        
-    <span class="permalink-and-source">
-        <a href="/docs/0.0.1.dev0/api/brown/interface/pen_interface.html#PenInterface.__init__">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/interface/pen_interface.py#L13">view source</a>
-    </span>
-
-    </p>
-    <div class="body">
-        <p class="summary"><p>
-</p></p>
-        
-            <h4>arguments:</h4>
-            <div class="type-details-list">
-                
-                    <div class="arg">
-                        <p><p>color <code>(<a href="/docs/0.0.1.dev0/api/brown/utils/color.html#Color">Color</a>)</code>: The color for the pen</p></p>
-                    </div>
-                
-                    <div class="arg">
-                        <p><p>thickness <code>(<a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit">Unit</a>)</code>: The stroke thickness of the pen</p></p>
-                    </div>
-                
-                    <div class="arg">
-                        <p><p>pattern <code>(<a href="/docs/0.0.1.dev0/api/brown/utils/pen_pattern.html#PenPattern">PenPattern</a> or int enum value)</code>: The stroke pattern.
-                Defaults to a solid line.</p></p>
-                    </div>
-                
-            </div>
-        
-        
-        
-        <p class="details"></p>
-        
-        
-        
-    </div>
-</div>
-            </div>
-        
-        
-        
-        
-            <h4 class="major-section-title">properties</h4>
+            
+                <h4 class="major-section-title">enumerations</h4>
+            
             <div class="major-section">
                 
-                    <div class="property"
-         id="PenInterface.color">
+                    <div class="attribute"
+         id="ClefType.treble">
     <p>
-        <span class="important-name">color</span>:
-        <span class="type"><code><a href="/docs/0.0.1.dev0/api/brown/utils/color.html#Color">Color</a></code></span>
-        &mdash;<span class="summary"> The color for the pen</span>
+        <span class="important-name">treble</span>:
+        <span class="type"></span>
+        &mdash;<span class="summary">A typical treble clef.</span>
         
     <span class="permalink-and-source">
-        <a href="/docs/0.0.1.dev0/api/brown/interface/pen_interface.html#PenInterface.color">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/interface/pen_interface.py#L31">view source</a>
+        <a href="/docs/0.0.1.dev0/api/brown/models/clef_type.html#ClefType.treble">permalink</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/models/clef_type.py#L11">view source</a>
     </span>
 
     </p>
@@ -567,22 +522,21 @@
     </div>
 </div>
                 
-                    <div class="property"
-         id="PenInterface.thickness">
+                    <div class="attribute"
+         id="ClefType.bass">
     <p>
-        <span class="important-name">thickness</span>:
-        <span class="type"><code><a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit">Unit</a></code></span>
-        &mdash;<span class="summary"> The drawing thickness of the pen.</span>
+        <span class="important-name">bass</span>:
+        <span class="type"></span>
+        &mdash;<span class="summary">A bass clef.</span>
         
     <span class="permalink-and-source">
-        <a href="/docs/0.0.1.dev0/api/brown/interface/pen_interface.html#PenInterface.thickness">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/interface/pen_interface.py#L44">view source</a>
+        <a href="/docs/0.0.1.dev0/api/brown/models/clef_type.html#ClefType.bass">permalink</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/models/clef_type.py#L14">view source</a>
     </span>
 
     </p>
     <div class="body">
-        <div class="details"><p>        If set to None, the value defaults to 0, a cosmetic pixel width.
-        </p></div>
+        <div class="details"></div>
         
         
         
@@ -590,16 +544,60 @@
     </div>
 </div>
                 
-                    <div class="property"
-         id="PenInterface.pattern">
+                    <div class="attribute"
+         id="ClefType.bass_8vb">
     <p>
-        <span class="important-name">pattern</span>:
-        <span class="type"><code><a href="/docs/0.0.1.dev0/api/brown/utils/pen_pattern.html#PenPattern">PenPattern</a></code></span>
-        &mdash;<span class="summary"> The stroke pattern.</span>
+        <span class="important-name">bass_8vb</span>:
+        <span class="type"></span>
+        &mdash;<span class="summary">An octave-down transposing bass clef.</span>
         
     <span class="permalink-and-source">
-        <a href="/docs/0.0.1.dev0/api/brown/interface/pen_interface.html#PenInterface.pattern">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/interface/pen_interface.py#L58">view source</a>
+        <a href="/docs/0.0.1.dev0/api/brown/models/clef_type.html#ClefType.bass_8vb">permalink</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/models/clef_type.py#L17">view source</a>
+    </span>
+
+    </p>
+    <div class="body">
+        <div class="details"></div>
+        
+        
+        
+        
+    </div>
+</div>
+                
+                    <div class="attribute"
+         id="ClefType.tenor">
+    <p>
+        <span class="important-name">tenor</span>:
+        <span class="type"></span>
+        &mdash;<span class="summary">A tenor clef.</span>
+        
+    <span class="permalink-and-source">
+        <a href="/docs/0.0.1.dev0/api/brown/models/clef_type.html#ClefType.tenor">permalink</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/models/clef_type.py#L20">view source</a>
+    </span>
+
+    </p>
+    <div class="body">
+        <div class="details"></div>
+        
+        
+        
+        
+    </div>
+</div>
+                
+                    <div class="attribute"
+         id="ClefType.alto">
+    <p>
+        <span class="important-name">alto</span>:
+        <span class="type"></span>
+        &mdash;<span class="summary">An alto clef.</span>
+        
+    <span class="permalink-and-source">
+        <a href="/docs/0.0.1.dev0/api/brown/models/clef_type.html#ClefType.alto">permalink</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/models/clef_type.py#L23">view source</a>
     </span>
 
     </p>
@@ -613,6 +611,8 @@
 </div>
                 
             </div>
+        
+        
         
         
         
