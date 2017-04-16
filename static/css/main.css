@@ -3,6 +3,7 @@ html {
   padding: 0; }
 
   body {
+    margin: 0;
     color: #050505;
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
@@ -35,44 +36,47 @@ html {
   display: none; }
 
   #page-wrapper {
-    max-width: 60em;
-    padding: 5em;
-    margin: auto;
-    position: relative;
-    background: #fffafe;
-    border-left: 1px solid #31231e;
-    border-bottom: 1px solid #31231e;
-    -webkit-box-shadow: -1px 1px 5px 0px #31231e;
-    -moz-box-shadow: -1px 1px 5px 0px #31231e;
-    box-shadow: -1px 1px 5px 0px #31231e; }
+    margin-left: 18em; }
 
-    #sidebar {
-      width: 225px;
-      position: fixed;
-      top: 0;
-      left: 0;
-      background: #1f427f;
-      height: 100%;
-      padding: 1em;
-      border-right: 1px solid #31231e;
-      color: #fffafe;
-      -webkit-box-shadow: 2px 1px 3px 0px #31231e;
-      -moz-box-shadow: 2px 1px 3px 0px #31231e;
-      box-shadow: 2px 1px 3px 0px #31231e; }
-      #sidebar h3 {
-        margin-top: 0;
-        margin-bottom: 1em; }
-        #sidebar a {
-          color: #fffafe; }
-          #sidebar ul {
-            padding: 0.5em;
-            list-style: none; }
+    #page-body {
+      position: relative;
+      max-width: 60em;
+      padding: 5em;
+      margin-left: 8em;
+      background: #fffafe;
+      border-left: 1px solid #31231e;
+      border-bottom: 1px solid #31231e;
+      -webkit-box-shadow: -1px 1px 5px 0px #31231e;
+      -moz-box-shadow: -1px 1px 5px 0px #31231e;
+      box-shadow: -1px 1px 5px 0px #31231e; }
+
+      #sidebar {
+        width: 16em;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: #1f427f;
+        height: 100%;
+        padding: 1em;
+        border-right: 1px solid #31231e;
+        color: #fffafe;
+        -webkit-box-shadow: 2px 1px 3px 0px #31231e;
+        -moz-box-shadow: 2px 1px 3px 0px #31231e;
+        box-shadow: 2px 1px 3px 0px #31231e; }
+        #sidebar h3 {
+          margin-top: 0;
+          margin-bottom: 1em; }
+          #sidebar a {
+            color: #fffafe; }
+            #sidebar ul {
+              padding: 0.5em;
+              list-style: none; }
 
 #sidebar-crook {
   width: 500px;
   position: fixed;
   top: 0;
-  left: 225px;
+  left: 16em;
   z-index: -1;
   background: linear-gradient(135deg, #9055a2 300px, transparent 0) top left;
   height: 100%; }
@@ -195,6 +199,16 @@ h1 {
   .attribute:hover .permalink-and-source > a,
   .property:hover .permalink-and-source > a {
     color: #1f427f; }
+
+@media (max-width: 96em) {
+  #page-body {
+    margin-left: 4em;   }
+}
+
+@media (max-width: 92em) {
+  #page-body {
+    margin-left: 0;   }
+}
 
 .hljs {
   display: block;
