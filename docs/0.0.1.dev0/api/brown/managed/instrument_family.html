@@ -298,7 +298,7 @@
                 <a href="/docs/0.0.1.dev0/api/brown/interface/qt_to_util.html">qt_to_util</a>
             </li>
         
-            <li id="toc-link-to-current-page">
+            <li >
                 <a href="/docs/0.0.1.dev0/api/brown/interface/text_interface.html">text_interface</a>
             </li>
         
@@ -320,7 +320,7 @@
                 <a href="/docs/0.0.1.dev0/api/brown/managed/container.html">container</a>
             </li>
         
-            <li >
+            <li id="toc-link-to-current-page">
                 <a href="/docs/0.0.1.dev0/api/brown/managed/instrument_family.html">instrument_family</a>
             </li>
         
@@ -464,7 +464,7 @@
             <div id="page-body">
                 
 
-    <h1 id="page-title">brown<wbr>.interface<wbr>.text_interface</h1>
+    <h1 id="page-title">brown<wbr>.managed<wbr>.instrument_family</h1>
 
     <a id="show-inherited-toggle" href="javascript:void(toggleShowInheritence())"></a>
 
@@ -480,125 +480,41 @@
         <h3 class="major-section-title">classes</h3>
         
             <div class="class"
-         id="TextInterface">
+         id="InstrumentFamily">
         <div class="class-name-wrapper">
             
     <span class="permalink-and-source">
-        <a href="/docs/0.0.1.dev0/api/brown/interface/text_interface.html#TextInterface">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/interface/text_interface.py#L8">view source</a>
+        <a href="/docs/0.0.1.dev0/api/brown/managed/instrument_family.html#InstrumentFamily">permalink</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/managed/instrument_family.py#L4">view source</a>
     </span>
 
             <h2>
-                <span class="class-name">TextInterface</span>
+                <span class="class-name">InstrumentFamily</span>
                 
-                    (<code><a href="/docs/0.0.1.dev0/api/brown/interface/graphic_object_interface.html#GraphicObjectInterface">GraphicObjectInterface</a></code>)
+                    (<code>Enum</code>)
                 
             </h2>
         </div>
-        <p class="summary"><p>An interface for graphical text objects.</p></p>
+        <p class="summary"><p>Common instrument categories.</p></p>
         
-        
-        
-            <div>
-                <div class="method"
-     id="TextInterface.__init__">
-    <p>
-        <span class="important-name">__init__</span>
-        
-            <code>(self,
-                 pos,
-                 text,
-                 font,
-                 brush,
-                 origin_offset=None,
-                 scale_factor=1,
-                 clip_start_x=None,
-                 clip_width=None)</code>
-        
-        
-    <span class="permalink-and-source">
-        <a href="/docs/0.0.1.dev0/api/brown/interface/text_interface.html#TextInterface.__init__">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/interface/text_interface.py#L12">view source</a>
-    </span>
-
-    </p>
-    <div class="body">
-        <p class="summary"><p>
-</p></p>
-        
-            <h4>arguments:</h4>
-            <div class="type-details-list">
-                
-                    <div class="arg">
-                        <p><p>pos <code>(<a href="/docs/0.0.1.dev0/api/brown/utils/point.html#Point">Point</a>[<a href="/docs/0.0.1.dev0/api/brown/utils/units.html#GraphicUnit">GraphicUnit</a>] or tuple)</code>: The position of the path root
-                relative to the document.</p></p>
-                    </div>
-                
-                    <div class="arg">
-                        <p><p>text <code>(str)</code>: The text for the object</p></p>
-                    </div>
-                
-                    <div class="arg">
-                        <p><p>font <code>(<a href="/docs/0.0.1.dev0/api/brown/interface/font_interface.html#FontInterface">FontInterface</a>)</code>: The font object for the text</p></p>
-                    </div>
-                
-                    <div class="arg">
-                        <p><p>brush <code>(<a href="/docs/0.0.1.dev0/api/brown/interface/brush_interface.html#BrushInterface">BrushInterface</a>)</code>: The brush for the object.</p></p>
-                    </div>
-                
-                    <div class="arg">
-                        <p><p>scale_factor <code>(float)</code>: A hard scaling factor.</p></p>
-                    </div>
-                
-                    <div class="arg">
-                        <p><p>clip_start_x <code>(<a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit">Unit</a> or None)</code>: The local starting position for the
-                clipping region. Use <code>None</code> to render from the start.</p></p>
-                    </div>
-                
-                    <div class="arg">
-                        <p><p>clip_width <code>(<a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit">Unit</a> or None)</code>: The width of the clipping region.
-                Use <code>None</code> to render to the end</p></p>
-                    </div>
-                
-            </div>
-        
-        
-        
-        <p class="details"></p>
         
         
         
             
-
-    <div class="overriden-note">
-        overriden from
-        <a href="/docs/0.0.1.dev0/api/brown/interface/graphic_object_interface.html#GraphicObjectInterface.__init__">
-            GraphicObjectInterface
-        </a>
-    </div>
-
-
-        
-    </div>
-</div>
-            </div>
-        
-        
-        
-        
-            <h4 class="major-section-title">properties</h4>
+                <h4 class="major-section-title">enumerations</h4>
+            
             <div class="major-section">
                 
-                    <div class="property"
-         id="TextInterface.text">
+                    <div class="attribute"
+         id="InstrumentFamily.string">
     <p>
-        <span class="important-name">text</span>:
-        <span class="type"><code>str</code></span>
-        &mdash;<span class="summary"> The text for the object</span>
+        <span class="important-name">string</span>:
+        <span class="type"></span>
+        &mdash;<span class="summary">String instruments</span>
         
     <span class="permalink-and-source">
-        <a href="/docs/0.0.1.dev0/api/brown/interface/text_interface.html#TextInterface.text">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/interface/text_interface.py#L56">view source</a>
+        <a href="/docs/0.0.1.dev0/api/brown/managed/instrument_family.html#InstrumentFamily.string">permalink</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/managed/instrument_family.py#L8">view source</a>
     </span>
 
     </p>
@@ -611,16 +527,16 @@
     </div>
 </div>
                 
-                    <div class="property"
-         id="TextInterface.font">
+                    <div class="attribute"
+         id="InstrumentFamily.wind">
     <p>
-        <span class="important-name">font</span>:
-        <span class="type"><code><a href="/docs/0.0.1.dev0/api/brown/interface/font_interface.html#FontInterface">FontInterface</a></code></span>
-        &mdash;<span class="summary"> The font object for the text </span>
+        <span class="important-name">wind</span>:
+        <span class="type"></span>
+        &mdash;<span class="summary">Woodwind instruments</span>
         
     <span class="permalink-and-source">
-        <a href="/docs/0.0.1.dev0/api/brown/interface/text_interface.html#TextInterface.font">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/interface/text_interface.py#L66">view source</a>
+        <a href="/docs/0.0.1.dev0/api/brown/managed/instrument_family.html#InstrumentFamily.wind">permalink</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/managed/instrument_family.py#L11">view source</a>
     </span>
 
     </p>
@@ -633,16 +549,16 @@
     </div>
 </div>
                 
-                    <div class="property"
-         id="TextInterface.origin_offset">
+                    <div class="attribute"
+         id="InstrumentFamily.brass">
     <p>
-        <span class="important-name">origin_offset</span>:
-        <span class="type"><code><a href="/docs/0.0.1.dev0/api/brown/utils/point.html#Point">Point</a></code></span>
-        &mdash;<span class="summary"> A hard offset to be applied to the rendered text</span>
+        <span class="important-name">brass</span>:
+        <span class="type"></span>
+        &mdash;<span class="summary">Brass instruments</span>
         
     <span class="permalink-and-source">
-        <a href="/docs/0.0.1.dev0/api/brown/interface/text_interface.html#TextInterface.origin_offset">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/interface/text_interface.py#L76">view source</a>
+        <a href="/docs/0.0.1.dev0/api/brown/managed/instrument_family.html#InstrumentFamily.brass">permalink</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/managed/instrument_family.py#L14">view source</a>
     </span>
 
     </p>
@@ -655,16 +571,16 @@
     </div>
 </div>
                 
-                    <div class="property"
-         id="TextInterface.scale_factor">
+                    <div class="attribute"
+         id="InstrumentFamily.percussion">
     <p>
-        <span class="important-name">scale_factor</span>:
-        <span class="type"><code>float</code></span>
-        &mdash;<span class="summary"> A hard scale factor to be applied to the rendered text</span>
+        <span class="important-name">percussion</span>:
+        <span class="type"></span>
+        &mdash;<span class="summary">Percussion instruments</span>
         
     <span class="permalink-and-source">
-        <a href="/docs/0.0.1.dev0/api/brown/interface/text_interface.html#TextInterface.scale_factor">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/interface/text_interface.py#L86">view source</a>
+        <a href="/docs/0.0.1.dev0/api/brown/managed/instrument_family.html#InstrumentFamily.percussion">permalink</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/managed/instrument_family.py#L17">view source</a>
     </span>
 
     </p>
@@ -677,23 +593,16 @@
     </div>
 </div>
                 
-            </div>
-        
-        
-            <div class="inherited">
-                <h4 class="major-section-title">inherited properties</h4>
-                <div class="major-section">
-                    
-                        <div class="property"
-         id="GraphicObjectInterface.pos">
+                    <div class="attribute"
+         id="InstrumentFamily.keyboard">
     <p>
-        <span class="important-name">pos</span>:
-        <span class="type"><code><a href="/docs/0.0.1.dev0/api/brown/utils/point.html#Point">Point</a>[<a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit">Unit</a>]</code></span>
-        &mdash;<span class="summary"> The absolute position of the object.</span>
+        <span class="important-name">keyboard</span>:
+        <span class="type"></span>
+        &mdash;<span class="summary">Keyboard instruments</span>
         
     <span class="permalink-and-source">
-        <a href="/docs/0.0.1.dev0/api/brown/interface/graphic_object_interface.html#GraphicObjectInterface.pos">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/interface/graphic_object_interface.py#L34">view source</a>
+        <a href="/docs/0.0.1.dev0/api/brown/managed/instrument_family.html#InstrumentFamily.keyboard">permalink</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/managed/instrument_family.py#L20">view source</a>
     </span>
 
     </p>
@@ -702,213 +611,85 @@
         
         
         
-            
-
-    <div class="inherited-note">
-        inherited from
-        <a href="/docs/0.0.1.dev0/api/brown/interface/graphic_object_interface.html#GraphicObjectInterface.pos">
-            GraphicObjectInterface
-        </a>
-    </div>
-
-
-        
         
     </div>
 </div>
-                    
-                        <div class="property"
-         id="GraphicObjectInterface.x">
-    <p>
-        <span class="important-name">x</span>:
-        <span class="type"><code><a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit">Unit</a></code></span>
-        &mdash;<span class="summary"> The absolute x position of the object</span>
-        
-    <span class="permalink-and-source">
-        <a href="/docs/0.0.1.dev0/api/brown/interface/graphic_object_interface.html#GraphicObjectInterface.x">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/interface/graphic_object_interface.py#L48">view source</a>
-    </span>
-
-    </p>
-    <div class="body">
-        <div class="details"></div>
-        
-        
-        
-            
-
-    <div class="inherited-note">
-        inherited from
-        <a href="/docs/0.0.1.dev0/api/brown/interface/graphic_object_interface.html#GraphicObjectInterface.x">
-            GraphicObjectInterface
-        </a>
-    </div>
-
-
-        
-        
-    </div>
-</div>
-                    
-                        <div class="property"
-         id="GraphicObjectInterface.y">
-    <p>
-        <span class="important-name">y</span>:
-        <span class="type"><code><a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit">Unit</a></code></span>
-        &mdash;<span class="summary"> The absolute y position of the object</span>
-        
-    <span class="permalink-and-source">
-        <a href="/docs/0.0.1.dev0/api/brown/interface/graphic_object_interface.html#GraphicObjectInterface.y">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/interface/graphic_object_interface.py#L58">view source</a>
-    </span>
-
-    </p>
-    <div class="body">
-        <div class="details"></div>
-        
-        
-        
-            
-
-    <div class="inherited-note">
-        inherited from
-        <a href="/docs/0.0.1.dev0/api/brown/interface/graphic_object_interface.html#GraphicObjectInterface.y">
-            GraphicObjectInterface
-        </a>
-    </div>
-
-
-        
-        
-    </div>
-</div>
-                    
-                        <div class="property"
-         id="GraphicObjectInterface.pen">
-    <p>
-        <span class="important-name">pen</span>:
-        <span class="type"><code><a href="/docs/0.0.1.dev0/api/brown/interface/pen_interface.html#PenInterface">PenInterface</a></code></span>
-        &mdash;<span class="summary"> The pen to draw outlines with.</span>
-        
-    <span class="permalink-and-source">
-        <a href="/docs/0.0.1.dev0/api/brown/interface/graphic_object_interface.html#GraphicObjectInterface.pen">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/interface/graphic_object_interface.py#L68">view source</a>
-    </span>
-
-    </p>
-    <div class="body">
-        <div class="details"></div>
-        
-        
-        
-            
-
-    <div class="inherited-note">
-        inherited from
-        <a href="/docs/0.0.1.dev0/api/brown/interface/graphic_object_interface.html#GraphicObjectInterface.pen">
-            GraphicObjectInterface
-        </a>
-    </div>
-
-
-        
-        
-    </div>
-</div>
-                    
-                        <div class="property"
-         id="GraphicObjectInterface.brush">
-    <p>
-        <span class="important-name">brush</span>:
-        <span class="type"><code><a href="/docs/0.0.1.dev0/api/brown/interface/brush_interface.html#BrushInterface">BrushInterface</a></code></span>
-        &mdash;<span class="summary"> The brush to fill shapes with.</span>
-        
-    <span class="permalink-and-source">
-        <a href="/docs/0.0.1.dev0/api/brown/interface/graphic_object_interface.html#GraphicObjectInterface.brush">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/interface/graphic_object_interface.py#L78">view source</a>
-    </span>
-
-    </p>
-    <div class="body">
-        <div class="details"></div>
-        
-        
-        
-            
-
-    <div class="inherited-note">
-        inherited from
-        <a href="/docs/0.0.1.dev0/api/brown/interface/graphic_object_interface.html#GraphicObjectInterface.brush">
-            GraphicObjectInterface
-        </a>
-    </div>
-
-
-        
-        
-    </div>
-</div>
-                    
-                </div>
-            </div>
-        
-        
-        
-        
-        
-        
-            <h4 class="major-section-title">methods</h4>
-            <div class="major-section">
                 
-                    <div class="method"
-     id="TextInterface.render">
+                    <div class="attribute"
+         id="InstrumentFamily.electronic">
     <p>
-        <span class="important-name">render</span>
-        
-            <code>()</code>
-        
+        <span class="important-name">electronic</span>:
+        <span class="type"></span>
+        &mdash;<span class="summary">Primarily electronic instruments</span>
         
     <span class="permalink-and-source">
-        <a href="/docs/0.0.1.dev0/api/brown/interface/text_interface.html#TextInterface.render">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/interface/text_interface.py#L97">view source</a>
+        <a href="/docs/0.0.1.dev0/api/brown/managed/instrument_family.html#InstrumentFamily.electronic">permalink</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/managed/instrument_family.py#L23">view source</a>
     </span>
 
     </p>
     <div class="body">
-        <p class="summary"><p>Render the line to the scene.
-</p></p>
-        
-        
-            <div class="returns">
-                <h4>returns:</h4>
-                <div class="type-details-list">
-                    
-                        <p><code>None</code></p>
-                    
-                </div>
-            </div>
-        
-        
-        <p class="details"><p>
-</p></p>
+        <div class="details"></div>
         
         
         
-            
-
-    <div class="overriden-note">
-        overriden from
-        <a href="/docs/0.0.1.dev0/api/brown/interface/graphic_object_interface.html#GraphicObjectInterface.render">
-            GraphicObjectInterface
-        </a>
+        
     </div>
+</div>
+                
+                    <div class="attribute"
+         id="InstrumentFamily.voice">
+    <p>
+        <span class="important-name">voice</span>:
+        <span class="type"></span>
+        &mdash;<span class="summary">Singing or speaking instruments</span>
+        
+    <span class="permalink-and-source">
+        <a href="/docs/0.0.1.dev0/api/brown/managed/instrument_family.html#InstrumentFamily.voice">permalink</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/managed/instrument_family.py#L26">view source</a>
+    </span>
 
+    </p>
+    <div class="body">
+        <div class="details"></div>
+        
+        
+        
+        
+    </div>
+</div>
+                
+                    <div class="attribute"
+         id="InstrumentFamily.other">
+    <p>
+        <span class="important-name">other</span>:
+        <span class="type"></span>
+        &mdash;<span class="summary">Catch-all for everything else</span>
+        
+    <span class="permalink-and-source">
+        <a href="/docs/0.0.1.dev0/api/brown/managed/instrument_family.html#InstrumentFamily.other">permalink</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/managed/instrument_family.py#L29">view source</a>
+    </span>
 
+    </p>
+    <div class="body">
+        <div class="details"></div>
+        
+        
+        
         
     </div>
 </div>
                 
             </div>
+        
+        
+        
+        
+        
+        
+        
+        
         
         
 
