@@ -334,7 +334,7 @@
     
     <ul>
         
-            <li >
+            <li id="toc-link-to-current-page">
                 <a href="/docs/0.0.1.dev0/api/brown/models/accidental_type.html">accidental_type</a>
             </li>
         
@@ -384,7 +384,7 @@
                 <a href="/docs/0.0.1.dev0/api/brown/utils/math_helpers.html">math_helpers</a>
             </li>
         
-            <li id="toc-link-to-current-page">
+            <li >
                 <a href="/docs/0.0.1.dev0/api/brown/utils/paper_templates.html">paper_templates</a>
             </li>
         
@@ -452,28 +452,199 @@
             <div id="page-body">
                 
 
-    <h1 id="page-title">brown<wbr>.utils<wbr>.paper_templates</h1>
+    <h1 id="page-title">brown<wbr>.models<wbr>.accidental_type</h1>
 
     <a id="show-inherited-toggle" href="javascript:void(toggleShowInheritence())"></a>
 
     
-        <span class="summary"><p>A dictionary of paper templates.</p></span>
+
     
 
     
-        <div class="details">
-            <p>Dict keys are strings and values are <code>list</code>s of args to <code><a href="/docs/0.0.1.dev0/api/brown/core/paper.html#Paper.__init__">Paper.__init__</a>()</code></p><p>Template names are case-insensitive.</p><p>Currently supported templates are:
-    <ul><li> <code>'A4'</code>
-    </li><li> <code>'Letter'</code>
-</li></ul>
-</p>
+
+    
+
+    
+        <h3 class="major-section-title">classes</h3>
+        
+            <div class="class"
+         id="AccidentalType">
+        <div class="class-name-wrapper">
+            
+    <span class="permalink-and-source">
+        <a href="/docs/0.0.1.dev0/api/brown/models/accidental_type.html#AccidentalType">permalink</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/models/accidental_type.py#L4">view source</a>
+    </span>
+
+            <h2>
+                <span class="class-name">AccidentalType</span>
+                
+                    (<code>Enum</code>)
+                
+            </h2>
         </div>
-    
+        <p class="summary"><p>A logical accidental descriptor.</p></p>
+        
+            <p class="details"><p>    These are used both in <code><a href="/docs/0.0.1.dev0/api/brown/models/pitch.html#Pitch">Pitch</a></code> manipulations and in
+    graphical <code><a href="/docs/0.0.1.dev0/api/brown/core/accidental.html#Accidental">Accidental</a></code> objects.</p><p>    The numeric values of each enum refer to the pitch class offset
+    associated with the accidental.
+    </p></p>
+        
+        
+        
+        
+            
+                <h4 class="major-section-title">enumerations</h4>
+            
+            <div class="major-section">
+                
+                    <div class="attribute"
+         id="AccidentalType.flat">
+    <p>
+        <span class="important-name">flat</span>:
+        <span class="type"></span>
+        &mdash;<span class="summary">A flat accidental</span>
+        
+    <span class="permalink-and-source">
+        <a href="/docs/0.0.1.dev0/api/brown/models/accidental_type.html#AccidentalType.flat">permalink</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/models/accidental_type.py#L15">view source</a>
+    </span>
 
-    
+    </p>
+    <div class="body">
+        <div class="details"></div>
+        
+        
+        
+        
+    </div>
+</div>
+                
+                    <div class="attribute"
+         id="AccidentalType.natural">
+    <p>
+        <span class="important-name">natural</span>:
+        <span class="type"></span>
+        &mdash;<span class="summary">A natural accidental</span>
+        
+    <span class="permalink-and-source">
+        <a href="/docs/0.0.1.dev0/api/brown/models/accidental_type.html#AccidentalType.natural">permalink</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/models/accidental_type.py#L18">view source</a>
+    </span>
 
-    
+    </p>
+    <div class="body">
+        <div class="details"></div>
+        
+        
+        
+        
+    </div>
+</div>
+                
+                    <div class="attribute"
+         id="AccidentalType.sharp">
+    <p>
+        <span class="important-name">sharp</span>:
+        <span class="type"></span>
+        &mdash;<span class="summary">A sharp accidental</span>
+        
+    <span class="permalink-and-source">
+        <a href="/docs/0.0.1.dev0/api/brown/models/accidental_type.html#AccidentalType.sharp">permalink</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/models/accidental_type.py#L21">view source</a>
+    </span>
 
+    </p>
+    <div class="body">
+        <div class="details"></div>
+        
+        
+        
+        
+    </div>
+</div>
+                
+                    <div class="attribute"
+         id="AccidentalType.f">
+    <p>
+        <span class="important-name">f</span>:
+        <span class="type"></span>
+        &mdash;<span class="summary">Shorthand for <code><a href="/docs/0.0.1.dev0/api/brown/models/accidental_type.html#AccidentalType.flat">AccidentalType.flat</a></code></span>
+        
+    <span class="permalink-and-source">
+        <a href="/docs/0.0.1.dev0/api/brown/models/accidental_type.html#AccidentalType.f">permalink</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/models/accidental_type.py#L24">view source</a>
+    </span>
+
+    </p>
+    <div class="body">
+        <div class="details"></div>
+        
+        
+        
+        
+    </div>
+</div>
+                
+                    <div class="attribute"
+         id="AccidentalType.n">
+    <p>
+        <span class="important-name">n</span>:
+        <span class="type"></span>
+        &mdash;<span class="summary">Shorthand for <code><a href="/docs/0.0.1.dev0/api/brown/models/accidental_type.html#AccidentalType.natural">AccidentalType.natural</a></code></span>
+        
+    <span class="permalink-and-source">
+        <a href="/docs/0.0.1.dev0/api/brown/models/accidental_type.html#AccidentalType.n">permalink</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/models/accidental_type.py#L27">view source</a>
+    </span>
+
+    </p>
+    <div class="body">
+        <div class="details"></div>
+        
+        
+        
+        
+    </div>
+</div>
+                
+                    <div class="attribute"
+         id="AccidentalType.s">
+    <p>
+        <span class="important-name">s</span>:
+        <span class="type"></span>
+        &mdash;<span class="summary">Shorthand for <code><a href="/docs/0.0.1.dev0/api/brown/models/accidental_type.html#AccidentalType.sharp">AccidentalType.sharp</a></code></span>
+        
+    <span class="permalink-and-source">
+        <a href="/docs/0.0.1.dev0/api/brown/models/accidental_type.html#AccidentalType.s">permalink</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/models/accidental_type.py#L30">view source</a>
+    </span>
+
+    </p>
+    <div class="body">
+        <div class="details"></div>
+        
+        
+        
+        
+    </div>
+</div>
+                
+            </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+
+    </div>
+        
     
 
 
