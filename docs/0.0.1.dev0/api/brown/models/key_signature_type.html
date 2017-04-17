@@ -358,16 +358,16 @@
                 <a href="/docs/0.0.1.dev0/api/brown/models/interval.html">interval</a>
             </li>
         
+            <li id="toc-link-to-current-page">
+                <a href="/docs/0.0.1.dev0/api/brown/models/key_signature_type.html">key_signature_type</a>
+            </li>
+        
             <li >
                 <a href="/docs/0.0.1.dev0/api/brown/models/pitch.html">pitch</a>
             </li>
         
             <li >
                 <a href="/docs/0.0.1.dev0/api/brown/models/transposition.html">transposition</a>
-            </li>
-        
-            <li id="toc-link-to-current-page">
-                <a href="/docs/0.0.1.dev0/api/brown/models/virtual_key_signature.html">virtual_key_signature</a>
             </li>
         
     </ul>
@@ -464,7 +464,7 @@
             <div id="page-body">
                 
 
-    <h1 id="page-title">brown<wbr>.models<wbr>.virtual_key_signature</h1>
+    <h1 id="page-title">brown<wbr>.models<wbr>.key_signature_type</h1>
 
     <a id="show-inherited-toggle" href="javascript:void(toggleShowInheritence())"></a>
 
@@ -480,22 +480,31 @@
         <h3 class="major-section-title">classes</h3>
         
             <div class="class"
-         id="VirtualKeySignature">
+         id="KeySignatureType">
         <div class="class-name-wrapper">
             
     <span class="permalink-and-source">
-        <a href="/docs/0.0.1.dev0/api/brown/models/virtual_key_signature.html#VirtualKeySignature">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/models/virtual_key_signature.py#L4">view source</a>
+        <a href="/docs/0.0.1.dev0/api/brown/models/key_signature_type.html#KeySignatureType">permalink</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/models/key_signature_type.py#L10">view source</a>
     </span>
 
             <h2>
-                <span class="class-name">VirtualKeySignature</span>
+                <span class="class-name">KeySignatureType</span>
+                
+                    (<code>Enum</code>)
                 
             </h2>
         </div>
-        <p class="summary"><p>A key signature descriptor.</p></p>
+        <p class="summary"><p>Common key signatures.</p></p>
         
-            <p class="details"><p>    This contains mappings between pitch letter names and <code><a href="/docs/0.0.1.dev0/api/brown/models/accidental_type.html#AccidentalType">AccidentalType</a></code>s.
+            <p class="details"><p>    Key signatures are specified as <code>dict</code>s between the 7 pitch letter names
+    and either an <code><a href="/docs/0.0.1.dev0/api/brown/models/accidental_type.html#AccidentalType">AccidentalType</a></code> or <code>None</code>. They are enumerated here in
+    the form <code>[pitch letter][f|s]_[major|minor]</code>. For example:</p><p>    <ul><li> c major is <code>KeySignatureType.c_major</code>
+    </li><li> f-sharp minor is <code>KeySignatureType.fs_minor</code>
+    </li><li> d-flat major is <code>KeySignature.df_major</code>
+</li></ul>
+    This enum defines the entire circle of fifths - from 0 flats to 7,
+    and 0 sharps to 7.
     </p></p>
         
         
