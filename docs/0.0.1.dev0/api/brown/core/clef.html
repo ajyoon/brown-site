@@ -497,8 +497,9 @@
         </div>
         <p class="summary"><p>A graphical and logical staff clef.</p></p>
         
-            <p class="details"><p>    <code><a href="/docs/0.0.1.dev0/api/brown/core/staff.html#Staff">Staff</a></code>s use these to determine how pitches within them
-    should be laid out.
+            <p class="details"><p>    <code><a href="/docs/0.0.1.dev0/api/brown/core/clef.html#Clef">Clef</a></code>s are drawn at the initially specified position, and at the
+    beginning of new lines in the parent <code><a href="/docs/0.0.1.dev0/api/brown/core/staff.html#Staff">Staff</a></code> until a new <code><a href="/docs/0.0.1.dev0/api/brown/core/clef.html#Clef">Clef</a></code>
+    is encountered or the end of the <code><a href="/docs/0.0.1.dev0/api/brown/core/staff.html#Staff">Staff</a></code>.</p><p>    <code><a href="/docs/0.0.1.dev0/api/brown/core/staff.html#Staff">Staff</a></code>s use these to determine how pitches within them should be laid out.
     </p></p>
         
         
@@ -514,7 +515,7 @@
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/core/clef.html#Clef.__init__">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/clef.py#L35">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/clef.py#L38">view source</a>
     </span>
 
     </p>
@@ -572,19 +573,18 @@
          id="Clef.clef_type">
     <p>
         <span class="important-name">clef_type</span>:
-        <span class="type"><code>str</code></span>
-        &mdash;<span class="summary"> The type of clef (e.g. 'treble', 'bass').</span>
+        <span class="type"><code><a href="/docs/0.0.1.dev0/api/brown/models/clef_type.html#ClefType">ClefType</a></code></span>
+        &mdash;<span class="summary"> The type of clef, both logical and graphical.</span>
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/core/clef.html#Clef.clef_type">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/clef.py#L60">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/clef.py#L63">view source</a>
     </span>
 
     </p>
     <div class="body">
         
-        <div class="details"><p>        Currently supported types are: <code>'treble'</code> and <code>'bass'</code>
-        </p></div>
+        <div class="details"></div>
         
         
             <p class="read-only-notice">
@@ -604,7 +604,7 @@
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/core/clef.html#Clef.staff_position">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/clef.py#L68">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/clef.py#L72">view source</a>
     </span>
 
     </p>
@@ -633,7 +633,7 @@
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/core/clef.html#Clef.middle_c_staff_position">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/clef.py#L78">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/clef.py#L82">view source</a>
     </span>
 
     </p>
