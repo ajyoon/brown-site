@@ -531,6 +531,7 @@
         <p class="summary"><p>
 </p></p>
         
+        
             <h4>arguments:</h4>
             <div class="type-details-list">
                 
@@ -564,7 +565,6 @@
         <p class="details"></p>
         
         
-        
     </div>
 </div>
             </div>
@@ -589,6 +589,7 @@
 
     </p>
     <div class="body">
+        
         <div class="details"><p>        Interface objects are created upon calling <code><a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject.render">GraphicObject.render</a>()</code></p><p>        Typically each GraphicObject will have one interface for each
         flowable line it appears in. Objects which fit completely
         in one visual line will typically have exactly one interface.</p><p>        If this is an empty set, the object has not been rendered yet
@@ -599,7 +600,6 @@
             <p class="read-only-notice">
                 read-only.
             </p>
-        
         
         
     </div>
@@ -619,8 +619,8 @@
 
     </p>
     <div class="body">
-        <div class="details"></div>
         
+        <div class="details"></div>
         
         
         
@@ -641,8 +641,8 @@
 
     </p>
     <div class="body">
-        <div class="details"></div>
         
+        <div class="details"></div>
         
         
         
@@ -663,8 +663,8 @@
 
     </p>
     <div class="body">
-        <div class="details"></div>
         
+        <div class="details"></div>
         
         
         
@@ -685,6 +685,7 @@
 
     </p>
     <div class="body">
+        
         <div class="details"><p>        This is used to determine how and where rendering cuts should be made.
         </p></div>
         
@@ -692,7 +693,6 @@
             <p class="read-only-notice">
                 read-only.
             </p>
-        
         
         
     </div>
@@ -712,8 +712,8 @@
 
     </p>
     <div class="body">
-        <div class="details"></div>
         
+        <div class="details"></div>
         
         
         
@@ -734,12 +734,12 @@
 
     </p>
     <div class="body">
+        
         <div class="details"><p>        As a convenience, this may be set with a hex color string
         for a solid color brush of that color. For brushes using
         alpha channels and non-solid-color fill patterns, a fully
         initialized brush must be passed to this.
         </p></div>
-        
         
         
         
@@ -760,9 +760,9 @@
 
     </p>
     <div class="body">
+        
         <div class="details"><p>        If this is set to None, it defaults to the first page of the document.
         </p></div>
-        
         
         
         
@@ -783,8 +783,8 @@
 
     </p>
     <div class="body">
-        <div class="details"></div>
         
+        <div class="details"></div>
         
         
         
@@ -805,6 +805,7 @@
 
     </p>
     <div class="body">
+        
         <div class="details"><p>        This recursively searches all of the object's children
         (and their children, etc.) and provides an iterator over them.</p><p>        The current implementation performs a simple recursive DFS over
         the tree, and has the potential to be rather slow.
@@ -814,7 +815,6 @@
             <p class="read-only-notice">
                 read-only.
             </p>
-        
         
         
     </div>
@@ -834,13 +834,13 @@
 
     </p>
     <div class="body">
+        
         <div class="details"></div>
         
         
             <p class="read-only-notice">
                 read-only.
             </p>
-        
         
         
     </div>
@@ -860,6 +860,7 @@
 
     </p>
     <div class="body">
+        
         <div class="details"><p>            <pre><code class="python">>>> from <a href="/docs/0.0.1.dev0/api/brown/core.html">brown.core</a> import <a href="/docs/0.0.1.dev0/api/brown.html">brown</a>; brown.setup()
 >>> some_object = <a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject">GraphicObject</a>((<a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Mm">Mm</a>(20), <a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Mm">Mm</a>(50)),
 ...                             <a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject.parent">parent</a>=brown.document.pages[5])
@@ -873,7 +874,6 @@ True
             <p class="read-only-notice">
                 read-only.
             </p>
-        
         
         
     </div>
@@ -893,13 +893,13 @@ True
 
     </p>
     <div class="body">
+        
         <div class="details"></div>
         
         
             <p class="read-only-notice">
                 read-only.
             </p>
-        
         
         
     </div>
@@ -929,6 +929,7 @@ True
     <div class="body">
         <p class="summary"><p>Find a GraphicObject's position relative to another GraphicObject
 </p></p>
+        
         
             <h4>arguments:</h4>
             <div class="type-details-list">
@@ -970,7 +971,6 @@ True
 
 
         
-        
     </div>
 </div>
                 
@@ -1002,6 +1002,7 @@ True
 </p></p>
         
         
+        
             <div class="returns">
                 <h4>returns:</h4>
                 <div class="type-details-list">
@@ -1014,7 +1015,6 @@ True
         
         <p class="details"><p>
 </p></p>
-        
         
         
     </div>
@@ -1040,11 +1040,11 @@ True
         
         
         
+        
         <p class="details"><p>
         Args: graphic_object_class (type): The type to search for.
             This should be a subclass of GraphicObject.</p><p>        Yields: GraphicObject
         </p></p>
-        
         
         
     </div>
@@ -1070,11 +1070,11 @@ True
         
         
         
+        
         <p class="details"><p>
         Args: graphic_object_class (type): The type to search for.
             This should be a subclass of GraphicObject.</p><p>        Yields: GraphicObject
         </p></p>
-        
         
         
     </div>
@@ -1097,6 +1097,7 @@ True
     <div class="body">
         <p class="summary"><p>Add an object to <code><a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject.children">self.children</a></code>.
 </p></p>
+        
         
             <h4>arguments:</h4>
             <div class="type-details-list">
@@ -1122,7 +1123,6 @@ True
 </p></p>
         
         
-        
     </div>
 </div>
                 
@@ -1143,6 +1143,7 @@ True
     <div class="body">
         <p class="summary"><p>Remove an object from <code><a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject.children">self.children</a></code>.
 </p></p>
+        
         
             <h4>arguments:</h4>
             <div class="type-details-list">
@@ -1168,7 +1169,6 @@ True
 </p></p>
         
         
-        
     </div>
 </div>
                 
@@ -1191,6 +1191,7 @@ True
 </p></p>
         
         
+        
             <div class="returns">
                 <h4>returns:</h4>
                 <div class="type-details-list">
@@ -1202,7 +1203,6 @@ True
         
         
         <p class="details"><p>        when needed if an object flows across a break in the frame.</p></p>
-        
         
         
     </div>
@@ -1225,6 +1225,7 @@ True
     <div class="body">
         <p class="summary"><p>Render the entire object.
 </p></p>
+        
         
             <h4>arguments:</h4>
             <div class="type-details-list">
@@ -1253,7 +1254,6 @@ True
         <code><a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject.interfaces">self.interfaces</a></code>.</p></p>
         
         
-        
     </div>
 </div>
                 
@@ -1274,6 +1274,7 @@ True
     <div class="body">
         <p class="summary"><p>Render the beginning of the object up to a stopping point.
 </p></p>
+        
         
             <h4>arguments:</h4>
             <div class="type-details-list">
@@ -1311,7 +1312,6 @@ True
         <code><a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject.interfaces">self.interfaces</a></code>.</p></p>
         
         
-        
     </div>
 </div>
                 
@@ -1332,6 +1332,7 @@ True
     <div class="body">
         <p class="summary"><p>Render the continuation of an object after a break.
 </p></p>
+        
         
             <h4>arguments:</h4>
             <div class="type-details-list">
@@ -1369,7 +1370,6 @@ True
         <code><a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject.interfaces">self.interfaces</a></code>.</p></p>
         
         
-        
     </div>
 </div>
                 
@@ -1390,6 +1390,7 @@ True
     <div class="body">
         <p class="summary"><p>
 </p></p>
+        
         
             <h4>arguments:</h4>
             <div class="type-details-list">
@@ -1424,7 +1425,6 @@ True
         two breaks. This function should render the portion of the object
         surrounded by breaks on either side.</p><p>        This method should create a GraphicInterface and store it in
         <code><a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject.interfaces">self.interfaces</a></code>.</p></p>
-        
         
         
     </div>

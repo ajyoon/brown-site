@@ -497,6 +497,7 @@
         <p class="summary"><p>Recursively convert all numbers in an immutable iterable.
 </p></p>
         
+        
             <h4>arguments:</h4>
             <div class="type-details-list">
                 
@@ -526,7 +527,6 @@
     This is a helper function for convert_all_to_unit</p></p>
         
         
-        
     </div>
 </div>
         
@@ -547,6 +547,7 @@
     <div class="body">
         <p class="summary"><p>Recursively convert all numbers found in an iterable to a unit in place.
 </p></p>
+        
         
             <h4>arguments:</h4>
             <div class="type-details-list">
@@ -575,7 +576,6 @@
         <p class="details"><p>
     This function works in place. Immutable structures (namely tuples) found
     within <code>iterable</code> will be replaced. <code>iterable</code> itself may not be immutable.</p><p>    In dictionaries, <i>only values</i> will be converted. Keys will be left as-is.</p></p>
-        
         
         
     </div>
@@ -643,6 +643,7 @@ TypeError: unsupported operand type(s) for +: 'int' and '<a href="/docs/0.0.1.de
         <p class="summary"><p>
 </p></p>
         
+        
             <h4>arguments:</h4>
             <div class="type-details-list">
                 
@@ -658,7 +659,6 @@ TypeError: unsupported operand type(s) for +: 'int' and '<a href="/docs/0.0.1.de
         
         
         <p class="details"></p>
-        
         
         
     </div>
@@ -685,9 +685,9 @@ TypeError: unsupported operand type(s) for +: 'int' and '<a href="/docs/0.0.1.de
 
     </p>
     <div class="body">
+        
         <div class="details"><p>    Subclasses should override this.
     </p></div>
-        
         
         
         
@@ -726,6 +726,7 @@ TypeError: unsupported operand type(s) for +: 'int' and '<a href="/docs/0.0.1.de
 </p></p>
         
         
+        
             <div class="returns">
                 <h4>returns:</h4>
                 <div class="type-details-list">
@@ -739,6 +740,50 @@ TypeError: unsupported operand type(s) for +: 'int' and '<a href="/docs/0.0.1.de
         <p class="details"><p>
 </p></p>
         
+        
+    </div>
+</div>
+                
+                    <div class="method"
+     id="Unit._assert_almost_equal">
+    <p>
+        <span class="important-name">_assert_almost_equal</span>
+        
+            <code>(other, places=7)</code>
+        
+        
+    <span class="permalink-and-source">
+        <a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit._assert_almost_equal">permalink</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/utils/units.py#L78">view source</a>
+    </span>
+
+    </p>
+    <div class="body">
+        <p class="summary"><p>Assert the near-equality of two units.
+</p></p>
+        
+        
+            <h4>arguments:</h4>
+            <div class="type-details-list">
+                
+                    <div class="arg">
+                        <p><p>other <code>(<a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit">Unit</a>)</code>: The unit to compare against</p></p>
+                    </div>
+                
+                    <div class="arg">
+                        <p><p>places <code>(int)</code>: The number of decimal places of accuracy required.</p></p>
+                    </div>
+                
+            </div>
+        
+        
+        
+        <p class="details"><p>
+        <ul><li><i>For testing purposes only.*</i>
+</li></ul>
+        Almost-equality is determined according to the base unit float
+        representations of both units, within the accuracy of <code>places</code>.</p><p>        A helpful failure message is given in the event of failure.</p><p>        This is primarily for testing purposes, as the stdlib
+        <code>assertAlmostEqual</code> doesn't play nice with custom numeric types.</p></p>
         
         
     </div>
@@ -757,7 +802,7 @@ TypeError: unsupported operand type(s) for +: 'int' and '<a href="/docs/0.0.1.de
             
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/utils/units.html#GraphicUnit">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/utils/units.py#L159">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/utils/units.py#L192">view source</a>
     </span>
 
             <h2>
@@ -793,6 +838,7 @@ TypeError: unsupported operand type(s) for +: 'int' and '<a href="/docs/0.0.1.de
         <p class="summary"><p>
 </p></p>
         
+        
             <h4>arguments:</h4>
             <div class="type-details-list">
                 
@@ -808,7 +854,6 @@ TypeError: unsupported operand type(s) for +: 'int' and '<a href="/docs/0.0.1.de
         
         
         <p class="details"></p>
-        
         
         
     </div>
@@ -835,6 +880,7 @@ TypeError: unsupported operand type(s) for +: 'int' and '<a href="/docs/0.0.1.de
 
     </p>
     <div class="body">
+        
         <div class="details"><p>    Subclasses should override this.
     </p></div>
         
@@ -850,7 +896,6 @@ TypeError: unsupported operand type(s) for +: 'int' and '<a href="/docs/0.0.1.de
     </div>
 
 
-        
         
     </div>
 </div>
@@ -889,6 +934,7 @@ TypeError: unsupported operand type(s) for +: 'int' and '<a href="/docs/0.0.1.de
 </p></p>
         
         
+        
             <div class="returns">
                 <h4>returns:</h4>
                 <div class="type-details-list">
@@ -914,6 +960,61 @@ TypeError: unsupported operand type(s) for +: 'int' and '<a href="/docs/0.0.1.de
 
 
         
+    </div>
+</div>
+                    
+                        <div class="method"
+     id="Unit._assert_almost_equal">
+    <p>
+        <span class="important-name">_assert_almost_equal</span>
+        
+            <code>(other, places=7)</code>
+        
+        
+    <span class="permalink-and-source">
+        <a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit._assert_almost_equal">permalink</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/utils/units.py#L78">view source</a>
+    </span>
+
+    </p>
+    <div class="body">
+        <p class="summary"><p>Assert the near-equality of two units.
+</p></p>
+        
+        
+            <h4>arguments:</h4>
+            <div class="type-details-list">
+                
+                    <div class="arg">
+                        <p><p>other <code>(<a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit">Unit</a>)</code>: The unit to compare against</p></p>
+                    </div>
+                
+                    <div class="arg">
+                        <p><p>places <code>(int)</code>: The number of decimal places of accuracy required.</p></p>
+                    </div>
+                
+            </div>
+        
+        
+        
+        <p class="details"><p>
+        <ul><li><i>For testing purposes only.*</i>
+</li></ul>
+        Almost-equality is determined according to the base unit float
+        representations of both units, within the accuracy of <code>places</code>.</p><p>        A helpful failure message is given in the event of failure.</p><p>        This is primarily for testing purposes, as the stdlib
+        <code>assertAlmostEqual</code> doesn't play nice with custom numeric types.</p></p>
+        
+        
+            
+
+    <div class="inherited-note">
+        inherited from
+        <a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit._assert_almost_equal">
+            Unit
+        </a>
+    </div>
+
+
         
     </div>
 </div>
@@ -931,7 +1032,7 @@ TypeError: unsupported operand type(s) for +: 'int' and '<a href="/docs/0.0.1.de
             
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Inch">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/utils/units.py#L169">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/utils/units.py#L202">view source</a>
     </span>
 
             <h2>
@@ -964,6 +1065,7 @@ TypeError: unsupported operand type(s) for +: 'int' and '<a href="/docs/0.0.1.de
         <p class="summary"><p>
 </p></p>
         
+        
             <h4>arguments:</h4>
             <div class="type-details-list">
                 
@@ -979,7 +1081,6 @@ TypeError: unsupported operand type(s) for +: 'int' and '<a href="/docs/0.0.1.de
         
         
         <p class="details"></p>
-        
         
         
     </div>
@@ -1006,6 +1107,7 @@ TypeError: unsupported operand type(s) for +: 'int' and '<a href="/docs/0.0.1.de
 
     </p>
     <div class="body">
+        
         <div class="details"><p>    Subclasses should override this.
     </p></div>
         
@@ -1021,7 +1123,6 @@ TypeError: unsupported operand type(s) for +: 'int' and '<a href="/docs/0.0.1.de
     </div>
 
 
-        
         
     </div>
 </div>
@@ -1060,6 +1161,7 @@ TypeError: unsupported operand type(s) for +: 'int' and '<a href="/docs/0.0.1.de
 </p></p>
         
         
+        
             <div class="returns">
                 <h4>returns:</h4>
                 <div class="type-details-list">
@@ -1085,6 +1187,61 @@ TypeError: unsupported operand type(s) for +: 'int' and '<a href="/docs/0.0.1.de
 
 
         
+    </div>
+</div>
+                    
+                        <div class="method"
+     id="Unit._assert_almost_equal">
+    <p>
+        <span class="important-name">_assert_almost_equal</span>
+        
+            <code>(other, places=7)</code>
+        
+        
+    <span class="permalink-and-source">
+        <a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit._assert_almost_equal">permalink</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/utils/units.py#L78">view source</a>
+    </span>
+
+    </p>
+    <div class="body">
+        <p class="summary"><p>Assert the near-equality of two units.
+</p></p>
+        
+        
+            <h4>arguments:</h4>
+            <div class="type-details-list">
+                
+                    <div class="arg">
+                        <p><p>other <code>(<a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit">Unit</a>)</code>: The unit to compare against</p></p>
+                    </div>
+                
+                    <div class="arg">
+                        <p><p>places <code>(int)</code>: The number of decimal places of accuracy required.</p></p>
+                    </div>
+                
+            </div>
+        
+        
+        
+        <p class="details"><p>
+        <ul><li><i>For testing purposes only.*</i>
+</li></ul>
+        Almost-equality is determined according to the base unit float
+        representations of both units, within the accuracy of <code>places</code>.</p><p>        A helpful failure message is given in the event of failure.</p><p>        This is primarily for testing purposes, as the stdlib
+        <code>assertAlmostEqual</code> doesn't play nice with custom numeric types.</p></p>
+        
+        
+            
+
+    <div class="inherited-note">
+        inherited from
+        <a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit._assert_almost_equal">
+            Unit
+        </a>
+    </div>
+
+
         
     </div>
 </div>
@@ -1102,7 +1259,7 @@ TypeError: unsupported operand type(s) for +: 'int' and '<a href="/docs/0.0.1.de
             
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Mm">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/utils/units.py#L174">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/utils/units.py#L207">view source</a>
     </span>
 
             <h2>
@@ -1135,6 +1292,7 @@ TypeError: unsupported operand type(s) for +: 'int' and '<a href="/docs/0.0.1.de
         <p class="summary"><p>
 </p></p>
         
+        
             <h4>arguments:</h4>
             <div class="type-details-list">
                 
@@ -1150,7 +1308,6 @@ TypeError: unsupported operand type(s) for +: 'int' and '<a href="/docs/0.0.1.de
         
         
         <p class="details"></p>
-        
         
         
     </div>
@@ -1177,6 +1334,7 @@ TypeError: unsupported operand type(s) for +: 'int' and '<a href="/docs/0.0.1.de
 
     </p>
     <div class="body">
+        
         <div class="details"><p>    Subclasses should override this.
     </p></div>
         
@@ -1192,7 +1350,6 @@ TypeError: unsupported operand type(s) for +: 'int' and '<a href="/docs/0.0.1.de
     </div>
 
 
-        
         
     </div>
 </div>
@@ -1231,6 +1388,7 @@ TypeError: unsupported operand type(s) for +: 'int' and '<a href="/docs/0.0.1.de
 </p></p>
         
         
+        
             <div class="returns">
                 <h4>returns:</h4>
                 <div class="type-details-list">
@@ -1256,6 +1414,61 @@ TypeError: unsupported operand type(s) for +: 'int' and '<a href="/docs/0.0.1.de
 
 
         
+    </div>
+</div>
+                    
+                        <div class="method"
+     id="Unit._assert_almost_equal">
+    <p>
+        <span class="important-name">_assert_almost_equal</span>
+        
+            <code>(other, places=7)</code>
+        
+        
+    <span class="permalink-and-source">
+        <a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit._assert_almost_equal">permalink</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/utils/units.py#L78">view source</a>
+    </span>
+
+    </p>
+    <div class="body">
+        <p class="summary"><p>Assert the near-equality of two units.
+</p></p>
+        
+        
+            <h4>arguments:</h4>
+            <div class="type-details-list">
+                
+                    <div class="arg">
+                        <p><p>other <code>(<a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit">Unit</a>)</code>: The unit to compare against</p></p>
+                    </div>
+                
+                    <div class="arg">
+                        <p><p>places <code>(int)</code>: The number of decimal places of accuracy required.</p></p>
+                    </div>
+                
+            </div>
+        
+        
+        
+        <p class="details"><p>
+        <ul><li><i>For testing purposes only.*</i>
+</li></ul>
+        Almost-equality is determined according to the base unit float
+        representations of both units, within the accuracy of <code>places</code>.</p><p>        A helpful failure message is given in the event of failure.</p><p>        This is primarily for testing purposes, as the stdlib
+        <code>assertAlmostEqual</code> doesn't play nice with custom numeric types.</p></p>
+        
+        
+            
+
+    <div class="inherited-note">
+        inherited from
+        <a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit._assert_almost_equal">
+            Unit
+        </a>
+    </div>
+
+
         
     </div>
 </div>

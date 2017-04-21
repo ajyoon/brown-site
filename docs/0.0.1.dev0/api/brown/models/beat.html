@@ -545,6 +545,7 @@
         
         
         
+        
         <p class="details"><p>        <ul><li>args:
             numerator (int or Beat):
             denominator (int):
@@ -554,7 +555,6 @@
         OR:
             beat (Beat): An existing Beat
         </p></p>
-        
         
         
     </div>
@@ -581,13 +581,13 @@
 
     </p>
     <div class="body">
+        
         <div class="details"></div>
         
         
             <p class="read-only-notice">
                 read-only.
             </p>
-        
         
         
     </div>
@@ -607,6 +607,7 @@
 
     </p>
     <div class="body">
+        
         <div class="details"><p>        If this is a <code><a href="/docs/0.0.1.dev0/api/brown/models/beat.html#Beat">Beat</a></code>, <code>self</code> will represent a tuplet.
         </p></div>
         
@@ -614,7 +615,6 @@
             <p class="read-only-notice">
                 read-only.
             </p>
-        
         
         
     </div>
@@ -634,13 +634,13 @@
 
     </p>
     <div class="body">
+        
         <div class="details"></div>
         
         
             <p class="read-only-notice">
                 read-only.
             </p>
-        
         
         
     </div>
@@ -660,13 +660,13 @@
 
     </p>
     <div class="body">
+        
         <div class="details"></div>
         
         
             <p class="read-only-notice">
                 read-only.
             </p>
-        
         
         
     </div>
@@ -686,13 +686,13 @@
 
     </p>
     <div class="body">
+        
         <div class="details"></div>
         
         
             <p class="read-only-notice">
                 read-only.
             </p>
-        
         
         
     </div>
@@ -712,13 +712,13 @@
 
     </p>
     <div class="body">
+        
         <div class="details"></div>
         
         
             <p class="read-only-notice">
                 read-only.
             </p>
-        
         
         
     </div>
@@ -748,6 +748,7 @@
     <div class="body">
         <p class="summary"><p>Initialize from a float with an optional denominator to round toward.
 </p></p>
+        
         
             <h4>arguments:</h4>
             <div class="type-details-list">
@@ -793,7 +794,6 @@
 
 
         
-        
     </div>
 </div>
                 
@@ -823,6 +823,7 @@
     <div class="body">
         <p class="summary"><p>Make a rounded fraction tuple from a float.
 </p></p>
+        
         
             <h4>arguments:</h4>
             <div class="type-details-list">
@@ -857,7 +858,6 @@
 </p></p>
         
         
-        
     </div>
 </div>
                 
@@ -887,8 +887,8 @@
         
         
         
-        <p class="details"></p>
         
+        <p class="details"></p>
         
         
     </div>
@@ -913,8 +913,8 @@
         
         
         
-        <p class="details"></p>
         
+        <p class="details"></p>
         
         
     </div>
@@ -939,8 +939,8 @@
         
         
         
-        <p class="details"></p>
         
+        <p class="details"></p>
         
         
     </div>
@@ -966,11 +966,11 @@
         
         
         
+        
         <p class="details"><p>
         Adding nested durations results in collapsing them into
         non-nested Durations
         </p></p>
-        
         
         
     </div>
@@ -996,11 +996,11 @@
         
         
         
+        
         <p class="details"><p>
         Subtracting nested durations results in collapsing them into
         non-nested Durations
         </p></p>
-        
         
         
     </div>
@@ -1025,8 +1025,8 @@
         
         
         
-        <p class="details"></p>
         
+        <p class="details"></p>
         
         
     </div>
@@ -1052,6 +1052,7 @@
         
         
         
+        
         <p class="details"><p>
         Because <code><a href="/docs/0.0.1.dev0/api/brown/models/beat.html#Beat.__gt__">Beat.__gt__</a></code> operates on the reduced fraction representation
         of the Beats being compared, but <code><a href="/docs/0.0.1.dev0/api/brown/models/beat.html#Beat.__eq__">Beat.__eq__</a></code> compares based on exact
@@ -1061,7 +1062,6 @@ True
 >>> <a href="/docs/0.0.1.dev0/api/brown/models/beat.html#Beat">Beat</a>(1, 4) == <a href="/docs/0.0.1.dev0/api/brown/models/beat.html#Beat">Beat</a>(<a href="/docs/0.0.1.dev0/api/brown/models/beat.html#Beat">Beat</a>(1, 1), 4)
 False
 </code></pre>        </p></p>
-        
         
         
     </div>
@@ -1086,8 +1086,8 @@ False
         
         
         
-        <p class="details"></p>
         
+        <p class="details"></p>
         
         
     </div>
@@ -1113,6 +1113,7 @@ False
         
         
         
+        
         <p class="details"><p>
         Because <code><a href="/docs/0.0.1.dev0/api/brown/models/beat.html#Beat.__lt__">Beat.__lt__</a></code> operates on the reduced fraction representation
         of the Beats being compared, but <code><a href="/docs/0.0.1.dev0/api/brown/models/beat.html#Beat.__eq__">Beat.__eq__</a></code> compares based on exact
@@ -1122,7 +1123,6 @@ True
 >>> <a href="/docs/0.0.1.dev0/api/brown/models/beat.html#Beat">Beat</a>(1, 4) == <a href="/docs/0.0.1.dev0/api/brown/models/beat.html#Beat">Beat</a>(<a href="/docs/0.0.1.dev0/api/brown/models/beat.html#Beat">Beat</a>(1, 1), 4)
 False
 </code></pre>        </p></p>
-        
         
         
     </div>
@@ -1147,6 +1147,7 @@ False
 </p></p>
         
         
+        
             <div class="returns">
                 <h4>returns:</h4>
                 <div class="type-details-list">
@@ -1160,7 +1161,6 @@ False
         <p class="details"><p>
         This recursively collapses any nested Beats and simplifies
         the returned Fraction.</p></p>
-        
         
         
     </div>

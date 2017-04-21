@@ -525,6 +525,18 @@
         <p class="summary"><p>
 </p></p>
         
+            
+
+    <div class="overriden-note">
+        overriden from
+        <a href="/docs/0.0.1.dev0/api/brown/models/beat.html#Beat.__init__">
+            Beat
+        </a>
+    </div>
+
+
+        
+        
         
         
         <p class="details"><p>        <ul><li>args:
@@ -537,18 +549,6 @@
             beat (Beat): An existing Beat
         </p></p>
         
-        
-        
-            
-
-    <div class="overriden-note">
-        overriden from
-        <a href="/docs/0.0.1.dev0/api/brown/models/beat.html#Beat.__init__">
-            Beat
-        </a>
-    </div>
-
-
         
     </div>
 </div>
@@ -574,6 +574,7 @@
 
     </p>
     <div class="body">
+        
         <div class="details"><p>    Subclasses should override this.
     </p></div>
         
@@ -589,7 +590,6 @@
     </div>
 
 
-        
         
     </div>
 </div>
@@ -617,6 +617,7 @@
 
     </p>
     <div class="body">
+        
         <div class="details"></div>
         
         
@@ -636,7 +637,6 @@
 
 
         
-        
     </div>
 </div>
                     
@@ -654,6 +654,7 @@
 
     </p>
     <div class="body">
+        
         <div class="details"><p>        If this is a <code><a href="/docs/0.0.1.dev0/api/brown/models/beat.html#Beat">Beat</a></code>, <code>self</code> will represent a tuplet.
         </p></div>
         
@@ -674,7 +675,6 @@
 
 
         
-        
     </div>
 </div>
                     
@@ -692,6 +692,7 @@
 
     </p>
     <div class="body">
+        
         <div class="details"></div>
         
         
@@ -711,7 +712,6 @@
 
 
         
-        
     </div>
 </div>
                     
@@ -729,6 +729,7 @@
 
     </p>
     <div class="body">
+        
         <div class="details"></div>
         
         
@@ -748,7 +749,6 @@
 
 
         
-        
     </div>
 </div>
                     
@@ -766,6 +766,7 @@
 
     </p>
     <div class="body">
+        
         <div class="details"></div>
         
         
@@ -785,7 +786,6 @@
 
 
         
-        
     </div>
 </div>
                     
@@ -803,6 +803,7 @@
 
     </p>
     <div class="body">
+        
         <div class="details"></div>
         
         
@@ -821,7 +822,6 @@
     </div>
 
 
-        
         
     </div>
 </div>
@@ -853,6 +853,7 @@
     <div class="body">
         <p class="summary"><p>Make a concrete GraphicBeat class and return it.
 </p></p>
+        
         
             <h4>arguments:</h4>
             <div class="type-details-list">
@@ -898,7 +899,6 @@
 
 
         
-        
     </div>
 </div>
                 
@@ -926,6 +926,7 @@
     <div class="body">
         <p class="summary"><p>Initialize from a float with an optional denominator to round toward.
 </p></p>
+        
         
             <h4>arguments:</h4>
             <div class="type-details-list">
@@ -971,7 +972,6 @@
 
 
         
-        
     </div>
 </div>
                     
@@ -1003,6 +1003,7 @@
     <div class="body">
         <p class="summary"><p>Make a rounded fraction tuple from a float.
 </p></p>
+        
         
             <h4>arguments:</h4>
             <div class="type-details-list">
@@ -1048,7 +1049,6 @@
 
 
         
-        
     </div>
 </div>
                     
@@ -1077,6 +1077,18 @@
         <p class="summary"><p>Return this value as a float in base unit values.
 </p></p>
         
+            
+
+    <div class="overriden-note">
+        overriden from
+        <a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit._to_base_unit_float">
+            Unit
+        </a>
+    </div>
+
+
+        
+        
         
             <div class="returns">
                 <h4>returns:</h4>
@@ -1092,18 +1104,6 @@
 </p></p>
         
         
-        
-            
-
-    <div class="overriden-note">
-        overriden from
-        <a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit._to_base_unit_float">
-            Unit
-        </a>
-    </div>
-
-
-        
     </div>
 </div>
                 
@@ -1113,6 +1113,62 @@
             <div class="inherited">
                 <h4 class="major-section-title">inherited methods</h4>
                 <div class="major-section">
+                    
+                        <div class="method"
+     id="Unit._assert_almost_equal">
+    <p>
+        <span class="important-name">_assert_almost_equal</span>
+        
+            <code>(other, places=7)</code>
+        
+        
+    <span class="permalink-and-source">
+        <a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit._assert_almost_equal">permalink</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/utils/units.py#L78">view source</a>
+    </span>
+
+    </p>
+    <div class="body">
+        <p class="summary"><p>Assert the near-equality of two units.
+</p></p>
+        
+        
+            <h4>arguments:</h4>
+            <div class="type-details-list">
+                
+                    <div class="arg">
+                        <p><p>other <code>(<a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit">Unit</a>)</code>: The unit to compare against</p></p>
+                    </div>
+                
+                    <div class="arg">
+                        <p><p>places <code>(int)</code>: The number of decimal places of accuracy required.</p></p>
+                    </div>
+                
+            </div>
+        
+        
+        
+        <p class="details"><p>
+        <ul><li><i>For testing purposes only.*</i>
+</li></ul>
+        Almost-equality is determined according to the base unit float
+        representations of both units, within the accuracy of <code>places</code>.</p><p>        A helpful failure message is given in the event of failure.</p><p>        This is primarily for testing purposes, as the stdlib
+        <code>assertAlmostEqual</code> doesn't play nice with custom numeric types.</p></p>
+        
+        
+            
+
+    <div class="inherited-note">
+        inherited from
+        <a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit._assert_almost_equal">
+            Unit
+        </a>
+    </div>
+
+
+        
+    </div>
+</div>
                     
                         <div class="method"
      id="Beat.__hash__">
@@ -1133,6 +1189,7 @@
         
         
         
+        
         <p class="details"></p>
         
         
@@ -1146,7 +1203,6 @@
     </div>
 
 
-        
         
     </div>
 </div>
@@ -1170,6 +1226,7 @@
         
         
         
+        
         <p class="details"></p>
         
         
@@ -1183,7 +1240,6 @@
     </div>
 
 
-        
         
     </div>
 </div>
@@ -1207,6 +1263,7 @@
         
         
         
+        
         <p class="details"></p>
         
         
@@ -1220,7 +1277,6 @@
     </div>
 
 
-        
         
     </div>
 </div>
@@ -1245,6 +1301,7 @@
         
         
         
+        
         <p class="details"><p>
         Adding nested durations results in collapsing them into
         non-nested Durations
@@ -1261,7 +1318,6 @@
     </div>
 
 
-        
         
     </div>
 </div>
@@ -1286,6 +1342,7 @@
         
         
         
+        
         <p class="details"><p>
         Subtracting nested durations results in collapsing them into
         non-nested Durations
@@ -1302,7 +1359,6 @@
     </div>
 
 
-        
         
     </div>
 </div>
@@ -1326,6 +1382,7 @@
         
         
         
+        
         <p class="details"></p>
         
         
@@ -1339,7 +1396,6 @@
     </div>
 
 
-        
         
     </div>
 </div>
@@ -1361,6 +1417,7 @@
     <div class="body">
         <p class="summary"><p>Beats are ordered by their reduced fraction representations.
 </p></p>
+        
         
         
         
@@ -1386,7 +1443,6 @@ False
 
 
         
-        
     </div>
 </div>
                     
@@ -1409,6 +1465,7 @@ False
         
         
         
+        
         <p class="details"></p>
         
         
@@ -1422,7 +1479,6 @@ False
     </div>
 
 
-        
         
     </div>
 </div>
@@ -1444,6 +1500,7 @@ False
     <div class="body">
         <p class="summary"><p>Beats are ordered by their reduced fraction representations.
 </p></p>
+        
         
         
         
@@ -1469,7 +1526,6 @@ False
 
 
         
-        
     </div>
 </div>
                     
@@ -1490,6 +1546,7 @@ False
     <div class="body">
         <p class="summary"><p>Collapse this Beat into a single Fraction and return it.
 </p></p>
+        
         
         
             <div class="returns">
@@ -1517,7 +1574,6 @@ False
     </div>
 
 
-        
         
     </div>
 </div>
