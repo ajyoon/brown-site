@@ -489,7 +489,7 @@
             
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/core/brace.html#Brace">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/brace.py#L7">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/brace.py#L8">view source</a>
     </span>
 
             <h2>
@@ -502,10 +502,10 @@
         <p class="summary"><p>A brace spanning staves, recurring at line beginnings.</p></p>
         
             <p class="details"><p>    The brace is drawn at the beginning of every line
-    after its initial x position through its length.</p><p>    A brace will be drawn on the first line it appears on
+    after its initial x position until the end of the staff.</p><p>    A brace will be drawn on the first line it appears on
     if and only if it is placed <i>exactly</i> at the line beginning.</p><p>    Consequently, <code><a href="/docs/0.0.1.dev0/api/brown/core/brace.html#Brace">Brace</a>(<a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Mm">Mm</a>(0), <a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Mm">Mm</a>(1000), some_staves)</code> will appear
     on the first line of the flowable, while
-    `Brace(Mm(1), Mm(1000), some_staves) will not begin drawing
+    <code><a href="/docs/0.0.1.dev0/api/brown/core/brace.html#Brace">Brace</a>(<a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Mm">Mm</a>(1), <a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Mm">Mm</a>(1000), some_staves)</code> will not begin drawing
     until the second line.
     </p></p>
         
@@ -517,12 +517,12 @@
     <p>
         <span class="important-name">__init__</span>
         
-            <code>(pos_x, length, staves)</code>
+            <code>(pos_x, staves)</code>
         
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/core/brace.html#Brace.__init__">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/brace.py#L23">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/brace.py#L24">view source</a>
     </span>
 
     </p>
@@ -547,10 +547,6 @@
                 
                     <div class="arg">
                         <p><p>pos_x <code>(<a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit">Unit</a>)</code>: Where this brace goes into effect</p></p>
-                    </div>
-                
-                    <div class="arg">
-                        <p><p>length <code>(<a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit">Unit</a>)</code>: How long this brace is in effect</p></p>
                     </div>
                 
                     <div class="arg">
@@ -583,7 +579,7 @@
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/core/brace.html#Brace.breakable_width">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/brace.py#L62">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/brace.py#L61">view source</a>
     </span>
 
     </p>
@@ -1352,7 +1348,7 @@ True
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/core/multi_staff_object.html#MultiStaffObject.visually_sorted_staves">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/multi_staff_object.py#L33">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/multi_staff_object.py#L30">view source</a>
     </span>
 
     </p>
@@ -1389,7 +1385,7 @@ True
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/core/multi_staff_object.html#MultiStaffObject.highest_staff">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/multi_staff_object.py#L39">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/multi_staff_object.py#L36">view source</a>
     </span>
 
     </p>
@@ -1426,7 +1422,7 @@ True
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/core/multi_staff_object.html#MultiStaffObject.lowest_staff">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/multi_staff_object.py#L44">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/multi_staff_object.py#L41">view source</a>
     </span>
 
     </p>
@@ -1463,7 +1459,7 @@ True
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/core/multi_staff_object.html#MultiStaffObject.vertical_span">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/multi_staff_object.py#L49">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/multi_staff_object.py#L46">view source</a>
     </span>
 
     </p>
