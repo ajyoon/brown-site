@@ -114,7 +114,7 @@
                 <a href="/docs/0.0.1.dev0/api/brown/core/invisible_object.html">invisible_object</a>
             </li>
         
-            <li >
+            <li id="toc-link-to-current-page">
                 <a href="/docs/0.0.1.dev0/api/brown/core/key_signature.html">key_signature</a>
             </li>
         
@@ -222,7 +222,7 @@
                 <a href="/docs/0.0.1.dev0/api/brown/core/staff_object.html">staff_object</a>
             </li>
         
-            <li id="toc-link-to-current-page">
+            <li >
                 <a href="/docs/0.0.1.dev0/api/brown/core/stem.html">stem</a>
             </li>
         
@@ -468,7 +468,7 @@
             <div id="page-body">
                 
 
-    <h1 id="page-title">brown<wbr>.core<wbr>.stem</h1>
+    <h1 id="page-title">brown<wbr>.core<wbr>.key_signature</h1>
 
     <a id="show-inherited-toggle" href="javascript:void(toggleShowInheritence())"></a>
 
@@ -484,37 +484,44 @@
         <h3 class="major-section-title">classes</h3>
         
             <div class="class"
-         id="Stem">
+         id="KeySignature">
         <div class="class-name-wrapper">
             
     <span class="permalink-and-source">
-        <a href="/docs/0.0.1.dev0/api/brown/core/stem.html#Stem">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/stem.py#L7">view source</a>
+        <a href="/docs/0.0.1.dev0/api/brown/core/key_signature.html#KeySignature">permalink</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/key_signature.py#L12">view source</a>
     </span>
 
             <h2>
-                <span class="class-name">Stem</span>
+                <span class="class-name">KeySignature</span>
                 
-                    (<code><a href="/docs/0.0.1.dev0/api/brown/core/path.html#Path">Path</a></code>, <code><a href="/docs/0.0.1.dev0/api/brown/core/staff_object.html#StaffObject">StaffObject</a></code>)
+                    (<code><a href="/docs/0.0.1.dev0/api/brown/core/object_group.html#ObjectGroup">ObjectGroup</a></code>, <code><a href="/docs/0.0.1.dev0/api/brown/core/staff_object.html#StaffObject">StaffObject</a></code>)
                 
             </h2>
         </div>
-        <p class="summary"><p>A vertical note/chord stem.</p></p>
+        <p class="summary"><p>A logical and graphical key signature.</p></p>
+        
+            <p class="details"><p>    The signature will be rendered initially at the given <code>pos_x</code>,
+    and at the beginning of subsequent lines throughout its duration.</p><p>    All traditional key signatures (those included in <code>KeySignatureTypes</code>)
+    are supported by this class. Nontraditional key signatures could
+    be implemented in a fairly straightforward way in a subclass of this.
+    </p><p>An visual accidental.</p><p>        This should only be used within this class.
+        </p></p>
         
         
         
             <div>
                 <div class="method"
-     id="Stem.__init__">
+     id="KeySignature.__init__">
     <p>
         <span class="important-name">__init__</span>
         
-            <code>(start, height, parent)</code>
+            <code>(pos_x, staff, key_signature_type)</code>
         
         
     <span class="permalink-and-source">
-        <a href="/docs/0.0.1.dev0/api/brown/core/stem.html#Stem.__init__">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/stem.py#L11">view source</a>
+        <a href="/docs/0.0.1.dev0/api/brown/core/key_signature.html#KeySignature.__init__">permalink</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/key_signature.py#L62">view source</a>
     </span>
 
     </p>
@@ -538,16 +545,17 @@
             <div class="type-details-list">
                 
                     <div class="arg">
-                        <p><p>start <code>(<a href="/docs/0.0.1.dev0/api/brown/utils/point.html#Point">Point</a>(StaffUnit))</code>: Starting point for the stem</p></p>
+                        <p><p>pos_x <code>(<a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit">Unit</a>)</code>: The x position relative to the parent staff.</p></p>
                     </div>
                 
                     <div class="arg">
-                        <p><p>height <code>(StaffUnit)</code>: The height of the stem,
-                where positive extend downward.</p></p>
+                        <p><p>staff <code>(<a href="/docs/0.0.1.dev0/api/brown/core/staff.html#Staff">Staff</a>)</code>: The parent staff</p></p>
                     </div>
                 
                     <div class="arg">
-                        <p><p>parent <code>(<a href="/docs/0.0.1.dev0/api/brown/core/staff_object.html#StaffObject">StaffObject</a> or <a href="/docs/0.0.1.dev0/api/brown/core/staff.html#Staff">Staff</a>)</code>:</p></p>
+                        <p><p>key_signature_type <code>(<a href="/docs/0.0.1.dev0/api/brown/models/key_signature_type.html#KeySignatureType">KeySignatureType</a> or str)</code>: A description of the
+                key signature. Any KeySignatureType may be used, or a str
+                of one's name.</p></p>
                     </div>
                 
             </div>
@@ -568,42 +576,15 @@
             <div class="major-section">
                 
                     <div class="property"
-         id="Stem.height">
+         id="KeySignature.key_signature_type">
     <p>
-        <span class="important-name">height</span>:
-        <span class="type"><code>StaffUnit</code></span>
-        &mdash;<span class="summary"> The height of the stem from its position.</span>
+        <span class="important-name">key_signature_type</span>:
+        <span class="type"><code><a href="/docs/0.0.1.dev0/api/brown/models/key_signature_type.html#KeySignatureType">KeySignatureType</a></code></span>
+        &mdash;<span class="summary"> A logical description of the key signature.</span>
         
     <span class="permalink-and-source">
-        <a href="/docs/0.0.1.dev0/api/brown/core/stem.html#Stem.height">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/stem.py#L32">view source</a>
-    </span>
-
-    </p>
-    <div class="body">
-        
-        <div class="details"><p>        Positive values extend downward, and vice versa.
-        </p></div>
-        
-        
-            <p class="read-only-notice">
-                read-only.
-            </p>
-        
-        
-    </div>
-</div>
-                
-                    <div class="property"
-         id="Stem.direction">
-    <p>
-        <span class="important-name">direction</span>:
-        <span class="type"><code>int</code></span>
-        &mdash;<span class="summary"> The direction the stem points, where -1 is up and 1 is down</span>
-        
-    <span class="permalink-and-source">
-        <a href="/docs/0.0.1.dev0/api/brown/core/stem.html#Stem.direction">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/stem.py#L40">view source</a>
+        <a href="/docs/0.0.1.dev0/api/brown/core/key_signature.html#KeySignature.key_signature_type">permalink</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/key_signature.py#L83">view source</a>
     </span>
 
     </p>
@@ -621,45 +602,30 @@
 </div>
                 
                     <div class="property"
-         id="Stem.start_point">
+         id="KeySignature.breakable_width">
     <p>
-        <span class="important-name">start_point</span>:
-        <span class="type"><code><a href="/docs/0.0.1.dev0/api/brown/core/path_element.html#PathElement">PathElement</a></code></span>
-        &mdash;<span class="summary"> The inner element attached to a Notehead.</span>
+        <span class="important-name">breakable_width</span>:
+        <span class="type"></span>
+        &mdash;<span class="summary"><code><a href="/docs/0.0.1.dev0/api/brown/core/key_signature.html#KeySignature">KeySignature</a></code>s extend until another is found in the staff.</span>
         
     <span class="permalink-and-source">
-        <a href="/docs/0.0.1.dev0/api/brown/core/stem.html#Stem.start_point">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/stem.py#L45">view source</a>
+        <a href="/docs/0.0.1.dev0/api/brown/core/key_signature.html#KeySignature.breakable_width">permalink</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/key_signature.py#L88">view source</a>
     </span>
 
     </p>
     <div class="body">
         
-        <div class="details"></div>
-        
-        
-            <p class="read-only-notice">
-                read-only.
-            </p>
-        
-        
+            
+
+    <div class="overriden-note">
+        overriden from
+        <a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject.breakable_width">
+            GraphicObject
+        </a>
     </div>
-</div>
-                
-                    <div class="property"
-         id="Stem.end_point">
-    <p>
-        <span class="important-name">end_point</span>:
-        <span class="type"><code><a href="/docs/0.0.1.dev0/api/brown/core/path_element.html#PathElement">PathElement</a></code></span>
-        &mdash;<span class="summary"> The outer element reaching above or below the Chordrest.</span>
-        
-    <span class="permalink-and-source">
-        <a href="/docs/0.0.1.dev0/api/brown/core/stem.html#Stem.end_point">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/stem.py#L50">view source</a>
-    </span>
 
-    </p>
-    <div class="body">
+
         
         <div class="details"></div>
         
@@ -746,84 +712,6 @@
         inherited from
         <a href="/docs/0.0.1.dev0/api/brown/core/staff_object.html#StaffObject.pos_in_staff">
             StaffObject
-        </a>
-    </div>
-
-
-        
-    </div>
-</div>
-                    
-                        <div class="property"
-         id="GraphicObject.breakable_width">
-    <p>
-        <span class="important-name">breakable_width</span>:
-        <span class="type"><code><a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit">Unit</a></code></span>
-        &mdash;<span class="summary"> The breakable_width of the object.</span>
-        
-    <span class="permalink-and-source">
-        <a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject.breakable_width">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/graphic_object.py#L111">view source</a>
-    </span>
-
-    </p>
-    <div class="body">
-        
-        <div class="details"><p>        This is used to determine how and where rendering cuts should be made.
-        </p></div>
-        
-        
-            <p class="read-only-notice">
-                read-only.
-            </p>
-        
-        
-            
-
-    <div class="inherited-note">
-        inherited from
-        <a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject.breakable_width">
-            GraphicObject
-        </a>
-    </div>
-
-
-        
-    </div>
-</div>
-                    
-                        <div class="property"
-         id="Path.current_draw_pos">
-    <p>
-        <span class="important-name">current_draw_pos</span>:
-        <span class="type"><code><a href="/docs/0.0.1.dev0/api/brown/utils/point.html#Point">Point</a></code></span>
-        &mdash;<span class="summary"> The current relative drawing position.</span>
-        
-    <span class="permalink-and-source">
-        <a href="/docs/0.0.1.dev0/api/brown/core/path.html#Path.current_draw_pos">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/path.py#L90">view source</a>
-    </span>
-
-    </p>
-    <div class="body">
-        
-        <div class="details"><p>        This is the location from which operations like line_to() will draw,
-        relative to <code>self.pos</code>.</p><p>        This property is read-only. To change this without connecting a line
-        to the new position, use <code><a href="/docs/0.0.1.dev0/api/brown/core/path.html#Path.move_to">self.move_to</a></code>.
-        </p></div>
-        
-        
-            <p class="read-only-notice">
-                read-only.
-            </p>
-        
-        
-            
-
-    <div class="inherited-note">
-        inherited from
-        <a href="/docs/0.0.1.dev0/api/brown/core/path.html#Path.current_draw_pos">
-            Path
         </a>
     </div>
 
@@ -1277,79 +1165,6 @@ True
                 <div class="major-section">
                     
                         <div class="method"
-     id="Path.straight_line">
-    <p>
-        <span class="important-name">straight_line</span>
-        
-            <code>(start, stop, pen=None, brush=None, parent=None)</code>
-        
-        
-    <span class="permalink-and-source">
-        <a href="/docs/0.0.1.dev0/api/brown/core/path.html#Path.straight_line">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/path.py#L47">view source</a>
-    </span>
-
-    </p>
-    <div class="body">
-        <p class="summary"><p>Path: Constructor for a straight line
-</p></p>
-        
-        
-            <h4>arguments:</h4>
-            <div class="type-details-list">
-                
-                    <div class="arg">
-                        <p><p>start <code>(<a href="/docs/0.0.1.dev0/api/brown/utils/point.html#Point">Point</a> or init tuple)</code>: Starting position relative to the parent</p></p>
-                    </div>
-                
-                    <div class="arg">
-                        <p><p>stop <code>(<a href="/docs/0.0.1.dev0/api/brown/utils/point.html#Point">Point</a> or init tuple)</code>: Ending position relative to the parent.</p></p>
-                    </div>
-                
-                    <div class="arg">
-                        <p><p>pen <code>(<a href="/docs/0.0.1.dev0/api/brown/core/pen.html#Pen">Pen</a>)</code>: The pen to draw outlines with.</p></p>
-                    </div>
-                
-                    <div class="arg">
-                        <p><p>brush <code>(<a href="/docs/0.0.1.dev0/api/brown/core/brush.html#Brush">Brush</a>)</code>: The brush to draw outlines with.</p></p>
-                    </div>
-                
-                    <div class="arg">
-                        <p><p>parent <code>(<a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject">GraphicObject</a>)</code>: The parent object or None</p></p>
-                    </div>
-                
-            </div>
-        
-        
-            <div class="returns">
-                <h4>returns:</h4>
-                <div class="type-details-list">
-                    
-                        <p><code><a href="/docs/0.0.1.dev0/api/brown/core/path.html#Path">Path</a></code></p>
-                    
-                </div>
-            </div>
-        
-        
-        <p class="details"><p>
-</p></p>
-        
-        
-            
-
-    <div class="inherited-note">
-        inherited from
-        <a href="/docs/0.0.1.dev0/api/brown/core/path.html#Path.straight_line">
-            Path
-        </a>
-    </div>
-
-
-        
-    </div>
-</div>
-                    
-                        <div class="method"
      id="GraphicObject.map_between_items">
     <p>
         <span class="important-name">map_between_items</span>
@@ -1475,366 +1290,6 @@ True
             <div class="inherited">
                 <h4 class="major-section-title">inherited methods</h4>
                 <div class="major-section">
-                    
-                        <div class="method"
-     id="Path.line_to">
-    <p>
-        <span class="important-name">line_to</span>
-        
-            <code>(x, y, parent=None)</code>
-        
-        
-    <span class="permalink-and-source">
-        <a href="/docs/0.0.1.dev0/api/brown/core/path.html#Path.line_to">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/path.py#L111">view source</a>
-    </span>
-
-    </p>
-    <div class="body">
-        <p class="summary"><p>Draw a path from the current position to a new point.
-</p></p>
-        
-        
-            <h4>arguments:</h4>
-            <div class="type-details-list">
-                
-                    <div class="arg">
-                        <p><p>x <code>(<a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit">Unit</a>)</code>: The end x position</p></p>
-                    </div>
-                
-                    <div class="arg">
-                        <p><p>y <code>(<a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit">Unit</a>)</code>: The end y position</p></p>
-                    </div>
-                
-                    <div class="arg">
-                        <p><p>page <code>(int)</code>: The end relative page number.
-                For most cases, this should be 0.</p></p>
-                    </div>
-                
-                    <div class="arg">
-                        <p><p>parent <code>(<a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject">GraphicObject</a>)</code>: An optional parent, whose position
-                the target coordinate will be relative to.</p></p>
-                    </div>
-                
-            </div>
-        
-        
-            <div class="returns">
-                <h4>returns:</h4>
-                <div class="type-details-list">
-                    
-                        <p><code>None</code></p>
-                    
-                </div>
-            </div>
-        
-        
-        <p class="details"><p>
-        Connect a path from the current position to a new position specified
-        by <code>x</code> and <code>y</code>, and move <code><a href="/docs/0.0.1.dev0/api/brown/core/path.html#Path.current_draw_pos">self.current_draw_pos</a></code> to the new point.</p><p>        A point parent may be passed as well, anchored the target point to
-        a separate GraphicObject. In this case, the coordinates passed will be
-        considered relative to the parent.</p></p>
-        
-        
-            
-
-    <div class="inherited-note">
-        inherited from
-        <a href="/docs/0.0.1.dev0/api/brown/core/path.html#Path.line_to">
-            Path
-        </a>
-    </div>
-
-
-        
-    </div>
-</div>
-                    
-                        <div class="method"
-     id="Path.move_to">
-    <p>
-        <span class="important-name">move_to</span>
-        
-            <code>(x, y, parent=None)</code>
-        
-        
-    <span class="permalink-and-source">
-        <a href="/docs/0.0.1.dev0/api/brown/core/path.html#Path.move_to">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/path.py#L139">view source</a>
-    </span>
-
-    </p>
-    <div class="body">
-        <p class="summary"><p>Close the current sub-path and start a new one.
-</p></p>
-        
-        
-            <h4>arguments:</h4>
-            <div class="type-details-list">
-                
-                    <div class="arg">
-                        <p><p>x <code>(<a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit">Unit</a>)</code>: The end x position</p></p>
-                    </div>
-                
-                    <div class="arg">
-                        <p><p>y <code>(<a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit">Unit</a>)</code>: The end y position</p></p>
-                    </div>
-                
-                    <div class="arg">
-                        <p><p>page <code>(int)</code>: The end relative page number.
-                For most cases, this should be 0.</p></p>
-                    </div>
-                
-                    <div class="arg">
-                        <p><p>parent <code>(<a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject">GraphicObject</a>)</code>: An optional parent, whose position
-                the target coordinate will be relative to.</p></p>
-                    </div>
-                
-            </div>
-        
-        
-            <div class="returns">
-                <h4>returns:</h4>
-                <div class="type-details-list">
-                    
-                        <p><code>None</code></p>
-                    
-                </div>
-            </div>
-        
-        
-        <p class="details"><p>
-        A point parent may be passed as well, anchored the target point to
-        a separate <code>GraphicObjec</code>t. In this case, the coordinates passed will be
-        considered relative to the parent.</p></p>
-        
-        
-            
-
-    <div class="inherited-note">
-        inherited from
-        <a href="/docs/0.0.1.dev0/api/brown/core/path.html#Path.move_to">
-            Path
-        </a>
-    </div>
-
-
-        
-    </div>
-</div>
-                    
-                        <div class="method"
-     id="Path.close_subpath">
-    <p>
-        <span class="important-name">close_subpath</span>
-        
-            <code>()</code>
-        
-        
-    <span class="permalink-and-source">
-        <a href="/docs/0.0.1.dev0/api/brown/core/path.html#Path.close_subpath">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/path.py#L162">view source</a>
-    </span>
-
-    </p>
-    <div class="body">
-        <p class="summary"><p>Close the current sub-path and start a new one at (0, 0).
-</p></p>
-        
-        
-        
-            <div class="returns">
-                <h4>returns:</h4>
-                <div class="type-details-list">
-                    
-                        <p><code>None</code></p>
-                    
-                </div>
-            </div>
-        
-        
-        <p class="details"><p>
-        This is equivalent to <code><a href="/docs/0.0.1.dev0/api/brown/core/path.html#Path.move_to">move_to</a>((<a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit">Unit</a>(0), <a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit">Unit</a>(0)))</code></p></p>
-        
-        
-            
-
-    <div class="inherited-note">
-        inherited from
-        <a href="/docs/0.0.1.dev0/api/brown/core/path.html#Path.close_subpath">
-            Path
-        </a>
-    </div>
-
-
-        
-    </div>
-</div>
-                    
-                        <div class="method"
-     id="Path.cubic_to">
-    <p>
-        <span class="important-name">cubic_to</span>
-        
-            <code>(self,
-                 control_1_x, control_1_y,
-                 control_2_x, control_2_y,
-                 end_x, end_y,
-                 control_1_parent=None,
-                 control_2_parent=None,
-                 end_parent=None)</code>
-        
-        
-    <span class="permalink-and-source">
-        <a href="/docs/0.0.1.dev0/api/brown/core/path.html#Path.cubic_to">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/path.py#L176">view source</a>
-    </span>
-
-    </p>
-    <div class="body">
-        <p class="summary"><p>Draw a cubic bezier curve from the current position to a new point.
-</p></p>
-        
-        
-            <h4>arguments:</h4>
-            <div class="type-details-list">
-                
-                    <div class="arg">
-                        <p><p>control_1_x <code>(<a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit">Unit</a>)</code>: The x coordinate of the first control point.</p></p>
-                    </div>
-                
-                    <div class="arg">
-                        <p><p>control_1_y <code>(<a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit">Unit</a>)</code>: The y coordinate of the first control point.</p></p>
-                    </div>
-                
-                    <div class="arg">
-                        <p><p>control_2_x <code>(<a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit">Unit</a>)</code>: The x coordinate of the second control point.</p></p>
-                    </div>
-                
-                    <div class="arg">
-                        <p><p>control_2_y <code>(<a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit">Unit</a>)</code>: The y coordinate of the second control point.</p></p>
-                    </div>
-                
-                    <div class="arg">
-                        <p><p>end_x <code>(<a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit">Unit</a>)</code>: The x coordinate of the curve target.</p></p>
-                    </div>
-                
-                    <div class="arg">
-                        <p><p>end_y <code>(<a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit">Unit</a>)</code>: The y coordinate of the curve target.</p></p>
-                    </div>
-                
-                    <div class="arg">
-                        <p><p>control_1_parent <code>(<a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject">GraphicObject</a> or None)</code>: An optional parent for
-                the first control point. If <code>None</code>, this defaults to the path.</p></p>
-                    </div>
-                
-                    <div class="arg">
-                        <p><p>control_2_parent <code>(<a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject">GraphicObject</a> or None)</code>: An optional parent for
-                the second control point. If <code>None</code>, this defaults to the path.</p></p>
-                    </div>
-                
-                    <div class="arg">
-                        <p><p>end_parent <code>(<a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject">GraphicObject</a> or None)</code>: An optional parent for the
-                curve target. If <code>None</code>, this defaults to the path.</p></p>
-                    </div>
-                
-            </div>
-        
-        
-            <div class="returns">
-                <h4>returns:</h4>
-                <div class="type-details-list">
-                    
-                        <p><code>None</code></p>
-                    
-                </div>
-            </div>
-        
-        
-        <p class="details"><p>
-        Moves <code><a href="/docs/0.0.1.dev0/api/brown/core/path.html#Path.current_draw_pos">self.current_draw_pos</a></code> to the new end point.</p></p>
-        
-        
-            
-
-    <div class="inherited-note">
-        inherited from
-        <a href="/docs/0.0.1.dev0/api/brown/core/path.html#Path.cubic_to">
-            Path
-        </a>
-    </div>
-
-
-        
-    </div>
-</div>
-                    
-                        <div class="method"
-     id="Path._render_slice">
-    <p>
-        <span class="important-name">_render_slice</span>
-        
-            <code>(pos, clip_start_x=None, clip_width=None)</code>
-        
-        
-    <span class="permalink-and-source">
-        <a href="/docs/0.0.1.dev0/api/brown/core/path.html#Path._render_slice">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/path.py#L221">view source</a>
-    </span>
-
-    </p>
-    <div class="body">
-        <p class="summary"><p>Render a horizontal slice of a path.
-</p></p>
-        
-        
-            <h4>arguments:</h4>
-            <div class="type-details-list">
-                
-                    <div class="arg">
-                        <p><p>pos <code>(<a href="/docs/0.0.1.dev0/api/brown/utils/point.html#Point">Point</a>)</code>: The doc-space position of the slice beginning
-                (at the top-left corner of the slice)</p></p>
-                    </div>
-                
-                    <div class="arg">
-                        <p><p>clip_start_x <code>(<a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit">Unit</a>)</code>: The starting x position in the path of the slice</p></p>
-                    </div>
-                
-                    <div class="arg">
-                        <p><p>clip_width <code>(<a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit">Unit</a>)</code>: The horizontal length of the slice to
-                be rendered</p></p>
-                    </div>
-                
-            </div>
-        
-        
-            <div class="returns">
-                <h4>returns:</h4>
-                <div class="type-details-list">
-                    
-                        <p><code>None</code></p>
-                    
-                </div>
-            </div>
-        
-        
-        <p class="details"><p>
-</p></p>
-        
-        
-            
-
-    <div class="inherited-note">
-        inherited from
-        <a href="/docs/0.0.1.dev0/api/brown/core/path.html#Path._render_slice">
-            Path
-        </a>
-    </div>
-
-
-        
-    </div>
-</div>
                     
                         <div class="method"
      id="GraphicObject.render">
