@@ -509,7 +509,7 @@
     <p>
         <span class="important-name">__init__</span>
         
-            <code>(pos, breakable_width=None,
+            <code>(pos, length=None,
                  pen=None, brush=None, parent=None)</code>
         
         
@@ -533,9 +533,10 @@
                     </div>
                 
                     <div class="arg">
-                        <p><p>breakable_width <code>(<a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit">Unit</a>)</code>: The width of the object which can be
-                subject to breaking across line breaks when in a FlowableFrame.
-                If the object is not inside a FlowableFrame, this has no effect</p></p>
+                        <p><p>length <code>(<a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit">Unit</a>)</code>: The width of the object which can be
+                subject to breaking across lines when in a<code><a href="/docs/0.0.1.dev0/api/brown/core/flowable_frame.html#FlowableFrame">FlowableFrame</a></code>.
+                If the object is not inside a <code><a href="/docs/0.0.1.dev0/api/brown/core/flowable_frame.html#FlowableFrame">FlowableFrame</a></code>,
+                this has no effect</p></p>
                     </div>
                 
                     <div class="arg">
@@ -681,21 +682,22 @@
 </div>
                     
                         <div class="property"
-         id="NewLine.length">
+         id="GraphicObject.length">
     <p>
         <span class="important-name">length</span>:
         <span class="type"><code><a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit">Unit</a></code></span>
-        &mdash;<span class="summary"> The length of the line.</span>
+        &mdash;<span class="summary"> The breakable length of the object.</span>
         
     <span class="permalink-and-source">
-        <a href="/docs/0.0.1.dev0/api/brown/core/new_line.html#NewLine.length">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/new_line.py#L42">view source</a>
+        <a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject.length">permalink</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/graphic_object.py#L111">view source</a>
     </span>
 
     </p>
     <div class="body">
         
-        <div class="details"></div>
+        <div class="details"><p>        This is used to determine how and where rendering cuts should be made.
+        </p></div>
         
         
             <p class="read-only-notice">
@@ -707,8 +709,8 @@
 
     <div class="inherited-note">
         inherited from
-        <a href="/docs/0.0.1.dev0/api/brown/core/new_line.html#NewLine.length">
-            NewLine
+        <a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject.length">
+            GraphicObject
         </a>
     </div>
 
@@ -763,7 +765,7 @@
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/core/layout_controller.html#LayoutController.page">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/layout_controller.py#L31">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/layout_controller.py#L30">view source</a>
     </span>
 
     </p>
@@ -802,7 +804,7 @@
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/core/layout_controller.html#LayoutController.flowable_frame">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/layout_controller.py#L40">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/layout_controller.py#L39">view source</a>
     </span>
 
     </p>
@@ -835,7 +837,7 @@
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/core/layout_controller.html#LayoutController.local_x">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/layout_controller.py#L49">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/layout_controller.py#L48">view source</a>
     </span>
 
     </p>
@@ -990,44 +992,6 @@
     <div class="inherited-note">
         inherited from
         <a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject.y">
-            GraphicObject
-        </a>
-    </div>
-
-
-        
-    </div>
-</div>
-                    
-                        <div class="property"
-         id="GraphicObject.breakable_width">
-    <p>
-        <span class="important-name">breakable_width</span>:
-        <span class="type"><code><a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit">Unit</a></code></span>
-        &mdash;<span class="summary"> The breakable_width of the object.</span>
-        
-    <span class="permalink-and-source">
-        <a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject.breakable_width">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/graphic_object.py#L111">view source</a>
-    </span>
-
-    </p>
-    <div class="body">
-        
-        <div class="details"><p>        This is used to determine how and where rendering cuts should be made.
-        </p></div>
-        
-        
-            <p class="read-only-notice">
-                read-only.
-            </p>
-        
-        
-            
-
-    <div class="inherited-note">
-        inherited from
-        <a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject.breakable_width">
             GraphicObject
         </a>
     </div>

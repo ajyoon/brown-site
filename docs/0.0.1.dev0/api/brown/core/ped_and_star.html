@@ -664,7 +664,7 @@
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/core/spanner.html#Spanner.end_x">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/spanner.py#L42">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/spanner.py#L45">view source</a>
     </span>
 
     </p>
@@ -697,7 +697,7 @@
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/core/spanner.html#Spanner.end_y">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/spanner.py#L51">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/spanner.py#L54">view source</a>
     </span>
 
     </p>
@@ -730,7 +730,7 @@
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/core/spanner.html#Spanner.end_pos">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/spanner.py#L60">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/spanner.py#L63">view source</a>
     </span>
 
     </p>
@@ -763,7 +763,7 @@
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/core/spanner.html#Spanner.end_parent">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/spanner.py#L69">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/spanner.py#L72">view source</a>
     </span>
 
     </p>
@@ -791,21 +791,22 @@
 </div>
                     
                         <div class="property"
-         id="Spanner.length">
+         id="Spanner.spanner_x_length">
     <p>
-        <span class="important-name">length</span>:
+        <span class="important-name">spanner_x_length</span>:
         <span class="type"><code><a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit">Unit</a></code></span>
-        &mdash;<span class="summary"> The length of the spanner.</span>
+        &mdash;<span class="summary"> The x-axis length of the spanner.</span>
         
     <span class="permalink-and-source">
-        <a href="/docs/0.0.1.dev0/api/brown/core/spanner.html#Spanner.length">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/spanner.py#L83">view source</a>
+        <a href="/docs/0.0.1.dev0/api/brown/core/spanner.html#Spanner.spanner_x_length">permalink</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/spanner.py#L86">view source</a>
     </span>
 
     </p>
     <div class="body">
         
-        <div class="details"><p>        The exact unit type will be the type of <code>self.pos.x</code>
+        <div class="details"><p>        Implementing subclasses will often want to override
+        <code><a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject.length">GraphicObject.length</a></code> to return this.
         </p></div>
         
         
@@ -818,7 +819,46 @@
 
     <div class="inherited-note">
         inherited from
-        <a href="/docs/0.0.1.dev0/api/brown/core/spanner.html#Spanner.length">
+        <a href="/docs/0.0.1.dev0/api/brown/core/spanner.html#Spanner.spanner_x_length">
+            Spanner
+        </a>
+    </div>
+
+
+        
+    </div>
+</div>
+                    
+                        <div class="property"
+         id="Spanner.spanner_length">
+    <p>
+        <span class="important-name">spanner_length</span>:
+        <span class="type"><code><a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit">Unit</a></code></span>
+        &mdash;<span class="summary"> The 2d length of the spanner.</span>
+        
+    <span class="permalink-and-source">
+        <a href="/docs/0.0.1.dev0/api/brown/core/spanner.html#Spanner.spanner_length">permalink</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/spanner.py#L99">view source</a>
+    </span>
+
+    </p>
+    <div class="body">
+        
+        <div class="details"><p>        Note: This takes into account both the x and y axis. For only
+            the horizontal length, use <code><a href="/docs/0.0.1.dev0/api/brown/core/spanner.html#Spanner.spanner_x_length">spanner_x_length</a></code>.
+        </p></div>
+        
+        
+            <p class="read-only-notice">
+                read-only.
+            </p>
+        
+        
+            
+
+    <div class="inherited-note">
+        inherited from
+        <a href="/docs/0.0.1.dev0/api/brown/core/spanner.html#Spanner.spanner_length">
             Spanner
         </a>
     </div>
@@ -969,14 +1009,14 @@
 </div>
                     
                         <div class="property"
-         id="GraphicObject.breakable_width">
+         id="GraphicObject.length">
     <p>
-        <span class="important-name">breakable_width</span>:
+        <span class="important-name">length</span>:
         <span class="type"><code><a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit">Unit</a></code></span>
-        &mdash;<span class="summary"> The breakable_width of the object.</span>
+        &mdash;<span class="summary"> The breakable length of the object.</span>
         
     <span class="permalink-and-source">
-        <a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject.breakable_width">permalink</a>
+        <a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject.length">permalink</a>
         <a href="https://github.com/ajyoon/brown/blob/master/brown/core/graphic_object.py#L111">view source</a>
     </span>
 
@@ -996,7 +1036,7 @@
 
     <div class="inherited-note">
         inherited from
-        <a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject.breakable_width">
+        <a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject.length">
             GraphicObject
         </a>
     </div>

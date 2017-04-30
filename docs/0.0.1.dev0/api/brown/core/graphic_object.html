@@ -521,7 +521,7 @@
     <p>
         <span class="important-name">__init__</span>
         
-            <code>(pos, breakable_width=None,
+            <code>(pos, length=None,
                  pen=None, brush=None, parent=None)</code>
         
         
@@ -545,9 +545,10 @@
                     </div>
                 
                     <div class="arg">
-                        <p><p>breakable_width <code>(<a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit">Unit</a>)</code>: The width of the object which can be
-                subject to breaking across line breaks when in a FlowableFrame.
-                If the object is not inside a FlowableFrame, this has no effect</p></p>
+                        <p><p>length <code>(<a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit">Unit</a>)</code>: The width of the object which can be
+                subject to breaking across lines when in a<code><a href="/docs/0.0.1.dev0/api/brown/core/flowable_frame.html#FlowableFrame">FlowableFrame</a></code>.
+                If the object is not inside a <code><a href="/docs/0.0.1.dev0/api/brown/core/flowable_frame.html#FlowableFrame">FlowableFrame</a></code>,
+                this has no effect</p></p>
                     </div>
                 
                     <div class="arg">
@@ -676,14 +677,14 @@
 </div>
                 
                     <div class="property"
-         id="GraphicObject.breakable_width">
+         id="GraphicObject.length">
     <p>
-        <span class="important-name">breakable_width</span>:
+        <span class="important-name">length</span>:
         <span class="type"><code><a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit">Unit</a></code></span>
-        &mdash;<span class="summary"> The breakable_width of the object.</span>
+        &mdash;<span class="summary"> The breakable length of the object.</span>
         
     <span class="permalink-and-source">
-        <a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject.breakable_width">permalink</a>
+        <a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject.length">permalink</a>
         <a href="https://github.com/ajyoon/brown/blob/master/brown/core/graphic_object.py#L111">view source</a>
     </span>
 

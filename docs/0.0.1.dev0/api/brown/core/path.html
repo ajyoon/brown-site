@@ -581,14 +581,14 @@
             <div class="major-section">
                 
                     <div class="property"
-         id="Path.breakable_width">
+         id="Path.length">
     <p>
-        <span class="important-name">breakable_width</span>:
+        <span class="important-name">length</span>:
         <span class="type"><code><a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit">Unit</a></code></span>
-        &mdash;<span class="summary"> The breakable width of the object.</span>
+        &mdash;<span class="summary"> The breakable length of the path.</span>
         
     <span class="permalink-and-source">
-        <a href="/docs/0.0.1.dev0/api/brown/core/path.html#Path.breakable_width">permalink</a>
+        <a href="/docs/0.0.1.dev0/api/brown/core/path.html#Path.length">permalink</a>
         <a href="https://github.com/ajyoon/brown/blob/master/brown/core/path.py#L68">view source</a>
     </span>
 
@@ -599,14 +599,16 @@
 
     <div class="overriden-note">
         overriden from
-        <a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject.breakable_width">
+        <a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject.length">
             GraphicObject
         </a>
     </div>
 
 
         
-        <div class="details"><p>        This is used to determine how and where rendering cuts should be made.
+        <div class="details"><p>        This is calculated automatically from path contents. By extension,
+        this means that by default all <code><a href="/docs/0.0.1.dev0/api/brown/core/path.html#Path">Path</a></code> objects will automatically
+        wrap in <code><a href="/docs/0.0.1.dev0/api/brown/core/flowable_frame.html#FlowableFrame">FlowableFrame</a></code>s.
         </p></div>
         
         
@@ -627,7 +629,7 @@
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/core/path.html#Path.current_draw_pos">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/path.py#L90">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/path.py#L92">view source</a>
     </span>
 
     </p>
@@ -1256,7 +1258,7 @@ True
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/core/path.html#Path.line_to">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/path.py#L111">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/path.py#L113">view source</a>
     </span>
 
     </p>
@@ -1319,7 +1321,7 @@ True
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/core/path.html#Path.move_to">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/path.py#L139">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/path.py#L141">view source</a>
     </span>
 
     </p>
@@ -1381,7 +1383,7 @@ True
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/core/path.html#Path.close_subpath">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/path.py#L162">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/path.py#L164">view source</a>
     </span>
 
     </p>
@@ -1424,7 +1426,7 @@ True
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/core/path.html#Path.cubic_to">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/path.py#L176">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/path.py#L178">view source</a>
     </span>
 
     </p>
@@ -1505,7 +1507,7 @@ True
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/core/path.html#Path._render_slice">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/path.py#L221">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/path.py#L223">view source</a>
     </span>
 
     </p>
