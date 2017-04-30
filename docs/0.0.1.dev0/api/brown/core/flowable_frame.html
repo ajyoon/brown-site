@@ -1293,15 +1293,15 @@ True
 </div>
                 
                     <div class="method"
-     id="FlowableFrame._x_pos_rel_to_line_start">
+     id="FlowableFrame._dist_to_line_start">
     <p>
-        <span class="important-name">_x_pos_rel_to_line_start</span>
+        <span class="important-name">_dist_to_line_start</span>
         
-            <code>(x)</code>
+            <code>(local_x)</code>
         
         
     <span class="permalink-and-source">
-        <a href="/docs/0.0.1.dev0/api/brown/core/flowable_frame.html#FlowableFrame._x_pos_rel_to_line_start">permalink</a>
+        <a href="/docs/0.0.1.dev0/api/brown/core/flowable_frame.html#FlowableFrame._dist_to_line_start">permalink</a>
         <a href="https://github.com/ajyoon/brown/blob/master/brown/core/flowable_frame.py#L141">view source</a>
     </span>
 
@@ -1315,7 +1315,7 @@ True
             <div class="type-details-list">
                 
                     <div class="arg">
-                        <p><p>x <code>(<a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit">Unit</a>)</code>: The local x-position.</p></p>
+                        <p><p>local_x <code>(<a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit">Unit</a>)</code>: The local x-position.</p></p>
                     </div>
                 
             </div>
@@ -1343,7 +1343,7 @@ True
     <p>
         <span class="important-name">_dist_to_line_end</span>
         
-            <code>(x)</code>
+            <code>(local_x)</code>
         
         
     <span class="permalink-and-source">
@@ -1361,7 +1361,7 @@ True
             <div class="type-details-list">
                 
                     <div class="arg">
-                        <p><p>x <code>(<a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit">Unit</a>)</code>: The local x coordinate.</p></p>
+                        <p><p>local_x <code>(<a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit">Unit</a>)</code>: The local x coordinate.</p></p>
                     </div>
                 
             </div>
@@ -1389,7 +1389,7 @@ True
     <p>
         <span class="important-name">_last_break_at</span>
         
-            <code>(x)</code>
+            <code>(local_x)</code>
         
         
     <span class="permalink-and-source">
@@ -1399,7 +1399,7 @@ True
 
     </p>
     <div class="body">
-        <p class="summary"><p>
+        <p class="summary"><p>Find the last <code><a href="/docs/0.0.1.dev0/api/brown/core/new_line.html#NewLine">NewLine</a></code> that occurred before a given local local_x-pos
 </p></p>
         
         
@@ -1407,7 +1407,7 @@ True
             <div class="type-details-list">
                 
                     <div class="arg">
-                        <p><p>pos <code>(<a href="/docs/0.0.1.dev0/api/brown/utils/point.html#Point">Point</a>)</code>: A local x-position</p></p>
+                        <p><p>local_x <code>(<a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit">Unit</a>)</code>: The local x coordinate.</p></p>
                     </div>
                 
             </div>
@@ -1423,7 +1423,8 @@ True
             </div>
         
         
-        <p class="details"><p>        Find the last line/page break that occured before a given local x-pos</p></p>
+        <p class="details"><p>
+</p></p>
         
         
     </div>
@@ -1434,17 +1435,17 @@ True
     <p>
         <span class="important-name">_last_break_index_at</span>
         
-            <code>(x)</code>
+            <code>(local_x)</code>
         
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/core/flowable_frame.html#FlowableFrame._last_break_index_at">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/flowable_frame.py#L175">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/flowable_frame.py#L174">view source</a>
     </span>
 
     </p>
     <div class="body">
-        <p class="summary"><p>
+        <p class="summary"><p>Like <code><a href="/docs/0.0.1.dev0/api/brown/core/flowable_frame.html#FlowableFrame._last_break_at">_last_break_at</a></code>, but returns an index.
 </p></p>
         
         
@@ -1452,7 +1453,7 @@ True
             <div class="type-details-list">
                 
                     <div class="arg">
-                        <p><p>pos <code>(<a href="/docs/0.0.1.dev0/api/brown/utils/point.html#Point">Point</a>)</code>: A local x-position</p></p>
+                        <p><p>pos <code>(<a href="/docs/0.0.1.dev0/api/brown/utils/point.html#Point">Point</a>)</code>: A local local_x-position</p></p>
                     </div>
                 
             </div>
@@ -1468,7 +1469,8 @@ True
             </div>
         
         
-        <p class="details"><p>        Like <code><a href="/docs/0.0.1.dev0/api/brown/core/flowable_frame.html#FlowableFrame._last_break_at">_last_break_at</a></code>, but returns the break index instead of the break</p></p>
+        <p class="details"><p>
+</p></p>
         
         
     </div>
@@ -1484,7 +1486,7 @@ True
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/core/flowable_frame.html#FlowableFrame.pos_in_frame_of">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/flowable_frame.py#L194">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/flowable_frame.py#L191">view source</a>
     </span>
 
     </p>
@@ -1530,7 +1532,7 @@ True
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/core/flowable_frame.html#FlowableFrame.map_between_items_in_frame">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/flowable_frame.py#L214">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/flowable_frame.py#L213">view source</a>
     </span>
 
     </p>
@@ -1558,8 +1560,7 @@ True
                 <div class="type-details-list">
                     
                         <p><p><code><a href="/docs/0.0.1.dev0/api/brown/utils/point.html#Point">Point</a></code>: The relative position of <code>destination</code>,
-                relative to <code>source</code> within the local frame space.
-                This will have a page number of 0.</p></p>
+                relative to <code>source</code> within the local frame space.</p></p>
                     
                 </div>
             </div>
@@ -1824,15 +1825,15 @@ True
 </div>
                     
                         <div class="method"
-     id="GraphicObject._render_flowable">
+     id="GraphicObject._render_in_flowable">
     <p>
-        <span class="important-name">_render_flowable</span>
+        <span class="important-name">_render_in_flowable</span>
         
             <code>()</code>
         
         
     <span class="permalink-and-source">
-        <a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject._render_flowable">permalink</a>
+        <a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject._render_in_flowable">permalink</a>
         <a href="https://github.com/ajyoon/brown/blob/master/brown/core/graphic_object.py#L314">view source</a>
     </span>
 
@@ -1860,7 +1861,7 @@ True
 
     <div class="inherited-note">
         inherited from
-        <a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject._render_flowable">
+        <a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject._render_in_flowable">
             GraphicObject
         </a>
     </div>
@@ -1875,12 +1876,12 @@ True
     <p>
         <span class="important-name">_render_complete</span>
         
-            <code>(pos)</code>
+            <code>(pos, dist_to_line_start=None)</code>
         
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject._render_complete">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/graphic_object.py#L363">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/graphic_object.py#L369">view source</a>
     </span>
 
     </p>
@@ -1894,6 +1895,14 @@ True
                 
                     <div class="arg">
                         <p><p>pos <code>(<a href="/docs/0.0.1.dev0/api/brown/utils/point.html#Point">Point</a>)</code>: The rendering position in document space for drawing.</p></p>
+                    </div>
+                
+                    <div class="arg">
+                        <p><p>dist_to_line_start <code>(<a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit">Unit</a>)</code>: If in a <code><a href="/docs/0.0.1.dev0/api/brown/core/flowable_frame.html#FlowableFrame">FlowableFrame</a></code>,
+                the x-axis distance from the active <code><a href="/docs/0.0.1.dev0/api/brown/core/new_line.html#NewLine">NewLine</a></code>s beginning.
+                Otherwise, this is always <code>None</code>. Subclasses may use this
+                information to perform basic position modifications at
+                render time, though in most cases this field can be ignored.</p></p>
                     </div>
                 
             </div>
@@ -1910,9 +1919,9 @@ True
         
         
         <p class="details"><p>
-        For use in flowable containers when rendering a FlowableObject
-        which happens to completely fit within a span of the FlowableFrame.
-        This function should render the entire object at <code><a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject.pos">self.pos</a></code></p><p>        This method should create a GraphicInterface and store it in
+        This is used to render all objects outside of <code><a href="/docs/0.0.1.dev0/api/brown/core/flowable_frame.html#FlowableFrame">FlowableFrame</a></code>s,
+        as well as those inside frames when they fit completely in
+        one span of the frame.</p><p>        This method should create a GraphicInterface and store it in
         <code><a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject.interfaces">self.interfaces</a></code>.</p></p>
         
         
@@ -1935,12 +1944,16 @@ True
     <p>
         <span class="important-name">_render_before_break</span>
         
-            <code>(local_start_x, start, stop)</code>
+            <code>(self,
+                             local_start_x,
+                             start,
+                             stop,
+                             dist_to_line_start)</code>
         
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject._render_before_break">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/graphic_object.py#L383">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/graphic_object.py#L394">view source</a>
     </span>
 
     </p>
@@ -1963,6 +1976,13 @@ True
                 
                     <div class="arg">
                         <p><p>stop <code>(<a href="/docs/0.0.1.dev0/api/brown/utils/point.html#Point">Point</a>)</code>: The stopping point in document space for drawing.</p></p>
+                    </div>
+                
+                    <div class="arg">
+                        <p><p>dist_to_line_start <code>(<a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit">Unit</a>)</code>: The x-axis distance from the active
+                <code><a href="/docs/0.0.1.dev0/api/brown/core/new_line.html#NewLine">NewLine</a></code>s beginning. Subclasses may use this
+                information to perform basic position modifications at
+                render time, though in most cases this field can be ignored.</p></p>
                     </div>
                 
             </div>
@@ -2009,7 +2029,7 @@ True
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject._render_after_break">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/graphic_object.py#L406">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/graphic_object.py#L425">view source</a>
     </span>
 
     </p>
@@ -2078,7 +2098,7 @@ True
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject._render_spanning_continuation">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/graphic_object.py#L429">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/graphic_object.py#L448">view source</a>
     </span>
 
     </p>
