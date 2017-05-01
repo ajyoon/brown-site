@@ -473,7 +473,7 @@
     <a id="show-inherited-toggle" href="javascript:void(toggleShowInheritence())"></a>
 
     
-        <span class="summary"><p>Helper functions for simple mathematical calculations</p></span>
+        <span class="summary"><p>General math helper tools.</p></span>
     
 
     
@@ -676,6 +676,65 @@
                 <div class="type-details-list">
                     
                         <p><p><code>int</code>: -1 if <code>value</code> is negative, and 1 if <code>value</code> is positive</p></p>
+                    
+                </div>
+            </div>
+        
+        
+        <p class="details"><p>
+</p></p>
+        
+        
+    </div>
+</div>
+        
+            <div class="method"
+     id="float_to_rounded_fraction_tuple">
+    <p>
+        <span class="important-name">float_to_rounded_fraction_tuple</span>
+        
+            <code>(value,
+                                    target_denominator=None,
+                                    limit_denominator=1024)</code>
+        
+        
+    <span class="permalink-and-source">
+        <a href="/docs/0.0.1.dev0/api/brown/utils/math_helpers.html#float_to_rounded_fraction_tuple">permalink</a>
+        <a href="">view source</a>
+    </span>
+
+    </p>
+    <div class="body">
+        <p class="summary"><p>Make a rounded fraction tuple from a float.
+</p></p>
+        
+        
+            <h4>arguments:</h4>
+            <div class="type-details-list">
+                
+                    <div class="arg">
+                        <p><p>value <code>(float)</code>: The value to convert into a fraction tuple.</p></p>
+                    </div>
+                
+                    <div class="arg">
+                        <p><p>target_denominator <code>(int)</code>: A denominator to use in the resulting tuple.
+            If <code>None</code>, the denominator is calculated with a maximum
+            value of <code>limit_denominator</code>.</p></p>
+                    </div>
+                
+                    <div class="arg">
+                        <p><p>limit_denominator <code>(int)</code>: The maximum denominator value.
+            If <code>round_to</code> is specified, this does nothing.</p></p>
+                    </div>
+                
+            </div>
+        
+        
+            <div class="returns">
+                <h4>returns:</h4>
+                <div class="type-details-list">
+                    
+                        <p><code>tuple(numerator, denominator)</code></p>
                     
                 </div>
             </div>

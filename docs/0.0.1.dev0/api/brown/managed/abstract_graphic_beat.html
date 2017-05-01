@@ -1041,81 +1041,6 @@
         
         
         
-            <div class="inherited">
-                <h4 class="major-section-title">inherited static methods</h4>
-                <div class="major-section">
-                    
-                        <div class="method"
-     id="Beat._float_to_rounded_fraction_tuple">
-    <p>
-        <span class="important-name">_float_to_rounded_fraction_tuple</span>
-        
-            <code>(value,
-                                         round_to=None,
-                                         limit_denominator=1024)</code>
-        
-        
-    <span class="permalink-and-source">
-        <a href="/docs/0.0.1.dev0/api/brown/models/beat.html#Beat._float_to_rounded_fraction_tuple">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/models/beat.py#L252">view source</a>
-    </span>
-
-    </p>
-    <div class="body">
-        <p class="summary"><p>Make a rounded fraction tuple from a float.
-</p></p>
-        
-        
-            <h4>arguments:</h4>
-            <div class="type-details-list">
-                
-                    <div class="arg">
-                        <p><p>value <code>(float)</code>:</p></p>
-                    </div>
-                
-                    <div class="arg">
-                        <p><p>round_to <code>(int)</code>: A denominator to round toward.</p></p>
-                    </div>
-                
-                    <div class="arg">
-                        <p><p>limit_denominator <code>(int)</code>: The maximum denominator value.
-                If <code>round_to</code> is specified, this does nothing.</p></p>
-                    </div>
-                
-            </div>
-        
-        
-            <div class="returns">
-                <h4>returns:</h4>
-                <div class="type-details-list">
-                    
-                        <p><code>tuple(<a href="/docs/0.0.1.dev0/api/brown/models/beat.html#Beat.numerator">numerator</a>, <a href="/docs/0.0.1.dev0/api/brown/models/beat.html#Beat.denominator">denominator</a>)</code></p>
-                    
-                </div>
-            </div>
-        
-        
-        <p class="details"><p>
-</p></p>
-        
-        
-            
-
-    <div class="inherited-note">
-        inherited from
-        <a href="/docs/0.0.1.dev0/api/brown/models/beat.html#Beat._float_to_rounded_fraction_tuple">
-            Beat
-        </a>
-    </div>
-
-
-        
-    </div>
-</div>
-                    
-                </div>
-            </div>
-        
         
             <h4 class="major-section-title">methods</h4>
             <div class="major-section">
@@ -1591,21 +1516,21 @@ False
 </div>
                     
                         <div class="method"
-     id="Beat._as_collapsed_fraction">
+     id="Beat.as_collapsed_fraction">
     <p>
-        <span class="important-name">_as_collapsed_fraction</span>
+        <span class="important-name">as_collapsed_fraction</span>
         
             <code>()</code>
         
         
     <span class="permalink-and-source">
-        <a href="/docs/0.0.1.dev0/api/brown/models/beat.html#Beat._as_collapsed_fraction">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/models/beat.py#L283">view source</a>
+        <a href="/docs/0.0.1.dev0/api/brown/models/beat.html#Beat.as_collapsed_fraction">permalink</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/models/beat.py#L251">view source</a>
     </span>
 
     </p>
     <div class="body">
-        <p class="summary"><p>Collapse this Beat into a single Fraction and return it.
+        <p class="summary"><p>Collapse this <code><a href="/docs/0.0.1.dev0/api/brown/models/beat.html#Beat">Beat</a></code> into a single <code>Fraction</code> and return it.
 </p></p>
         
         
@@ -1621,15 +1546,15 @@ False
         
         
         <p class="details"><p>
-        This recursively collapses any nested Beats and simplifies
-        the returned Fraction.</p></p>
+        This recursively collapses any nested <code><a href="/docs/0.0.1.dev0/api/brown/models/beat.html#Beat">Beat</a></code>s and simplifies
+        the returned <code>Fraction</code>.</p></p>
         
         
             
 
     <div class="inherited-note">
         inherited from
-        <a href="/docs/0.0.1.dev0/api/brown/models/beat.html#Beat._as_collapsed_fraction">
+        <a href="/docs/0.0.1.dev0/api/brown/models/beat.html#Beat.as_collapsed_fraction">
             Beat
         </a>
     </div>
