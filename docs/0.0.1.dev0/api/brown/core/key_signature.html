@@ -505,7 +505,7 @@
     and at the beginning of subsequent lines until a new
     <code><a href="/docs/0.0.1.dev0/api/brown/core/key_signature.html#KeySignature">KeySignature</a></code> is encountered.</p><p>    All traditional key signatures (those included in <code>KeySignatureTypes</code>)
     are supported by this class. Nontraditional key signatures could
-    be implemented in a fairly straightforward way in a subclass of this.
+    be implemented in a fairly straightforward way in a subclass of this.</p><p>    TODO: Support clef changes during a key signature.
     </p><p>An visual accidental.</p><p>        This should only be used within this class.
         </p></p>
         
@@ -522,7 +522,7 @@
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/core/key_signature.html#KeySignature.__init__">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/key_signature.py#L63">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/key_signature.py#L65">view source</a>
     </span>
 
     </p>
@@ -585,7 +585,7 @@
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/core/key_signature.html#KeySignature.key_signature_type">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/key_signature.py#L84">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/key_signature.py#L86">view source</a>
     </span>
 
     </p>
@@ -611,7 +611,7 @@
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/core/key_signature.html#KeySignature.length">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/key_signature.py#L89">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/key_signature.py#L91">view source</a>
     </span>
 
     </p>
@@ -1593,7 +1593,7 @@ True
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject._render_complete">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/graphic_object.py#L369">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/graphic_object.py#L367">view source</a>
     </span>
 
     </p>
@@ -1656,16 +1656,12 @@ True
     <p>
         <span class="important-name">_render_before_break</span>
         
-            <code>(self,
-                             local_start_x,
-                             start,
-                             stop,
-                             dist_to_line_start)</code>
+            <code>(start, stop, dist_to_line_start)</code>
         
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject._render_before_break">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/graphic_object.py#L394">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/graphic_object.py#L392">view source</a>
     </span>
 
     </p>
@@ -1676,11 +1672,6 @@ True
         
             <h4>arguments:</h4>
             <div class="type-details-list">
-                
-                    <div class="arg">
-                        <p><p>local_start_x <code>(<a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit">Unit</a>)</code>: The local starting position of this
-                drawing segment.</p></p>
-                    </div>
                 
                     <div class="arg">
                         <p><p>start <code>(<a href="/docs/0.0.1.dev0/api/brown/utils/point.html#Point">Point</a>)</code>: The starting point in document space for drawing.</p></p>
@@ -1741,7 +1732,7 @@ True
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject._render_after_break">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/graphic_object.py#L425">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/graphic_object.py#L417">view source</a>
     </span>
 
     </p>
@@ -1810,7 +1801,7 @@ True
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject._render_spanning_continuation">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/graphic_object.py#L448">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/graphic_object.py#L440">view source</a>
     </span>
 
     </p>
