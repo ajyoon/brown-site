@@ -937,19 +937,18 @@
     <p>
         <span class="important-name">current_draw_pos</span>:
         <span class="type"><code><a href="/docs/0.0.1.dev0/api/brown/utils/point.html#Point">Point</a></code></span>
-        &mdash;<span class="summary"> The current relative drawing position.</span>
+        &mdash;<span class="summary"> The current drawing position relative to <code>self.pos</code>.</span>
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/core/path.html#Path.current_draw_pos">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/path.py#L92">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/path.py#L87">view source</a>
     </span>
 
     </p>
     <div class="body">
         
-        <div class="details"><p>        This is the location from which operations like line_to() will draw,
-        relative to <code>self.pos</code>.</p><p>        This property is read-only. To change this without connecting a line
-        to the new position, use <code><a href="/docs/0.0.1.dev0/api/brown/core/path.html#Path.move_to">self.move_to</a></code>.
+        <div class="details"><p>        This is the location from which operations like <code><a href="/docs/0.0.1.dev0/api/brown/core/path.html#Path.line_to">line_to</a>()</code> will draw.</p><p>        To change this without connecting the path to the new position,
+        use <code><a href="/docs/0.0.1.dev0/api/brown/core/path.html#Path.move_to">move_to</a>()</code>.
         </p></div>
         
         
@@ -1409,43 +1408,6 @@ True
     </div>
 </div>
                     
-                        <div class="property"
-         id="GraphicObject.is_in_flowable">
-    <p>
-        <span class="important-name">is_in_flowable</span>:
-        <span class="type"><code>bool</code></span>
-        &mdash;<span class="summary"> Whether or not this object is in a FlowableFrame</span>
-        
-    <span class="permalink-and-source">
-        <a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject.is_in_flowable">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/graphic_object.py#L244">view source</a>
-    </span>
-
-    </p>
-    <div class="body">
-        
-        <div class="details"></div>
-        
-        
-            <p class="read-only-notice">
-                read-only.
-            </p>
-        
-        
-            
-
-    <div class="inherited-note">
-        inherited from
-        <a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject.is_in_flowable">
-            GraphicObject
-        </a>
-    </div>
-
-
-        
-    </div>
-</div>
-                    
                 </div>
             </div>
         
@@ -1465,7 +1427,7 @@ True
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/core/path.html#Path.straight_line">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/path.py#L47">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/path.py#L42">view source</a>
     </span>
 
     </p>
@@ -1538,7 +1500,7 @@ True
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject.map_between_items">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/graphic_object.py#L251">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/graphic_object.py#L246">view source</a>
     </span>
 
     </p>
@@ -1757,7 +1719,7 @@ True
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/core/path.html#Path.line_to">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/path.py#L113">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/path.py#L107">view source</a>
     </span>
 
     </p>
@@ -1778,12 +1740,7 @@ True
                     </div>
                 
                     <div class="arg">
-                        <p><p>page <code>(int)</code>: The end relative page number.
-                For most cases, this should be 0.</p></p>
-                    </div>
-                
-                    <div class="arg">
-                        <p><p>parent <code>(<a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject">GraphicObject</a>)</code>: An optional parent, whose position
+                        <p><p>parent <code>(<a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject">GraphicObject</a> or <a href="/docs/0.0.1.dev0/api/brown/core/page.html#Page">Page</a>)</code>: An optional parent, whose position
                 the target coordinate will be relative to.</p></p>
                     </div>
                 
@@ -1831,7 +1788,7 @@ True
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/core/path.html#Path.move_to">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/path.py#L141">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/path.py#L133">view source</a>
     </span>
 
     </p>
@@ -1852,12 +1809,7 @@ True
                     </div>
                 
                     <div class="arg">
-                        <p><p>page <code>(int)</code>: The end relative page number.
-                For most cases, this should be 0.</p></p>
-                    </div>
-                
-                    <div class="arg">
-                        <p><p>parent <code>(<a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject">GraphicObject</a>)</code>: An optional parent, whose position
+                        <p><p>parent <code>(<a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject">GraphicObject</a> or <a href="/docs/0.0.1.dev0/api/brown/core/page.html#Page">Page</a>)</code>: An optional parent, whose position
                 the target coordinate will be relative to.</p></p>
                     </div>
                 
@@ -1876,7 +1828,7 @@ True
         
         <p class="details"><p>
         A point parent may be passed as well, anchored the target point to
-        a separate <code>GraphicObjec</code>t. In this case, the coordinates passed will be
+        a separate <code><a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject">GraphicObject</a></code>. In this case, the coordinates passed will be
         considered relative to the parent.</p></p>
         
         
@@ -1904,12 +1856,12 @@ True
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/core/path.html#Path.close_subpath">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/path.py#L164">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/path.py#L154">view source</a>
     </span>
 
     </p>
     <div class="body">
-        <p class="summary"><p>Close the current sub-path and start a new one at (0, 0).
+        <p class="summary"><p>Close the current sub-path and start a new one at the local origin.
 </p></p>
         
         
@@ -1958,7 +1910,7 @@ True
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/core/path.html#Path.cubic_to">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/path.py#L178">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/path.py#L168">view source</a>
     </span>
 
     </p>
@@ -1995,18 +1947,18 @@ True
                     </div>
                 
                     <div class="arg">
-                        <p><p>control_1_parent <code>(<a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject">GraphicObject</a> or None)</code>: An optional parent for
-                the first control point. If <code>None</code>, this defaults to the path.</p></p>
+                        <p><p>control_1_parent <code>(<a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject">GraphicObject</a> or <a href="/docs/0.0.1.dev0/api/brown/core/page.html#Page">Page</a>)</code>: An optional parent for
+                the first control point. Defaults to <code>self</code>.</p></p>
                     </div>
                 
                     <div class="arg">
-                        <p><p>control_2_parent <code>(<a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject">GraphicObject</a> or None)</code>: An optional parent for
-                the second control point. If <code>None</code>, this defaults to the path.</p></p>
+                        <p><p>control_2_parent <code>(<a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject">GraphicObject</a> or <a href="/docs/0.0.1.dev0/api/brown/core/page.html#Page">Page</a>)</code>: An optional parent for
+                the second control point. Defaults to <code>self</code>.</p></p>
                     </div>
                 
                     <div class="arg">
-                        <p><p>end_parent <code>(<a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject">GraphicObject</a> or None)</code>: An optional parent for the
-                curve target. If <code>None</code>, this defaults to the path.</p></p>
+                        <p><p>end_parent <code>(<a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject">GraphicObject</a> or <a href="/docs/0.0.1.dev0/api/brown/core/page.html#Page">Page</a>)</code>: An optional parent for the
+                curve target. Defaults to <code>self</code>.</p></p>
                     </div>
                 
             </div>
@@ -2023,7 +1975,7 @@ True
         
         
         <p class="details"><p>
-        Moves <code><a href="/docs/0.0.1.dev0/api/brown/core/path.html#Path.current_draw_pos">self.current_draw_pos</a></code> to the new end point.</p></p>
+</p></p>
         
         
             
@@ -2050,7 +2002,7 @@ True
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/core/path.html#Path._render_slice">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/path.py#L223">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/path.py#L211">view source</a>
     </span>
 
     </p>
@@ -2117,7 +2069,7 @@ True
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject.render">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/graphic_object.py#L268">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/graphic_object.py#L263">view source</a>
     </span>
 
     </p>
@@ -2165,7 +2117,7 @@ True
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject.descendants_of_class_or_subclass">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/graphic_object.py#L280">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/graphic_object.py#L275">view source</a>
     </span>
 
     </p>
@@ -2206,7 +2158,7 @@ True
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject.descendants_of_exact_class">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/graphic_object.py#L292">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/graphic_object.py#L287">view source</a>
     </span>
 
     </p>
@@ -2247,7 +2199,7 @@ True
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject.first_ancestor_of_class_or_subclass">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/graphic_object.py#L304">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/graphic_object.py#L299">view source</a>
     </span>
 
     </p>
@@ -2305,7 +2257,7 @@ True
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject.first_ancestor_of_exact_class">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/graphic_object.py#L319">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/graphic_object.py#L314">view source</a>
     </span>
 
     </p>
@@ -2364,7 +2316,7 @@ True
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject._register_child">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/graphic_object.py#L341">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/graphic_object.py#L336">view source</a>
     </span>
 
     </p>
@@ -2421,7 +2373,7 @@ True
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject._unregister_child">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/graphic_object.py#L351">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/graphic_object.py#L346">view source</a>
     </span>
 
     </p>
@@ -2478,7 +2430,7 @@ True
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject._render_in_flowable">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/graphic_object.py#L361">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/graphic_object.py#L356">view source</a>
     </span>
 
     </p>
@@ -2525,7 +2477,7 @@ True
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject._render_complete">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/graphic_object.py#L414">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/graphic_object.py#L409">view source</a>
     </span>
 
     </p>
@@ -2593,7 +2545,7 @@ True
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject._render_before_break">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/graphic_object.py#L439">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/graphic_object.py#L434">view source</a>
     </span>
 
     </p>
@@ -2664,7 +2616,7 @@ True
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject._render_after_break">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/graphic_object.py#L464">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/graphic_object.py#L459">view source</a>
     </span>
 
     </p>
@@ -2733,7 +2685,7 @@ True
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject._render_spanning_continuation">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/graphic_object.py#L487">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/graphic_object.py#L482">view source</a>
     </span>
 
     </p>
