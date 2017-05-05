@@ -91,7 +91,7 @@
             </li>
         
             <li >
-                <a href="/docs/0.0.1.dev0/api/brown/core/flowable_frame.html">flowable_frame</a>
+                <a href="/docs/0.0.1.dev0/api/brown/core/flowable.html">flowable</a>
             </li>
         
             <li >
@@ -1328,14 +1328,14 @@
 </div>
                     
                         <div class="property"
-         id="GraphicObject.frame">
+         id="GraphicObject.flowable">
     <p>
-        <span class="important-name">frame</span>:
-        <span class="type"><code><a href="/docs/0.0.1.dev0/api/brown/core/flowable_frame.html#FlowableFrame">FlowableFrame</a> or None</code></span>
-        &mdash;<span class="summary"> The frame this object belongs in.</span>
+        <span class="important-name">flowable</span>:
+        <span class="type"><code><a href="/docs/0.0.1.dev0/api/brown/core/flowable.html#Flowable">Flowable</a> or None</code></span>
+        &mdash;<span class="summary"> The flowable this object belongs in.</span>
         
     <span class="permalink-and-source">
-        <a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject.frame">permalink</a>
+        <a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject.flowable">permalink</a>
         <a href="https://github.com/ajyoon/brown/blob/master/brown/core/graphic_object.py#L217">view source</a>
     </span>
 
@@ -1354,7 +1354,7 @@
 
     <div class="inherited-note">
         inherited from
-        <a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject.frame">
+        <a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject.flowable">
             GraphicObject
         </a>
     </div>
@@ -2450,7 +2450,7 @@ True
             </div>
         
         
-        <p class="details"><p>        when needed if an object flows across a break in the frame.</p></p>
+        <p class="details"><p>        when needed if an object flows across a break in the flowable.</p></p>
         
         
             
@@ -2494,7 +2494,7 @@ True
                     </div>
                 
                     <div class="arg">
-                        <p><p>dist_to_line_start <code>(<a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit">Unit</a>)</code>: If in a <code><a href="/docs/0.0.1.dev0/api/brown/core/flowable_frame.html#FlowableFrame">FlowableFrame</a></code>,
+                        <p><p>dist_to_line_start <code>(<a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit">Unit</a>)</code>: If in a <code><a href="/docs/0.0.1.dev0/api/brown/core/flowable.html#Flowable">Flowable</a></code>,
                 the x-axis distance from the active <code><a href="/docs/0.0.1.dev0/api/brown/core/new_line.html#NewLine">NewLine</a></code>s beginning.
                 Otherwise, this is always <code>None</code>. Subclasses may use this
                 information to perform basic position modifications at
@@ -2515,9 +2515,9 @@ True
         
         
         <p class="details"><p>
-        This is used to render all objects outside of <code><a href="/docs/0.0.1.dev0/api/brown/core/flowable_frame.html#FlowableFrame">FlowableFrame</a></code>s,
-        as well as those inside frames when they fit completely in
-        one span of the frame.</p><p>        This method should create a GraphicInterface and store it in
+        This is used to render all objects outside of <code><a href="/docs/0.0.1.dev0/api/brown/core/flowable.html#Flowable">Flowable</a></code>s,
+        as well as those inside flowables when they fit completely in
+        one span of the flowable.</p><p>        This method should create a GraphicInterface and store it in
         <code><a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject.interfaces">self.interfaces</a></code>.</p></p>
         
         
