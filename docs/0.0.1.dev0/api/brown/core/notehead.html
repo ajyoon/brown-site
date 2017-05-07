@@ -502,9 +502,7 @@
         <p class="summary"><p>A simple notehead glyph whose appearance is determined by a Duration</p></p>
         
             <p class="details"><p>    Currently, values larger than whole notes are not supported.
-    </p><p>StaffUnit: The notehead position in the staff.</p><p>        StaffUnit(0) means the top staff line, higher values
-        mean lower pitches, and vice versa.
-        </p></p>
+    </p></p>
         
         
         
@@ -657,7 +655,7 @@
     <p>
         <span class="important-name">staff_position</span>:
         <span class="type"><code>StaffUnit</code></span>
-        &mdash;<span class="summary"> The y-axis relative to the staff</span>
+        &mdash;<span class="summary"> The y-axis position in the staff.</span>
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/core/notehead.html#Notehead.staff_position">permalink</a>
@@ -667,7 +665,9 @@
     </p>
     <div class="body">
         
-        <div class="details"></div>
+        <div class="details"><p>        StaffUnit(0) means the top staff line, higher values
+        mean lower pitches, and vice versa.
+        </p></div>
         
         
             <p class="read-only-notice">
@@ -1653,43 +1653,6 @@ True
 </div>
                     
                         <div class="method"
-     id="Text.position_y_baseline">
-    <p>
-        <span class="important-name">position_y_baseline</span>
-        
-            <code>(y)</code>
-        
-        
-    <span class="permalink-and-source">
-        <a href="/docs/0.0.1.dev0/api/brown/core/text.html#Text.position_y_baseline">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/text.py#L77">view source</a>
-    </span>
-
-    </p>
-    <div class="body">
-        <p class="summary"><p>Position the object such that its first line baseline is at <code>y</code></p></p>
-        
-        
-        
-        
-        <p class="details"></p>
-        
-        
-            
-
-    <div class="inherited-note">
-        inherited from
-        <a href="/docs/0.0.1.dev0/api/brown/core/text.html#Text.position_y_baseline">
-            Text
-        </a>
-    </div>
-
-
-        
-    </div>
-</div>
-                    
-                        <div class="method"
      id="Text._render_slice">
     <p>
         <span class="important-name">_render_slice</span>
@@ -1699,7 +1662,7 @@ True
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/core/text.html#Text._render_slice">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/text.py#L84">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/text.py#L77">view source</a>
     </span>
 
     </p>

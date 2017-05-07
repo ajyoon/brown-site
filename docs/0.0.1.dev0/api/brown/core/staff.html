@@ -584,6 +584,39 @@
             <div class="major-section">
                 
                     <div class="property"
+         id="Staff.unit">
+    <p>
+        <span class="important-name">unit</span>:
+        <span class="type"><code>type</code></span>
+        &mdash;<span class="summary"> The standard distance between two lines in this staff.</span>
+        
+    <span class="permalink-and-source">
+        <a href="/docs/0.0.1.dev0/api/brown/core/staff.html#Staff.unit">permalink</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/staff.py#L55">view source</a>
+    </span>
+
+    </p>
+    <div class="body">
+        
+        <div class="details"><p>        This is a generated class with the name <code>StaffUnit</code>. All <code><a href="/docs/0.0.1.dev0/api/brown/core/staff.html#Staff">Staff</a></code>
+        objects have a unique <code>StaffUnit</code> class such that different sized
+        staves may coexist within a score and <code><a href="/docs/0.0.1.dev0/api/brown/core/staff_object.html#StaffObject">StaffObject</a></code>s placed within
+        them will be able to correctly position and scale themselves
+        accordingly.</p><p>        This class is generated automatically according to <code><a href="/docs/0.0.1.dev0/api/brown/core/staff.html#Staff.height">self.height</a></code>
+        and <code><a href="/docs/0.0.1.dev0/api/brown/core/staff.html#Staff.line_count">self.line_count</a></code>, with the assumption that all staff lines
+        are evenly spaced.
+        </p></div>
+        
+        
+            <p class="read-only-notice">
+                read-only.
+            </p>
+        
+        
+    </div>
+</div>
+                
+                    <div class="property"
          id="Staff.height">
     <p>
         <span class="important-name">height</span>:
@@ -592,7 +625,7 @@
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/core/staff.html#Staff.height">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/staff.py#L55">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/staff.py#L71">view source</a>
     </span>
 
     </p>
@@ -619,7 +652,7 @@
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/core/staff.html#Staff.line_count">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/staff.py#L63">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/staff.py#L79">view source</a>
     </span>
 
     </p>
@@ -645,7 +678,7 @@
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/core/staff.html#Staff.top_line_y">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/staff.py#L68">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/staff.py#L84">view source</a>
     </span>
 
     </p>
@@ -671,7 +704,7 @@
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/core/staff.html#Staff.center_pos_y">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/staff.py#L73">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/staff.py#L89">view source</a>
     </span>
 
     </p>
@@ -697,7 +730,7 @@
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/core/staff.html#Staff.bottom_line_y">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/staff.py#L78">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/staff.py#L94">view source</a>
     </span>
 
     </p>
@@ -1395,7 +1428,7 @@ True
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/core/staff.html#Staff._make_unit_class">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/staff.py#L175">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/staff.py#L248">view source</a>
     </span>
 
     </p>
@@ -1448,7 +1481,7 @@ True
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/core/staff.html#Staff.distance_to_next_of_type">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/staff.py#L84">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/staff.py#L100">view source</a>
     </span>
 
     </p>
@@ -1497,7 +1530,7 @@ True
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/core/staff.html#Staff.active_clef_at">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/staff.py#L113">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/staff.py#L129">view source</a>
     </span>
 
     </p>
@@ -1544,7 +1577,7 @@ True
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/core/staff.html#Staff.active_transposition_at">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/staff.py#L130">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/staff.py#L146">view source</a>
     </span>
 
     </p>
@@ -1589,12 +1622,12 @@ True
     <p>
         <span class="important-name">middle_c_at</span>
         
-            <code>(position_x)</code>
+            <code>(pos_x)</code>
         
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/core/staff.html#Staff.middle_c_at">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/staff.py#L151">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/staff.py#L167">view source</a>
     </span>
 
     </p>
@@ -1623,21 +1656,21 @@ True
 </div>
                 
                     <div class="method"
-     id="Staff._position_inside_staff">
+     id="Staff.y_inside_staff">
     <p>
-        <span class="important-name">_position_inside_staff</span>
+        <span class="important-name">y_inside_staff</span>
         
-            <code>(position)</code>
+            <code>(pos_y)</code>
         
         
     <span class="permalink-and-source">
-        <a href="/docs/0.0.1.dev0/api/brown/core/staff.html#Staff._position_inside_staff">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/staff.py#L189">view source</a>
+        <a href="/docs/0.0.1.dev0/api/brown/core/staff.html#Staff.y_inside_staff">permalink</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/staff.py#L188">view source</a>
     </span>
 
     </p>
     <div class="body">
-        <p class="summary"><p>Determine if a position is inside the staff.
+        <p class="summary"><p>Determine if a y-axis position is inside the staff.
 </p></p>
         
         
@@ -1645,7 +1678,7 @@ True
             <div class="type-details-list">
                 
                     <div class="arg">
-                        <p><p>position <code>(StaffUnit)</code>: A vertical staff position</p></p>
+                        <p><p>pos_y <code>(StaffUnit)</code>: A vertical staff position</p></p>
                     </div>
                 
             </div>
@@ -1669,21 +1702,21 @@ True
 </div>
                 
                     <div class="method"
-     id="Staff._position_outside_staff">
+     id="Staff.y_outside_staff">
     <p>
-        <span class="important-name">_position_outside_staff</span>
+        <span class="important-name">y_outside_staff</span>
         
-            <code>(position)</code>
+            <code>(pos_y)</code>
         
         
     <span class="permalink-and-source">
-        <a href="/docs/0.0.1.dev0/api/brown/core/staff.html#Staff._position_outside_staff">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/staff.py#L201">view source</a>
+        <a href="/docs/0.0.1.dev0/api/brown/core/staff.html#Staff.y_outside_staff">permalink</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/staff.py#L200">view source</a>
     </span>
 
     </p>
     <div class="body">
-        <p class="summary"><p>Determine if a position is outside of the staff.
+        <p class="summary"><p>Determine if a y-axis position is outside of the staff.
 </p></p>
         
         
@@ -1691,7 +1724,7 @@ True
             <div class="type-details-list">
                 
                     <div class="arg">
-                        <p><p>position <code>(StaffUnit)</code>: A vertical staff position</p></p>
+                        <p><p>pos_y <code>(StaffUnit)</code>: A vertical staff position</p></p>
                     </div>
                 
             </div>
@@ -1715,21 +1748,21 @@ True
 </div>
                 
                     <div class="method"
-     id="Staff._position_on_ledger">
+     id="Staff.y_on_ledger">
     <p>
-        <span class="important-name">_position_on_ledger</span>
+        <span class="important-name">y_on_ledger</span>
         
-            <code>(position)</code>
+            <code>(pos_y)</code>
         
         
     <span class="permalink-and-source">
-        <a href="/docs/0.0.1.dev0/api/brown/core/staff.html#Staff._position_on_ledger">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/staff.py#L213">view source</a>
+        <a href="/docs/0.0.1.dev0/api/brown/core/staff.html#Staff.y_on_ledger">permalink</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/staff.py#L212">view source</a>
     </span>
 
     </p>
     <div class="body">
-        <p class="summary"><p>Tell if a position is on a ledger line position
+        <p class="summary"><p>Determine if a y-axis position is on a ledger line position
 </p></p>
         
         
@@ -1737,7 +1770,7 @@ True
             <div class="type-details-list">
                 
                     <div class="arg">
-                        <p><p>position <code>(StaffUnit)</code>: A vertical staff position</p></p>
+                        <p><p>pos_y <code>(StaffUnit)</code>: A vertical staff position</p></p>
                     </div>
                 
             </div>
@@ -1761,16 +1794,16 @@ True
 </div>
                 
                     <div class="method"
-     id="Staff._ledgers_needed_from_position">
+     id="Staff.ledgers_needed_for_y">
     <p>
-        <span class="important-name">_ledgers_needed_from_position</span>
+        <span class="important-name">ledgers_needed_for_y</span>
         
             <code>(position)</code>
         
         
     <span class="permalink-and-source">
-        <a href="/docs/0.0.1.dev0/api/brown/core/staff.html#Staff._ledgers_needed_from_position">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/staff.py#L226">view source</a>
+        <a href="/docs/0.0.1.dev0/api/brown/core/staff.html#Staff.ledgers_needed_for_y">permalink</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/staff.py#L225">view source</a>
     </span>
 
     </p>

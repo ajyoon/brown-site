@@ -617,7 +617,7 @@
     <p>
         <span class="important-name">children</span>:
         <span class="type"><code>set(<a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject">GraphicObject</a>)</code></span>
-        &mdash;<span class="summary"> All objects who have self as their parent.</span>
+        &mdash;<span class="summary"> All objects who have <code>self</code> as their parent.</span>
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/core/document.html#Document.children">permalink</a>
@@ -628,29 +628,6 @@
     <div class="body">
         
         <div class="details"></div>
-        
-        
-        
-    </div>
-</div>
-                
-                    <div class="property"
-         id="Document.occupied_pages">
-    <p>
-        <span class="important-name">occupied_pages</span>:
-        <span class="type"><code>iter[int]</code></span>
-        &mdash;<span class="summary"> The nonempty pages in the document.</span>
-        
-    <span class="permalink-and-source">
-        <a href="/docs/0.0.1.dev0/api/brown/core/document.html#Document.occupied_pages">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/document.py#L87">view source</a>
-    </span>
-
-    </p>
-    <div class="body">
-        
-        <div class="details"><p>        This iterator includes any blank pages between occupied pages as well.</p><p>        Warning: This is a computationally expensive calculation
-        </p></div>
         
         
             <p class="read-only-notice">
@@ -670,7 +647,7 @@
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/core/document.html#Document._page_display_gap">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/document.py#L101">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/document.py#L85">view source</a>
     </span>
 
     </p>
@@ -701,52 +678,6 @@
             <div class="major-section">
                 
                     <div class="method"
-     id="Document._min_max_pages">
-    <p>
-        <span class="important-name">_min_max_pages</span>
-        
-            <code>(graphic_objects)</code>
-        
-        
-    <span class="permalink-and-source">
-        <a href="/docs/0.0.1.dev0/api/brown/core/document.html#Document._min_max_pages">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/document.py#L113">view source</a>
-    </span>
-
-    </p>
-    <div class="body">
-        <p class="summary"><p>Find the min and max pages of an iterable of GraphicObjects
-</p></p>
-        
-        
-            <h4>arguments:</h4>
-            <div class="type-details-list">
-                
-                    <div class="arg">
-                        <p><p>graphic_objects <code>(iter[<a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject">GraphicObject</a>])</code>:</p></p>
-                    </div>
-                
-            </div>
-        
-        
-            <div class="returns">
-                <h4>returns:</h4>
-                <div class="type-details-list">
-                    
-                        <p><p><code>tuple(int, int)</code>: (min, max)</p></p>
-                    
-                </div>
-            </div>
-        
-        
-        <p class="details"><p>
-</p></p>
-        
-        
-    </div>
-</div>
-                
-                    <div class="method"
      id="Document._register_child">
     <p>
         <span class="important-name">_register_child</span>
@@ -756,7 +687,7 @@
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/core/document.html#Document._register_child">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/document.py#L137">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/document.py#L97">view source</a>
     </span>
 
     </p>
@@ -802,7 +733,7 @@
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/core/document.html#Document._unregister_child">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/document.py#L147">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/document.py#L107">view source</a>
     </span>
 
     </p>
@@ -839,16 +770,72 @@
 </div>
                 
                     <div class="method"
-     id="Document._page_origin">
+     id="Document.page_range_of">
     <p>
-        <span class="important-name">_page_origin</span>
+        <span class="important-name">page_range_of</span>
+        
+            <code>(graphic_objects)</code>
+        
+        
+    <span class="permalink-and-source">
+        <a href="/docs/0.0.1.dev0/api/brown/core/document.html#Document.page_range_of">permalink</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/document.py#L119">view source</a>
+    </span>
+
+    </p>
+    <div class="body">
+        <p class="summary"><p>Find the page indices an iter of <code><a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject">GraphicObject</a></code>s appears on.
+</p></p>
+        
+        
+            <h4>arguments:</h4>
+            <div class="type-details-list">
+                
+                    <div class="arg">
+                        <p><p>graphic_objects <code>(iter[<a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject">GraphicObject</a>])</code>:</p></p>
+                    </div>
+                
+            </div>
+        
+        
+            <div class="returns">
+                <h4>returns:</h4>
+                <div class="type-details-list">
+                    
+                        <p><p><code>range</code>: The range from the first page index to one after the last.
+                In order to be consistent with python's <code>range</code> semantics,
+                the range goes 1 past the maximum page objects appear on.</p></p>
+                    
+                </div>
+            </div>
+        
+        
+        <p class="details"><p>
+            <pre><code class="python">>>> from <a href="/docs/0.0.1.dev0/api/brown/common.html">brown.common</a> import *
+>>> brown.setup()
+>>> graphic_objects = [
+...     <a href="/docs/0.0.1.dev0/api/brown/core/invisible_object.html#InvisibleObject">InvisibleObject</a>((0, 0), brown.document.pages[1]),
+...     <a href="/docs/0.0.1.dev0/api/brown/core/invisible_object.html#InvisibleObject">InvisibleObject</a>((0, 0), brown.document.pages[5]),
+... ]
+>>> brown.document.page_range_of(graphic_objects)
+range(1, 6)
+</code></pre></p></p>
+        
+        
+    </div>
+</div>
+                
+                    <div class="method"
+     id="Document.page_origin">
+    <p>
+        <span class="important-name">page_origin</span>
         
             <code>(page_number)</code>
         
         
     <span class="permalink-and-source">
-        <a href="/docs/0.0.1.dev0/api/brown/core/document.html#Document._page_origin">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/document.py#L157">view source</a>
+        <a href="/docs/0.0.1.dev0/api/brown/core/document.html#Document.page_origin">permalink</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/document.py#L155">view source</a>
     </span>
 
     </p>
@@ -889,16 +876,16 @@
 </div>
                 
                     <div class="method"
-     id="Document._paper_origin">
+     id="Document.paper_origin">
     <p>
-        <span class="important-name">_paper_origin</span>
+        <span class="important-name">paper_origin</span>
         
             <code>(page_number)</code>
         
         
     <span class="permalink-and-source">
-        <a href="/docs/0.0.1.dev0/api/brown/core/document.html#Document._paper_origin">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/document.py#L179">view source</a>
+        <a href="/docs/0.0.1.dev0/api/brown/core/document.html#Document.paper_origin">permalink</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/document.py#L177">view source</a>
     </span>
 
     </p>
@@ -948,7 +935,7 @@
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/core/document.html#Document.canvas_pos_of">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/document.py#L201">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/document.py#L197">view source</a>
     </span>
 
     </p>
@@ -994,7 +981,7 @@
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/core/document.html#Document.page_bounding_rect">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/document.py#L220">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/document.py#L216">view source</a>
     </span>
 
     </p>
@@ -1042,7 +1029,7 @@
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/core/document.html#Document.paper_bounding_rect">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/document.py#L242">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/document.py#L238">view source</a>
     </span>
 
     </p>
@@ -1090,7 +1077,7 @@
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/core/document.html#Document.render">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/document.py#L264">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/document.py#L260">view source</a>
     </span>
 
     </p>
