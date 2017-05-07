@@ -489,7 +489,7 @@
             
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/core/rest.html#Rest">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/rest.py#L6">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/rest.py#L7">view source</a>
     </span>
 
             <h2>
@@ -516,12 +516,12 @@
     <p>
         <span class="important-name">__init__</span>
         
-            <code>(pos_x, duration, parent)</code>
+            <code>(pos_x, parent, duration)</code>
         
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/core/rest.html#Rest.__init__">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/rest.py#L31">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/rest.py#L32">view source</a>
     </span>
 
     </p>
@@ -545,15 +545,18 @@
             <div class="type-details-list">
                 
                     <div class="arg">
-                        <p><p>pos_x <code>(StaffUnit)</code>:</p></p>
+                        <p><p>pos_x <code>(StaffUnit)</code>: The x-axis position relative to the parent.
+                The y-axis position will be determined automatically.
+                TODO: Pass in a Point here - users may want to give
+                specific rest locations.</p></p>
                     </div>
                 
                     <div class="arg">
-                        <p><p>staff <code>(<a href="/docs/0.0.1.dev0/api/brown/core/staff.html#Staff">Staff</a>)</code>:</p></p>
+                        <p><p>duration <code>(<a href="/docs/0.0.1.dev0/api/brown/models/beat.html#Beat">Beat</a> or init tuple)</code>:</p></p>
                     </div>
                 
                     <div class="arg">
-                        <p><p>duration <code>(<a href="/docs/0.0.1.dev0/api/brown/models/beat.html#Beat">Beat</a>)</code>:</p></p>
+                        <p><p>parent <code>(<a href="/docs/0.0.1.dev0/api/brown/core/staff_object.html#StaffObject">StaffObject</a> or <a href="/docs/0.0.1.dev0/api/brown/core/staff.html#Staff">Staff</a>)</code>:</p></p>
                     </div>
                 
             </div>
@@ -582,7 +585,7 @@
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/core/rest.html#Rest.duration">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/rest.py#L48">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/rest.py#L53">view source</a>
     </span>
 
     </p>
