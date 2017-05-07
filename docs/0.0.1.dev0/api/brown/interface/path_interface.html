@@ -486,12 +486,12 @@ is a <code>moveTo</code> to the origin; second is the <code>lineTo</code> you as
 <code><a href="/docs/0.0.1.dev0/api/brown.html">brown</a></code> paths maintain this behavior.</p><p>TODO: This is out of date and may not be true.</p><p>If a <code>lineTo(0, 0)</code>, a <code>moveTo(0, 0)</code> is performed instead:</p><p>    <pre><code class="python">>>> from <a href="/docs/0.0.1.dev0/api/brown/core.html">brown.core</a> import <a href="/docs/0.0.1.dev0/api/brown.html">brown</a>; brown.setup()
 >>> line_to_origin = <a href="/docs/0.0.1.dev0/api/brown/interface/path_interface.html#PathInterface">PathInterface</a>((5, 6))
 >>> line_to_origin.line_to((0, 0))
->>> assert(line_to_origin._qt_path == line_to_origin._qt_object.path())
+>>> assert(line_to_origin._qt_path == line_to_origin.qt_object.path())
 >>> assert(line_to_origin._qt_path.elementCount() == 1)
 >>> assert(line_to_origin._qt_path.elementAt(0).isMoveTo() == True)
 >>> line_to_elsewhere = <a href="/docs/0.0.1.dev0/api/brown/interface/path_interface.html#PathInterface">PathInterface</a>((5, 6))
 >>> line_to_elsewhere.line_to((1, 0))
->>> assert(line_to_elsewhere._qt_path == line_to_elsewhere._qt_object.path())
+>>> assert(line_to_elsewhere._qt_path == line_to_elsewhere.qt_object.path())
 >>> assert(line_to_elsewhere._qt_path.elementCount() == 2)
 >>> assert(line_to_elsewhere._qt_path.elementAt(0).isMoveTo() == True)
 >>> assert(line_to_elsewhere._qt_path.elementAt(1).isLineTo() == True)
@@ -558,17 +558,6 @@ which the brown API translates to: <code>[control_point, control_point, curve_to
     <div class="body">
         <p class="summary"><p>
 </p></p>
-        
-            
-
-    <div class="overriden-note">
-        overriden from
-        <a href="/docs/0.0.1.dev0/api/brown/interface/graphic_object_interface.html#GraphicObjectInterface.__init__">
-            GraphicObjectInterface
-        </a>
-    </div>
-
-
         
         
             <h4>arguments:</h4>
@@ -682,11 +671,11 @@ which the brown API translates to: <code>[control_point, control_point, curve_to
     <p>
         <span class="important-name">pos</span>:
         <span class="type"><code><a href="/docs/0.0.1.dev0/api/brown/utils/point.html#Point">Point</a>[<a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit">Unit</a>]</code></span>
-        &mdash;<span class="summary"> The absolute position of the object.</span>
+        &mdash;<span class="summary"> The absolute position of the object.                This setter automatically propagates changes to        the underlying Qt object.        </span>
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/interface/graphic_object_interface.html#GraphicObjectInterface.pos">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/interface/graphic_object_interface.py#L34">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/interface/graphic_object_interface.py#L30">view source</a>
     </span>
 
     </p>
@@ -715,7 +704,7 @@ which the brown API translates to: <code>[control_point, control_point, curve_to
     <p>
         <span class="important-name">x</span>:
         <span class="type"><code><a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit">Unit</a></code></span>
-        &mdash;<span class="summary"> The absolute x position of the object</span>
+        &mdash;<span class="summary"> The absolute x position of the object                This setter automatically propagates changes to        the underlying Qt object.        </span>
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/interface/graphic_object_interface.html#GraphicObjectInterface.x">permalink</a>
@@ -748,11 +737,11 @@ which the brown API translates to: <code>[control_point, control_point, curve_to
     <p>
         <span class="important-name">y</span>:
         <span class="type"><code><a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit">Unit</a></code></span>
-        &mdash;<span class="summary"> The absolute y position of the object</span>
+        &mdash;<span class="summary"> The absolute y position of the object                This setter automatically propagates changes to        the underlying Qt object.        </span>
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/interface/graphic_object_interface.html#GraphicObjectInterface.y">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/interface/graphic_object_interface.py#L58">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/interface/graphic_object_interface.py#L62">view source</a>
     </span>
 
     </p>
@@ -781,11 +770,11 @@ which the brown API translates to: <code>[control_point, control_point, curve_to
     <p>
         <span class="important-name">pen</span>:
         <span class="type"><code><a href="/docs/0.0.1.dev0/api/brown/interface/pen_interface.html#PenInterface">PenInterface</a></code></span>
-        &mdash;<span class="summary"> The pen to draw outlines with.</span>
+        &mdash;<span class="summary"> The pen to draw outlines with.                This setter automatically propagates changes to        the underlying Qt object.        </span>
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/interface/graphic_object_interface.html#GraphicObjectInterface.pen">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/interface/graphic_object_interface.py#L68">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/interface/graphic_object_interface.py#L76">view source</a>
     </span>
 
     </p>
@@ -814,11 +803,11 @@ which the brown API translates to: <code>[control_point, control_point, curve_to
     <p>
         <span class="important-name">brush</span>:
         <span class="type"><code><a href="/docs/0.0.1.dev0/api/brown/interface/brush_interface.html#BrushInterface">BrushInterface</a></code></span>
-        &mdash;<span class="summary"> The brush to fill shapes with.</span>
+        &mdash;<span class="summary"> The brush to fill shapes with.                This setter automatically propagates changes to        the underlying Qt object.        </span>
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/interface/graphic_object_interface.html#GraphicObjectInterface.brush">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/interface/graphic_object_interface.py#L78">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/interface/graphic_object_interface.py#L90">view source</a>
     </span>
 
     </p>
@@ -926,15 +915,15 @@ which the brown API translates to: <code>[control_point, control_point, curve_to
             <div class="type-details-list">
                 
                     <div class="arg">
-                        <p><p>control_1_x <code>(<a href="/docs/0.0.1.dev0/api/brown/utils/point.html#Point">Point</a>)</code>: The local position of the 1st control point</p></p>
+                        <p><p>control_1 <code>(<a href="/docs/0.0.1.dev0/api/brown/utils/point.html#Point">Point</a>)</code>: The local position of the 1st control point</p></p>
                     </div>
                 
                     <div class="arg">
-                        <p><p>control_2_x <code>(<a href="/docs/0.0.1.dev0/api/brown/utils/point.html#Point">Point</a>)</code>: The local position of the 2nd control point</p></p>
+                        <p><p>control_2 <code>(<a href="/docs/0.0.1.dev0/api/brown/utils/point.html#Point">Point</a>)</code>: The local position of the 2nd control point</p></p>
                     </div>
                 
                     <div class="arg">
-                        <p><p>end_x <code>(<a href="/docs/0.0.1.dev0/api/brown/utils/point.html#Point">Point</a>)</code>: The local position of the end point</p></p>
+                        <p><p>end <code>(<a href="/docs/0.0.1.dev0/api/brown/utils/point.html#Point">Point</a>)</code>: The local position of the end point</p></p>
                     </div>
                 
             </div>
@@ -1096,7 +1085,7 @@ which the brown API translates to: <code>[control_point, control_point, curve_to
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/interface/path_interface.html#PathInterface.set_element_position_at">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/interface/path_interface.py#L213">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/interface/path_interface.py#L206">view source</a>
     </span>
 
     </p>
@@ -1137,16 +1126,16 @@ which the brown API translates to: <code>[control_point, control_point, curve_to
 </div>
                 
                     <div class="method"
-     id="PathInterface._render">
+     id="PathInterface.render">
     <p>
-        <span class="important-name">_render</span>
+        <span class="important-name">render</span>
         
             <code>()</code>
         
         
     <span class="permalink-and-source">
-        <a href="/docs/0.0.1.dev0/api/brown/interface/path_interface.html#PathInterface._render">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/interface/path_interface.py#L231">view source</a>
+        <a href="/docs/0.0.1.dev0/api/brown/interface/path_interface.html#PathInterface.render">permalink</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/interface/path_interface.py#L224">view source</a>
     </span>
 
     </p>
@@ -1158,7 +1147,7 @@ which the brown API translates to: <code>[control_point, control_point, curve_to
 
     <div class="overriden-note">
         overriden from
-        <a href="/docs/0.0.1.dev0/api/brown/interface/graphic_object_interface.html#GraphicObjectInterface._render">
+        <a href="/docs/0.0.1.dev0/api/brown/interface/graphic_object_interface.html#GraphicObjectInterface.render">
             GraphicObjectInterface
         </a>
     </div>
@@ -1185,21 +1174,21 @@ which the brown API translates to: <code>[control_point, control_point, curve_to
 </div>
                 
                     <div class="method"
-     id="PathInterface._update_qt_object_path">
+     id="PathInterface.update_qt_path">
     <p>
-        <span class="important-name">_update_qt_object_path</span>
+        <span class="important-name">update_qt_path</span>
         
             <code>()</code>
         
         
     <span class="permalink-and-source">
-        <a href="/docs/0.0.1.dev0/api/brown/interface/path_interface.html#PathInterface._update_qt_object_path">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/interface/path_interface.py#L240">view source</a>
+        <a href="/docs/0.0.1.dev0/api/brown/interface/path_interface.html#PathInterface.update_qt_path">permalink</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/interface/path_interface.py#L231">view source</a>
     </span>
 
     </p>
     <div class="body">
-        <p class="summary"><p>Synchronize the contents of self._qt_path to self._qt_object
+        <p class="summary"><p>Synchronize the contents of self._qt_path to self.qt_object
 </p></p>
         
         

@@ -543,11 +543,8 @@
                     </div>
                 
                     <div class="arg">
-                        <p><p>element_type <code>(int)</code>: The type of element this represents. If None,
-                this will attempt to guess the type. Type guessing for move_to
-                and line_to elements is guaranteed to be accurate, but
-                for distinguishing curves and control points is unsafe and
-                will throw a ValueError</p></p>
+                        <p><p>element_type <code>(<a href="/docs/0.0.1.dev0/api/brown/core/path_element_type.html#PathElementType">PathElementType</a> or int enum value)</code>:
+                The type of element this represents.</p></p>
                     </div>
                 
             </div>
@@ -568,15 +565,15 @@
             <div class="major-section">
                 
                     <div class="property"
-         id="PathElementInterface.parent_path">
+         id="PathElementInterface.path_interface">
     <p>
-        <span class="important-name">parent_path</span>:
+        <span class="important-name">path_interface</span>:
         <span class="type"><code><a href="/docs/0.0.1.dev0/api/brown/interface/path_interface.html#PathInterface">PathInterface</a></code></span>
         &mdash;<span class="summary"> The path interface this element belongs in.</span>
         
     <span class="permalink-and-source">
-        <a href="/docs/0.0.1.dev0/api/brown/interface/path_element_interface.html#PathElementInterface.parent_path">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/interface/path_element_interface.py#L55">view source</a>
+        <a href="/docs/0.0.1.dev0/api/brown/interface/path_element_interface.html#PathElementInterface.path_interface">permalink</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/interface/path_element_interface.py#L48">view source</a>
     </span>
 
     </p>
@@ -602,7 +599,7 @@
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/interface/path_element_interface.html#PathElementInterface.index">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/interface/path_element_interface.py#L60">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/interface/path_element_interface.py#L53">view source</a>
     </span>
 
     </p>
@@ -628,7 +625,7 @@
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/interface/path_element_interface.html#PathElementInterface.element_type">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/interface/path_element_interface.py#L65">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/interface/path_element_interface.py#L58">view source</a>
     </span>
 
     </p>
@@ -658,21 +655,21 @@
             <div class="major-section">
                 
                     <div class="method"
-     id="PathElementInterface._update_element_in_parent_path">
+     id="PathElementInterface.update_element_in_path_interface">
     <p>
-        <span class="important-name">_update_element_in_parent_path</span>
+        <span class="important-name">update_element_in_path_interface</span>
         
             <code>()</code>
         
         
     <span class="permalink-and-source">
-        <a href="/docs/0.0.1.dev0/api/brown/interface/path_element_interface.html#PathElementInterface._update_element_in_parent_path">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/interface/path_element_interface.py#L80">view source</a>
+        <a href="/docs/0.0.1.dev0/api/brown/interface/path_element_interface.html#PathElementInterface.update_element_in_path_interface">permalink</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/interface/path_element_interface.py#L73">view source</a>
     </span>
 
     </p>
     <div class="body">
-        <p class="summary"><p>Push element properties to self._qt_object and the parent path
+        <p class="summary"><p>Push element properties to self.qt_object and the parent path
 </p></p>
         
         
