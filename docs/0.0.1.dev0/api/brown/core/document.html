@@ -501,7 +501,7 @@
         
             <p class="details"><p>    This object should not be created directly by users - it is instantiated
     by <code>brown.setup()</code>, which creates a global instance of this class which
-    can be then accessed as <code>brown.document</code>.</p><p>    This object should be created by <code>brown.setup()</code></p><p>    NOTE: Paper gutters are not yet implemented
+    can be then accessed as <code>brown.document</code>.</p><p>    NOTE: Paper gutters are not yet implemented
     </p></p>
         
         
@@ -517,7 +517,7 @@
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/core/document.html#Document.__init__">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/document.py#L22">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/document.py#L20">view source</a>
     </span>
 
     </p>
@@ -531,7 +531,7 @@
                 
                     <div class="arg">
                         <p><p>paper <code>(<a href="/docs/0.0.1.dev0/api/brown/core/paper.html#Paper">Paper</a>)</code>: The paper to use in the document. If None,
-                this defaults to config.DEFAULT_PAPER_TYPE</p></p>
+                this defaults to <code>config.DEFAULT_PAPER_TYPE</code></p></p>
                     </div>
                 
             </div>
@@ -560,7 +560,7 @@
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/core/document.html#Document.paper">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/document.py#L42">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/document.py#L40">view source</a>
     </span>
 
     </p>
@@ -582,7 +582,7 @@
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/core/document.html#Document.pages">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/document.py#L51">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/document.py#L49">view source</a>
     </span>
 
     </p>
@@ -621,7 +621,7 @@
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/core/document.html#Document._page_display_gap">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/document.py#L79">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/document.py#L77">view source</a>
     </span>
 
     </p>
@@ -661,7 +661,7 @@
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/core/document.html#Document._render">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/document.py#L91">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/document.py#L89">view source</a>
     </span>
 
     </p>
@@ -698,7 +698,7 @@
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/core/document.html#Document.page_range_of">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/document.py#L101">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/document.py#L99">view source</a>
     </span>
 
     </p>
@@ -754,7 +754,7 @@ range(1, 6)
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/core/document.html#Document.page_origin">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/document.py#L137">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/document.py#L135">view source</a>
     </span>
 
     </p>
@@ -804,7 +804,7 @@ range(1, 6)
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/core/document.html#Document.paper_origin">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/document.py#L159">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/document.py#L157">view source</a>
     </span>
 
     </p>
@@ -854,7 +854,7 @@ range(1, 6)
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/core/document.html#Document.canvas_pos_of">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/document.py#L179">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/document.py#L177">view source</a>
     </span>
 
     </p>
@@ -900,7 +900,7 @@ range(1, 6)
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/core/document.html#Document.page_bounding_rect">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/document.py#L198">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/document.py#L196">view source</a>
     </span>
 
     </p>
@@ -931,8 +931,7 @@ range(1, 6)
         
         <p class="details"><p>
         The resulting rect will cover the <i>live page area</i> - that is,
-        the area within the margins of the page</p><p>        All points in the resulting rect will have page=0,
-        as this is considered in canvas space.</p></p>
+        the area within the margins of the page</p></p>
         
         
     </div>
@@ -948,7 +947,7 @@ range(1, 6)
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/core/document.html#Document.paper_bounding_rect">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/document.py#L220">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/document.py#L215">view source</a>
     </span>
 
     </p>
@@ -979,8 +978,7 @@ range(1, 6)
         
         <p class="details"><p>
         The resulting rect will cover the entire paper sheet -
-        regardless of margins and gutter.</p><p>        All points in the resulting rect will have page=0,
-        as this is considered in canvas space.</p></p>
+        regardless of margins and gutter.</p></p>
         
         
     </div>

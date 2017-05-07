@@ -580,6 +580,57 @@
 </div>
         
             <div class="method"
+     id="register_font">
+    <p>
+        <span class="important-name">register_font</span>
+        
+            <code>(font_file_path)</code>
+        
+        
+    <span class="permalink-and-source">
+        <a href="/docs/0.0.1.dev0/api/brown/core/brown.html#register_font">permalink</a>
+        <a href="">view source</a>
+    </span>
+
+    </p>
+    <div class="body">
+        <p class="summary"><p>Register a font file with the application.
+</p></p>
+        
+        
+            <h4>arguments:</h4>
+            <div class="type-details-list">
+                
+                    <div class="arg">
+                        <p><p>font_file_path <code>(str)</code>: A path to a font file. Currently only
+            TrueType and OpenType fonts are supported.</p></p>
+                    </div>
+                
+            </div>
+        
+        
+            <div class="returns">
+                <h4>returns:</h4>
+                <div class="type-details-list">
+                    
+                        <p><code>None</code></p>
+                    
+                </div>
+            </div>
+        
+        
+        <p class="details"><p>
+    If highly consistent typesetting is a concern for your score and
+    you wish to use non-standard fonts (e.g. Times New Roman), it is
+    recommended that you distribute your fonts with <code><a href="/docs/0.0.1.dev0/api/brown.html">brown</a></code> scripts
+    whenever possible, and call this immediately after <code>brown.setup()</code>.</p><p>    If successful, this makes the font available for use in <code><a href="/docs/0.0.1.dev0/api/brown/core/font.html#Font">Font</a></code> objects,
+    to be referenced by the family name embedded in the font file.</p></p>
+        
+        
+    </div>
+</div>
+        
+            <div class="method"
      id="register_music_font">
     <p>
         <span class="important-name">register_music_font</span>
@@ -608,7 +659,7 @@
                     </div>
                 
                     <div class="arg">
-                        <p><p>font_file_path <code>(str)</code>: A path to a font file</p></p>
+                        <p><p>font_file_path <code>(str)</code>: A path to a font file.</p></p>
                     </div>
                 
                     <div class="arg">
