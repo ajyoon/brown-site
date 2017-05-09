@@ -2206,6 +2206,1825 @@ True
 
     </div>
         
+            <div class="class"
+         id="_OctaveLineText">
+        <div class="class-name-wrapper">
+            
+    <span class="permalink-and-source">
+        <a href="/docs/0.0.1.dev0/api/brown/core/octave_line.html#_OctaveLineText">permalink</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/octave_line.py#L119">view source</a>
+    </span>
+
+            <h2>
+                <span class="class-name">_OctaveLineText</span>
+                
+                    (<code><a href="/docs/0.0.1.dev0/api/brown/core/music_text.html#MusicText">MusicText</a></code>)
+                
+            </h2>
+        </div>
+        <p class="summary"><p>An octave text mark recurring at line beginnings with added parenthesis.</p></p>
+        
+            <p class="details"><p>    This is a private class meant to be used exclusively in the context
+    of an OctaveLine
+    </p></p>
+        
+        
+        
+            <div>
+                <div class="method"
+     id="_OctaveLineText.__init__">
+    <p>
+        <span class="important-name">__init__</span>
+        
+            <code>(pos, parent, length, indication)</code>
+        
+        
+    <span class="permalink-and-source">
+        <a href="/docs/0.0.1.dev0/api/brown/core/octave_line.html#_OctaveLineText.__init__">permalink</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/octave_line.py#L126">view source</a>
+    </span>
+
+    </p>
+    <div class="body">
+        <p class="summary"><p>
+</p></p>
+        
+            
+
+    <div class="overriden-note">
+        overriden from
+        <a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject.__init__">
+            GraphicObject
+        </a>
+    </div>
+
+
+        
+        
+            <h4>arguments:</h4>
+            <div class="type-details-list">
+                
+                    <div class="arg">
+                        <p><p>pos <code>(<a href="/docs/0.0.1.dev0/api/brown/utils/point.html#Point">Point</a>)</code>:</p></p>
+                    </div>
+                
+                    <div class="arg">
+                        <p><p>parent <code>(<a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject">GraphicObject</a>)</code>:</p></p>
+                    </div>
+                
+                    <div class="arg">
+                        <p><p>length <code>(<a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit">Unit</a>)</code>:</p></p>
+                    </div>
+                
+                    <div class="arg">
+                        <p><p>indication <code>(str)</code>: A valid octave indication.
+                Should be a valid entry in <code>OctaveLine.glyphs</code>.</p></p>
+                    </div>
+                
+            </div>
+        
+        
+        
+        <p class="details"></p>
+        
+        
+    </div>
+</div>
+            </div>
+        
+        
+        
+        
+        
+            <div class="inherited">
+                <h4 class="major-section-title">inherited properties</h4>
+                <div class="major-section">
+                    
+                        <div class="property"
+         id="GraphicObject.length">
+    <p>
+        <span class="important-name">length</span>:
+        <span class="type"><code><a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit">Unit</a></code></span>
+        &mdash;<span class="summary"> The breakable length of the object.</span>
+        
+    <span class="permalink-and-source">
+        <a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject.length">permalink</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/graphic_object.py#L112">view source</a>
+    </span>
+
+    </p>
+    <div class="body">
+        
+        <div class="details"><p>        This is used to determine how and where rendering cuts should be made.
+        </p></div>
+        
+        
+            <p class="read-only-notice">
+                read-only.
+            </p>
+        
+        
+            
+
+    <div class="inherited-note">
+        inherited from
+        <a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject.length">
+            GraphicObject
+        </a>
+    </div>
+
+
+        
+    </div>
+</div>
+                    
+                        <div class="property"
+         id="Text._bounding_rect">
+    <p>
+        <span class="important-name">_bounding_rect</span>:
+        <span class="type"></span>
+        &mdash;<span class="summary">The bounding rect override for this text.</span>
+        
+    <span class="permalink-and-source">
+        <a href="/docs/0.0.1.dev0/api/brown/core/text.html#Text._bounding_rect">permalink</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/text.py#L63">view source</a>
+    </span>
+
+    </p>
+    <div class="body">
+        
+        <div class="details"></div>
+        
+        
+            <p class="read-only-notice">
+                read-only.
+            </p>
+        
+        
+            
+
+    <div class="inherited-note">
+        inherited from
+        <a href="/docs/0.0.1.dev0/api/brown/core/text.html#Text._bounding_rect">
+            Text
+        </a>
+    </div>
+
+
+        
+    </div>
+</div>
+                    
+                        <div class="property"
+         id="Text._origin_offset">
+    <p>
+        <span class="important-name">_origin_offset</span>:
+        <span class="type"><code><a href="/docs/0.0.1.dev0/api/brown/utils/point.html#Point">Point</a></code></span>
+        &mdash;<span class="summary"> The origin offset override for this glyph.</span>
+        
+    <span class="permalink-and-source">
+        <a href="/docs/0.0.1.dev0/api/brown/core/text.html#Text._origin_offset">permalink</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/text.py#L68">view source</a>
+    </span>
+
+    </p>
+    <div class="body">
+        
+        <div class="details"></div>
+        
+        
+            <p class="read-only-notice">
+                read-only.
+            </p>
+        
+        
+            
+
+    <div class="inherited-note">
+        inherited from
+        <a href="/docs/0.0.1.dev0/api/brown/core/text.html#Text._origin_offset">
+            Text
+        </a>
+    </div>
+
+
+        
+    </div>
+</div>
+                    
+                        <div class="property"
+         id="StaffObject.staff">
+    <p>
+        <span class="important-name">staff</span>:
+        <span class="type"><code><a href="/docs/0.0.1.dev0/api/brown/core/staff.html#Staff">Staff</a></code></span>
+        &mdash;<span class="summary"> The staff associated with this object</span>
+        
+    <span class="permalink-and-source">
+        <a href="/docs/0.0.1.dev0/api/brown/core/staff_object.html#StaffObject.staff">permalink</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/staff_object.py#L31">view source</a>
+    </span>
+
+    </p>
+    <div class="body">
+        
+        <div class="details"></div>
+        
+        
+            <p class="read-only-notice">
+                read-only.
+            </p>
+        
+        
+            
+
+    <div class="inherited-note">
+        inherited from
+        <a href="/docs/0.0.1.dev0/api/brown/core/staff_object.html#StaffObject.staff">
+            StaffObject
+        </a>
+    </div>
+
+
+        
+    </div>
+</div>
+                    
+                        <div class="property"
+         id="StaffObject.pos_in_staff">
+    <p>
+        <span class="important-name">pos_in_staff</span>:
+        <span class="type"><code><a href="/docs/0.0.1.dev0/api/brown/utils/point.html#Point">Point</a></code></span>
+        &mdash;<span class="summary"> The position of this object relative to the staff.</span>
+        
+    <span class="permalink-and-source">
+        <a href="/docs/0.0.1.dev0/api/brown/core/staff_object.html#StaffObject.pos_in_staff">permalink</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/staff_object.py#L36">view source</a>
+    </span>
+
+    </p>
+    <div class="body">
+        
+        <div class="details"><p>        This position is in non-flowed space.</p><p>        # TODO: Definitely cache me when property caching is implemented
+        </p></div>
+        
+        
+            <p class="read-only-notice">
+                read-only.
+            </p>
+        
+        
+            
+
+    <div class="inherited-note">
+        inherited from
+        <a href="/docs/0.0.1.dev0/api/brown/core/staff_object.html#StaffObject.pos_in_staff">
+            StaffObject
+        </a>
+    </div>
+
+
+        
+    </div>
+</div>
+                    
+                        <div class="property"
+         id="Text.text">
+    <p>
+        <span class="important-name">text</span>:
+        <span class="type"><code>str</code></span>
+        &mdash;<span class="summary"> The text to be drawn</span>
+        
+    <span class="permalink-and-source">
+        <a href="/docs/0.0.1.dev0/api/brown/core/text.html#Text.text">permalink</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/text.py#L33">view source</a>
+    </span>
+
+    </p>
+    <div class="body">
+        
+        <div class="details"></div>
+        
+        
+            <p class="read-only-notice">
+                read-only.
+            </p>
+        
+        
+            
+
+    <div class="inherited-note">
+        inherited from
+        <a href="/docs/0.0.1.dev0/api/brown/core/text.html#Text.text">
+            Text
+        </a>
+    </div>
+
+
+        
+    </div>
+</div>
+                    
+                        <div class="property"
+         id="Text.font">
+    <p>
+        <span class="important-name">font</span>:
+        <span class="type"><code><a href="/docs/0.0.1.dev0/api/brown/core/font.html#Font">Font</a></code></span>
+        &mdash;<span class="summary"> The text font</span>
+        
+    <span class="permalink-and-source">
+        <a href="/docs/0.0.1.dev0/api/brown/core/text.html#Text.font">permalink</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/text.py#L38">view source</a>
+    </span>
+
+    </p>
+    <div class="body">
+        
+        <div class="details"></div>
+        
+        
+        
+            
+
+    <div class="inherited-note">
+        inherited from
+        <a href="/docs/0.0.1.dev0/api/brown/core/text.html#Text.font">
+            Text
+        </a>
+    </div>
+
+
+        
+    </div>
+</div>
+                    
+                        <div class="property"
+         id="Text.baseline_y">
+    <p>
+        <span class="important-name">baseline_y</span>:
+        <span class="type"><code><a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit">Unit</a></code></span>
+        &mdash;<span class="summary"> The y coordinate of the first text line's baseline.</span>
+        
+    <span class="permalink-and-source">
+        <a href="/docs/0.0.1.dev0/api/brown/core/text.html#Text.baseline_y">permalink</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/text.py#L47">view source</a>
+    </span>
+
+    </p>
+    <div class="body">
+        
+        <div class="details"></div>
+        
+        
+            <p class="read-only-notice">
+                read-only.
+            </p>
+        
+        
+            
+
+    <div class="inherited-note">
+        inherited from
+        <a href="/docs/0.0.1.dev0/api/brown/core/text.html#Text.baseline_y">
+            Text
+        </a>
+    </div>
+
+
+        
+    </div>
+</div>
+                    
+                        <div class="property"
+         id="Text.scale_factor">
+    <p>
+        <span class="important-name">scale_factor</span>:
+        <span class="type"><code>float</code></span>
+        &mdash;<span class="summary"> A hard scale factor to be applied to the rendered text</span>
+        
+    <span class="permalink-and-source">
+        <a href="/docs/0.0.1.dev0/api/brown/core/text.html#Text.scale_factor">permalink</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/text.py#L52">view source</a>
+    </span>
+
+    </p>
+    <div class="body">
+        
+        <div class="details"></div>
+        
+        
+        
+            
+
+    <div class="inherited-note">
+        inherited from
+        <a href="/docs/0.0.1.dev0/api/brown/core/text.html#Text.scale_factor">
+            Text
+        </a>
+    </div>
+
+
+        
+    </div>
+</div>
+                    
+                        <div class="property"
+         id="GraphicObject.interfaces">
+    <p>
+        <span class="important-name">interfaces</span>:
+        <span class="type"><code>set(<a href="/docs/0.0.1.dev0/api/brown/interface/graphic_object_interface.html#GraphicObjectInterface">GraphicObjectInterface</a>)</code></span>
+        &mdash;<span class="summary"> The interfaces for this object</span>
+        
+    <span class="permalink-and-source">
+        <a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject.interfaces">permalink</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/graphic_object.py#L66">view source</a>
+    </span>
+
+    </p>
+    <div class="body">
+        
+        <div class="details"><p>        Interface objects are created upon calling <code>GraphicObject.render()</code></p><p>        Typically each GraphicObject will have one interface for each
+        flowable line it appears in. Objects which fit completely
+        in one visual line will typically have exactly one interface.</p><p>        If this is an empty set, the object has not been rendered yet
+        with the <code>render()</code> method.
+        </p></div>
+        
+        
+            <p class="read-only-notice">
+                read-only.
+            </p>
+        
+        
+            
+
+    <div class="inherited-note">
+        inherited from
+        <a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject.interfaces">
+            GraphicObject
+        </a>
+    </div>
+
+
+        
+    </div>
+</div>
+                    
+                        <div class="property"
+         id="GraphicObject.pos">
+    <p>
+        <span class="important-name">pos</span>:
+        <span class="type"><code><a href="/docs/0.0.1.dev0/api/brown/utils/point.html#Point">Point</a></code></span>
+        &mdash;<span class="summary"> The position of the object relative to its parent.</span>
+        
+    <span class="permalink-and-source">
+        <a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject.pos">permalink</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/graphic_object.py#L81">view source</a>
+    </span>
+
+    </p>
+    <div class="body">
+        
+        <div class="details"></div>
+        
+        
+        
+            
+
+    <div class="inherited-note">
+        inherited from
+        <a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject.pos">
+            GraphicObject
+        </a>
+    </div>
+
+
+        
+    </div>
+</div>
+                    
+                        <div class="property"
+         id="GraphicObject.x">
+    <p>
+        <span class="important-name">x</span>:
+        <span class="type"><code><a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit">Unit</a></code></span>
+        &mdash;<span class="summary"> The x position of the object relative to its parent.</span>
+        
+    <span class="permalink-and-source">
+        <a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject.x">permalink</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/graphic_object.py#L94">view source</a>
+    </span>
+
+    </p>
+    <div class="body">
+        
+        <div class="details"></div>
+        
+        
+        
+            
+
+    <div class="inherited-note">
+        inherited from
+        <a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject.x">
+            GraphicObject
+        </a>
+    </div>
+
+
+        
+    </div>
+</div>
+                    
+                        <div class="property"
+         id="GraphicObject.y">
+    <p>
+        <span class="important-name">y</span>:
+        <span class="type"><code><a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit">Unit</a></code></span>
+        &mdash;<span class="summary"> The x position of the object relative to its parent.</span>
+        
+    <span class="permalink-and-source">
+        <a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject.y">permalink</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/graphic_object.py#L103">view source</a>
+    </span>
+
+    </p>
+    <div class="body">
+        
+        <div class="details"></div>
+        
+        
+        
+            
+
+    <div class="inherited-note">
+        inherited from
+        <a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject.y">
+            GraphicObject
+        </a>
+    </div>
+
+
+        
+    </div>
+</div>
+                    
+                        <div class="property"
+         id="GraphicObject.pen">
+    <p>
+        <span class="important-name">pen</span>:
+        <span class="type"><code><a href="/docs/0.0.1.dev0/api/brown/core/pen.html#Pen">Pen</a></code></span>
+        &mdash;<span class="summary"> The pen to draw outlines with</span>
+        
+    <span class="permalink-and-source">
+        <a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject.pen">permalink</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/graphic_object.py#L120">view source</a>
+    </span>
+
+    </p>
+    <div class="body">
+        
+        <div class="details"></div>
+        
+        
+        
+            
+
+    <div class="inherited-note">
+        inherited from
+        <a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject.pen">
+            GraphicObject
+        </a>
+    </div>
+
+
+        
+    </div>
+</div>
+                    
+                        <div class="property"
+         id="GraphicObject.brush">
+    <p>
+        <span class="important-name">brush</span>:
+        <span class="type"><code><a href="/docs/0.0.1.dev0/api/brown/core/brush.html#Brush">Brush</a></code></span>
+        &mdash;<span class="summary"> The brush to draw outlines with</span>
+        
+    <span class="permalink-and-source">
+        <a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject.brush">permalink</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/graphic_object.py#L138">view source</a>
+    </span>
+
+    </p>
+    <div class="body">
+        
+        <div class="details"><p>        As a convenience, this may be set with a hex color string
+        for a solid color brush of that color. For brushes using
+        alpha channels and non-solid-color fill patterns, a fully
+        initialized brush must be passed to this.
+        </p></div>
+        
+        
+        
+            
+
+    <div class="inherited-note">
+        inherited from
+        <a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject.brush">
+            GraphicObject
+        </a>
+    </div>
+
+
+        
+    </div>
+</div>
+                    
+                        <div class="property"
+         id="GraphicObject.parent">
+    <p>
+        <span class="important-name">parent</span>:
+        <span class="type"><code><a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject">GraphicObject</a></code></span>
+        &mdash;<span class="summary"> The parent object.</span>
+        
+    <span class="permalink-and-source">
+        <a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject.parent">permalink</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/graphic_object.py#L162">view source</a>
+    </span>
+
+    </p>
+    <div class="body">
+        
+        <div class="details"><p>        If this is set to None, it defaults to the first page of the document.
+        </p></div>
+        
+        
+        
+            
+
+    <div class="inherited-note">
+        inherited from
+        <a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject.parent">
+            GraphicObject
+        </a>
+    </div>
+
+
+        
+    </div>
+</div>
+                    
+                        <div class="property"
+         id="GraphicObject.children">
+    <p>
+        <span class="important-name">children</span>:
+        <span class="type"><code>set(<a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject">GraphicObject</a>)</code></span>
+        &mdash;<span class="summary"> All objects who have self as their parent.</span>
+        
+    <span class="permalink-and-source">
+        <a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject.children">permalink</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/graphic_object.py#L179">view source</a>
+    </span>
+
+    </p>
+    <div class="body">
+        
+        <div class="details"></div>
+        
+        
+        
+            
+
+    <div class="inherited-note">
+        inherited from
+        <a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject.children">
+            GraphicObject
+        </a>
+    </div>
+
+
+        
+    </div>
+</div>
+                    
+                        <div class="property"
+         id="GraphicObject.descendants">
+    <p>
+        <span class="important-name">descendants</span>:
+        <span class="type"><code>iter[<a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject">GraphicObject</a>]</code></span>
+        &mdash;<span class="summary"> All of the objects in the children subtree.</span>
+        
+    <span class="permalink-and-source">
+        <a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject.descendants">permalink</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/graphic_object.py#L188">view source</a>
+    </span>
+
+    </p>
+    <div class="body">
+        
+        <div class="details"><p>        This recursively searches all of the object's children
+        (and their children, etc.) and provides an iterator over them.</p><p>        The current implementation performs a simple recursive DFS over
+        the tree, and has the potential to be rather slow.
+        </p></div>
+        
+        
+            <p class="read-only-notice">
+                read-only.
+            </p>
+        
+        
+            
+
+    <div class="inherited-note">
+        inherited from
+        <a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject.descendants">
+            GraphicObject
+        </a>
+    </div>
+
+
+        
+    </div>
+</div>
+                    
+                        <div class="property"
+         id="GraphicObject.ancestors">
+    <p>
+        <span class="important-name">ancestors</span>:
+        <span class="type"><code>iter[<a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject">GraphicObject</a>]</code></span>
+        &mdash;<span class="summary"> All ancestors of this object.</span>
+        
+    <span class="permalink-and-source">
+        <a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject.ancestors">permalink</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/graphic_object.py#L203">view source</a>
+    </span>
+
+    </p>
+    <div class="body">
+        
+        <div class="details"><p>        Follows the chain of parents until a document page is reached.
+        The iterable will <i>not</i> include the document <code><a href="/docs/0.0.1.dev0/api/brown/core/page.html#Page">Page</a></code>.</p><p>        The order begins with <code><a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject.parent">self.parent</a></code> and traverses upward in the tree.
+        </p></div>
+        
+        
+            <p class="read-only-notice">
+                read-only.
+            </p>
+        
+        
+            
+
+    <div class="inherited-note">
+        inherited from
+        <a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject.ancestors">
+            GraphicObject
+        </a>
+    </div>
+
+
+        
+    </div>
+</div>
+                    
+                        <div class="property"
+         id="GraphicObject.flowable">
+    <p>
+        <span class="important-name">flowable</span>:
+        <span class="type"><code><a href="/docs/0.0.1.dev0/api/brown/core/flowable.html#Flowable">Flowable</a> or None</code></span>
+        &mdash;<span class="summary"> The flowable this object belongs in.</span>
+        
+    <span class="permalink-and-source">
+        <a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject.flowable">permalink</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/graphic_object.py#L217">view source</a>
+    </span>
+
+    </p>
+    <div class="body">
+        
+        <div class="details"></div>
+        
+        
+            <p class="read-only-notice">
+                read-only.
+            </p>
+        
+        
+            
+
+    <div class="inherited-note">
+        inherited from
+        <a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject.flowable">
+            GraphicObject
+        </a>
+    </div>
+
+
+        
+    </div>
+</div>
+                    
+                        <div class="property"
+         id="GraphicObject.page_index">
+    <p>
+        <span class="important-name">page_index</span>:
+        <span class="type"></span>
+        &mdash;<span class="summary">The index of the page this object appears on.</span>
+        
+    <span class="permalink-and-source">
+        <a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject.page_index">permalink</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/graphic_object.py#L222">view source</a>
+    </span>
+
+    </p>
+    <div class="body">
+        
+        <div class="details"><p>            <pre><code class="python">>>> from <a href="/docs/0.0.1.dev0/api/brown/core.html">brown.core</a> import <a href="/docs/0.0.1.dev0/api/brown.html">brown</a>; brown.setup()
+>>> some_object = <a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject">GraphicObject</a>((<a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Mm">Mm</a>(20), <a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Mm">Mm</a>(50)),
+...                             <a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject.parent">parent</a>=brown.document.pages[5])
+>>> some_object.page_index
+5
+>>> some_object in brown.document.pages[5].descendants
+True
+</code></pre>        </p></div>
+        
+        
+            <p class="read-only-notice">
+                read-only.
+            </p>
+        
+        
+            
+
+    <div class="inherited-note">
+        inherited from
+        <a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject.page_index">
+            GraphicObject
+        </a>
+    </div>
+
+
+        
+    </div>
+</div>
+                    
+                </div>
+            </div>
+        
+        
+        
+            <div class="inherited">
+                <h4 class="major-section-title">inherited class methods</h4>
+                <div class="major-section">
+                    
+                        <div class="method"
+     id="GraphicObject.map_between_items">
+    <p>
+        <span class="important-name">map_between_items</span>
+        
+            <code>(source, destination)</code>
+        
+        
+    <span class="permalink-and-source">
+        <a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject.map_between_items">permalink</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/graphic_object.py#L246">view source</a>
+    </span>
+
+    </p>
+    <div class="body">
+        <p class="summary"><p>Find a GraphicObject's position relative to another GraphicObject
+</p></p>
+        
+        
+            <h4>arguments:</h4>
+            <div class="type-details-list">
+                
+                    <div class="arg">
+                        <p><p>source <code>(<a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject">GraphicObject</a>)</code>: The object to map from</p></p>
+                    </div>
+                
+                    <div class="arg">
+                        <p><p>destination <code>(<a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject">GraphicObject</a>)</code>: The object to map to</p></p>
+                    </div>
+                
+            </div>
+        
+        
+            <div class="returns">
+                <h4>returns:</h4>
+                <div class="type-details-list">
+                    
+                        <p><p><code><a href="/docs/0.0.1.dev0/api/brown/utils/point.html#Point">Point</a></code>: The canvas position of <code>destination</code> relative to <code>source</code></p></p>
+                    
+                </div>
+            </div>
+        
+        
+        <p class="details"><p>
+</p></p>
+        
+        
+            
+
+    <div class="inherited-note">
+        inherited from
+        <a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject.map_between_items">
+            GraphicObject
+        </a>
+    </div>
+
+
+        
+    </div>
+</div>
+                    
+                </div>
+            </div>
+        
+        
+        
+            <div class="inherited">
+                <h4 class="major-section-title">inherited static methods</h4>
+                <div class="major-section">
+                    
+                        <div class="method"
+     id="StaffObject.find_staff">
+    <p>
+        <span class="important-name">find_staff</span>
+        
+            <code>(graphic_object)</code>
+        
+        
+    <span class="permalink-and-source">
+        <a href="/docs/0.0.1.dev0/api/brown/core/staff_object.html#StaffObject.find_staff">permalink</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/staff_object.py#L50">view source</a>
+    </span>
+
+    </p>
+    <div class="body">
+        <p class="summary"><p>Find the first staff which is <code>graphic_object</code> or an ancestor of it.
+</p></p>
+        
+        
+            <h4>arguments:</h4>
+            <div class="type-details-list">
+                
+                    <div class="arg">
+                        <p><p>graphic_object <code>(<a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject">GraphicObject</a>)</code>:</p></p>
+                    </div>
+                
+            </div>
+        
+        
+            <div class="returns">
+                <h4>returns:</h4>
+                <div class="type-details-list">
+                    
+                        <p><code><a href="/docs/0.0.1.dev0/api/brown/core/staff.html#Staff">Staff</a> or None</code></p>
+                    
+                </div>
+            </div>
+        
+        
+        <p class="details"><p>
+</p></p>
+        
+        
+            
+
+    <div class="inherited-note">
+        inherited from
+        <a href="/docs/0.0.1.dev0/api/brown/core/staff_object.html#StaffObject.find_staff">
+            StaffObject
+        </a>
+    </div>
+
+
+        
+    </div>
+</div>
+                    
+                </div>
+            </div>
+        
+        
+        
+            <div class="inherited">
+                <h4 class="major-section-title">inherited methods</h4>
+                <div class="major-section">
+                    
+                        <div class="method"
+     id="MusicText._char_list_bounding_rect">
+    <p>
+        <span class="important-name">_char_list_bounding_rect</span>
+        
+            <code>(music_chars)</code>
+        
+        
+    <span class="permalink-and-source">
+        <a href="/docs/0.0.1.dev0/api/brown/core/music_text.html#MusicText._char_list_bounding_rect">permalink</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/music_text.py#L83">view source</a>
+    </span>
+
+    </p>
+    <div class="body">
+        <p class="summary"><p>Find the bounding rect of a given list of music chars.
+</p></p>
+        
+        
+            <h4>arguments:</h4>
+            <div class="type-details-list">
+                
+                    <div class="arg">
+                        <p><p>music_chars <code>(list[<a href="/docs/0.0.1.dev0/api/brown/core/music_char.html#MusicChar">MusicChar</a>])</code>: The string to represent</p></p>
+                    </div>
+                
+            </div>
+        
+        
+            <div class="returns">
+                <h4>returns:</h4>
+                <div class="type-details-list">
+                    
+                        <p><p><code><a href="/docs/0.0.1.dev0/api/brown/utils/rect.html#Rect">Rect</a></code>: The bounding rect of the specified text if drawn.</p></p>
+                    
+                </div>
+            </div>
+        
+        
+        <p class="details"><p>
+        Takes a list of MusicChars and determined the bounding rect
+        they would have if they were in this MusicText.</p><p>        The fonts of every music character should the the same as self.font.</p></p>
+        
+        
+            
+
+    <div class="inherited-note">
+        inherited from
+        <a href="/docs/0.0.1.dev0/api/brown/core/music_text.html#MusicText._char_list_bounding_rect">
+            MusicText
+        </a>
+    </div>
+
+
+        
+    </div>
+</div>
+                    
+                        <div class="method"
+     id="Text._render_slice">
+    <p>
+        <span class="important-name">_render_slice</span>
+        
+            <code>(pos, clip_start_x=None, clip_width=None)</code>
+        
+        
+    <span class="permalink-and-source">
+        <a href="/docs/0.0.1.dev0/api/brown/core/text.html#Text._render_slice">permalink</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/text.py#L75">view source</a>
+    </span>
+
+    </p>
+    <div class="body">
+        <p class="summary"><p>Render a horizontal slice of a path.
+</p></p>
+        
+        
+            <h4>arguments:</h4>
+            <div class="type-details-list">
+                
+                    <div class="arg">
+                        <p><p>pos <code>(<a href="/docs/0.0.1.dev0/api/brown/utils/point.html#Point">Point</a>)</code>: The doc-space position of the slice beginning
+                (at the top-left corner of the slice)</p></p>
+                    </div>
+                
+                    <div class="arg">
+                        <p><p>clip_start_x <code>(<a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit">Unit</a>)</code>: The starting local x position in of the slice</p></p>
+                    </div>
+                
+                    <div class="arg">
+                        <p><p>clip_width <code>(<a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit">Unit</a>)</code>: The horizontal length of the slice to
+                be rendered</p></p>
+                    </div>
+                
+            </div>
+        
+        
+            <div class="returns">
+                <h4>returns:</h4>
+                <div class="type-details-list">
+                    
+                        <p><code>None</code></p>
+                    
+                </div>
+            </div>
+        
+        
+        <p class="details"><p>
+</p></p>
+        
+        
+            
+
+    <div class="inherited-note">
+        inherited from
+        <a href="/docs/0.0.1.dev0/api/brown/core/text.html#Text._render_slice">
+            Text
+        </a>
+    </div>
+
+
+        
+    </div>
+</div>
+                    
+                        <div class="method"
+     id="GraphicObject.descendants_of_class_or_subclass">
+    <p>
+        <span class="important-name">descendants_of_class_or_subclass</span>
+        
+            <code>(graphic_object_class)</code>
+        
+        
+    <span class="permalink-and-source">
+        <a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject.descendants_of_class_or_subclass">permalink</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/graphic_object.py#L263">view source</a>
+    </span>
+
+    </p>
+    <div class="body">
+        <p class="summary"><p>Yield all child descendants with a given class or its subclasses.
+</p></p>
+        
+        
+        
+        
+        <p class="details"><p>
+        Args: graphic_object_class (type): The type to search for.
+            This should be a subclass of GraphicObject.</p><p>        Yields: GraphicObject
+        </p></p>
+        
+        
+            
+
+    <div class="inherited-note">
+        inherited from
+        <a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject.descendants_of_class_or_subclass">
+            GraphicObject
+        </a>
+    </div>
+
+
+        
+    </div>
+</div>
+                    
+                        <div class="method"
+     id="GraphicObject.descendants_of_exact_class">
+    <p>
+        <span class="important-name">descendants_of_exact_class</span>
+        
+            <code>(graphic_object_class)</code>
+        
+        
+    <span class="permalink-and-source">
+        <a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject.descendants_of_exact_class">permalink</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/graphic_object.py#L275">view source</a>
+    </span>
+
+    </p>
+    <div class="body">
+        <p class="summary"><p>Yield all child descendants with a given class.
+</p></p>
+        
+        
+        
+        
+        <p class="details"><p>
+        Args: graphic_object_class (type): The type to search for.
+            This should be a subclass of GraphicObject.</p><p>        Yields: GraphicObject
+        </p></p>
+        
+        
+            
+
+    <div class="inherited-note">
+        inherited from
+        <a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject.descendants_of_exact_class">
+            GraphicObject
+        </a>
+    </div>
+
+
+        
+    </div>
+</div>
+                    
+                        <div class="method"
+     id="GraphicObject.first_ancestor_of_class_or_subclass">
+    <p>
+        <span class="important-name">first_ancestor_of_class_or_subclass</span>
+        
+            <code>(graphic_object_class)</code>
+        
+        
+    <span class="permalink-and-source">
+        <a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject.first_ancestor_of_class_or_subclass">permalink</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/graphic_object.py#L287">view source</a>
+    </span>
+
+    </p>
+    <div class="body">
+        <p class="summary"><p>Get the closest ancestor with a class or its subclasses.
+</p></p>
+        
+        
+            <h4>arguments:</h4>
+            <div class="type-details-list">
+                
+                    <div class="arg">
+                        <p><p>graphic_object_class <code>(type)</code>: The type to search for.
+                This should be a subclass of GraphicObject.</p></p>
+                    </div>
+                
+            </div>
+        
+        
+            <div class="returns">
+                <h4>returns:</h4>
+                <div class="type-details-list">
+                    
+                        <p><code><a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject">GraphicObject</a> or None</code></p>
+                    
+                </div>
+            </div>
+        
+        
+        <p class="details"><p>
+        If none can be found, returns <code>None</code>.</p></p>
+        
+        
+            
+
+    <div class="inherited-note">
+        inherited from
+        <a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject.first_ancestor_of_class_or_subclass">
+            GraphicObject
+        </a>
+    </div>
+
+
+        
+    </div>
+</div>
+                    
+                        <div class="method"
+     id="GraphicObject.first_ancestor_of_exact_class">
+    <p>
+        <span class="important-name">first_ancestor_of_exact_class</span>
+        
+            <code>(graphic_object_class)</code>
+        
+        
+    <span class="permalink-and-source">
+        <a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject.first_ancestor_of_exact_class">permalink</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/graphic_object.py#L302">view source</a>
+    </span>
+
+    </p>
+    <div class="body">
+        <p class="summary"><p>Get the closest ancestor with a class.
+</p></p>
+        
+        
+            <h4>arguments:</h4>
+            <div class="type-details-list">
+                
+                    <div class="arg">
+                        <p><p>graphic_object_class <code>(type or str)</code>: The type to search for.
+                This should be a subclass of GraphicObject.
+                A str of a class name may also be used.</p></p>
+                    </div>
+                
+            </div>
+        
+        
+            <div class="returns">
+                <h4>returns:</h4>
+                <div class="type-details-list">
+                    
+                        <p><code><a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject">GraphicObject</a> or None</code></p>
+                    
+                </div>
+            </div>
+        
+        
+        <p class="details"><p>
+        If none can be found, returns <code>None</code>.</p></p>
+        
+        
+            
+
+    <div class="inherited-note">
+        inherited from
+        <a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject.first_ancestor_of_exact_class">
+            GraphicObject
+        </a>
+    </div>
+
+
+        
+    </div>
+</div>
+                    
+                        <div class="method"
+     id="GraphicObject._render">
+    <p>
+        <span class="important-name">_render</span>
+        
+            <code>()</code>
+        
+        
+    <span class="permalink-and-source">
+        <a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject._render">permalink</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/graphic_object.py#L324">view source</a>
+    </span>
+
+    </p>
+    <div class="body">
+        <p class="summary"><p>Render the object and all its children.
+</p></p>
+        
+        
+        
+            <div class="returns">
+                <h4>returns:</h4>
+                <div class="type-details-list">
+                    
+                        <p><code>None</code></p>
+                    
+                </div>
+            </div>
+        
+        
+        <p class="details"><p>
+</p></p>
+        
+        
+            
+
+    <div class="inherited-note">
+        inherited from
+        <a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject._render">
+            GraphicObject
+        </a>
+    </div>
+
+
+        
+    </div>
+</div>
+                    
+                        <div class="method"
+     id="GraphicObject._register_child">
+    <p>
+        <span class="important-name">_register_child</span>
+        
+            <code>(child)</code>
+        
+        
+    <span class="permalink-and-source">
+        <a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject._register_child">permalink</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/graphic_object.py#L336">view source</a>
+    </span>
+
+    </p>
+    <div class="body">
+        <p class="summary"><p>Add an object to <code><a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject.children">self.children</a></code>.
+</p></p>
+        
+        
+            <h4>arguments:</h4>
+            <div class="type-details-list">
+                
+                    <div class="arg">
+                        <p><p>child <code>(<a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject">GraphicObject</a>)</code>: The object to add</p></p>
+                    </div>
+                
+            </div>
+        
+        
+            <div class="returns">
+                <h4>returns:</h4>
+                <div class="type-details-list">
+                    
+                        <p><code>None</code></p>
+                    
+                </div>
+            </div>
+        
+        
+        <p class="details"><p>
+</p></p>
+        
+        
+            
+
+    <div class="inherited-note">
+        inherited from
+        <a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject._register_child">
+            GraphicObject
+        </a>
+    </div>
+
+
+        
+    </div>
+</div>
+                    
+                        <div class="method"
+     id="GraphicObject._unregister_child">
+    <p>
+        <span class="important-name">_unregister_child</span>
+        
+            <code>(child)</code>
+        
+        
+    <span class="permalink-and-source">
+        <a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject._unregister_child">permalink</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/graphic_object.py#L346">view source</a>
+    </span>
+
+    </p>
+    <div class="body">
+        <p class="summary"><p>Remove an object from <code><a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject.children">self.children</a></code>.
+</p></p>
+        
+        
+            <h4>arguments:</h4>
+            <div class="type-details-list">
+                
+                    <div class="arg">
+                        <p><p>child <code>(<a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject">GraphicObject</a>)</code>: The object to remove</p></p>
+                    </div>
+                
+            </div>
+        
+        
+            <div class="returns">
+                <h4>returns:</h4>
+                <div class="type-details-list">
+                    
+                        <p><code>None</code></p>
+                    
+                </div>
+            </div>
+        
+        
+        <p class="details"><p>
+</p></p>
+        
+        
+            
+
+    <div class="inherited-note">
+        inherited from
+        <a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject._unregister_child">
+            GraphicObject
+        </a>
+    </div>
+
+
+        
+    </div>
+</div>
+                    
+                        <div class="method"
+     id="GraphicObject._render_in_flowable">
+    <p>
+        <span class="important-name">_render_in_flowable</span>
+        
+            <code>()</code>
+        
+        
+    <span class="permalink-and-source">
+        <a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject._render_in_flowable">permalink</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/graphic_object.py#L356">view source</a>
+    </span>
+
+    </p>
+    <div class="body">
+        <p class="summary"><p>Render the object to the scene, dispatching partial rendering calls
+</p></p>
+        
+        
+        
+            <div class="returns">
+                <h4>returns:</h4>
+                <div class="type-details-list">
+                    
+                        <p><code>None</code></p>
+                    
+                </div>
+            </div>
+        
+        
+        <p class="details"><p>        when needed if an object flows across a break in the flowable.</p></p>
+        
+        
+            
+
+    <div class="inherited-note">
+        inherited from
+        <a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject._render_in_flowable">
+            GraphicObject
+        </a>
+    </div>
+
+
+        
+    </div>
+</div>
+                    
+                        <div class="method"
+     id="GraphicObject._render_complete">
+    <p>
+        <span class="important-name">_render_complete</span>
+        
+            <code>(pos, dist_to_line_start=None)</code>
+        
+        
+    <span class="permalink-and-source">
+        <a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject._render_complete">permalink</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/graphic_object.py#L409">view source</a>
+    </span>
+
+    </p>
+    <div class="body">
+        <p class="summary"><p>Render the entire object.
+</p></p>
+        
+        
+            <h4>arguments:</h4>
+            <div class="type-details-list">
+                
+                    <div class="arg">
+                        <p><p>pos <code>(<a href="/docs/0.0.1.dev0/api/brown/utils/point.html#Point">Point</a>)</code>: The rendering position in document space for drawing.</p></p>
+                    </div>
+                
+                    <div class="arg">
+                        <p><p>dist_to_line_start <code>(<a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit">Unit</a>)</code>: If in a <code><a href="/docs/0.0.1.dev0/api/brown/core/flowable.html#Flowable">Flowable</a></code>,
+                the x-axis distance from the active <code><a href="/docs/0.0.1.dev0/api/brown/core/new_line.html#NewLine">NewLine</a></code>s beginning.
+                Otherwise, this is always <code>None</code>. Subclasses may use this
+                information to perform basic position modifications at
+                render time, though in most cases this field can be ignored.</p></p>
+                    </div>
+                
+            </div>
+        
+        
+            <div class="returns">
+                <h4>returns:</h4>
+                <div class="type-details-list">
+                    
+                        <p><code>None</code></p>
+                    
+                </div>
+            </div>
+        
+        
+        <p class="details"><p>
+        This is used to render all objects outside of <code><a href="/docs/0.0.1.dev0/api/brown/core/flowable.html#Flowable">Flowable</a></code>s,
+        as well as those inside flowables when they fit completely in
+        one span of the flowable.</p><p>        This method should create a GraphicInterface and store it in
+        <code><a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject.interfaces">self.interfaces</a></code>.</p></p>
+        
+        
+            
+
+    <div class="inherited-note">
+        inherited from
+        <a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject._render_complete">
+            GraphicObject
+        </a>
+    </div>
+
+
+        
+    </div>
+</div>
+                    
+                        <div class="method"
+     id="GraphicObject._render_before_break">
+    <p>
+        <span class="important-name">_render_before_break</span>
+        
+            <code>(start, stop, dist_to_line_start)</code>
+        
+        
+    <span class="permalink-and-source">
+        <a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject._render_before_break">permalink</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/graphic_object.py#L434">view source</a>
+    </span>
+
+    </p>
+    <div class="body">
+        <p class="summary"><p>Render the beginning of the object up to a stopping point.
+</p></p>
+        
+        
+            <h4>arguments:</h4>
+            <div class="type-details-list">
+                
+                    <div class="arg">
+                        <p><p>start <code>(<a href="/docs/0.0.1.dev0/api/brown/utils/point.html#Point">Point</a>)</code>: The starting point in document space for drawing.</p></p>
+                    </div>
+                
+                    <div class="arg">
+                        <p><p>stop <code>(<a href="/docs/0.0.1.dev0/api/brown/utils/point.html#Point">Point</a>)</code>: The stopping point in document space for drawing.</p></p>
+                    </div>
+                
+                    <div class="arg">
+                        <p><p>dist_to_line_start <code>(<a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit">Unit</a>)</code>: The x-axis distance from the active
+                <code><a href="/docs/0.0.1.dev0/api/brown/core/new_line.html#NewLine">NewLine</a></code>s beginning. Subclasses may use this
+                information to perform basic position modifications at
+                render time, though in most cases this field can be ignored.</p></p>
+                    </div>
+                
+            </div>
+        
+        
+            <div class="returns">
+                <h4>returns:</h4>
+                <div class="type-details-list">
+                    
+                        <p><code>None</code></p>
+                    
+                </div>
+            </div>
+        
+        
+        <p class="details"><p>
+        For use in flowable containers when rendering an object that
+        crosses a line or page break. This function should render the
+        beginning portion of the object up to the break.</p><p>        This method should create a GraphicInterface and store it in
+        <code><a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject.interfaces">self.interfaces</a></code>.</p></p>
+        
+        
+            
+
+    <div class="inherited-note">
+        inherited from
+        <a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject._render_before_break">
+            GraphicObject
+        </a>
+    </div>
+
+
+        
+    </div>
+</div>
+                    
+                        <div class="method"
+     id="GraphicObject._render_after_break">
+    <p>
+        <span class="important-name">_render_after_break</span>
+        
+            <code>(local_start_x, start, stop)</code>
+        
+        
+    <span class="permalink-and-source">
+        <a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject._render_after_break">permalink</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/graphic_object.py#L459">view source</a>
+    </span>
+
+    </p>
+    <div class="body">
+        <p class="summary"><p>Render the continuation of an object after a break.
+</p></p>
+        
+        
+            <h4>arguments:</h4>
+            <div class="type-details-list">
+                
+                    <div class="arg">
+                        <p><p>local_start_x <code>(<a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit">Unit</a>)</code>: The local starting position of this
+                drawing segment.</p></p>
+                    </div>
+                
+                    <div class="arg">
+                        <p><p>start <code>(<a href="/docs/0.0.1.dev0/api/brown/utils/point.html#Point">Point</a>)</code>: The starting point in document space for drawing.</p></p>
+                    </div>
+                
+                    <div class="arg">
+                        <p><p>stop <code>(<a href="/docs/0.0.1.dev0/api/brown/utils/point.html#Point">Point</a>)</code>: The stopping point in document space for drawing.</p></p>
+                    </div>
+                
+            </div>
+        
+        
+            <div class="returns">
+                <h4>returns:</h4>
+                <div class="type-details-list">
+                    
+                        <p><code>None</code></p>
+                    
+                </div>
+            </div>
+        
+        
+        <p class="details"><p>
+        For use in flowable containers when rendering an object that
+        crosses a line or page break. This function should render the
+        ending portion of an object after a break.</p><p>        This method should create a GraphicInterface and store it in
+        <code><a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject.interfaces">self.interfaces</a></code>.</p></p>
+        
+        
+            
+
+    <div class="inherited-note">
+        inherited from
+        <a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject._render_after_break">
+            GraphicObject
+        </a>
+    </div>
+
+
+        
+    </div>
+</div>
+                    
+                        <div class="method"
+     id="GraphicObject._render_spanning_continuation">
+    <p>
+        <span class="important-name">_render_spanning_continuation</span>
+        
+            <code>(local_start_x, start, stop)</code>
+        
+        
+    <span class="permalink-and-source">
+        <a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject._render_spanning_continuation">permalink</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/graphic_object.py#L482">view source</a>
+    </span>
+
+    </p>
+    <div class="body">
+        <p class="summary"><p>
+</p></p>
+        
+        
+            <h4>arguments:</h4>
+            <div class="type-details-list">
+                
+                    <div class="arg">
+                        <p><p>local_start_x <code>(<a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit">Unit</a>)</code>: The local starting position of this
+                drawing segment.</p></p>
+                    </div>
+                
+                    <div class="arg">
+                        <p><p>start <code>(<a href="/docs/0.0.1.dev0/api/brown/utils/point.html#Point">Point</a>)</code>: The starting point in document space for drawing.</p></p>
+                    </div>
+                
+                    <div class="arg">
+                        <p><p>stop <code>(<a href="/docs/0.0.1.dev0/api/brown/utils/point.html#Point">Point</a>)</code>: The stopping point in document space for drawing.</p></p>
+                    </div>
+                
+            </div>
+        
+        
+            <div class="returns">
+                <h4>returns:</h4>
+                <div class="type-details-list">
+                    
+                        <p><code>None</code></p>
+                    
+                </div>
+            </div>
+        
+        
+        <p class="details"><p>        Render the continuation of an object after a break and before another.</p><p>        For use in flowable containers when rendering an object that crosses
+        two breaks. This function should render the portion of the object
+        surrounded by breaks on either side.</p><p>        This method should create a GraphicInterface and store it in
+        <code><a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject.interfaces">self.interfaces</a></code>.</p></p>
+        
+        
+            
+
+    <div class="inherited-note">
+        inherited from
+        <a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject._render_spanning_continuation">
+            GraphicObject
+        </a>
+    </div>
+
+
+        
+    </div>
+</div>
+                    
+                </div>
+            </div>
+        
+
+
+    </div>
+        
     
 
 
