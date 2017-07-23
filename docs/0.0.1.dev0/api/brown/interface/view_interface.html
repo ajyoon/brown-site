@@ -306,7 +306,7 @@
                 <a href="/docs/0.0.1.dev0/api/brown/interface/text_interface.html">text_interface</a>
             </li>
         
-            <li >
+            <li id="toc-link-to-current-page">
                 <a href="/docs/0.0.1.dev0/api/brown/interface/view_interface.html">view_interface</a>
             </li>
         
@@ -420,7 +420,7 @@
                 <a href="/docs/0.0.1.dev0/api/brown/utils/pen_pattern.html">pen_pattern</a>
             </li>
         
-            <li id="toc-link-to-current-page">
+            <li >
                 <a href="/docs/0.0.1.dev0/api/brown/utils/point.html">point</a>
             </li>
         
@@ -476,7 +476,7 @@
             <div id="page-body">
                 
 
-    <h1 id="page-title">brown<wbr>.utils<wbr>.point</h1>
+    <h1 id="page-title">brown<wbr>.interface<wbr>.view_interface</h1>
 
     <a id="show-inherited-toggle" href="javascript:void(toggleShowInheritence())"></a>
 
@@ -492,38 +492,42 @@
         <h3 class="major-section-title">classes</h3>
         
             <div class="class"
-         id="Point">
+         id="ViewInterface">
         <div class="class-name-wrapper">
             
     <span class="permalink-and-source">
-        <a href="/docs/0.0.1.dev0/api/brown/utils/point.html#Point">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/utils/point.py#L4">view source</a>
+        <a href="/docs/0.0.1.dev0/api/brown/interface/view_interface.html#ViewInterface">permalink</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/interface/view_interface.py#L4">view source</a>
     </span>
 
             <h2>
-                <span class="class-name">Point</span>
+                <span class="class-name">ViewInterface</span>
+                
+                    (<code>QtWidgets.QGraphicsView</code>)
                 
             </h2>
         </div>
-        <p class="summary"><p>A two dimensional point.</p></p>
+        <p class="summary"><p>The graphical view and working area.</p></p>
         
-            <p class="details"><p>    The x-axis grows left-to right, and the y-axis grows top-to-bottom.
+            <p class="details"><p>    Includes some basic hacky interactivity features,
+    architecture will need to be revisited once a general
+    input processing system is worked out.
     </p></p>
         
         
         
             <div>
                 <div class="method"
-     id="Point.__init__">
+     id="ViewInterface.__init__">
     <p>
         <span class="important-name">__init__</span>
         
-            <code>(x, y)</code>
+            <code>(scene)</code>
         
         
     <span class="permalink-and-source">
-        <a href="/docs/0.0.1.dev0/api/brown/utils/point.html#Point.__init__">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/utils/point.py#L12">view source</a>
+        <a href="/docs/0.0.1.dev0/api/brown/interface/view_interface.html#ViewInterface.__init__">permalink</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/interface/view_interface.py#L12">view source</a>
     </span>
 
     </p>
@@ -536,11 +540,7 @@
             <div class="type-details-list">
                 
                     <div class="arg">
-                        <p><p>x <code>(float or <a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit">Unit</a>)</code>: The x axis position</p></p>
-                    </div>
-                
-                    <div class="arg">
-                        <p><p>y <code>(float or <a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit">Unit</a>)</code>: The y axis position</p></p>
+                        <p><p>scene <code>(QGraphicsScene)</code>:</p></p>
                     </div>
                 
             </div>
@@ -557,175 +557,7 @@
         
         
         
-            <h4 class="major-section-title">properties</h4>
-            <div class="major-section">
-                
-                    <div class="property"
-         id="Point.x">
-    <p>
-        <span class="important-name">x</span>:
-        <span class="type"><code><a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit">Unit</a>, int, or float</code></span>
-        &mdash;<span class="summary"> The x coordinate of the point.</span>
         
-    <span class="permalink-and-source">
-        <a href="/docs/0.0.1.dev0/api/brown/utils/point.html#Point.x">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/utils/point.py#L48">view source</a>
-    </span>
-
-    </p>
-    <div class="body">
-        
-        <div class="details"></div>
-        
-        
-        
-    </div>
-</div>
-                
-                    <div class="property"
-         id="Point.y">
-    <p>
-        <span class="important-name">y</span>:
-        <span class="type"><code><a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit">Unit</a>, int, or float</code></span>
-        &mdash;<span class="summary"> The y coordinate of the point.</span>
-        
-    <span class="permalink-and-source">
-        <a href="/docs/0.0.1.dev0/api/brown/utils/point.html#Point.y">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/utils/point.py#L57">view source</a>
-    </span>
-
-    </p>
-    <div class="body">
-        
-        <div class="details"></div>
-        
-        
-        
-    </div>
-</div>
-                
-            </div>
-        
-        
-        
-            <h4 class="major-section-title">class methods</h4>
-            <div class="major-section">
-                
-                    <div class="method"
-     id="Point.from_existing">
-    <p>
-        <span class="important-name">from_existing</span>
-        
-            <code>(point)</code>
-        
-        
-    <span class="permalink-and-source">
-        <a href="/docs/0.0.1.dev0/api/brown/utils/point.html#Point.from_existing">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/utils/point.py#L24">view source</a>
-    </span>
-
-    </p>
-    <div class="body">
-        <p class="summary"><p>Clone a Point
-</p></p>
-        
-        
-            <h4>arguments:</h4>
-            <div class="type-details-list">
-                
-                    <div class="arg">
-                        <p><p>point <code>(<a href="/docs/0.0.1.dev0/api/brown/utils/point.html#Point">Point</a>)</code>: The point to clone</p></p>
-                    </div>
-                
-            </div>
-        
-        
-            <div class="returns">
-                <h4>returns:</h4>
-                <div class="type-details-list">
-                    
-                        <p><code><a href="/docs/0.0.1.dev0/api/brown/utils/point.html#Point">Point</a></code></p>
-                    
-                </div>
-            </div>
-        
-        
-        <p class="details"><p>
-</p></p>
-        
-        
-            
-
-    <div class="inherited-note">
-        inherited from
-        <a href="/docs/0.0.1.dev0/api/brown/utils/point.html#Point.from_existing">
-            Point
-        </a>
-    </div>
-
-
-        
-    </div>
-</div>
-                
-                    <div class="method"
-     id="Point.from_parent_point">
-    <p>
-        <span class="important-name">from_parent_point</span>
-        
-            <code>(parent_point)</code>
-        
-        
-    <span class="permalink-and-source">
-        <a href="/docs/0.0.1.dev0/api/brown/utils/point.html#Point.from_parent_point">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/utils/point.py#L35">view source</a>
-    </span>
-
-    </p>
-    <div class="body">
-        <p class="summary"><p>Create a Point from an ParentPoint, discarding its parent.
-</p></p>
-        
-        
-            <h4>arguments:</h4>
-            <div class="type-details-list">
-                
-                    <div class="arg">
-                        <p><p>parent_point <code>(<a href="/docs/0.0.1.dev0/api/brown/utils/parent_point.html#ParentPoint">ParentPoint</a>)</code>:</p></p>
-                    </div>
-                
-            </div>
-        
-        
-            <div class="returns">
-                <h4>returns:</h4>
-                <div class="type-details-list">
-                    
-                        <p><code><a href="/docs/0.0.1.dev0/api/brown/utils/point.html#Point">Point</a></code></p>
-                    
-                </div>
-            </div>
-        
-        
-        <p class="details"><p>
-</p></p>
-        
-        
-            
-
-    <div class="inherited-note">
-        inherited from
-        <a href="/docs/0.0.1.dev0/api/brown/utils/point.html#Point.from_parent_point">
-            Point
-        </a>
-    </div>
-
-
-        
-    </div>
-</div>
-                
-            </div>
         
         
         
@@ -735,234 +567,26 @@
             <div class="major-section">
                 
                     <div class="method"
-     id="Point.to_unit">
+     id="ViewInterface.wheelEvent">
     <p>
-        <span class="important-name">to_unit</span>
+        <span class="important-name">wheelEvent</span>
         
-            <code>(unit)</code>
+            <code>(event)</code>
         
         
     <span class="permalink-and-source">
-        <a href="/docs/0.0.1.dev0/api/brown/utils/point.html#Point.to_unit">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/utils/point.py#L67">view source</a>
+        <a href="/docs/0.0.1.dev0/api/brown/interface/view_interface.html#ViewInterface.wheelEvent">permalink</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/interface/view_interface.py#L23">view source</a>
     </span>
 
     </p>
     <div class="body">
-        <p class="summary"><p>Translate coordinates to be of a certain unit type.
-</p></p>
-        
-        
-            <h4>arguments:</h4>
-            <div class="type-details-list">
-                
-                    <div class="arg">
-                        <p><p>unit <code>(type)</code>: A Unit class.</p></p>
-                    </div>
-                
-            </div>
-        
-        
-            <div class="returns">
-                <h4>returns:</h4>
-                <div class="type-details-list">
-                    
-                        <p><p><code><a href="/docs/0.0.1.dev0/api/brown/utils/point.html#Point">Point</a></code>: the modified self point.</p></p>
-                    
-                </div>
-            </div>
-        
-        
-        <p class="details"><p>
-</p></p>
-        
-        
-    </div>
-</div>
-                
-                    <div class="method"
-     id="Point.__eq__">
-    <p>
-        <span class="important-name">__eq__</span>
-        
-            <code>(other)</code>
-        
-        
-    <span class="permalink-and-source">
-        <a href="/docs/0.0.1.dev0/api/brown/utils/point.html#Point.__eq__">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/utils/point.py#L90">view source</a>
-    </span>
-
-    </p>
-    <div class="body">
-        <p class="summary"><p>Two Points are equal if their attributes are all equal.
-</p></p>
-        
-        
-        
-            <div class="returns">
-                <h4>returns:</h4>
-                <div class="type-details-list">
-                    
-                        <p><code>Bool</code></p>
-                    
-                </div>
-            </div>
-        
-        
-        <p class="details"><p>
-</p></p>
-        
-        
-    </div>
-</div>
-                
-                    <div class="method"
-     id="Point.__add__">
-    <p>
-        <span class="important-name">__add__</span>
-        
-            <code>(other)</code>
-        
-        
-    <span class="permalink-and-source">
-        <a href="/docs/0.0.1.dev0/api/brown/utils/point.html#Point.__add__">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/utils/point.py#L100">view source</a>
-    </span>
-
-    </p>
-    <div class="body">
-        <p class="summary"><p><code><a href="/docs/0.0.1.dev0/api/brown/utils/point.html#Point">Point</a></code>s are added by adding their x and y values in a new <code><a href="/docs/0.0.1.dev0/api/brown/utils/point.html#Point">Point</a></code>
-</p></p>
-        
-        
-        
-            <div class="returns">
-                <h4>returns:</h4>
-                <div class="type-details-list">
-                    
-                        <p><code><a href="/docs/0.0.1.dev0/api/brown/utils/point.html#Point">Point</a></code></p>
-                    
-                </div>
-            </div>
-        
-        
-        <p class="details"><p>
-</p></p>
-        
-        
-    </div>
-</div>
-                
-                    <div class="method"
-     id="Point.__sub__">
-    <p>
-        <span class="important-name">__sub__</span>
-        
-            <code>(other)</code>
-        
-        
-    <span class="permalink-and-source">
-        <a href="/docs/0.0.1.dev0/api/brown/utils/point.html#Point.__sub__">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/utils/point.py#L110">view source</a>
-    </span>
-
-    </p>
-    <div class="body">
-        <p class="summary"><p><code><a href="/docs/0.0.1.dev0/api/brown/utils/point.html#Point">Point</a></code>s are subtracted by adding their x and y values in a new <code><a href="/docs/0.0.1.dev0/api/brown/utils/point.html#Point">Point</a></code>
-</p></p>
-        
-        
-        
-            <div class="returns">
-                <h4>returns:</h4>
-                <div class="type-details-list">
-                    
-                        <p><code><a href="/docs/0.0.1.dev0/api/brown/utils/point.html#Point">Point</a></code></p>
-                    
-                </div>
-            </div>
-        
-        
-        <p class="details"><p>
-</p></p>
-        
-        
-    </div>
-</div>
-                
-                    <div class="method"
-     id="Point.__mul__">
-    <p>
-        <span class="important-name">__mul__</span>
-        
-            <code>(other)</code>
-        
-        
-    <span class="permalink-and-source">
-        <a href="/docs/0.0.1.dev0/api/brown/utils/point.html#Point.__mul__">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/utils/point.py#L120">view source</a>
-    </span>
-
-    </p>
-    <div class="body">
-        <p class="summary"><p>Points may be multiplied with scalars.
-</p></p>
-        
-        
-            <h4>arguments:</h4>
-            <div class="type-details-list">
-                
-                    <div class="arg">
-                        <p><p>other <code>(<a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit">Unit</a>, int, float)</code>: A scalar value</p></p>
-                    </div>
-                
-            </div>
-        
-        
-            <div class="returns">
-                <h4>returns:</h4>
-                <div class="type-details-list">
-                    
-                        <p><code><a href="/docs/0.0.1.dev0/api/brown/utils/point.html#Point">Point</a></code></p>
-                    
-                </div>
-            </div>
-        
-        
-        <p class="details"><p>
-</p></p>
-        
-        
-    </div>
-</div>
-                
-                    <div class="method"
-     id="Point._assert_almost_equal">
-    <p>
-        <span class="important-name">_assert_almost_equal</span>
-        
-            <code>(other, places=7)</code>
-        
-        
-    <span class="permalink-and-source">
-        <a href="/docs/0.0.1.dev0/api/brown/utils/point.html#Point._assert_almost_equal">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/utils/point.py#L141">view source</a>
-    </span>
-
-    </p>
-    <div class="body">
-        <p class="summary"><p>Assert the near-equality of two points.
-</p></p>
+        <p class="summary"><p>Zoom in or out of the view.</p></p>
         
         
         
         
-        <p class="details"><p>
-        <ul><li><i>For testing purposes only.*</i>
-</li></ul>
-        Both <code><a href="/docs/0.0.1.dev0/api/brown/utils/point.html#Point.x">self.x</a></code> and <code><a href="/docs/0.0.1.dev0/api/brown/utils/point.html#Point.y">self.y</a></code> must be <code><a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit">Unit</a></code>types.
-        </p></p>
+        <p class="details"></p>
         
         
     </div>
