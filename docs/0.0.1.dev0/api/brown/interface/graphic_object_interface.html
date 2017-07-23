@@ -283,6 +283,10 @@
             </li>
         
             <li >
+                <a href="/docs/0.0.1.dev0/api/brown/interface/interface.html">interface</a>
+            </li>
+        
+            <li >
                 <a href="/docs/0.0.1.dev0/api/brown/interface/paper_interface.html">paper_interface</a>
             </li>
         
@@ -497,25 +501,22 @@
             
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/interface/graphic_object_interface.html#GraphicObjectInterface">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/interface/graphic_object_interface.py#L8">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/interface/graphic_object_interface.py#L9">view source</a>
     </span>
 
             <h2>
                 <span class="class-name">GraphicObjectInterface</span>
                 
-                    (<code>ABC</code>)
+                    (<code><a href="/docs/0.0.1.dev0/api/brown/interface/interface.html#Interface">Interface</a></code>)
                 
             </h2>
         </div>
         <p class="summary"><p>Interface for a generic graphic object.</p></p>
         
-            <p class="details"><p>    This is a top-level abstract interface class. All graphic interfaces
-    for renderable objects should descend from this.</p><p>    <code><a href="/docs/0.0.1.dev0/api/brown/interface/graphic_object_interface.html#GraphicObjectInterface">GraphicObjectInterface</a></code> classes have no concept of parentage, or,
+            <p class="details"><p>    All graphic interfaces for renderable objects should descend from this.</p><p>    <code><a href="/docs/0.0.1.dev0/api/brown/interface/graphic_object_interface.html#GraphicObjectInterface">GraphicObjectInterface</a></code> classes have no concept of parentage, or,
     by extension, page numbers. The <code><a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject">GraphicObject</a></code>s responsible for
     creating these interface objects should pass only document-space
-    positions to these.
-    
-    Implementing class <code>__init__</code> methods should, in the following order:
+    positions to these.</p><p>    Implementing class <code>__init__</code> methods should, in the following order:
     <ul><li> Create a <code>QGraphicsItem</code> subclass object and store it in
       <code>self.qt_object</code>.
     </li><li> Set <code>self.pos</code>, <code>self.pen</code>, and <code>self.brush</code>. The setters
@@ -524,6 +525,55 @@
     </li></ul></p></p>
         
         
+        
+            <div>
+                <div class="method"
+     id="GraphicObjectInterface.__init__">
+    <p>
+        <span class="important-name">__init__</span>
+        
+            <code>(brown_object)</code>
+        
+        
+    <span class="permalink-and-source">
+        <a href="/docs/0.0.1.dev0/api/brown/interface/graphic_object_interface.html#GraphicObjectInterface.__init__">permalink</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/interface/graphic_object_interface.py#L27">view source</a>
+    </span>
+
+    </p>
+    <div class="body">
+        <p class="summary"><p>
+</p></p>
+        
+            
+
+    <div class="overriden-note">
+        overriden from
+        <a href="/docs/0.0.1.dev0/api/brown/interface/interface.html#Interface.__init__">
+            Interface
+        </a>
+    </div>
+
+
+        
+        
+            <h4>arguments:</h4>
+            <div class="type-details-list">
+                
+                    <div class="arg">
+                        <p><p>brown_object <code>(<a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject">GraphicObject</a>)</code>: the brown object this belongs to</p></p>
+                    </div>
+                
+            </div>
+        
+        
+        
+        <p class="details"></p>
+        
+        
+    </div>
+</div>
+            </div>
         
         
         
@@ -536,17 +586,19 @@
     <p>
         <span class="important-name">pos</span>:
         <span class="type"><code><a href="/docs/0.0.1.dev0/api/brown/utils/point.html#Point">Point</a>[<a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit">Unit</a>]</code></span>
-        &mdash;<span class="summary"> The absolute position of the object.                This setter automatically propagates changes to        the underlying Qt object.        </span>
+        &mdash;<span class="summary"> The absolute position of the object.</span>
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/interface/graphic_object_interface.html#GraphicObjectInterface.pos">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/interface/graphic_object_interface.py#L30">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/interface/graphic_object_interface.py#L37">view source</a>
     </span>
 
     </p>
     <div class="body">
         
-        <div class="details"></div>
+        <div class="details"><p>        This setter automatically propagates changes to
+        the underlying Qt object.
+        </p></div>
         
         
         
@@ -558,17 +610,19 @@
     <p>
         <span class="important-name">x</span>:
         <span class="type"><code><a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit">Unit</a></code></span>
-        &mdash;<span class="summary"> The absolute x position of the object                This setter automatically propagates changes to        the underlying Qt object.        </span>
+        &mdash;<span class="summary"> The absolute x position of the object</span>
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/interface/graphic_object_interface.html#GraphicObjectInterface.x">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/interface/graphic_object_interface.py#L48">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/interface/graphic_object_interface.py#L55">view source</a>
     </span>
 
     </p>
     <div class="body">
         
-        <div class="details"></div>
+        <div class="details"><p>        This setter automatically propagates changes to
+        the underlying Qt object.
+        </p></div>
         
         
         
@@ -580,17 +634,19 @@
     <p>
         <span class="important-name">y</span>:
         <span class="type"><code><a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit">Unit</a></code></span>
-        &mdash;<span class="summary"> The absolute y position of the object                This setter automatically propagates changes to        the underlying Qt object.        </span>
+        &mdash;<span class="summary"> The absolute y position of the object</span>
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/interface/graphic_object_interface.html#GraphicObjectInterface.y">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/interface/graphic_object_interface.py#L62">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/interface/graphic_object_interface.py#L69">view source</a>
     </span>
 
     </p>
     <div class="body">
         
-        <div class="details"></div>
+        <div class="details"><p>        This setter automatically propagates changes to
+        the underlying Qt object.
+        </p></div>
         
         
         
@@ -602,17 +658,19 @@
     <p>
         <span class="important-name">pen</span>:
         <span class="type"><code><a href="/docs/0.0.1.dev0/api/brown/interface/pen_interface.html#PenInterface">PenInterface</a></code></span>
-        &mdash;<span class="summary"> The pen to draw outlines with.                This setter automatically propagates changes to        the underlying Qt object.        </span>
+        &mdash;<span class="summary"> The pen to draw outlines with.</span>
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/interface/graphic_object_interface.html#GraphicObjectInterface.pen">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/interface/graphic_object_interface.py#L76">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/interface/graphic_object_interface.py#L83">view source</a>
     </span>
 
     </p>
     <div class="body">
         
-        <div class="details"></div>
+        <div class="details"><p>        This setter automatically propagates changes to
+        the underlying Qt object.
+        </p></div>
         
         
         
@@ -624,17 +682,19 @@
     <p>
         <span class="important-name">brush</span>:
         <span class="type"><code><a href="/docs/0.0.1.dev0/api/brown/interface/brush_interface.html#BrushInterface">BrushInterface</a></code></span>
-        &mdash;<span class="summary"> The brush to fill shapes with.                This setter automatically propagates changes to        the underlying Qt object.        </span>
+        &mdash;<span class="summary"> The brush to fill shapes with.</span>
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/interface/graphic_object_interface.html#GraphicObjectInterface.brush">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/interface/graphic_object_interface.py#L90">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/interface/graphic_object_interface.py#L97">view source</a>
     </span>
 
     </p>
     <div class="body">
         
-        <div class="details"></div>
+        <div class="details"><p>        This setter automatically propagates changes to
+        the underlying Qt object.
+        </p></div>
         
         
         
@@ -662,7 +722,7 @@
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/interface/graphic_object_interface.html#GraphicObjectInterface.render">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/interface/graphic_object_interface.py#L103">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/interface/graphic_object_interface.py#L110">view source</a>
     </span>
 
     </p>

@@ -283,6 +283,10 @@
             </li>
         
             <li >
+                <a href="/docs/0.0.1.dev0/api/brown/interface/interface.html">interface</a>
+            </li>
+        
+            <li >
                 <a href="/docs/0.0.1.dev0/api/brown/interface/paper_interface.html">paper_interface</a>
             </li>
         
@@ -497,11 +501,13 @@
             
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/interface/brush_interface.html#BrushInterface">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/interface/brush_interface.py#L4">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/interface/brush_interface.py#L6">view source</a>
     </span>
 
             <h2>
                 <span class="class-name">BrushInterface</span>
+                
+                    (<code><a href="/docs/0.0.1.dev0/api/brown/interface/interface.html#Interface">Interface</a></code>)
                 
             </h2>
         </div>
@@ -518,12 +524,12 @@
     <p>
         <span class="important-name">__init__</span>
         
-            <code>(color, pattern)</code>
+            <code>(brown_object, color, pattern)</code>
         
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/interface/brush_interface.html#BrushInterface.__init__">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/interface/brush_interface.py#L10">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/interface/brush_interface.py#L12">view source</a>
     </span>
 
     </p>
@@ -531,9 +537,24 @@
         <p class="summary"><p>
 </p></p>
         
+            
+
+    <div class="overriden-note">
+        overriden from
+        <a href="/docs/0.0.1.dev0/api/brown/interface/interface.html#Interface.__init__">
+            Interface
+        </a>
+    </div>
+
+
+        
         
             <h4>arguments:</h4>
             <div class="type-details-list">
+                
+                    <div class="arg">
+                        <p><p>brown_object <code>(<a href="/docs/0.0.1.dev0/api/brown/core/brush.html#Brush">Brush</a>)</code>: The object this interface belongs to</p></p>
+                    </div>
                 
                     <div class="arg">
                         <p><p>color <code>(<a href="/docs/0.0.1.dev0/api/brown/utils/color.html#Color">Color</a>)</code>: The color of the brush.</p></p>
@@ -565,17 +586,19 @@
     <p>
         <span class="important-name">color</span>:
         <span class="type"><code><a href="/docs/0.0.1.dev0/api/brown/utils/color.html#Color">Color</a></code></span>
-        &mdash;<span class="summary"> The color for the brush.                This setter automatically propagates changes to the        underlying Qt object.        </span>
+        &mdash;<span class="summary"> The color for the brush.</span>
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/interface/brush_interface.html#BrushInterface.color">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/interface/brush_interface.py#L25">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/interface/brush_interface.py#L29">view source</a>
     </span>
 
     </p>
     <div class="body">
         
-        <div class="details"></div>
+        <div class="details"><p>        This setter automatically propagates changes to the
+        underlying Qt object.
+        </p></div>
         
         
         
@@ -587,17 +610,19 @@
     <p>
         <span class="important-name">pattern</span>:
         <span class="type"><code><a href="/docs/0.0.1.dev0/api/brown/utils/brush_pattern.html#BrushPattern">BrushPattern</a></code></span>
-        &mdash;<span class="summary"> The fill pattern.                This setter automatically propagates changes to the        underlying Qt object.        </span>
+        &mdash;<span class="summary"> The fill pattern.</span>
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/interface/brush_interface.html#BrushInterface.pattern">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/interface/brush_interface.py#L42">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/interface/brush_interface.py#L46">view source</a>
     </span>
 
     </p>
     <div class="body">
         
-        <div class="details"></div>
+        <div class="details"><p>        This setter automatically propagates changes to the
+        underlying Qt object.
+        </p></div>
         
         
         

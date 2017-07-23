@@ -162,7 +162,7 @@
                 <a href="/docs/0.0.1.dev0/api/brown/core/page.html">page</a>
             </li>
         
-            <li id="toc-link-to-current-page">
+            <li >
                 <a href="/docs/0.0.1.dev0/api/brown/core/page_supplier.html">page_supplier</a>
             </li>
         
@@ -282,7 +282,7 @@
                 <a href="/docs/0.0.1.dev0/api/brown/interface/graphic_object_interface.html">graphic_object_interface</a>
             </li>
         
-            <li >
+            <li id="toc-link-to-current-page">
                 <a href="/docs/0.0.1.dev0/api/brown/interface/interface.html">interface</a>
             </li>
         
@@ -480,7 +480,7 @@
             <div id="page-body">
                 
 
-    <h1 id="page-title">brown<wbr>.core<wbr>.page_supplier</h1>
+    <h1 id="page-title">brown<wbr>.interface<wbr>.interface</h1>
 
     <a id="show-inherited-toggle" href="javascript:void(toggleShowInheritence())"></a>
 
@@ -496,48 +496,40 @@
         <h3 class="major-section-title">classes</h3>
         
             <div class="class"
-         id="PageSupplier">
+         id="Interface">
         <div class="class-name-wrapper">
             
     <span class="permalink-and-source">
-        <a href="/docs/0.0.1.dev0/api/brown/core/page_supplier.html#PageSupplier">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/page_supplier.py#L4">view source</a>
+        <a href="/docs/0.0.1.dev0/api/brown/interface/interface.html#Interface">permalink</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/interface/interface.py#L4">view source</a>
     </span>
 
             <h2>
-                <span class="class-name">PageSupplier</span>
+                <span class="class-name">Interface</span>
+                
+                    (<code>ABC</code>)
                 
             </h2>
         </div>
-        <p class="summary"><p>A supplier and generator-on-demand of document Page objects.</p></p>
-        
-            <p class="details"><p>    This acts like a list of Page objects which generates them as
-    needed. Externally, it can be used mostly as a list. If an index
-    is requested for which no Page yet exists, that page will be
-    generated, as well as any missing pages between the previous
-    last page and the one requested. Consequently, keep in mind
-    that innocent looking operations such as some_page_suppler[100000]
-    are actually expensive operations, as they implicitly generate
-    thousands of Page objects.</p><p>    The contents of the PageSupplier should be treated as immutable.
-    Attempts to modify the pages it contains will likely result in
-    unexpected behavior.</p><p>    This is an internal class meant to be created by the global Document
-    for its <code>pages</code> property.
+        <p class="summary"><p>An interface between a brown object and a PyQt one.
+    
+    All <code><a href="/docs/0.0.1.dev0/api/brown/interface.html">brown.interface</a></code> classes should subclass this.
     </p></p>
         
         
         
             <div>
                 <div class="method"
-     id="PageSupplier.__init__">
+     id="Interface.__init__">
     <p>
         <span class="important-name">__init__</span>
         
-            <code>(document)</code>
+            <code>(brown_object)</code>
         
         
     <span class="permalink-and-source">
-        <a href="/docs/0.0.1.dev0/api/brown/core/page_supplier.html#PageSupplier.__init__">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/page_supplier.py#L23">view source</a>
+        <a href="/docs/0.0.1.dev0/api/brown/interface/interface.html#Interface.__init__">permalink</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/interface/interface.py#L10">view source</a>
     </span>
 
     </p>
@@ -550,7 +542,7 @@
             <div class="type-details-list">
                 
                     <div class="arg">
-                        <p><p>document <code>(<a href="/docs/0.0.1.dev0/api/brown/core/document.html#Document">Document</a>)</code>: The global document using this object.</p></p>
+                        <p><p>brown_object: The brown object this interface belongs to</p></p>
                     </div>
                 
             </div>
