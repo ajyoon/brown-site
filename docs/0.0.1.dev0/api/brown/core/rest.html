@@ -524,7 +524,7 @@
     <p>
         <span class="important-name">__init__</span>
         
-            <code>(pos_x, parent, duration)</code>
+            <code>(pos, parent, duration)</code>
         
         
     <span class="permalink-and-source">
@@ -553,10 +553,10 @@
             <div class="type-details-list">
                 
                     <div class="arg">
-                        <p><p>pos_x <code>(StaffUnit)</code>: The x-axis position relative to the parent.
-                The y-axis position will be determined automatically.
-                TODO: Pass in a Point here - users may want to give
-                specific rest locations.</p></p>
+                        <p><p>pos <code>(<a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit">Unit</a> or <a href="/docs/0.0.1.dev0/api/brown/utils/point.html#Point">Point</a>)</code>: The position relative to the parent.
+                For convenience, a <code><a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit">Unit</a></code> may be passed representing the x-axis
+                position, in which case the y-axis position defaults
+                to <code><a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit">Unit</a>(0)</code>.</p></p>
                     </div>
                 
                     <div class="arg">
@@ -593,7 +593,7 @@
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/core/rest.html#Rest.duration">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/rest.py#L53">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/rest.py#L54">view source</a>
     </span>
 
     </p>
