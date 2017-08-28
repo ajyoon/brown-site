@@ -503,15 +503,13 @@
             <h2>
                 <span class="class-name">RepeatingMusicTextLine</span>
                 
-                    (<code><a href="/docs/0.0.1.dev0/api/brown/core/music_text.html#MusicText">MusicText</a></code>, <code><a href="/docs/0.0.1.dev0/api/brown/core/spanner.html#Spanner">Spanner</a></code>)
+                    (<code><a href="/docs/0.0.1.dev0/api/brown/core/music_text.html#MusicText">MusicText</a></code>, <code><a href="/docs/0.0.1.dev0/api/brown/core/horizontal_spanner.html#HorizontalSpanner">HorizontalSpanner</a></code>)
                 
             </h2>
         </div>
         <p class="summary"><p>A spanner of repeating music text over its length.</p></p>
         
-            <p class="details"><p>    Currently only perfectly horizontal spanners are supported.
-    Additionally, the stop position should be to the right of the start.</p><p>    TODO: Implement text spanners that are not perfectly horizontal.
-    TODO: Support stop.x < start.x
+            <p class="details"><p>    All of these spanners must be hori
     </p></p>
         
         
@@ -522,12 +520,13 @@
     <p>
         <span class="important-name">__init__</span>
         
-            <code>(start, stop, text, font=None, scale_factor=1)</code>
+            <code>(start, parent, end_x, text, end_parent=None,
+                 font=None, scale_factor=1)</code>
         
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/core/repeating_music_text_line.html#RepeatingMusicTextLine.__init__">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/repeating_music_text_line.py#L18">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/repeating_music_text_line.py#L14">view source</a>
     </span>
 
     </p>
@@ -551,11 +550,15 @@
             <div class="type-details-list">
                 
                     <div class="arg">
-                        <p><p>start <code>(<a href="/docs/0.0.1.dev0/api/brown/utils/parent_point.html#ParentPoint">ParentPoint</a> or tuple init args)</code>:</p></p>
+                        <p><p>start <code>(<a href="/docs/0.0.1.dev0/api/brown/utils/point.html#Point">Point</a> or init tuple)</code>: The starting point.</p></p>
                     </div>
                 
                     <div class="arg">
-                        <p><p>stop <code>(<a href="/docs/0.0.1.dev0/api/brown/utils/parent_point.html#ParentPoint">ParentPoint</a> or tuple init args)</code>:</p></p>
+                        <p><p>parent <code>(<a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject">GraphicObject</a>)</code>: The parent of the starting point.</p></p>
+                    </div>
+                
+                    <div class="arg">
+                        <p><p>end_x <code>(<a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit">Unit</a>)</code>: The end x position.</p></p>
                     </div>
                 
                     <div class="arg">
@@ -563,6 +566,11 @@
                 The text to be repeated over the spanner,
                 represented as a str (glyph name), tuple
                 (glyph name, alternate number), MusicChar, or a list of them.</p></p>
+                    </div>
+                
+                    <div class="arg">
+                        <p><p>end_parent <code>(<a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject">GraphicObject</a>)</code>: An optional parent of the end point.
+                If omitted, the end position is relative to the main object.</p></p>
                     </div>
                 
                     <div class="arg">
@@ -601,7 +609,7 @@
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/core/repeating_music_text_line.html#RepeatingMusicTextLine._repetitions_needed">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/repeating_music_text_line.py#L61">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/repeating_music_text_line.py#L53">view source</a>
     </span>
 
     </p>
