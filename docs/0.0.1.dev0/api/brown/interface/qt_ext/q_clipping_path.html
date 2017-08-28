@@ -575,9 +575,9 @@
             <div class="major-section">
                 
                     <div class="method"
-     id="QClippingPath.create_clipping_area">
+     id="QClippingPath.calculate_clipping_area">
     <p>
-        <span class="important-name">create_clipping_area</span>
+        <span class="important-name">calculate_clipping_area</span>
         
             <code>(bounding_rect,
                              clip_start_x,
@@ -586,13 +586,78 @@
         
         
     <span class="permalink-and-source">
-        <a href="/docs/0.0.1.dev0/api/brown/interface/qt_ext/q_clipping_path.html#QClippingPath.create_clipping_area">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/interface/qt_ext/q_clipping_path.py#L47">view source</a>
+        <a href="/docs/0.0.1.dev0/api/brown/interface/qt_ext/q_clipping_path.html#QClippingPath.calculate_clipping_area">permalink</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/interface/qt_ext/q_clipping_path.py#L63">view source</a>
     </span>
 
     </p>
     <div class="body">
         <p class="summary"><p>Create a QRectF giving the painting area for the object.
+</p></p>
+        
+        
+            <h4>arguments:</h4>
+            <div class="type-details-list">
+                
+                    <div class="arg">
+                        <p><p>bounding_rect <code>(QRectF)</code>: The full shape's bounding rectangle</p></p>
+                    </div>
+                
+                    <div class="arg">
+                        <p><p>clip_start_x <code>(<a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit">Unit</a> or None)</code>: The local starting position for the
+                clipping region. Use <code>None</code> to render from the start.</p></p>
+                    </div>
+                
+                    <div class="arg">
+                        <p><p>clip_width <code>(<a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit">Unit</a> or None)</code>: The width of the clipping region.
+                Use <code>None</code> to render to the end</p></p>
+                    </div>
+                
+                    <div class="arg">
+                        <p><p>extra_padding <code>(float)</code>: Extra area padding to be added to all
+                sides of the clipping area. This might be useful, for instance,
+                for making sure thick pen strokes render completely.</p></p>
+                    </div>
+                
+            </div>
+        
+        
+            <div class="returns">
+                <h4>returns:</h4>
+                <div class="type-details-list">
+                    
+                        <p><code>QRectF</code></p>
+                    
+                </div>
+            </div>
+        
+        
+        <p class="details"><p>
+</p></p>
+        
+        
+    </div>
+</div>
+                
+                    <div class="method"
+     id="QClippingPath.calculate_bounding_rect">
+    <p>
+        <span class="important-name">calculate_bounding_rect</span>
+        
+            <code>(bounding_rect,
+                             clip_start_x,
+                             clip_width,
+                             extra_padding)</code>
+        
+        
+    <span class="permalink-and-source">
+        <a href="/docs/0.0.1.dev0/api/brown/interface/qt_ext/q_clipping_path.html#QClippingPath.calculate_bounding_rect">permalink</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/interface/qt_ext/q_clipping_path.py#L92">view source</a>
+    </span>
+
+    </p>
+    <div class="body">
+        <p class="summary"><p>Create a QRectF giving the bounding rect for the path.
 </p></p>
         
         
@@ -656,7 +721,7 @@
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/interface/qt_ext/q_clipping_path.html#QClippingPath.paint">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/interface/qt_ext/q_clipping_path.py#L28">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/interface/qt_ext/q_clipping_path.py#L32">view source</a>
     </span>
 
     </p>
