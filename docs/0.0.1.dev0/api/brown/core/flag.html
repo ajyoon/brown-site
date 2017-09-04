@@ -2205,12 +2205,12 @@ True
     <p>
         <span class="important-name">_render_complete</span>
         
-            <code>(pos, dist_to_line_start=None)</code>
+            <code>(pos, dist_to_line_start=None, local_start_x=None)</code>
         
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject._render_complete">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/graphic_object.py#L409">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/graphic_object.py#L411">view source</a>
     </span>
 
     </p>
@@ -2232,6 +2232,11 @@ True
                 Otherwise, this is always <code>None</code>. Subclasses may use this
                 information to perform basic position modifications at
                 render time, though in most cases this field can be ignored.</p></p>
+                    </div>
+                
+                    <div class="arg">
+                        <p><p>local_start_x <code>(<a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit">Unit</a>)</code>: If this object is in a flowable, the local
+                starting position of this drawing segment.</p></p>
                     </div>
                 
             </div>
@@ -2273,12 +2278,12 @@ True
     <p>
         <span class="important-name">_render_before_break</span>
         
-            <code>(start, stop, dist_to_line_start)</code>
+            <code>(local_start_x, start, stop, dist_to_line_start)</code>
         
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject._render_before_break">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/graphic_object.py#L434">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/graphic_object.py#L438">view source</a>
     </span>
 
     </p>
@@ -2289,6 +2294,11 @@ True
         
             <h4>arguments:</h4>
             <div class="type-details-list">
+                
+                    <div class="arg">
+                        <p><p>local_start_x <code>(<a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit">Unit</a>)</code>: The local starting position of this
+                drawing segment.</p></p>
+                    </div>
                 
                     <div class="arg">
                         <p><p>start <code>(<a href="/docs/0.0.1.dev0/api/brown/utils/point.html#Point">Point</a>)</code>: The starting point in document space for drawing.</p></p>
@@ -2349,7 +2359,7 @@ True
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject._render_after_break">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/graphic_object.py#L459">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/graphic_object.py#L465">view source</a>
     </span>
 
     </p>
@@ -2418,7 +2428,7 @@ True
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject._render_spanning_continuation">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/graphic_object.py#L482">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/graphic_object.py#L488">view source</a>
     </span>
 
     </p>
