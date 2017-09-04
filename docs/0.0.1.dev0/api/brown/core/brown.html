@@ -405,6 +405,14 @@
             </li>
         
             <li >
+                <a href="/docs/0.0.1.dev0/api/brown/utils/file_system.html">file_system</a>
+            </li>
+        
+            <li >
+                <a href="/docs/0.0.1.dev0/api/brown/utils/images.html">images</a>
+            </li>
+        
+            <li >
                 <a href="/docs/0.0.1.dev0/api/brown/utils/math_helpers.html">math_helpers</a>
             </li>
         
@@ -772,6 +780,85 @@
         
         
         <p class="details"><p>
+</p></p>
+        
+        
+    </div>
+</div>
+        
+            <div class="method"
+     id="render_image">
+    <p>
+        <span class="important-name">render_image</span>
+        
+            <code>(rect, image_path, dpi=600, quality=-1, bg_color=None)</code>
+        
+        
+    <span class="permalink-and-source">
+        <a href="/docs/0.0.1.dev0/api/brown/core/brown.html#render_image">permalink</a>
+        <a href="">view source</a>
+    </span>
+
+    </p>
+    <div class="body">
+        <p class="summary"><p>Render a section of the document to an image.
+</p></p>
+        
+        
+            <h4>arguments:</h4>
+            <div class="type-details-list">
+                
+                    <div class="arg">
+                        <p><p>rect <code>(<a href="/docs/0.0.1.dev0/api/brown/utils/rect.html#Rect">Rect</a> or arg tuple)</code>: The part of the document to render,
+            in document coordinates.</p></p>
+                    </div>
+                
+                    <div class="arg">
+                        <p><p>image_path <code>(str)</code>: The path to the output image.
+            This must be a valid path relative to the current
+            working directory.</p></p>
+                    </div>
+                
+                    <div class="arg">
+                        <p><p>dpi <code>(int)</code>: The pixels per inch of the rendered image.</p></p>
+                    </div>
+                
+                    <div class="arg">
+                        <p><p>quality <code>(int)</code>: The quality of the output image for compressed
+            image formats. Must be either <code>-1</code> (default compression) or
+            between <code>0</code> (most compressed) and <code>100</code> (least compressed).</p></p>
+                    </div>
+                
+                    <div class="arg">
+                        <p><p>bg_color <code>(<a href="/docs/0.0.1.dev0/api/brown/utils/color.html#Color">Color</a> or arg tuple)</code>: The background color for the image.
+            Defaults to solid white. Use a Color with <code>alpha=0</code> for a fully
+            transparent background.</p></p>
+                    </div>
+                
+            </div>
+        
+        
+            <div class="returns">
+                <h4>returns:</h4>
+                <div class="type-details-list">
+                    
+                        <p><code>None</code></p>
+                    
+                </div>
+            </div>
+        
+        
+        <p class="details"><p>
+    The following file extensions are supported:
+        <ul><li> <code>.bmp</code>
+        </li><li> <code>.jpg</code>
+        </li><li> <code>.png</code>
+        </li><li> <code>.pbm</code>
+        </li><li> <code>.pgm</code>
+        </li><li> <code>.ppm</code>
+        </li><li> <code>.xbm</code>
+        </li><li> <code>.xpm</code>
+</li></ul>
 </p></p>
         
         

@@ -405,6 +405,14 @@
             </li>
         
             <li >
+                <a href="/docs/0.0.1.dev0/api/brown/utils/file_system.html">file_system</a>
+            </li>
+        
+            <li >
+                <a href="/docs/0.0.1.dev0/api/brown/utils/images.html">images</a>
+            </li>
+        
+            <li >
                 <a href="/docs/0.0.1.dev0/api/brown/utils/math_helpers.html">math_helpers</a>
             </li>
         
@@ -1476,6 +1484,297 @@ TypeError: unsupported operand type(s) for +: 'int' and '<a href="/docs/0.0.1.de
             </h2>
         </div>
         <p class="summary"><p>A millimeter.</p></p>
+        
+        
+        
+            <div class="inherited">
+                <div class="method"
+     id="Unit.__init__">
+    <p>
+        <span class="important-name">__init__</span>
+        
+            <code>(value)</code>
+        
+        
+    <span class="permalink-and-source">
+        <a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit.__init__">permalink</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/utils/units.py#L45">view source</a>
+    </span>
+
+    </p>
+    <div class="body">
+        <p class="summary"><p>
+</p></p>
+        
+        
+            <h4>arguments:</h4>
+            <div class="type-details-list">
+                
+                    <div class="arg">
+                        <p><p>value <code>(int, float, or <a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit">Unit</a>)</code>: The value of the unit.
+                <code>int</code> and <code>float</code> literals will be stored directly
+                into <code>self.value</code>. Any value which is a unit subclass of
+                <code><a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit">Unit</a></code> will be converted to that value in this unit.</p></p>
+                    </div>
+                
+            </div>
+        
+        
+        
+        <p class="details"></p>
+        
+        
+    </div>
+</div>
+            </div>
+        
+        
+        
+            <div class="inherited">
+                <h4 class="major-section-title">inherited class attributes</h4>
+                <div class="major-section">
+                    
+                        <div class="attribute"
+         id="Unit._conversion_rate">
+    <p>
+        <span class="important-name">_conversion_rate</span>:
+        <span class="type"><code>float</code></span>
+        &mdash;<span class="summary"> the ratio of this class to <code><a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit">Unit</a></code>s.</span>
+        
+    <span class="permalink-and-source">
+        <a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit._conversion_rate">permalink</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/utils/units.py#L39">view source</a>
+    </span>
+
+    </p>
+    <div class="body">
+        
+        <div class="details"><p>    Subclasses should override this.
+    </p></div>
+        
+        
+        
+            
+
+    <div class="inherited-note">
+        inherited from
+        <a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit._conversion_rate">
+            Unit
+        </a>
+    </div>
+
+
+        
+    </div>
+</div>
+                    
+                </div>
+            </div>
+        
+        
+        
+        
+        
+            <div class="inherited">
+                <h4 class="major-section-title">inherited class methods</h4>
+                <div class="major-section">
+                    
+                        <div class="method"
+     id="Unit.from_existing">
+    <p>
+        <span class="important-name">from_existing</span>
+        
+            <code>(existing)</code>
+        
+        
+    <span class="permalink-and-source">
+        <a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit.from_existing">permalink</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/utils/units.py#L72">view source</a>
+    </span>
+
+    </p>
+    <div class="body">
+        <p class="summary"><p>Clone any Unit object.
+</p></p>
+        
+        
+            <h4>arguments:</h4>
+            <div class="type-details-list">
+                
+                    <div class="arg">
+                        <p><p>existing <code>(<a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit">Unit</a>)</code>: An existing unit</p></p>
+                    </div>
+                
+            </div>
+        
+        
+            <div class="returns">
+                <h4>returns:</h4>
+                <div class="type-details-list">
+                    
+                        <p><code><a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit">Unit</a></code></p>
+                    
+                </div>
+            </div>
+        
+        
+        <p class="details"><p>
+</p></p>
+        
+        
+            
+
+    <div class="inherited-note">
+        inherited from
+        <a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit.from_existing">
+            Unit
+        </a>
+    </div>
+
+
+        
+    </div>
+</div>
+                    
+                </div>
+            </div>
+        
+        
+        
+        
+        
+            <div class="inherited">
+                <h4 class="major-section-title">inherited methods</h4>
+                <div class="major-section">
+                    
+                        <div class="method"
+     id="Unit._to_base_unit_float">
+    <p>
+        <span class="important-name">_to_base_unit_float</span>
+        
+            <code>()</code>
+        
+        
+    <span class="permalink-and-source">
+        <a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit._to_base_unit_float">permalink</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/utils/units.py#L84">view source</a>
+    </span>
+
+    </p>
+    <div class="body">
+        <p class="summary"><p>Return this value as a float in base unit values.
+</p></p>
+        
+        
+        
+            <div class="returns">
+                <h4>returns:</h4>
+                <div class="type-details-list">
+                    
+                        <p><code>float</code></p>
+                    
+                </div>
+            </div>
+        
+        
+        <p class="details"><p>
+</p></p>
+        
+        
+            
+
+    <div class="inherited-note">
+        inherited from
+        <a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit._to_base_unit_float">
+            Unit
+        </a>
+    </div>
+
+
+        
+    </div>
+</div>
+                    
+                        <div class="method"
+     id="Unit._assert_almost_equal">
+    <p>
+        <span class="important-name">_assert_almost_equal</span>
+        
+            <code>(other, places=7)</code>
+        
+        
+    <span class="permalink-and-source">
+        <a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit._assert_almost_equal">permalink</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/utils/units.py#L91">view source</a>
+    </span>
+
+    </p>
+    <div class="body">
+        <p class="summary"><p>Assert the near-equality of two units.
+</p></p>
+        
+        
+            <h4>arguments:</h4>
+            <div class="type-details-list">
+                
+                    <div class="arg">
+                        <p><p>other <code>(<a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit">Unit</a>)</code>: The unit to compare against</p></p>
+                    </div>
+                
+                    <div class="arg">
+                        <p><p>places <code>(int)</code>: The number of decimal places of accuracy required.</p></p>
+                    </div>
+                
+            </div>
+        
+        
+        
+        <p class="details"><p>
+        <ul><li><i>For testing purposes only.*</i>
+</li></ul>
+        Almost-equality is determined according to the base unit float
+        representations of both units, within the accuracy of <code>places</code>.</p><p>        A helpful failure message is given in the event of failure.</p><p>        This is primarily for testing purposes, as the stdlib
+        <code>assertAlmostEqual</code> doesn't play nice with custom numeric types.</p></p>
+        
+        
+            
+
+    <div class="inherited-note">
+        inherited from
+        <a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit._assert_almost_equal">
+            Unit
+        </a>
+    </div>
+
+
+        
+    </div>
+</div>
+                    
+                </div>
+            </div>
+        
+
+
+    </div>
+        
+            <div class="class"
+         id="Meter">
+        <div class="class-name-wrapper">
+            
+    <span class="permalink-and-source">
+        <a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Meter">permalink</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/utils/units.py#L225">view source</a>
+    </span>
+
+            <h2>
+                <span class="class-name">Meter</span>
+                
+                    (<code><a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit">Unit</a></code>)
+                
+            </h2>
+        </div>
+        <p class="summary"><p>A meter.</p></p>
         
         
         

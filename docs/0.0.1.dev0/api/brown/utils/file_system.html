@@ -210,7 +210,7 @@
                 <a href="/docs/0.0.1.dev0/api/brown/core/slur.html">slur</a>
             </li>
         
-            <li id="toc-link-to-current-page">
+            <li >
                 <a href="/docs/0.0.1.dev0/api/brown/core/spanner.html">spanner</a>
             </li>
         
@@ -404,7 +404,7 @@
                 <a href="/docs/0.0.1.dev0/api/brown/utils/exceptions.html">exceptions</a>
             </li>
         
-            <li >
+            <li id="toc-link-to-current-page">
                 <a href="/docs/0.0.1.dev0/api/brown/utils/file_system.html">file_system</a>
             </li>
         
@@ -488,12 +488,12 @@
             <div id="page-body">
                 
 
-    <h1 id="page-title">brown<wbr>.core<wbr>.spanner</h1>
+    <h1 id="page-title">brown<wbr>.utils<wbr>.file_system</h1>
 
     <a id="show-inherited-toggle" href="javascript:void(toggleShowInheritence())"></a>
 
     
-
+        <span class="summary"><p>File system utils</p></span>
     
 
     
@@ -501,252 +501,47 @@
     
 
     
-        <h3 class="major-section-title">classes</h3>
+        <h3 class="major-section-title">methods</h3>
         
-            <div class="class"
-         id="Spanner">
-        <div class="class-name-wrapper">
-            
-    <span class="permalink-and-source">
-        <a href="/docs/0.0.1.dev0/api/brown/core/spanner.html#Spanner">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/spanner.py#L8">view source</a>
-    </span>
-
-            <h2>
-                <span class="class-name">Spanner</span>
-                
-            </h2>
-        </div>
-        <p class="summary"><p>A Mixin class for <code><a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject">GraphicObject</a></code>s with starting and ending anchors.</p></p>
-        
-            <p class="details"><p>    If the spanner (main <code><a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject">GraphicObject</a></code>) is in a <code><a href="/docs/0.0.1.dev0/api/brown/core/flowable.html#Flowable">Flowable</a></code>, the endpoint
-    must be in the same one. Likewise, if the spanner is <i>not</i> in one,
-    the endpoint must not be in one either.</p><p>    This mixin only provides a common interface for ending anchors.
-    The starting position of this spanner should be the main object's
-    <code><a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject.pos">GraphicObject.pos</a></code>, and the starting anchored should be the its
-    <code><a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject.parent">GraphicObject.parent</a></code>. It is up to the implementing class to
-    decide how to use this information.</p><p>    In order to prevent a diamond problem, this class</p><p>    For an example implementation, see <code><a href="/docs/0.0.1.dev0/api/brown/core/slur.html#Slur">Slur</a></code>.
-    </p></p>
-        
-        
-        
-            <div>
-                <div class="method"
-     id="Spanner.__init__">
+            <div class="method"
+     id="is_valid_file_path">
     <p>
-        <span class="important-name">__init__</span>
+        <span class="important-name">is_valid_file_path</span>
         
-            <code>(end_pos, end_parent=None)</code>
+            <code>(path)</code>
         
         
     <span class="permalink-and-source">
-        <a href="/docs/0.0.1.dev0/api/brown/core/spanner.html#Spanner.__init__">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/spanner.py#L26">view source</a>
+        <a href="/docs/0.0.1.dev0/api/brown/utils/file_system.html#is_valid_file_path">permalink</a>
+        <a href="">view source</a>
     </span>
 
     </p>
     <div class="body">
-        <p class="summary"><p>
+        <p class="summary"><p>Determine if a path points to a valid location for a file.
 </p></p>
         
         
-            <h4>arguments:</h4>
-            <div class="type-details-list">
-                
-                    <div class="arg">
-                        <p><p>end_pos <code>(<a href="/docs/0.0.1.dev0/api/brown/utils/point.html#Point">Point</a> or init tuple)</code>: The position of the endpoint</p></p>
-                    </div>
-                
-                    <div class="arg">
-                        <p><p>end_parent <code>(<a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject">GraphicObject</a> or None)</code>: The parent of the endpoint.
-                <code><a href="/docs/0.0.1.dev0/api/brown/core/spanner.html#Spanner.end_pos">end_pos</a></code> will be relative to this object.
-                If None, this defaults to the spanner.</p></p>
-                    </div>
-                
+        
+            <div class="returns">
+                <h4>returns:</h4>
+                <div class="type-details-list">
+                    
+                        <p><code>bool</code></p>
+                    
+                </div>
             </div>
         
         
-        
-        <p class="details"></p>
-        
-            <h4>warning:</h4>
-            <div class="warning">
-                <p>If the spanner is in a <code><a href="/docs/0.0.1.dev0/api/brown/core/flowable.html#Flowable">Flowable</a></code>, <code><a href="/docs/0.0.1.dev0/api/brown/core/spanner.html#Spanner.end_parent">end_parent</a></code> must be
-            in the same one. Likewise, if the spanner is not in a
-            <code><a href="/docs/0.0.1.dev0/api/brown/core/flowable.html#Flowable">Flowable</a></code>, this must not be either.</p>
-            </div>
+        <p class="details"><p>
+</p></p>
         
         
     </div>
 </div>
-            </div>
         
-        
-        
-        
-            <h4 class="major-section-title">properties</h4>
-            <div class="major-section">
-                
-                    <div class="property"
-         id="Spanner.end_x">
-    <p>
-        <span class="important-name">end_x</span>:
-        <span class="type"><code><a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit">Unit</a></code></span>
-        &mdash;<span class="summary"> The x position of the endpoint</span>
-        
-    <span class="permalink-and-source">
-        <a href="/docs/0.0.1.dev0/api/brown/core/spanner.html#Spanner.end_x">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/spanner.py#L45">view source</a>
-    </span>
+    
 
-    </p>
-    <div class="body">
-        
-        <div class="details"></div>
-        
-        
-        
-    </div>
-</div>
-                
-                    <div class="property"
-         id="Spanner.end_y">
-    <p>
-        <span class="important-name">end_y</span>:
-        <span class="type"><code><a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit">Unit</a></code></span>
-        &mdash;<span class="summary"> The y position of the endpoint</span>
-        
-    <span class="permalink-and-source">
-        <a href="/docs/0.0.1.dev0/api/brown/core/spanner.html#Spanner.end_y">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/spanner.py#L54">view source</a>
-    </span>
-
-    </p>
-    <div class="body">
-        
-        <div class="details"></div>
-        
-        
-        
-    </div>
-</div>
-                
-                    <div class="property"
-         id="Spanner.end_pos">
-    <p>
-        <span class="important-name">end_pos</span>:
-        <span class="type"><code><a href="/docs/0.0.1.dev0/api/brown/utils/point.html#Point">Point</a></code></span>
-        &mdash;<span class="summary"> The position of the endpoint</span>
-        
-    <span class="permalink-and-source">
-        <a href="/docs/0.0.1.dev0/api/brown/core/spanner.html#Spanner.end_pos">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/spanner.py#L63">view source</a>
-    </span>
-
-    </p>
-    <div class="body">
-        
-        <div class="details"></div>
-        
-        
-        
-    </div>
-</div>
-                
-                    <div class="property"
-         id="Spanner.end_parent">
-    <p>
-        <span class="important-name">end_parent</span>:
-        <span class="type"><code><a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject">GraphicObject</a></code></span>
-        &mdash;<span class="summary"> The parent of the endpoint.</span>
-        
-    <span class="permalink-and-source">
-        <a href="/docs/0.0.1.dev0/api/brown/core/spanner.html#Spanner.end_parent">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/spanner.py#L72">view source</a>
-    </span>
-
-    </p>
-    <div class="body">
-        
-        <div class="details"><p>        <code><a href="/docs/0.0.1.dev0/api/brown/core/spanner.html#Spanner.end_pos">self.end_pos</a></code> is measured relative to this.
-        To make <code><a href="/docs/0.0.1.dev0/api/brown/core/spanner.html#Spanner.end_pos">self.end_pos</a></code> relative to <code>self.pos</code>,
-        simply set this to <code>self</code>.
-        </p></div>
-        
-        
-        
-    </div>
-</div>
-                
-                    <div class="property"
-         id="Spanner.spanner_x_length">
-    <p>
-        <span class="important-name">spanner_x_length</span>:
-        <span class="type"><code><a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit">Unit</a></code></span>
-        &mdash;<span class="summary"> The x-axis length of the spanner.</span>
-        
-    <span class="permalink-and-source">
-        <a href="/docs/0.0.1.dev0/api/brown/core/spanner.html#Spanner.spanner_x_length">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/spanner.py#L86">view source</a>
-    </span>
-
-    </p>
-    <div class="body">
-        
-        <div class="details"><p>        Implementing subclasses will often want to override
-        <code><a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject.length">GraphicObject.length</a></code> to return this.
-        </p></div>
-        
-        
-            <p class="read-only-notice">
-                read-only.
-            </p>
-        
-        
-    </div>
-</div>
-                
-                    <div class="property"
-         id="Spanner.spanner_length">
-    <p>
-        <span class="important-name">spanner_length</span>:
-        <span class="type"><code><a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit">Unit</a></code></span>
-        &mdash;<span class="summary"> The 2d length of the spanner.</span>
-        
-    <span class="permalink-and-source">
-        <a href="/docs/0.0.1.dev0/api/brown/core/spanner.html#Spanner.spanner_length">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/spanner.py#L99">view source</a>
-    </span>
-
-    </p>
-    <div class="body">
-        
-        <div class="details"><p>        Note: This takes into account both the x and y axis. For only
-            the horizontal length, use <code><a href="/docs/0.0.1.dev0/api/brown/core/spanner.html#Spanner.spanner_x_length">spanner_x_length</a></code>.
-        </p></div>
-        
-        
-            <p class="read-only-notice">
-                read-only.
-            </p>
-        
-        
-    </div>
-</div>
-                
-            </div>
-        
-        
-        
-        
-        
-        
-        
-        
-
-
-    </div>
-        
     
 
 
