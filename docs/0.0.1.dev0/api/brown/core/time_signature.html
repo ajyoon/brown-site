@@ -513,6 +513,10 @@
         </div>
         <p class="summary"><p>A logical and graphical time signature</p></p>
         
+            <p class="details"><p>    TODO: Time signatures with differing character-length numerators and
+    denominators (e.g. 12/8) currently display incorrectly as left-justified.
+    </p></p>
+        
         
         
             <div>
@@ -521,12 +525,12 @@
     <p>
         <span class="important-name">__init__</span>
         
-            <code>(pos_x, duration, staff)</code>
+            <code>(pos_x, meter, staff)</code>
         
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/core/time_signature.html#TimeSignature.__init__">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/time_signature.py#L23">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/time_signature.py#L27">view source</a>
     </span>
 
     </p>
@@ -555,7 +559,7 @@
                     </div>
                 
                     <div class="arg">
-                        <p><p>duration <code>(<a href="/docs/0.0.1.dev0/api/brown/models/beat.html#Beat">Beat</a>)</code>: The length of a measure in this
+                        <p><p>meter <code>(<a href="/docs/0.0.1.dev0/api/brown/models/beat.html#Beat">Beat</a>)</code>: The length of a measure in this
                 time signature. The numerator and denominators
                 of this duration are used literally as the numbers
                 in the rendered representation of the signature.
@@ -594,7 +598,7 @@
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/core/time_signature.html#TimeSignature.numerator_glyph">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/time_signature.py#L54">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/time_signature.py#L57">view source</a>
     </span>
 
     </p>
@@ -620,7 +624,7 @@
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/core/time_signature.html#TimeSignature.denominator_glyph">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/time_signature.py#L59">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/time_signature.py#L62">view source</a>
     </span>
 
     </p>
@@ -638,15 +642,15 @@
 </div>
                 
                     <div class="property"
-         id="TimeSignature.duration">
+         id="TimeSignature.meter">
     <p>
-        <span class="important-name">duration</span>:
-        <span class="type"><code>Duration</code></span>
+        <span class="important-name">meter</span>:
+        <span class="type"><code><a href="/docs/0.0.1.dev0/api/brown/models/beat.html#Beat">Beat</a></code></span>
         &mdash;<span class="summary"> The length of one bar in this time signature</span>
         
     <span class="permalink-and-source">
-        <a href="/docs/0.0.1.dev0/api/brown/core/time_signature.html#TimeSignature.duration">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/time_signature.py#L64">view source</a>
+        <a href="/docs/0.0.1.dev0/api/brown/core/time_signature.html#TimeSignature.meter">permalink</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/time_signature.py#L67">view source</a>
     </span>
 
     </p>
@@ -1293,6 +1297,57 @@ True
                 </div>
             </div>
         
+        
+            <h4 class="major-section-title">static methods</h4>
+            <div class="major-section">
+                
+                    <div class="method"
+     id="TimeSignature._glyphs_for_number">
+    <p>
+        <span class="important-name">_glyphs_for_number</span>
+        
+            <code>(number)</code>
+        
+        
+    <span class="permalink-and-source">
+        <a href="/docs/0.0.1.dev0/api/brown/core/time_signature.html#TimeSignature._glyphs_for_number">permalink</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/time_signature.py#L74">view source</a>
+    </span>
+
+    </p>
+    <div class="body">
+        <p class="summary"><p>Convert a number to a list of SMuFL glyph names.
+</p></p>
+        
+        
+            <h4>arguments:</h4>
+            <div class="type-details-list">
+                
+                    <div class="arg">
+                        <p><p>number <code>(int)</code>: The time signature number to derive from</p></p>
+                    </div>
+                
+            </div>
+        
+        
+            <div class="returns">
+                <h4>returns:</h4>
+                <div class="type-details-list">
+                    
+                        <p><p><code>list[str]</code>: The time signature glyph names for the digits of <code>number</code>.</p></p>
+                    
+                </div>
+            </div>
+        
+        
+        <p class="details"><p>
+</p></p>
+        
+        
+    </div>
+</div>
+                
+            </div>
         
         
             <div class="inherited">
