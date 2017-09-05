@@ -283,6 +283,10 @@
             </li>
         
             <li >
+                <a href="/docs/0.0.1.dev0/api/brown/interface/images.html">images</a>
+            </li>
+        
+            <li >
                 <a href="/docs/0.0.1.dev0/api/brown/interface/interface.html">interface</a>
             </li>
         
@@ -406,10 +410,6 @@
         
             <li >
                 <a href="/docs/0.0.1.dev0/api/brown/utils/file_system.html">file_system</a>
-            </li>
-        
-            <li >
-                <a href="/docs/0.0.1.dev0/api/brown/utils/images.html">images</a>
             </li>
         
             <li >
@@ -791,7 +791,8 @@
     <p>
         <span class="important-name">render_image</span>
         
-            <code>(rect, image_path, dpi=600, quality=-1, bg_color=None)</code>
+            <code>(rect, image_path, dpi=600, quality=-1, bg_color=None,
+                 autocrop=False)</code>
         
         
     <span class="permalink-and-source">
@@ -833,6 +834,12 @@
                         <p><p>bg_color <code>(<a href="/docs/0.0.1.dev0/api/brown/utils/color.html#Color">Color</a> or arg tuple)</code>: The background color for the image.
             Defaults to solid white. Use a Color with <code>alpha=0</code> for a fully
             transparent background.</p></p>
+                    </div>
+                
+                    <div class="arg">
+                        <p><p>autocrop <code>(bool)</code>: Whether or not to crop the output image to tightly
+            fit the contents of the frame. If true, the image will be cropped
+            such that all 4 edges have at least one pixel not of <code>bg_color</code>.</p></p>
                     </div>
                 
             </div>

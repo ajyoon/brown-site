@@ -282,6 +282,10 @@
                 <a href="/docs/0.0.1.dev0/api/brown/interface/graphic_object_interface.html">graphic_object_interface</a>
             </li>
         
+            <li id="toc-link-to-current-page">
+                <a href="/docs/0.0.1.dev0/api/brown/interface/images.html">images</a>
+            </li>
+        
             <li >
                 <a href="/docs/0.0.1.dev0/api/brown/interface/interface.html">interface</a>
             </li>
@@ -408,10 +412,6 @@
                 <a href="/docs/0.0.1.dev0/api/brown/utils/file_system.html">file_system</a>
             </li>
         
-            <li id="toc-link-to-current-page">
-                <a href="/docs/0.0.1.dev0/api/brown/utils/images.html">images</a>
-            </li>
-        
             <li >
                 <a href="/docs/0.0.1.dev0/api/brown/utils/math_helpers.html">math_helpers</a>
             </li>
@@ -488,7 +488,7 @@
             <div id="page-body">
                 
 
-    <h1 id="page-title">brown<wbr>.utils<wbr>.images</h1>
+    <h1 id="page-title">brown<wbr>.interface<wbr>.images</h1>
 
     <a id="show-inherited-toggle" href="javascript:void(toggleShowInheritence())"></a>
 
@@ -510,7 +510,7 @@
         
         
     <span class="permalink-and-source">
-        <a href="/docs/0.0.1.dev0/api/brown/utils/images.html#dpi_to_dpm">permalink</a>
+        <a href="/docs/0.0.1.dev0/api/brown/interface/images.html#dpi_to_dpm">permalink</a>
         <a href="">view source</a>
     </span>
 
@@ -535,6 +535,57 @@
                 <div class="type-details-list">
                     
                         <p><p><code>int</code>: A Dots Per Meter value</p></p>
+                    
+                </div>
+            </div>
+        
+        
+        <p class="details"><p>
+</p></p>
+        
+        
+    </div>
+</div>
+        
+            <div class="method"
+     id="autocrop">
+    <p>
+        <span class="important-name">autocrop</span>
+        
+            <code>(q_image, q_color)</code>
+        
+        
+    <span class="permalink-and-source">
+        <a href="/docs/0.0.1.dev0/api/brown/interface/images.html#autocrop">permalink</a>
+        <a href="">view source</a>
+    </span>
+
+    </p>
+    <div class="body">
+        <p class="summary"><p>Automatically crop a qt image around the pixels not of a given color.
+</p></p>
+        
+        
+            <h4>arguments:</h4>
+            <div class="type-details-list">
+                
+                    <div class="arg">
+                        <p><p>q_image <code>(QImage)</code>:</p></p>
+                    </div>
+                
+                    <div class="arg">
+                        <p><p>q_color <code>(QColor)</code>:</p></p>
+                    </div>
+                
+            </div>
+        
+        
+            <div class="returns">
+                <h4>returns:</h4>
+                <div class="type-details-list">
+                    
+                        <p><p><code>QImage</code>: A newly cropped Qt image. The passed-in image is left
+            unmodified.</p></p>
                     
                 </div>
             </div>
