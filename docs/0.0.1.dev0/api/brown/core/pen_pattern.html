@@ -71,6 +71,10 @@
             </li>
         
             <li >
+                <a href="/docs/0.0.1.dev0/api/brown/core/brush_pattern.html">brush_pattern</a>
+            </li>
+        
+            <li >
                 <a href="/docs/0.0.1.dev0/api/brown/core/chordrest.html">chordrest</a>
             </li>
         
@@ -192,6 +196,10 @@
         
             <li >
                 <a href="/docs/0.0.1.dev0/api/brown/core/pen.html">pen</a>
+            </li>
+        
+            <li id="toc-link-to-current-page">
+                <a href="/docs/0.0.1.dev0/api/brown/core/pen_pattern.html">pen_pattern</a>
             </li>
         
             <li >
@@ -392,10 +400,6 @@
     
     <ul>
         
-            <li id="toc-link-to-current-page">
-                <a href="/docs/0.0.1.dev0/api/brown/utils/brush_pattern.html">brush_pattern</a>
-            </li>
-        
             <li >
                 <a href="/docs/0.0.1.dev0/api/brown/utils/caching.html">caching</a>
             </li>
@@ -422,10 +426,6 @@
         
             <li >
                 <a href="/docs/0.0.1.dev0/api/brown/utils/parent_point.html">parent_point</a>
-            </li>
-        
-            <li >
-                <a href="/docs/0.0.1.dev0/api/brown/utils/pen_pattern.html">pen_pattern</a>
             </li>
         
             <li >
@@ -488,7 +488,7 @@
             <div id="page-body">
                 
 
-    <h1 id="page-title">brown<wbr>.utils<wbr>.brush_pattern</h1>
+    <h1 id="page-title">brown<wbr>.core<wbr>.pen_pattern</h1>
 
     <a id="show-inherited-toggle" href="javascript:void(toggleShowInheritence())"></a>
 
@@ -504,16 +504,16 @@
         <h3 class="major-section-title">classes</h3>
         
             <div class="class"
-         id="BrushPattern">
+         id="PenPattern">
         <div class="class-name-wrapper">
             
     <span class="permalink-and-source">
-        <a href="/docs/0.0.1.dev0/api/brown/utils/brush_pattern.html#BrushPattern">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/utils/brush_pattern.py#L4">view source</a>
+        <a href="/docs/0.0.1.dev0/api/brown/core/pen_pattern.html#PenPattern">permalink</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/pen_pattern.py#L4">view source</a>
     </span>
 
             <h2>
-                <span class="class-name">BrushPattern</span>
+                <span class="class-name">PenPattern</span>
                 
                     (<code>Enum</code>)
                 
@@ -522,10 +522,9 @@
         <p class="summary"><p>An enumeration of pen stroke patterns.</p></p>
         
             <p class="details"><p>    Only the below enumerated patterns are currently supported,
-    but if needed it is possible to implement gradient patterns
-    and arbitrary custom patterns. See the following page from
-    the relevant Qt docs:
-        https://doc.qt.io/qt-5/qt.html#BrushStyle-enum
+    but if needed it is possible to implement arbitrary custom
+    patterns. See the following page from the relevant Qt docs:
+        http://doc.qt.io/qt-5.7/qt.html#PenStyle-enum
     </p></p>
         
         
@@ -537,37 +536,15 @@
             <div class="major-section">
                 
                     <div class="attribute"
-         id="BrushPattern.NO_BRUSH">
-    <p>
-        <span class="important-name">NO_BRUSH</span>:
-        <span class="type"></span>
-        &mdash;<span class="summary">No brush pattern. This is equivalent to a fully transparent color.</span>
-        
-    <span class="permalink-and-source">
-        <a href="/docs/0.0.1.dev0/api/brown/utils/brush_pattern.html#BrushPattern.NO_BRUSH">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/utils/brush_pattern.py#L14">view source</a>
-    </span>
-
-    </p>
-    <div class="body">
-        
-        <div class="details"></div>
-        
-        
-        
-    </div>
-</div>
-                
-                    <div class="attribute"
-         id="BrushPattern.SOLID">
+         id="PenPattern.SOLID">
     <p>
         <span class="important-name">SOLID</span>:
         <span class="type"></span>
-        &mdash;<span class="summary">Uniform solid color.</span>
+        &mdash;<span class="summary">A solid line</span>
         
     <span class="permalink-and-source">
-        <a href="/docs/0.0.1.dev0/api/brown/utils/brush_pattern.html#BrushPattern.SOLID">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/utils/brush_pattern.py#L17">view source</a>
+        <a href="/docs/0.0.1.dev0/api/brown/core/pen_pattern.html#PenPattern.SOLID">permalink</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/pen_pattern.py#L13">view source</a>
     </span>
 
     </p>
@@ -581,15 +558,15 @@
 </div>
                 
                     <div class="attribute"
-         id="BrushPattern.DENSE_1">
+         id="PenPattern.DASH">
     <p>
-        <span class="important-name">DENSE_1</span>:
+        <span class="important-name">DASH</span>:
         <span class="type"></span>
-        &mdash;<span class="summary">Extremely dense brush pattern.</span>
+        &mdash;<span class="summary">Dashes separated by blank space</span>
         
     <span class="permalink-and-source">
-        <a href="/docs/0.0.1.dev0/api/brown/utils/brush_pattern.html#BrushPattern.DENSE_1">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/utils/brush_pattern.py#L20">view source</a>
+        <a href="/docs/0.0.1.dev0/api/brown/core/pen_pattern.html#PenPattern.DASH">permalink</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/pen_pattern.py#L16">view source</a>
     </span>
 
     </p>
@@ -603,15 +580,15 @@
 </div>
                 
                     <div class="attribute"
-         id="BrushPattern.DENSE_2">
+         id="PenPattern.DOT">
     <p>
-        <span class="important-name">DENSE_2</span>:
+        <span class="important-name">DOT</span>:
         <span class="type"></span>
-        &mdash;<span class="summary">Very dense brush pattern.</span>
+        &mdash;<span class="summary">Small dots separated by blank space</span>
         
     <span class="permalink-and-source">
-        <a href="/docs/0.0.1.dev0/api/brown/utils/brush_pattern.html#BrushPattern.DENSE_2">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/utils/brush_pattern.py#L23">view source</a>
+        <a href="/docs/0.0.1.dev0/api/brown/core/pen_pattern.html#PenPattern.DOT">permalink</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/pen_pattern.py#L19">view source</a>
     </span>
 
     </p>
@@ -625,15 +602,15 @@
 </div>
                 
                     <div class="attribute"
-         id="BrushPattern.DENSE_3">
+         id="PenPattern.DASHDOT">
     <p>
-        <span class="important-name">DENSE_3</span>:
+        <span class="important-name">DASHDOT</span>:
         <span class="type"></span>
-        &mdash;<span class="summary">Somewhat dense brush pattern.</span>
+        &mdash;<span class="summary">Alternating dashes and dots</span>
         
     <span class="permalink-and-source">
-        <a href="/docs/0.0.1.dev0/api/brown/utils/brush_pattern.html#BrushPattern.DENSE_3">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/utils/brush_pattern.py#L26">view source</a>
+        <a href="/docs/0.0.1.dev0/api/brown/core/pen_pattern.html#PenPattern.DASHDOT">permalink</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/pen_pattern.py#L22">view source</a>
     </span>
 
     </p>
@@ -647,213 +624,15 @@
 </div>
                 
                     <div class="attribute"
-         id="BrushPattern.DENSE_4">
+         id="PenPattern.DASHDOTDOT">
     <p>
-        <span class="important-name">DENSE_4</span>:
+        <span class="important-name">DASHDOTDOT</span>:
         <span class="type"></span>
-        &mdash;<span class="summary">Half dense brush pattern.</span>
+        &mdash;<span class="summary">A repeating pattern of one dash and two dots</span>
         
     <span class="permalink-and-source">
-        <a href="/docs/0.0.1.dev0/api/brown/utils/brush_pattern.html#BrushPattern.DENSE_4">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/utils/brush_pattern.py#L29">view source</a>
-    </span>
-
-    </p>
-    <div class="body">
-        
-        <div class="details"></div>
-        
-        
-        
-    </div>
-</div>
-                
-                    <div class="attribute"
-         id="BrushPattern.DENSE_5">
-    <p>
-        <span class="important-name">DENSE_5</span>:
-        <span class="type"></span>
-        &mdash;<span class="summary">Somewhat sparse brush pattern.</span>
-        
-    <span class="permalink-and-source">
-        <a href="/docs/0.0.1.dev0/api/brown/utils/brush_pattern.html#BrushPattern.DENSE_5">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/utils/brush_pattern.py#L32">view source</a>
-    </span>
-
-    </p>
-    <div class="body">
-        
-        <div class="details"></div>
-        
-        
-        
-    </div>
-</div>
-                
-                    <div class="attribute"
-         id="BrushPattern.DENSE_6">
-    <p>
-        <span class="important-name">DENSE_6</span>:
-        <span class="type"></span>
-        &mdash;<span class="summary">Very sparse brush pattern.</span>
-        
-    <span class="permalink-and-source">
-        <a href="/docs/0.0.1.dev0/api/brown/utils/brush_pattern.html#BrushPattern.DENSE_6">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/utils/brush_pattern.py#L35">view source</a>
-    </span>
-
-    </p>
-    <div class="body">
-        
-        <div class="details"></div>
-        
-        
-        
-    </div>
-</div>
-                
-                    <div class="attribute"
-         id="BrushPattern.DENSE_7">
-    <p>
-        <span class="important-name">DENSE_7</span>:
-        <span class="type"></span>
-        &mdash;<span class="summary">Extremely sparse brush pattern.</span>
-        
-    <span class="permalink-and-source">
-        <a href="/docs/0.0.1.dev0/api/brown/utils/brush_pattern.html#BrushPattern.DENSE_7">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/utils/brush_pattern.py#L38">view source</a>
-    </span>
-
-    </p>
-    <div class="body">
-        
-        <div class="details"></div>
-        
-        
-        
-    </div>
-</div>
-                
-                    <div class="attribute"
-         id="BrushPattern.HORIZONTAL_LINES">
-    <p>
-        <span class="important-name">HORIZONTAL_LINES</span>:
-        <span class="type"></span>
-        &mdash;<span class="summary">Horizontal lines.</span>
-        
-    <span class="permalink-and-source">
-        <a href="/docs/0.0.1.dev0/api/brown/utils/brush_pattern.html#BrushPattern.HORIZONTAL_LINES">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/utils/brush_pattern.py#L41">view source</a>
-    </span>
-
-    </p>
-    <div class="body">
-        
-        <div class="details"></div>
-        
-        
-        
-    </div>
-</div>
-                
-                    <div class="attribute"
-         id="BrushPattern.VERTICAL_LINES">
-    <p>
-        <span class="important-name">VERTICAL_LINES</span>:
-        <span class="type"></span>
-        &mdash;<span class="summary">Vertical lines.</span>
-        
-    <span class="permalink-and-source">
-        <a href="/docs/0.0.1.dev0/api/brown/utils/brush_pattern.html#BrushPattern.VERTICAL_LINES">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/utils/brush_pattern.py#L44">view source</a>
-    </span>
-
-    </p>
-    <div class="body">
-        
-        <div class="details"></div>
-        
-        
-        
-    </div>
-</div>
-                
-                    <div class="attribute"
-         id="BrushPattern.CROSSING_VERTICAL_HORIZONTAL_LINES">
-    <p>
-        <span class="important-name">CROSSING_VERTICAL_HORIZONTAL_LINES</span>:
-        <span class="type"></span>
-        &mdash;<span class="summary">Crossing horizontal and vertical lines.</span>
-        
-    <span class="permalink-and-source">
-        <a href="/docs/0.0.1.dev0/api/brown/utils/brush_pattern.html#BrushPattern.CROSSING_VERTICAL_HORIZONTAL_LINES">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/utils/brush_pattern.py#L47">view source</a>
-    </span>
-
-    </p>
-    <div class="body">
-        
-        <div class="details"></div>
-        
-        
-        
-    </div>
-</div>
-                
-                    <div class="attribute"
-         id="BrushPattern.ASCENDING_DIAGONAL_LINES">
-    <p>
-        <span class="important-name">ASCENDING_DIAGONAL_LINES</span>:
-        <span class="type"></span>
-        &mdash;<span class="summary">Diagonal lines ascending from left to right.</span>
-        
-    <span class="permalink-and-source">
-        <a href="/docs/0.0.1.dev0/api/brown/utils/brush_pattern.html#BrushPattern.ASCENDING_DIAGONAL_LINES">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/utils/brush_pattern.py#L50">view source</a>
-    </span>
-
-    </p>
-    <div class="body">
-        
-        <div class="details"></div>
-        
-        
-        
-    </div>
-</div>
-                
-                    <div class="attribute"
-         id="BrushPattern.DESCENDING_DIAGONAL_LINES">
-    <p>
-        <span class="important-name">DESCENDING_DIAGONAL_LINES</span>:
-        <span class="type"></span>
-        &mdash;<span class="summary">Diagonal lines descending from left to right.</span>
-        
-    <span class="permalink-and-source">
-        <a href="/docs/0.0.1.dev0/api/brown/utils/brush_pattern.html#BrushPattern.DESCENDING_DIAGONAL_LINES">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/utils/brush_pattern.py#L53">view source</a>
-    </span>
-
-    </p>
-    <div class="body">
-        
-        <div class="details"></div>
-        
-        
-        
-    </div>
-</div>
-                
-                    <div class="attribute"
-         id="BrushPattern.CROSSING_DIAGONAL_LINES">
-    <p>
-        <span class="important-name">CROSSING_DIAGONAL_LINES</span>:
-        <span class="type"></span>
-        &mdash;<span class="summary">Crossing diagonal lines.</span>
-        
-    <span class="permalink-and-source">
-        <a href="/docs/0.0.1.dev0/api/brown/utils/brush_pattern.html#BrushPattern.CROSSING_DIAGONAL_LINES">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/utils/brush_pattern.py#L56">view source</a>
+        <a href="/docs/0.0.1.dev0/api/brown/core/pen_pattern.html#PenPattern.DASHDOTDOT">permalink</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/pen_pattern.py#L25">view source</a>
     </span>
 
     </p>
