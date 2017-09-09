@@ -253,18 +253,22 @@
         <ul>
             
                 
-    <li id="toc-link-to-current-page">
-        <a href="/docs/0.0.1.dev0/api/brown/interface/qt_ext.html">qt_ext</a>
+    <li >
+        <a href="/docs/0.0.1.dev0/api/brown/interface/qt.html">qt</a>
     </li>
     
     <ul>
         
             <li >
-                <a href="/docs/0.0.1.dev0/api/brown/interface/qt_ext/q_clipping_path.html">q_clipping_path</a>
+                <a href="/docs/0.0.1.dev0/api/brown/interface/qt/converters.html">converters</a>
             </li>
         
             <li >
-                <a href="/docs/0.0.1.dev0/api/brown/interface/qt_ext/q_enhanced_text_item.html">q_enhanced_text_item</a>
+                <a href="/docs/0.0.1.dev0/api/brown/interface/qt/q_clipping_path.html">q_clipping_path</a>
+            </li>
+        
+            <li id="toc-link-to-current-page">
+                <a href="/docs/0.0.1.dev0/api/brown/interface/qt/q_enhanced_text_item.html">q_enhanced_text_item</a>
             </li>
         
     </ul>
@@ -312,10 +316,6 @@
         
             <li >
                 <a href="/docs/0.0.1.dev0/api/brown/interface/pen_interface.html">pen_interface</a>
-            </li>
-        
-            <li >
-                <a href="/docs/0.0.1.dev0/api/brown/interface/qt_to_util.html">qt_to_util</a>
             </li>
         
             <li >
@@ -488,21 +488,122 @@
             <div id="page-body">
                 
 
-<h1>brown.interface.qt_ext</h1>
-<h3>Custom Qt subclass extensions</h3>
-<p>This package contains subclasses of Qt classes which extend their behavior to allow things like clipping text and paths. For most cases, the vast library of primitives provided by Qt (and, by extension, PyQt5) is enough to provide the functionality required by <code><a href="/docs/0.0.1.dev0/api/brown.html">brown</a></code>. Modules should only be added here when deemed absolutely necessary, as they are much harder to test.</p>
+    <h1 id="page-title">brown<wbr>.interface<wbr>.qt<wbr>.q_enhanced_text_item</h1>
 
+    <a id="show-inherited-toggle" href="javascript:void(toggleShowInheritence())"></a>
 
+    
 
-    <h3>modules</h3>
-    <ul>
+    
+
+    
+
+    
+
+    
+        <h3 class="major-section-title">classes</h3>
         
-            <li><a href="/docs/0.0.1.dev0/api/brown/interface/qt_ext/q_clipping_path.html">brown.interface.qt_ext.q_clipping_path</a></li>
-        
-            <li><a href="/docs/0.0.1.dev0/api/brown/interface/qt_ext/q_enhanced_text_item.html">brown.interface.qt_ext.q_enhanced_text_item</a></li>
-        
-    </ul>
+            <div class="class"
+         id="QEnhancedTextItem">
+        <div class="class-name-wrapper">
+            
+    <span class="permalink-and-source">
+        <a href="/docs/0.0.1.dev0/api/brown/interface/qt/q_enhanced_text_item.html#QEnhancedTextItem">permalink</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/interface/qt/q_enhanced_text_item.py#L7">view source</a>
+    </span>
 
+            <h2>
+                <span class="class-name">QEnhancedTextItem</span>
+                
+                    (<code>QtWidgets.QGraphicsSimpleTextItem</code>)
+                
+            </h2>
+        </div>
+        <p class="summary"><p>A text item giving explicit control over positioning and scale.</p></p>
+        
+            <p class="details"><p>    This is a modified QGraphicsSimpleTextItem which acts mostly like
+    its superclass, with the following extensions:</p><p>    <ul><li> It can be given a rendering offset which forces a painting offset
+      indicated by a point vector.
+    </li><li> It can be given a scaling factor which triggers a hard scale on
+      top of its font size. Scaling is performed relative to the origin.
+    </li><li> It can be clipped to render any horizontal slice of its image.
+    </li></ul></p></p>
+        
+        
+        
+            <div>
+                <div class="method"
+     id="QEnhancedTextItem.__init__">
+    <p>
+        <span class="important-name">__init__</span>
+        
+            <code>(self,
+                 *args,
+                 origin_offset=None,
+                 scale_factor=1,
+                 clip_start_x=None,
+                 clip_width=None,
+                 **kwargs)</code>
+        
+        
+    <span class="permalink-and-source">
+        <a href="/docs/0.0.1.dev0/api/brown/interface/qt/q_enhanced_text_item.html#QEnhancedTextItem.__init__">permalink</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/interface/qt/q_enhanced_text_item.py#L21">view source</a>
+    </span>
+
+    </p>
+    <div class="body">
+        <p class="summary"><p>
+</p></p>
+        
+        
+            <h4>arguments:</h4>
+            <div class="type-details-list">
+                
+                    <div class="arg">
+                        <p><p>origin_offset <code>(QPointF)</code>: The offset of the glyph's origin from (0, 0)</p></p>
+                    </div>
+                
+                    <div class="arg">
+                        <p><p>scale_factor <code>(float)</code>: A hard scaling factor.</p></p>
+                    </div>
+                
+                    <div class="arg">
+                        <p><p>clip_start_x <code>(<a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit">Unit</a> or None)</code>: The local starting position for the
+                clipping region. Use <code>None</code> to render from the start.</p></p>
+                    </div>
+                
+                    <div class="arg">
+                        <p><p>clip_width <code>(<a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit">Unit</a> or None)</code>: The width of the clipping region.
+                Use <code>None</code> to render to the end</p></p>
+                    </div>
+                
+            </div>
+        
+        
+        
+        <p class="details"></p>
+        
+        
+    </div>
+</div>
+            </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+
+    </div>
+        
+    
 
 
             </div>

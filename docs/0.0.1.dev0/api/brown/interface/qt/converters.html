@@ -254,17 +254,21 @@
             
                 
     <li >
-        <a href="/docs/0.0.1.dev0/api/brown/interface/qt_ext.html">qt_ext</a>
+        <a href="/docs/0.0.1.dev0/api/brown/interface/qt.html">qt</a>
     </li>
     
     <ul>
         
-            <li >
-                <a href="/docs/0.0.1.dev0/api/brown/interface/qt_ext/q_clipping_path.html">q_clipping_path</a>
+            <li id="toc-link-to-current-page">
+                <a href="/docs/0.0.1.dev0/api/brown/interface/qt/converters.html">converters</a>
             </li>
         
-            <li id="toc-link-to-current-page">
-                <a href="/docs/0.0.1.dev0/api/brown/interface/qt_ext/q_enhanced_text_item.html">q_enhanced_text_item</a>
+            <li >
+                <a href="/docs/0.0.1.dev0/api/brown/interface/qt/q_clipping_path.html">q_clipping_path</a>
+            </li>
+        
+            <li >
+                <a href="/docs/0.0.1.dev0/api/brown/interface/qt/q_enhanced_text_item.html">q_enhanced_text_item</a>
             </li>
         
     </ul>
@@ -312,10 +316,6 @@
         
             <li >
                 <a href="/docs/0.0.1.dev0/api/brown/interface/pen_interface.html">pen_interface</a>
-            </li>
-        
-            <li >
-                <a href="/docs/0.0.1.dev0/api/brown/interface/qt_to_util.html">qt_to_util</a>
             </li>
         
             <li >
@@ -488,12 +488,12 @@
             <div id="page-body">
                 
 
-    <h1 id="page-title">brown<wbr>.interface<wbr>.qt_ext<wbr>.q_enhanced_text_item</h1>
+    <h1 id="page-title">brown<wbr>.interface<wbr>.qt<wbr>.converters</h1>
 
     <a id="show-inherited-toggle" href="javascript:void(toggleShowInheritence())"></a>
 
     
-
+        <span class="summary"><p>Helper methods for conversion between <code><a href="/docs/0.0.1.dev0/api/brown/utils.html">brown.utils</a></code> and Qt classes</p></span>
     
 
     
@@ -501,59 +501,24 @@
     
 
     
-        <h3 class="major-section-title">classes</h3>
+        <h3 class="major-section-title">methods</h3>
         
-            <div class="class"
-         id="QEnhancedTextItem">
-        <div class="class-name-wrapper">
-            
-    <span class="permalink-and-source">
-        <a href="/docs/0.0.1.dev0/api/brown/interface/qt_ext/q_enhanced_text_item.html#QEnhancedTextItem">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/interface/qt_ext/q_enhanced_text_item.py#L7">view source</a>
-    </span>
-
-            <h2>
-                <span class="class-name">QEnhancedTextItem</span>
-                
-                    (<code>QtWidgets.QGraphicsSimpleTextItem</code>)
-                
-            </h2>
-        </div>
-        <p class="summary"><p>A text item giving explicit control over positioning and scale.</p></p>
-        
-            <p class="details"><p>    This is a modified QGraphicsSimpleTextItem which acts mostly like
-    its superclass, with the following extensions:</p><p>    <ul><li> It can be given a rendering offset which forces a painting offset
-      indicated by a point vector.
-    </li><li> It can be given a scaling factor which triggers a hard scale on
-      top of its font size. Scaling is performed relative to the origin.
-    </li><li> It can be clipped to render any horizontal slice of its image.
-    </li></ul></p></p>
-        
-        
-        
-            <div>
-                <div class="method"
-     id="QEnhancedTextItem.__init__">
+            <div class="method"
+     id="unit_to_qt_int">
     <p>
-        <span class="important-name">__init__</span>
+        <span class="important-name">unit_to_qt_int</span>
         
-            <code>(self,
-                 *args,
-                 origin_offset=None,
-                 scale_factor=1,
-                 clip_start_x=None,
-                 clip_width=None,
-                 **kwargs)</code>
+            <code>(unit)</code>
         
         
     <span class="permalink-and-source">
-        <a href="/docs/0.0.1.dev0/api/brown/interface/qt_ext/q_enhanced_text_item.html#QEnhancedTextItem.__init__">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/interface/qt_ext/q_enhanced_text_item.py#L21">view source</a>
+        <a href="/docs/0.0.1.dev0/api/brown/interface/qt/converters.html#unit_to_qt_int">permalink</a>
+        <a href="">view source</a>
     </span>
 
     </p>
     <div class="body">
-        <p class="summary"><p>
+        <p class="summary"><p>Create a Qt integer from a Unit
 </p></p>
         
         
@@ -561,48 +526,457 @@
             <div class="type-details-list">
                 
                     <div class="arg">
-                        <p><p>origin_offset <code>(QPointF)</code>: The offset of the glyph's origin from (0, 0)</p></p>
-                    </div>
-                
-                    <div class="arg">
-                        <p><p>scale_factor <code>(float)</code>: A hard scaling factor.</p></p>
-                    </div>
-                
-                    <div class="arg">
-                        <p><p>clip_start_x <code>(<a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit">Unit</a> or None)</code>: The local starting position for the
-                clipping region. Use <code>None</code> to render from the start.</p></p>
-                    </div>
-                
-                    <div class="arg">
-                        <p><p>clip_width <code>(<a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit">Unit</a> or None)</code>: The width of the clipping region.
-                Use <code>None</code> to render to the end</p></p>
+                        <p><p>unit <code>(<a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit">Unit</a>)</code>: The source unit</p></p>
                     </div>
                 
             </div>
         
         
+            <div class="returns">
+                <h4>returns:</h4>
+                <div class="type-details-list">
+                    
+                        <p><code>int</code></p>
+                    
+                </div>
+            </div>
         
-        <p class="details"></p>
+        
+        <p class="details"><p>
+</p></p>
         
         
     </div>
 </div>
+        
+            <div class="method"
+     id="unit_to_qt_float">
+    <p>
+        <span class="important-name">unit_to_qt_float</span>
+        
+            <code>(unit)</code>
+        
+        
+    <span class="permalink-and-source">
+        <a href="/docs/0.0.1.dev0/api/brown/interface/qt/converters.html#unit_to_qt_float">permalink</a>
+        <a href="">view source</a>
+    </span>
+
+    </p>
+    <div class="body">
+        <p class="summary"><p>Create a Qt integer from a Unit
+</p></p>
+        
+        
+            <h4>arguments:</h4>
+            <div class="type-details-list">
+                
+                    <div class="arg">
+                        <p><p>unit <code>(<a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit">Unit</a>)</code>: The source unit</p></p>
+                    </div>
+                
             </div>
         
         
+            <div class="returns">
+                <h4>returns:</h4>
+                <div class="type-details-list">
+                    
+                        <p><code>float</code></p>
+                    
+                </div>
+            </div>
         
         
+        <p class="details"><p>
+</p></p>
         
         
-        
-        
-        
-        
-        
-
-
     </div>
+</div>
         
+            <div class="method"
+     id="qt_point_to_point">
+    <p>
+        <span class="important-name">qt_point_to_point</span>
+        
+            <code>(qt_point, unit=None)</code>
+        
+        
+    <span class="permalink-and-source">
+        <a href="/docs/0.0.1.dev0/api/brown/interface/qt/converters.html#qt_point_to_point">permalink</a>
+        <a href="">view source</a>
+    </span>
+
+    </p>
+    <div class="body">
+        <p class="summary"><p>Create a Point from a QPoint or QPointF
+</p></p>
+        
+        
+            <h4>arguments:</h4>
+            <div class="type-details-list">
+                
+                    <div class="arg">
+                        <p><p>qt_point <code>(QPoint or QPointF)</code>: The source point</p></p>
+                    </div>
+                
+                    <div class="arg">
+                        <p><p>unit <code>(<a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit">Unit</a>)</code>: An optional unit to convert
+            values to in the output <code><a href="/docs/0.0.1.dev0/api/brown/utils/point.html#Point">Point</a></code>. If omitted, values
+            in the output <code><a href="/docs/0.0.1.dev0/api/brown/utils/point.html#Point">Point</a></code> will be plain <code>int</code> or <code>float</code> values.</p></p>
+                    </div>
+                
+            </div>
+        
+        
+            <div class="returns">
+                <h4>returns:</h4>
+                <div class="type-details-list">
+                    
+                        <p><code><a href="/docs/0.0.1.dev0/api/brown/utils/point.html#Point">Point</a></code></p>
+                    
+                </div>
+            </div>
+        
+        
+        <p class="details"><p>
+</p></p>
+        
+        
+    </div>
+</div>
+        
+            <div class="method"
+     id="point_to_qt_point">
+    <p>
+        <span class="important-name">point_to_qt_point</span>
+        
+            <code>(point)</code>
+        
+        
+    <span class="permalink-and-source">
+        <a href="/docs/0.0.1.dev0/api/brown/interface/qt/converters.html#point_to_qt_point">permalink</a>
+        <a href="">view source</a>
+    </span>
+
+    </p>
+    <div class="body">
+        <p class="summary"><p>Create a QPoint from a Point
+</p></p>
+        
+        
+            <h4>arguments:</h4>
+            <div class="type-details-list">
+                
+                    <div class="arg">
+                        <p><p>point <code>(<a href="/docs/0.0.1.dev0/api/brown/utils/point.html#Point">Point</a>)</code>: The source point</p></p>
+                    </div>
+                
+            </div>
+        
+        
+            <div class="returns">
+                <h4>returns:</h4>
+                <div class="type-details-list">
+                    
+                        <p><code>QPoint</code></p>
+                    
+                </div>
+            </div>
+        
+        
+        <p class="details"><p>
+</p></p>
+        
+        
+    </div>
+</div>
+        
+            <div class="method"
+     id="point_to_qt_point_f">
+    <p>
+        <span class="important-name">point_to_qt_point_f</span>
+        
+            <code>(point)</code>
+        
+        
+    <span class="permalink-and-source">
+        <a href="/docs/0.0.1.dev0/api/brown/interface/qt/converters.html#point_to_qt_point_f">permalink</a>
+        <a href="">view source</a>
+    </span>
+
+    </p>
+    <div class="body">
+        <p class="summary"><p>Create a QPointF from a Point
+</p></p>
+        
+        
+            <h4>arguments:</h4>
+            <div class="type-details-list">
+                
+                    <div class="arg">
+                        <p><p>point <code>(<a href="/docs/0.0.1.dev0/api/brown/utils/point.html#Point">Point</a>)</code>: The source point</p></p>
+                    </div>
+                
+            </div>
+        
+        
+            <div class="returns">
+                <h4>returns:</h4>
+                <div class="type-details-list">
+                    
+                        <p><code>QPointF</code></p>
+                    
+                </div>
+            </div>
+        
+        
+        <p class="details"><p>
+</p></p>
+        
+        
+    </div>
+</div>
+        
+            <div class="method"
+     id="qt_rect_to_rect">
+    <p>
+        <span class="important-name">qt_rect_to_rect</span>
+        
+            <code>(qt_rect, unit=None)</code>
+        
+        
+    <span class="permalink-and-source">
+        <a href="/docs/0.0.1.dev0/api/brown/interface/qt/converters.html#qt_rect_to_rect">permalink</a>
+        <a href="">view source</a>
+    </span>
+
+    </p>
+    <div class="body">
+        <p class="summary"><p>Create a Rect from a QRect or QRectF
+</p></p>
+        
+        
+            <h4>arguments:</h4>
+            <div class="type-details-list">
+                
+                    <div class="arg">
+                        <p><p>qt_rect <code>(QRect or QRectF)</code>: The source rect</p></p>
+                    </div>
+                
+                    <div class="arg">
+                        <p><p>unit <code>(<a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit">Unit</a>)</code>: An optional unit to convert
+            values to in the output <code><a href="/docs/0.0.1.dev0/api/brown/utils/rect.html#Rect">Rect</a></code>. If omitted, values
+            in the output <code><a href="/docs/0.0.1.dev0/api/brown/utils/rect.html#Rect">Rect</a></code> will be plain <code>int</code> or <code>float</code> values.</p></p>
+                    </div>
+                
+            </div>
+        
+        
+            <div class="returns">
+                <h4>returns:</h4>
+                <div class="type-details-list">
+                    
+                        <p><code><a href="/docs/0.0.1.dev0/api/brown/utils/rect.html#Rect">Rect</a></code></p>
+                    
+                </div>
+            </div>
+        
+        
+        <p class="details"><p>
+</p></p>
+        
+        
+    </div>
+</div>
+        
+            <div class="method"
+     id="rect_to_qt_rect">
+    <p>
+        <span class="important-name">rect_to_qt_rect</span>
+        
+            <code>(rect)</code>
+        
+        
+    <span class="permalink-and-source">
+        <a href="/docs/0.0.1.dev0/api/brown/interface/qt/converters.html#rect_to_qt_rect">permalink</a>
+        <a href="">view source</a>
+    </span>
+
+    </p>
+    <div class="body">
+        <p class="summary"><p>Create a QRect from a Rect
+</p></p>
+        
+        
+            <h4>arguments:</h4>
+            <div class="type-details-list">
+                
+                    <div class="arg">
+                        <p><p>rect <code>(<a href="/docs/0.0.1.dev0/api/brown/utils/rect.html#Rect">Rect</a>)</code>: The source rect</p></p>
+                    </div>
+                
+            </div>
+        
+        
+            <div class="returns">
+                <h4>returns:</h4>
+                <div class="type-details-list">
+                    
+                        <p><code>QRect</code></p>
+                    
+                </div>
+            </div>
+        
+        
+        <p class="details"><p>
+</p></p>
+        
+        
+    </div>
+</div>
+        
+            <div class="method"
+     id="rect_to_qt_rect_f">
+    <p>
+        <span class="important-name">rect_to_qt_rect_f</span>
+        
+            <code>(rect)</code>
+        
+        
+    <span class="permalink-and-source">
+        <a href="/docs/0.0.1.dev0/api/brown/interface/qt/converters.html#rect_to_qt_rect_f">permalink</a>
+        <a href="">view source</a>
+    </span>
+
+    </p>
+    <div class="body">
+        <p class="summary"><p>Create a QRectF from a Rect
+</p></p>
+        
+        
+            <h4>arguments:</h4>
+            <div class="type-details-list">
+                
+                    <div class="arg">
+                        <p><p>rect <code>(<a href="/docs/0.0.1.dev0/api/brown/utils/rect.html#Rect">Rect</a>)</code>: The source rect</p></p>
+                    </div>
+                
+            </div>
+        
+        
+            <div class="returns">
+                <h4>returns:</h4>
+                <div class="type-details-list">
+                    
+                        <p><code>QRectF</code></p>
+                    
+                </div>
+            </div>
+        
+        
+        <p class="details"><p>
+</p></p>
+        
+        
+    </div>
+</div>
+        
+            <div class="method"
+     id="color_to_q_color">
+    <p>
+        <span class="important-name">color_to_q_color</span>
+        
+            <code>(color)</code>
+        
+        
+    <span class="permalink-and-source">
+        <a href="/docs/0.0.1.dev0/api/brown/interface/qt/converters.html#color_to_q_color">permalink</a>
+        <a href="">view source</a>
+    </span>
+
+    </p>
+    <div class="body">
+        <p class="summary"><p>Create a <code>QColor</code> from a <code><a href="/docs/0.0.1.dev0/api/brown/utils/color.html#Color">Color</a></code>
+</p></p>
+        
+        
+            <h4>arguments:</h4>
+            <div class="type-details-list">
+                
+                    <div class="arg">
+                        <p><p>color <code>(<a href="/docs/0.0.1.dev0/api/brown/utils/color.html#Color">Color</a>)</code>: The source <code><a href="/docs/0.0.1.dev0/api/brown/utils/color.html#Color">Color</a></code></p></p>
+                    </div>
+                
+            </div>
+        
+        
+            <div class="returns">
+                <h4>returns:</h4>
+                <div class="type-details-list">
+                    
+                        <p><code>QColor</code></p>
+                    
+                </div>
+            </div>
+        
+        
+        <p class="details"><p>
+</p></p>
+        
+        
+    </div>
+</div>
+        
+            <div class="method"
+     id="q_color_to_color">
+    <p>
+        <span class="important-name">q_color_to_color</span>
+        
+            <code>(q_color)</code>
+        
+        
+    <span class="permalink-and-source">
+        <a href="/docs/0.0.1.dev0/api/brown/interface/qt/converters.html#q_color_to_color">permalink</a>
+        <a href="">view source</a>
+    </span>
+
+    </p>
+    <div class="body">
+        <p class="summary"><p>Create a <code><a href="/docs/0.0.1.dev0/api/brown/utils/color.html#Color">Color</a></code> from a <code>QColor</code>
+</p></p>
+        
+        
+            <h4>arguments:</h4>
+            <div class="type-details-list">
+                
+                    <div class="arg">
+                        <p><p>q_color <code>(QColor)</code>: The source <code>QColor</code></p></p>
+                    </div>
+                
+            </div>
+        
+        
+            <div class="returns">
+                <h4>returns:</h4>
+                <div class="type-details-list">
+                    
+                        <p><code><a href="/docs/0.0.1.dev0/api/brown/utils/color.html#Color">Color</a></code></p>
+                    
+                </div>
+            </div>
+        
+        
+        <p class="details"><p>
+</p></p>
+        
+        
+    </div>
+</div>
+        
+    
+
     
 
 
