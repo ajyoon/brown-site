@@ -517,7 +517,25 @@
                 
             </h2>
         </div>
-        <p class="summary"><p>A pitch with a letter, octave, and accidental</p></p>
+        <p class="summary"><p>A pitch with a letter, octave, and accidental.</p></p>
+        
+            <p class="details"><p>    Pitches are represented as strings in a subset of lilypond pitch notation.</p><p>    A pitch indicator has three parts: a pitch letter, an optional accidental
+    letter, and an optional octave mark.
+    <ul><li> Pitch letters are the standard <code>c</code> through <code>b</code> letters.
+    </li><li> The accidental letter may be <code>f</code> for flat, <code>s</code> for sharp, and <code>n</code>
+      for natural. If omitted, the actual logical pitch depends on context
+      the pitch appears in.
+    </li><li> The octave indication is given by a series of apostrophes (<code>'</code>)
+      or commas (<code>,</code>), where each apostrophe increases the pitch by an octave,
+      and each comma decreases it. All octave transformations are relative to
+      the octave below middle-C. By extension, the absence of an octave
+      indicator means a pitch is within the octave below middle-C.
+</li></ul>
+    Some examples:</p><p>    <ul><li> Middle-C: <code>c'</code>
+    </li><li> The B directly below that: <code>b</code>
+    </li><li> The C one octave below middle-C: <code>c</code>
+    </li><li> The F-sharp above middle-C: <code>fs'</code>
+    </li></ul></p></p>
         
         
         
@@ -532,7 +550,7 @@
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/models/pitch.html#Pitch.__init__">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/models/pitch.py#L33">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/models/pitch.py#L54">view source</a>
     </span>
 
     </p>
@@ -545,19 +563,14 @@
             <div class="type-details-list">
                 
                     <div class="arg">
-                        <p><p>pitch <code>(str)</code>: A pitch representation of a string
-                in lilypond notation</p></p>
+                        <p><p>pitch <code>(str)</code>: A pitch indicator. (see above class documentation).</p></p>
                     </div>
                 
             </div>
         
         
         
-        <p class="details"><p>        Valid pitch accidentals suffixes are <code>s</code> for sharp, <code>f</code> for flat,
-        and <code>n</code> for explicit natural.</p><p>        Octaves are denoted by suffixes of commas or apostrophes,
-        where none is C below middle-C, and each comma / apostrophe
-        indicates an octave down or up, respectively.</p><p>        TODO: Explain better, needs examples - most users will not be
-              familiar with lilypond pitch notation</p></p>
+        <p class="details"></p>
         
         
     </div>
@@ -575,18 +588,17 @@
     <p>
         <span class="important-name">pitch</span>:
         <span class="type"><code>str</code></span>
-        &mdash;<span class="summary"> A string representation of the pitch.</span>
+        &mdash;<span class="summary"> A pitch indicator.</span>
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/models/pitch.html#Pitch.pitch">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/models/pitch.py#L90">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/models/pitch.py#L87">view source</a>
     </span>
 
     </p>
     <div class="body">
         
-        <div class="details"><p>        See <code><a href="/docs/0.0.1.dev0/api/brown/models/pitch.html#Pitch.__init__">__init__</a></code> documentation for a complete description.
-        </p></div>
+        <div class="details"></div>
         
         
         
@@ -602,7 +614,7 @@
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/models/pitch.html#Pitch.letter">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/models/pitch.py#L117">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/models/pitch.py#L111">view source</a>
     </span>
 
     </p>
@@ -628,7 +640,7 @@
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/models/pitch.html#Pitch.accidental_type">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/models/pitch.py#L122">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/models/pitch.py#L116">view source</a>
     </span>
 
     </p>
@@ -656,7 +668,7 @@
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/models/pitch.html#Pitch.octave">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/models/pitch.py#L131">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/models/pitch.py#L125">view source</a>
     </span>
 
     </p>
@@ -684,33 +696,7 @@
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/models/pitch.html#Pitch.pitch_class">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/models/pitch.py#L140">view source</a>
-    </span>
-
-    </p>
-    <div class="body">
-        
-        <div class="details"></div>
-        
-        
-            <p class="read-only-notice">
-                read-only.
-            </p>
-        
-        
-    </div>
-</div>
-                
-                    <div class="property"
-         id="Pitch.midi_number">
-    <p>
-        <span class="important-name">midi_number</span>:
-        <span class="type"><code>int</code></span>
-        &mdash;<span class="summary"> The midi pitch number, where A440 == 69 and middle C == 60</span>
-        
-    <span class="permalink-and-source">
-        <a href="/docs/0.0.1.dev0/api/brown/models/pitch.html#Pitch.midi_number">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/models/pitch.py#L148">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/models/pitch.py#L134">view source</a>
     </span>
 
     </p>
@@ -736,20 +722,21 @@
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/models/pitch.html#Pitch.diatonic_degree_in_c">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/models/pitch.py#L155">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/models/pitch.py#L142">view source</a>
     </span>
 
     </p>
     <div class="body">
         
-        <div class="details"><p>            'c': 1,
-            'd': 2,
-            'e': 3,
-            'f': 4,
-            'g': 5,
-            'a': 6,
-            'b': 7
-        </p></div>
+        <div class="details"><p>        <pre><code class="python">>>> <a href="/docs/0.0.1.dev0/api/brown/models/pitch.html#Pitch">Pitch</a>("c").diatonic_degree_in_c
+1
+>>> <a href="/docs/0.0.1.dev0/api/brown/models/pitch.html#Pitch">Pitch</a>("c'").diatonic_degree_in_c
+1
+>>> <a href="/docs/0.0.1.dev0/api/brown/models/pitch.html#Pitch">Pitch</a>("d'''").diatonic_degree_in_c
+2
+>>> <a href="/docs/0.0.1.dev0/api/brown/models/pitch.html#Pitch">Pitch</a>("bf,").diatonic_degree_in_c
+7
+</code></pre></p></div>
         
         
             <p class="read-only-notice">
@@ -769,7 +756,7 @@
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/models/pitch.html#Pitch.staff_pos_from_middle_c">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/models/pitch.py#L169">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/models/pitch.py#L157">view source</a>
     </span>
 
     </p>
@@ -777,8 +764,7 @@
         
         <div class="details"><p>        Values are in numeric pseudo-staff-units where positive
         values mean positions below middle C, and negative values
-        mean positions above it.</p><p>        Examples:
-            <pre><code class="python">>>> <a href="/docs/0.0.1.dev0/api/brown/models/pitch.html#Pitch">Pitch</a>("c'").staff_pos_from_middle_c
+        mean positions above it.</p><p>        <pre><code class="python">>>> <a href="/docs/0.0.1.dev0/api/brown/models/pitch.html#Pitch">Pitch</a>("c'").staff_pos_from_middle_c
 0
 >>> <a href="/docs/0.0.1.dev0/api/brown/models/pitch.html#Pitch">Pitch</a>("cs'").staff_pos_from_middle_c
 0
@@ -808,7 +794,7 @@
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/models/pitch.html#Pitch.string_desriptor">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/models/pitch.py#L197">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/models/pitch.py#L184">view source</a>
     </span>
 
     </p>
@@ -846,7 +832,7 @@
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/models/pitch.html#Pitch.__repr__">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/models/pitch.py#L58">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/models/pitch.py#L67">view source</a>
     </span>
 
     </p>
@@ -872,27 +858,17 @@
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/models/pitch.html#Pitch.__eq__">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/models/pitch.py#L62">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/models/pitch.py#L71">view source</a>
     </span>
 
     </p>
     <div class="body">
-        <p class="summary"><p>Two Pitches are equal if all of their attributes are equal
-</p></p>
+        <p class="summary"><p>Two Pitches are equal if all of their attributes are equal.</p></p>
         
         
         
         
-        <p class="details"><p>
-        Note that two pitches with the same midi number are not
-        necessarily equal. Enharmonically equivalent pitches are
-        not equal to each other.</p><p>            <pre><code class="python">>>> <a href="/docs/0.0.1.dev0/api/brown/models/pitch.html#Pitch">Pitch</a>("c") == <a href="/docs/0.0.1.dev0/api/brown/models/pitch.html#Pitch">Pitch</a>("c")
-True
->>> <a href="/docs/0.0.1.dev0/api/brown/models/pitch.html#Pitch">Pitch</a>("c") == <a href="/docs/0.0.1.dev0/api/brown/models/pitch.html#Pitch">Pitch</a>("bs,")
-False
->>> <a href="/docs/0.0.1.dev0/api/brown/models/pitch.html#Pitch">Pitch</a>("c").midi_number == <a href="/docs/0.0.1.dev0/api/brown/models/pitch.html#Pitch">Pitch</a>("bs,").midi_number
-True
-</code></pre></p></p>
+        <p class="details"></p>
         
         
     </div>
@@ -908,7 +884,7 @@ True
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/models/pitch.html#Pitch.__hash__">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/models/pitch.py#L81">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/models/pitch.py#L78">view source</a>
     </span>
 
     </p>
