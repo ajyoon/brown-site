@@ -519,11 +519,11 @@
         </div>
         <p class="summary"><p>An object which must always be the descendant of a Staff</p></p>
         
-            <p class="details"><p>    This is a Mixin class, meant to be paired with GraphicObject classes.</p><p>    Usage within a GraphicObject will look something like:</p><p>        class SomeStaffGlyphObject(MusicText, StaffObject):
-            def __init__(self, pos, parent):
-                MusicText.__init__(self, 'someGlyphName', parent)
-                StaffObject.__init__(self, parent)
-    </p></p>
+            <p class="details"><p>    This is a Mixin class, meant to be paired with GraphicObject classes.</p><p>    Usage within a GraphicObject will look something like:</p><p>    <pre><code class="python">>>> class SomeMusicGlyph(<a href="/docs/0.0.1.dev0/api/brown/core/music_text.html#MusicText">MusicText</a>, <a href="/docs/0.0.1.dev0/api/brown/core/staff_object.html#StaffObject">StaffObject</a>):  
+...     def __init__(self, ...):
+...         <a href="/docs/0.0.1.dev0/api/brown/core/music_text.html#MusicText.__init__">MusicText.__init__</a>(self, ...)
+...         <a href="/docs/0.0.1.dev0/api/brown/core/staff_object.html#StaffObject.__init__">StaffObject.__init__</a>(self, ...)
+</code></pre></p></p>
         
         
         
