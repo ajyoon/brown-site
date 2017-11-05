@@ -519,7 +519,12 @@
     ancestor. All <code><a href="/docs/0.0.1.dev0/api/brown/core/page.html#Page">Page</a></code>s are children of the global document.</p><p>    <code><a href="/docs/0.0.1.dev0/api/brown/core/page.html#Page">Page</a></code> objects are automatically created by <code><a href="/docs/0.0.1.dev0/api/brown/core/document.html#Document">Document</a></code> and should
     not be manually created or manipulated.</p><p>    This class shares many properties and methods with GraphicObject,
     but notably is not a subclass of it.
-    </p></p>
+    </p><p>Add an object to <code>self.children</code>.</p><p>        Args:
+            child (GraphicObject): The object to add</p><p>        Returns: None
+        </p><p>Remove an object from <code>self.children</code>.</p><p>        Args:
+            child (GraphicObject): The object to remove</p><p>        Returns: None
+        </p><p>Render every object in the page.</p><p>        Returns: None
+        </p></p>
         
         
         
@@ -676,135 +681,6 @@
         
             <h4 class="major-section-title">methods</h4>
             <div class="major-section">
-                
-                    <div class="method"
-     id="Page._register_child">
-    <p>
-        <span class="important-name">_register_child</span>
-        
-            <code>(child)</code>
-        
-        
-    <span class="permalink-and-source">
-        <a href="/docs/0.0.1.dev0/api/brown/core/page.html#Page._register_child">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/page.py#L63">view source</a>
-    </span>
-
-    </p>
-    <div class="body">
-        <p class="summary"><p>Add an object to <code>self.children</code>.
-</p></p>
-        
-        
-            <h4>arguments:</h4>
-            <div class="type-details-list">
-                
-                    <div class="arg">
-                        <p><p>child <code>(<a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject">GraphicObject</a>)</code>: The object to add</p></p>
-                    </div>
-                
-            </div>
-        
-        
-            <div class="returns">
-                <h4>returns:</h4>
-                <div class="type-details-list">
-                    
-                        <p><code>None</code></p>
-                    
-                </div>
-            </div>
-        
-        
-        <p class="details"><p>
-</p></p>
-        
-        
-    </div>
-</div>
-                
-                    <div class="method"
-     id="Page._unregister_child">
-    <p>
-        <span class="important-name">_unregister_child</span>
-        
-            <code>(child)</code>
-        
-        
-    <span class="permalink-and-source">
-        <a href="/docs/0.0.1.dev0/api/brown/core/page.html#Page._unregister_child">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/page.py#L73">view source</a>
-    </span>
-
-    </p>
-    <div class="body">
-        <p class="summary"><p>Remove an object from <code>self.children</code>.
-</p></p>
-        
-        
-            <h4>arguments:</h4>
-            <div class="type-details-list">
-                
-                    <div class="arg">
-                        <p><p>child <code>(<a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject">GraphicObject</a>)</code>: The object to remove</p></p>
-                    </div>
-                
-            </div>
-        
-        
-            <div class="returns">
-                <h4>returns:</h4>
-                <div class="type-details-list">
-                    
-                        <p><code>None</code></p>
-                    
-                </div>
-            </div>
-        
-        
-        <p class="details"><p>
-</p></p>
-        
-        
-    </div>
-</div>
-                
-                    <div class="method"
-     id="Page._render">
-    <p>
-        <span class="important-name">_render</span>
-        
-            <code>()</code>
-        
-        
-    <span class="permalink-and-source">
-        <a href="/docs/0.0.1.dev0/api/brown/core/page.html#Page._render">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/page.py#L83">view source</a>
-    </span>
-
-    </p>
-    <div class="body">
-        <p class="summary"><p>Render every object in the page.
-</p></p>
-        
-        
-        
-            <div class="returns">
-                <h4>returns:</h4>
-                <div class="type-details-list">
-                    
-                        <p><code>None</code></p>
-                    
-                </div>
-            </div>
-        
-        
-        <p class="details"><p>
-</p></p>
-        
-        
-    </div>
-</div>
                 
                     <div class="method"
      id="Page.descendants_with_class_or_subclass">

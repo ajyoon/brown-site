@@ -518,7 +518,10 @@
             <p class="details"><p>    This object should not be created directly by users - it is instantiated
     by <code>brown.setup()</code>, which creates a global instance of this class which
     can be then accessed as <code>brown.document</code>.</p><p>    NOTE: Paper gutters are not yet implemented
-    </p></p>
+    </p><p>Unit: The visual horizontal gap between pages on the canvas.</p><p>        This only affects page display in the rendered preview,
+        and has no effect on exported documents.</p><p>        To change this, set <code>config.PAGE_DISPLAY_GAP</code>.
+        </p><p>Render all items in the document.</p><p>        Returns: None
+        </p></p>
         
         
         
@@ -628,34 +631,6 @@
     </div>
 </div>
                 
-                    <div class="property"
-         id="Document._page_display_gap">
-    <p>
-        <span class="important-name">_page_display_gap</span>:
-        <span class="type"><code><a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit">Unit</a></code></span>
-        &mdash;<span class="summary"> The visual horizontal gap between pages on the canvas.</span>
-        
-    <span class="permalink-and-source">
-        <a href="/docs/0.0.1.dev0/api/brown/core/document.html#Document._page_display_gap">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/document.py#L77">view source</a>
-    </span>
-
-    </p>
-    <div class="body">
-        
-        <div class="details"><p>        This only affects page display in the rendered preview,
-        and has no effect on exported documents.</p><p>        To change this, set <code>config.PAGE_DISPLAY_GAP</code>.
-        </p></div>
-        
-        
-            <p class="read-only-notice">
-                read-only.
-            </p>
-        
-        
-    </div>
-</div>
-                
             </div>
         
         
@@ -666,43 +641,6 @@
         
             <h4 class="major-section-title">methods</h4>
             <div class="major-section">
-                
-                    <div class="method"
-     id="Document._render">
-    <p>
-        <span class="important-name">_render</span>
-        
-            <code>()</code>
-        
-        
-    <span class="permalink-and-source">
-        <a href="/docs/0.0.1.dev0/api/brown/core/document.html#Document._render">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/document.py#L89">view source</a>
-    </span>
-
-    </p>
-    <div class="body">
-        <p class="summary"><p>Render all items in the document.
-</p></p>
-        
-        
-        
-            <div class="returns">
-                <h4>returns:</h4>
-                <div class="type-details-list">
-                    
-                        <p><code>None</code></p>
-                    
-                </div>
-            </div>
-        
-        
-        <p class="details"><p>
-</p></p>
-        
-        
-    </div>
-</div>
                 
                     <div class="method"
      id="Document.page_range_of">
