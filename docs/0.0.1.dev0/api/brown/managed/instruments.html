@@ -638,12 +638,368 @@
     </div>
         
             <div class="class"
+         id="Trumpet">
+        <div class="class-name-wrapper">
+            
+    <span class="permalink-and-source">
+        <a href="/docs/0.0.1.dev0/api/brown/managed/instruments.html#Trumpet">permalink</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/managed/instruments.py#L51">view source</a>
+    </span>
+
+            <h2>
+                <span class="class-name">Trumpet</span>
+                
+                    (<code><a href="/docs/0.0.1.dev0/api/brown/managed/instruments.html#Instrument">Instrument</a></code>)
+                
+            </h2>
+        </div>
+        <p class="summary"><p>A trumpet written in sounding pitch</p></p>
+        
+        
+        
+        
+        
+            <div class="inherited">
+                <h4 class="major-section-title">inherited class attributes</h4>
+                <div class="major-section">
+                    
+                        <div class="attribute"
+         id="Instrument.name">
+    <p>
+        <span class="important-name">name</span>:
+        <span class="type"><code>str</code></span>
+        &mdash;<span class="summary"> The full name of this instrument.</span>
+        
+    <span class="permalink-and-source">
+        <a href="/docs/0.0.1.dev0/api/brown/managed/instruments.html#Instrument.name">permalink</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/managed/instruments.py#L17">view source</a>
+    </span>
+
+    </p>
+    <div class="body">
+        
+        <div class="details"></div>
+        
+        
+        
+            
+
+    <div class="inherited-note">
+        inherited from
+        <a href="/docs/0.0.1.dev0/api/brown/managed/instruments.html#Instrument.name">
+            Instrument
+        </a>
+    </div>
+
+
+        
+    </div>
+</div>
+                    
+                        <div class="attribute"
+         id="Instrument.short_name">
+    <p>
+        <span class="important-name">short_name</span>:
+        <span class="type"><code>str</code></span>
+        &mdash;<span class="summary"> The shortened version of this instrument's name.</span>
+        
+    <span class="permalink-and-source">
+        <a href="/docs/0.0.1.dev0/api/brown/managed/instruments.html#Instrument.short_name">permalink</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/managed/instruments.py#L20">view source</a>
+    </span>
+
+    </p>
+    <div class="body">
+        
+        <div class="details"><p>    This is the name that will typically appear on systems after the first one.
+    For example, "Violoncello" might be shortened to "Vc."
+    </p></div>
+        
+        
+        
+            
+
+    <div class="inherited-note">
+        inherited from
+        <a href="/docs/0.0.1.dev0/api/brown/managed/instruments.html#Instrument.short_name">
+            Instrument
+        </a>
+    </div>
+
+
+        
+    </div>
+</div>
+                    
+                        <div class="attribute"
+         id="Instrument.staves">
+    <p>
+        <span class="important-name">staves</span>:
+        <span class="type"><code>List[tuple(<a href="/docs/0.0.1.dev0/api/brown/models/clef_type.html#ClefType">ClefType</a>, <a href="/docs/0.0.1.dev0/api/brown/models/transposition.html#Transposition">Transposition</a>)]</code></span>
+        &mdash;<span class="summary"> Default clefs and transpositions.</span>
+        
+    <span class="permalink-and-source">
+        <a href="/docs/0.0.1.dev0/api/brown/managed/instruments.html#Instrument.staves">permalink</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/managed/instruments.py#L27">view source</a>
+    </span>
+
+    </p>
+    <div class="body">
+        
+        <div class="details"><p>    This specifies the default properties of the staves this instrument
+    typically uses. For most instruments, this will be a single staff.</p><p>    Each staff is given in a tuple of the form: <code>(<a href="/docs/0.0.1.dev0/api/brown/models/clef_type.html#ClefType">ClefType</a>, <a href="/docs/0.0.1.dev0/api/brown/models/transposition.html#Transposition">Transposition</a>)</code>.
+    To not use any <code><a href="/docs/0.0.1.dev0/api/brown/models/transposition.html#Transposition">Transposition</a></code> set that value to <code>None</code>
+    </p></div>
+        
+        
+        
+            
+
+    <div class="inherited-note">
+        inherited from
+        <a href="/docs/0.0.1.dev0/api/brown/managed/instruments.html#Instrument.staves">
+            Instrument
+        </a>
+    </div>
+
+
+        
+    </div>
+</div>
+                    
+                        <div class="attribute"
+         id="Instrument.family">
+    <p>
+        <span class="important-name">family</span>:
+        <span class="type"><code><a href="/docs/0.0.1.dev0/api/brown/managed/instrument_family.html#InstrumentFamily">InstrumentFamily</a></code></span>
+        &mdash;<span class="summary"> The general category of this instrument.</span>
+        
+    <span class="permalink-and-source">
+        <a href="/docs/0.0.1.dev0/api/brown/managed/instruments.html#Instrument.family">permalink</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/managed/instruments.py#L37">view source</a>
+    </span>
+
+    </p>
+    <div class="body">
+        
+        <div class="details"></div>
+        
+        
+        
+            
+
+    <div class="inherited-note">
+        inherited from
+        <a href="/docs/0.0.1.dev0/api/brown/managed/instruments.html#Instrument.family">
+            Instrument
+        </a>
+    </div>
+
+
+        
+    </div>
+</div>
+                    
+                </div>
+            </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+
+    </div>
+        
+            <div class="class"
+         id="Piano">
+        <div class="class-name-wrapper">
+            
+    <span class="permalink-and-source">
+        <a href="/docs/0.0.1.dev0/api/brown/managed/instruments.html#Piano">permalink</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/managed/instruments.py#L59">view source</a>
+    </span>
+
+            <h2>
+                <span class="class-name">Piano</span>
+                
+                    (<code><a href="/docs/0.0.1.dev0/api/brown/managed/instruments.html#Instrument">Instrument</a></code>)
+                
+            </h2>
+        </div>
+        <p class="summary"><p>A two-staff piano</p></p>
+        
+        
+        
+        
+        
+            <div class="inherited">
+                <h4 class="major-section-title">inherited class attributes</h4>
+                <div class="major-section">
+                    
+                        <div class="attribute"
+         id="Instrument.name">
+    <p>
+        <span class="important-name">name</span>:
+        <span class="type"><code>str</code></span>
+        &mdash;<span class="summary"> The full name of this instrument.</span>
+        
+    <span class="permalink-and-source">
+        <a href="/docs/0.0.1.dev0/api/brown/managed/instruments.html#Instrument.name">permalink</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/managed/instruments.py#L17">view source</a>
+    </span>
+
+    </p>
+    <div class="body">
+        
+        <div class="details"></div>
+        
+        
+        
+            
+
+    <div class="inherited-note">
+        inherited from
+        <a href="/docs/0.0.1.dev0/api/brown/managed/instruments.html#Instrument.name">
+            Instrument
+        </a>
+    </div>
+
+
+        
+    </div>
+</div>
+                    
+                        <div class="attribute"
+         id="Instrument.short_name">
+    <p>
+        <span class="important-name">short_name</span>:
+        <span class="type"><code>str</code></span>
+        &mdash;<span class="summary"> The shortened version of this instrument's name.</span>
+        
+    <span class="permalink-and-source">
+        <a href="/docs/0.0.1.dev0/api/brown/managed/instruments.html#Instrument.short_name">permalink</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/managed/instruments.py#L20">view source</a>
+    </span>
+
+    </p>
+    <div class="body">
+        
+        <div class="details"><p>    This is the name that will typically appear on systems after the first one.
+    For example, "Violoncello" might be shortened to "Vc."
+    </p></div>
+        
+        
+        
+            
+
+    <div class="inherited-note">
+        inherited from
+        <a href="/docs/0.0.1.dev0/api/brown/managed/instruments.html#Instrument.short_name">
+            Instrument
+        </a>
+    </div>
+
+
+        
+    </div>
+</div>
+                    
+                        <div class="attribute"
+         id="Instrument.staves">
+    <p>
+        <span class="important-name">staves</span>:
+        <span class="type"><code>List[tuple(<a href="/docs/0.0.1.dev0/api/brown/models/clef_type.html#ClefType">ClefType</a>, <a href="/docs/0.0.1.dev0/api/brown/models/transposition.html#Transposition">Transposition</a>)]</code></span>
+        &mdash;<span class="summary"> Default clefs and transpositions.</span>
+        
+    <span class="permalink-and-source">
+        <a href="/docs/0.0.1.dev0/api/brown/managed/instruments.html#Instrument.staves">permalink</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/managed/instruments.py#L27">view source</a>
+    </span>
+
+    </p>
+    <div class="body">
+        
+        <div class="details"><p>    This specifies the default properties of the staves this instrument
+    typically uses. For most instruments, this will be a single staff.</p><p>    Each staff is given in a tuple of the form: <code>(<a href="/docs/0.0.1.dev0/api/brown/models/clef_type.html#ClefType">ClefType</a>, <a href="/docs/0.0.1.dev0/api/brown/models/transposition.html#Transposition">Transposition</a>)</code>.
+    To not use any <code><a href="/docs/0.0.1.dev0/api/brown/models/transposition.html#Transposition">Transposition</a></code> set that value to <code>None</code>
+    </p></div>
+        
+        
+        
+            
+
+    <div class="inherited-note">
+        inherited from
+        <a href="/docs/0.0.1.dev0/api/brown/managed/instruments.html#Instrument.staves">
+            Instrument
+        </a>
+    </div>
+
+
+        
+    </div>
+</div>
+                    
+                        <div class="attribute"
+         id="Instrument.family">
+    <p>
+        <span class="important-name">family</span>:
+        <span class="type"><code><a href="/docs/0.0.1.dev0/api/brown/managed/instrument_family.html#InstrumentFamily">InstrumentFamily</a></code></span>
+        &mdash;<span class="summary"> The general category of this instrument.</span>
+        
+    <span class="permalink-and-source">
+        <a href="/docs/0.0.1.dev0/api/brown/managed/instruments.html#Instrument.family">permalink</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/managed/instruments.py#L37">view source</a>
+    </span>
+
+    </p>
+    <div class="body">
+        
+        <div class="details"></div>
+        
+        
+        
+            
+
+    <div class="inherited-note">
+        inherited from
+        <a href="/docs/0.0.1.dev0/api/brown/managed/instruments.html#Instrument.family">
+            Instrument
+        </a>
+    </div>
+
+
+        
+    </div>
+</div>
+                    
+                </div>
+            </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+
+    </div>
+        
+            <div class="class"
          id="Violin">
         <div class="class-name-wrapper">
             
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/managed/instruments.html#Violin">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/managed/instruments.py#L44">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/managed/instruments.py#L67">view source</a>
     </span>
 
             <h2>
@@ -821,7 +1177,7 @@
             
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/managed/instruments.html#ViolinI">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/managed/instruments.py#L52">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/managed/instruments.py#L75">view source</a>
     </span>
 
             <h2>
@@ -999,7 +1355,7 @@
             
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/managed/instruments.html#ViolinII">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/managed/instruments.py#L58">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/managed/instruments.py#L81">view source</a>
     </span>
 
             <h2>
@@ -1177,7 +1533,7 @@
             
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/managed/instruments.html#Viola">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/managed/instruments.py#L64">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/managed/instruments.py#L87">view source</a>
     </span>
 
             <h2>
@@ -1355,7 +1711,7 @@
             
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/managed/instruments.html#Cello">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/managed/instruments.py#L72">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/managed/instruments.py#L95">view source</a>
     </span>
 
             <h2>
@@ -1533,7 +1889,7 @@
             
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/managed/instruments.html#Violoncello">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/managed/instruments.py#L80">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/managed/instruments.py#L103">view source</a>
     </span>
 
             <h2>
@@ -1711,7 +2067,7 @@
             
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/managed/instruments.html#Bass">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/managed/instruments.py#L85">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/managed/instruments.py#L108">view source</a>
     </span>
 
             <h2>
@@ -1889,7 +2245,7 @@
             
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/managed/instruments.html#Contrabass">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/managed/instruments.py#L93">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/managed/instruments.py#L116">view source</a>
     </span>
 
             <h2>
