@@ -30,7 +30,7 @@ html {
             padding-bottom: 0.25em;
             padding-left: 0.5em; }
             .sidebar-toc #toc-link-to-current-page a {
-              color: #1f427f; }
+              color: #443730; }
 
 .inherited {
   display: none; }
@@ -55,11 +55,11 @@ html {
         position: fixed;
         top: 0;
         left: 0;
-        background: #1f427f;
+        background: #443730;
         height: 100%;
         padding: 1em;
         border-right: 1px solid #31231e;
-        color: #fffafe;
+        color: #f3f4f3;
         -webkit-box-shadow: 2px 1px 3px 0px #31231e;
         -moz-box-shadow: 2px 1px 3px 0px #31231e;
         box-shadow: 2px 1px 3px 0px #31231e; }
@@ -67,7 +67,7 @@ html {
           margin-top: 0;
           margin-bottom: 1em; }
           #sidebar a {
-            color: #fffafe; }
+            color: #f3f4f3; }
             #sidebar ul {
               padding: 0.5em;
               list-style: none; }
@@ -78,7 +78,7 @@ html {
   top: 0;
   left: 16em;
   z-index: -1;
-  background: linear-gradient(135deg, #9055a2 300px, transparent 0) top left;
+  background: linear-gradient(135deg, #800000 300px, transparent 0) top left;
   height: 100%; }
 
   #site-search {
@@ -99,7 +99,7 @@ h1 {
   font-size: 70px;
   font-style: italic;
   font-weight: bold;
-  color: #1f427f;
+  color: #443730;
   margin: 0; }
 
   h2 {
@@ -107,7 +107,7 @@ h1 {
     font-size: 35px; }
 
     a {
-      color: #1f427f; }
+      color: #443730; }
 
       code {
         background: #f1efef;
@@ -188,7 +188,7 @@ h1 {
   .class:hover > .class-name-wrapper > .permalink-and-source {
     transform: translateX(0); }
     .class:hover > .class-name-wrapper > .permalink-and-source > a {
-      color: #1f427f; }
+      color: #443730; }
 
 .method:hover .permalink-and-source, .attribute:hover .permalink-and-source,
 .property:hover .permalink-and-source {
@@ -196,7 +196,7 @@ h1 {
   .method:hover .permalink-and-source > a,
   .attribute:hover .permalink-and-source > a,
   .property:hover .permalink-and-source > a {
-    color: #1f427f; }
+    color: #443730; }
 
 @media (max-width: 96em) {
   #page-body {
