@@ -505,20 +505,19 @@
             
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/core/repeating_music_text_line.html#RepeatingMusicTextLine">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/repeating_music_text_line.py#L6">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/repeating_music_text_line.py#L7">view source</a>
     </span>
 
             <h2>
                 <span class="class-name">RepeatingMusicTextLine</span>
                 
-                    (<code><a href="/docs/0.0.1.dev0/api/brown/core/music_text.html#MusicText">MusicText</a></code>, <code><a href="/docs/0.0.1.dev0/api/brown/core/horizontal_spanner.html#HorizontalSpanner">HorizontalSpanner</a></code>)
+                    (<code><a href="/docs/0.0.1.dev0/api/brown/core/music_text.html#MusicText">MusicText</a></code>, <code><a href="/docs/0.0.1.dev0/api/brown/core/staff_object.html#StaffObject">StaffObject</a></code>, <code><a href="/docs/0.0.1.dev0/api/brown/core/horizontal_spanner.html#HorizontalSpanner">HorizontalSpanner</a></code>)
                 
             </h2>
         </div>
         <p class="summary"><p>A spanner of repeating music text over its length.</p></p>
         
-            <p class="details"><p>    All of these spanners must be hori
-    </p><p>int: The number of text repetitions needed to cover the line.</p><p>        This value rounds down, such that the real length of the drawn
+            <p class="details"><p>int: The number of text repetitions needed to cover the line.</p><p>        This value rounds down, such that the real length of the drawn
         text will always be <= self.length.
         </p></p>
         
@@ -536,7 +535,7 @@
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/core/repeating_music_text_line.html#RepeatingMusicTextLine.__init__">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/repeating_music_text_line.py#L13">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/repeating_music_text_line.py#L11">view source</a>
     </span>
 
     </p>
@@ -826,44 +825,6 @@
 </div>
                     
                         <div class="property"
-         id="GraphicObject.length">
-    <p>
-        <span class="important-name">length</span>:
-        <span class="type"><code><a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit">Unit</a></code></span>
-        &mdash;<span class="summary"> The breakable length of the object.</span>
-        
-    <span class="permalink-and-source">
-        <a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject.length">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/graphic_object.py#L112">view source</a>
-    </span>
-
-    </p>
-    <div class="body">
-        
-        <div class="details"><p>        This is used to determine how and where rendering cuts should be made.
-        </p></div>
-        
-        
-            <p class="read-only-notice">
-                read-only.
-            </p>
-        
-        
-            
-
-    <div class="inherited-note">
-        inherited from
-        <a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject.length">
-            GraphicObject
-        </a>
-    </div>
-
-
-        
-    </div>
-</div>
-                    
-                        <div class="property"
          id="StaffObject.staff">
     <p>
         <span class="important-name">staff</span>:
@@ -930,6 +891,44 @@
         inherited from
         <a href="/docs/0.0.1.dev0/api/brown/core/staff_object.html#StaffObject.pos_in_staff">
             StaffObject
+        </a>
+    </div>
+
+
+        
+    </div>
+</div>
+                    
+                        <div class="property"
+         id="GraphicObject.length">
+    <p>
+        <span class="important-name">length</span>:
+        <span class="type"><code><a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit">Unit</a></code></span>
+        &mdash;<span class="summary"> The breakable length of the object.</span>
+        
+    <span class="permalink-and-source">
+        <a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject.length">permalink</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/graphic_object.py#L112">view source</a>
+    </span>
+
+    </p>
+    <div class="body">
+        
+        <div class="details"><p>        This is used to determine how and where rendering cuts should be made.
+        </p></div>
+        
+        
+            <p class="read-only-notice">
+                read-only.
+            </p>
+        
+        
+            
+
+    <div class="inherited-note">
+        inherited from
+        <a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject.length">
+            GraphicObject
         </a>
     </div>
 

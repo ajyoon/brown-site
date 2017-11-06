@@ -505,27 +505,32 @@
             
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/core/music_text.html#MusicText">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/music_text.py#L8">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/music_text.py#L9">view source</a>
     </span>
 
             <h2>
                 <span class="class-name">MusicText</span>
                 
-                    (<code><a href="/docs/0.0.1.dev0/api/brown/core/text.html#Text">Text</a></code>, <code><a href="/docs/0.0.1.dev0/api/brown/core/staff_object.html#StaffObject">StaffObject</a></code>)
+                    (<code><a href="/docs/0.0.1.dev0/api/brown/core/text.html#Text">Text</a></code>)
                 
             </h2>
         </div>
         <p class="summary"><p>
-    A glyph with a MusicFont and convenient access to relevant SMuFL metadata.</p></p>
+    A glyph with a MusicFont and convenient access to relevant SMuFL metadata.
+    </p></p>
         
-            <p class="details"><p>    The text content of a MusicText should be a single character.
-    Rather than being specified by their unicode codepoints or literals,
-    characters should be specified by their canonical SMuFL names.
-    </p><p>Rect: The bounding rect for this text when rendered.</p><p>Point: The origin offset override for this glyph.</p><p>Find the bounding rect of a given list of music chars.</p><p>        Takes a list of MusicChars and determined the bounding rect
+            <p class="details"><p>Rect: The bounding rect for this text when rendered.</p><p>Point: The origin offset override for this glyph.</p><p>Find the bounding rect of a given list of music chars.</p><p>        Takes a list of MusicChars and determined the bounding rect
         they would have if they were in this MusicText.</p><p>        The fonts of every music character should the the same as self.font.</p><p>        Args:
             music_chars (list[MusicChar]): The string to represent</p><p>        Returns:
             Rect: The bounding rect of the specified text if drawn.</p><p>        Raises:
             ValueError: if <code>music_chars</code> is empty.
+        </p><p>
+        Args:
+            text (str, tuple, MusicChar, or list of these):
+                The text to be used, represented as a either a <code>str</code>
+                (glyph name), <code>tuple</code> (glyph name, alternate number),
+                <code><a href="/docs/0.0.1.dev0/api/brown/core/music_char.html#MusicChar">MusicChar</a></code>, or a list of these.
+            font (MusicFont): The font to be applied to the text
         </p></p>
         
         
@@ -541,7 +546,7 @@
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/core/music_text.html#MusicText.__init__">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/music_text.py#L16">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/music_text.py#L13">view source</a>
     </span>
 
     </p>
@@ -565,7 +570,7 @@
             <div class="type-details-list">
                 
                     <div class="arg">
-                        <p><p>pos <code>(<a href="/docs/0.0.1.dev0/api/brown/utils/point.html#Point">Point</a> or init tuple)</code>: The position of the text</p></p>
+                        <p><p>pos <code>(<a href="/docs/0.0.1.dev0/api/brown/utils/point.html#Point">Point</a> or init tuple)</code>: The position of the text.</p></p>
                     </div>
                 
                     <div class="arg">
@@ -576,14 +581,14 @@
                     </div>
                 
                     <div class="arg">
-                        <p><p>parent <code>(<a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject">GraphicObject</a>)</code>: The parent of the glyph. This should
-                either be a <code><a href="/docs/0.0.1.dev0/api/brown/core/staff.html#Staff">Staff</a></code> or an object which has a <code><a href="/docs/0.0.1.dev0/api/brown/core/staff.html#Staff">Staff</a></code> as
-                an ancestor.</p></p>
+                        <p><p>parent <code>(<a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject">GraphicObject</a>)</code>: The parent of the glyph. If no <code>font</code>
+                is given, this must either be a <code><a href="/docs/0.0.1.dev0/api/brown/core/staff.html#Staff">Staff</a></code> or an object which has
+                a <code><a href="/docs/0.0.1.dev0/api/brown/core/staff.html#Staff">Staff</a></code> as an ancestor.</p></p>
                     </div>
                 
                     <div class="arg">
                         <p><p>font <code>(<a href="/docs/0.0.1.dev0/api/brown/core/music_font.html#MusicFont">MusicFont</a>)</code>: The music font to be used. If not specified,
-                the font is taken from the ancestor staff.</p></p>
+                <code>parent</code> must be or have a <code><a href="/docs/0.0.1.dev0/api/brown/core/staff.html#Staff">Staff</a></code> ancestor.</p></p>
                     </div>
                 
                     <div class="arg">
@@ -617,7 +622,7 @@
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/core/music_text.html#MusicText.length">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/music_text.py#L61">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/music_text.py#L43">view source</a>
     </span>
 
     </p>
@@ -652,81 +657,6 @@
             <div class="inherited">
                 <h4 class="major-section-title">inherited properties</h4>
                 <div class="major-section">
-                    
-                        <div class="property"
-         id="StaffObject.staff">
-    <p>
-        <span class="important-name">staff</span>:
-        <span class="type"><code><a href="/docs/0.0.1.dev0/api/brown/core/staff.html#Staff">Staff</a></code></span>
-        &mdash;<span class="summary"> The staff associated with this object</span>
-        
-    <span class="permalink-and-source">
-        <a href="/docs/0.0.1.dev0/api/brown/core/staff_object.html#StaffObject.staff">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/staff_object.py#L31">view source</a>
-    </span>
-
-    </p>
-    <div class="body">
-        
-        <div class="details"></div>
-        
-        
-            <p class="read-only-notice">
-                read-only.
-            </p>
-        
-        
-            
-
-    <div class="inherited-note">
-        inherited from
-        <a href="/docs/0.0.1.dev0/api/brown/core/staff_object.html#StaffObject.staff">
-            StaffObject
-        </a>
-    </div>
-
-
-        
-    </div>
-</div>
-                    
-                        <div class="property"
-         id="StaffObject.pos_in_staff">
-    <p>
-        <span class="important-name">pos_in_staff</span>:
-        <span class="type"><code><a href="/docs/0.0.1.dev0/api/brown/utils/point.html#Point">Point</a></code></span>
-        &mdash;<span class="summary"> The position of this object relative to the staff.</span>
-        
-    <span class="permalink-and-source">
-        <a href="/docs/0.0.1.dev0/api/brown/core/staff_object.html#StaffObject.pos_in_staff">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/staff_object.py#L36">view source</a>
-    </span>
-
-    </p>
-    <div class="body">
-        
-        <div class="details"><p>        This position is in non-flowed space.</p><p>        # TODO: Definitely cache me when property caching is implemented
-        </p></div>
-        
-        
-            <p class="read-only-notice">
-                read-only.
-            </p>
-        
-        
-            
-
-    <div class="inherited-note">
-        inherited from
-        <a href="/docs/0.0.1.dev0/api/brown/core/staff_object.html#StaffObject.pos_in_staff">
-            StaffObject
-        </a>
-    </div>
-
-
-        
-    </div>
-</div>
                     
                         <div class="property"
          id="Text.text">
@@ -1379,70 +1309,6 @@ True
             </div>
         
         
-        
-            <div class="inherited">
-                <h4 class="major-section-title">inherited static methods</h4>
-                <div class="major-section">
-                    
-                        <div class="method"
-     id="StaffObject.find_staff">
-    <p>
-        <span class="important-name">find_staff</span>
-        
-            <code>(graphic_object)</code>
-        
-        
-    <span class="permalink-and-source">
-        <a href="/docs/0.0.1.dev0/api/brown/core/staff_object.html#StaffObject.find_staff">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/staff_object.py#L50">view source</a>
-    </span>
-
-    </p>
-    <div class="body">
-        <p class="summary"><p>Find the first staff which is <code>graphic_object</code> or an ancestor of it.
-</p></p>
-        
-        
-            <h4>arguments:</h4>
-            <div class="type-details-list">
-                
-                    <div class="arg">
-                        <p><p>graphic_object <code>(<a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject">GraphicObject</a>)</code>:</p></p>
-                    </div>
-                
-            </div>
-        
-        
-            <div class="returns">
-                <h4>returns:</h4>
-                <div class="type-details-list">
-                    
-                        <p><code><a href="/docs/0.0.1.dev0/api/brown/core/staff.html#Staff">Staff</a> or None</code></p>
-                    
-                </div>
-            </div>
-        
-        
-        <p class="details"><p>
-</p></p>
-        
-        
-            
-
-    <div class="inherited-note">
-        inherited from
-        <a href="/docs/0.0.1.dev0/api/brown/core/staff_object.html#StaffObject.find_staff">
-            StaffObject
-        </a>
-    </div>
-
-
-        
-    </div>
-</div>
-                    
-                </div>
-            </div>
         
         
         
