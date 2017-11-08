@@ -519,7 +519,7 @@
     A glyph with a MusicFont and convenient access to relevant SMuFL metadata.
     </p></p>
         
-            <p class="details"><p>Rect: The bounding rect for this text when rendered.</p><p>Point: The origin offset override for this glyph.</p><p>Find the bounding rect of a given list of music chars.</p><p>        Takes a list of MusicChars and determined the bounding rect
+            <p class="details"><p>Point: The origin offset override for this glyph.</p><p>Find the bounding rect of a given list of music chars.</p><p>        Takes a list of MusicChars and determined the bounding rect
         they would have if they were in this MusicText.</p><p>        The fonts of every music character should the the same as self.font.</p><p>        Args:
             music_chars (list[MusicChar]): The string to represent</p><p>        Returns:
             Rect: The bounding rect of the specified text if drawn.</p><p>        Raises:
@@ -641,6 +641,43 @@
         
         <div class="details"><p>        This is used to determine how and where rendering cuts should be made.
         </p></div>
+        
+        
+            <p class="read-only-notice">
+                read-only.
+            </p>
+        
+        
+    </div>
+</div>
+                
+                    <div class="property"
+         id="MusicText.bounding_rect">
+    <p>
+        <span class="important-name">bounding_rect</span>:
+        <span class="type"><code><a href="/docs/0.0.1.dev0/api/brown/utils/rect.html#Rect">Rect</a></code></span>
+        &mdash;<span class="summary"> The bounding rect for this text when rendered.</span>
+        
+    <span class="permalink-and-source">
+        <a href="/docs/0.0.1.dev0/api/brown/core/music_text.html#MusicText.bounding_rect">permalink</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/music_text.py#L53">view source</a>
+    </span>
+
+    </p>
+    <div class="body">
+        
+            
+
+    <div class="overriden-note">
+        overriden from
+        <a href="/docs/0.0.1.dev0/api/brown/core/text.html#Text.bounding_rect">
+            Text
+        </a>
+    </div>
+
+
+        
+        <div class="details"></div>
         
         
             <p class="read-only-notice">
