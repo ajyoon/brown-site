@@ -199,6 +199,14 @@
             </li>
         
             <li >
+                <a href="/docs/0.0.1.dev0/api/brown/core/pen_cap_style.html">pen_cap_style</a>
+            </li>
+        
+            <li >
+                <a href="/docs/0.0.1.dev0/api/brown/core/pen_join_style.html">pen_join_style</a>
+            </li>
+        
+            <li >
                 <a href="/docs/0.0.1.dev0/api/brown/core/pen_pattern.html">pen_pattern</a>
             </li>
         
@@ -505,7 +513,7 @@
             
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/core/pen.html#Pen">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/pen.py#L8">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/pen.py#L10">view source</a>
     </span>
 
             <h2>
@@ -529,12 +537,14 @@
             <code>(self,
                  color='#000000',
                  thickness=None,
-                 pattern=PenPattern.SOLID)</code>
+                 pattern=PenPattern.SOLID,
+                 join_style=PenJoinStyle.BEVEL,
+                 cap_style=PenCapStyle.SQUARE)</code>
         
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/core/pen.html#Pen.__init__">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/pen.py#L14">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/pen.py#L16">view source</a>
     </span>
 
     </p>
@@ -557,8 +567,16 @@
                     </div>
                 
                     <div class="arg">
-                        <p><p>pattern <code>(<a href="/docs/0.0.1.dev0/api/brown/core/pen_pattern.html#PenPattern">PenPattern</a> or int)</code>: The stroke pattern.
+                        <p><p>pattern <code>(<a href="/docs/0.0.1.dev0/api/brown/core/pen_pattern.html#PenPattern">PenPattern</a>)</code>: The stroke pattern.
                 Defaults to a solid line.</p></p>
+                    </div>
+                
+                    <div class="arg">
+                        <p><p>join_style <code>(<a href="/docs/0.0.1.dev0/api/brown/core/pen_join_style.html#PenJoinStyle">PenJoinStyle</a>)</code>: Defaults to a bevel join</p></p>
+                    </div>
+                
+                    <div class="arg">
+                        <p><p>cap_style <code>(<a href="/docs/0.0.1.dev0/api/brown/core/pen_cap_style.html#PenCapStyle">PenCapStyle</a>)</code>: Defaults to a square cap</p></p>
                     </div>
                 
             </div>
@@ -587,7 +605,7 @@
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/core/pen.html#Pen.color">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/pen.py#L55">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/pen.py#L67">view source</a>
     </span>
 
     </p>
@@ -609,7 +627,7 @@
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/core/pen.html#Pen.thickness">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/pen.py#L64">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/pen.py#L76">view source</a>
     </span>
 
     </p>
@@ -631,13 +649,58 @@
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/core/pen.html#Pen.pattern">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/pen.py#L73">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/pen.py#L85">view source</a>
     </span>
 
     </p>
     <div class="body">
         
         <div class="details"></div>
+        
+        
+        
+    </div>
+</div>
+                
+                    <div class="property"
+         id="Pen.join_style">
+    <p>
+        <span class="important-name">join_style</span>:
+        <span class="type"><code><a href="/docs/0.0.1.dev0/api/brown/core/pen_join_style.html#PenJoinStyle">PenJoinStyle</a></code></span>
+        &mdash;<span class="summary"> the style of line sharp line joins.</span>
+        
+    <span class="permalink-and-source">
+        <a href="/docs/0.0.1.dev0/api/brown/core/pen.html#Pen.join_style">permalink</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/pen.py#L94">view source</a>
+    </span>
+
+    </p>
+    <div class="body">
+        
+        <div class="details"><p>        This style has no effect on curved paths.
+        </p></div>
+        
+        
+        
+    </div>
+</div>
+                
+                    <div class="property"
+         id="Pen.cap_style">
+    <p>
+        <span class="important-name">cap_style</span>:
+        <span class="type"><code><a href="/docs/0.0.1.dev0/api/brown/core/pen_cap_style.html#PenCapStyle">PenCapStyle</a></code></span>
+        &mdash;<span class="summary"> the style of unclosed path caps with this pen.</span>
+        
+    <span class="permalink-and-source">
+        <a href="/docs/0.0.1.dev0/api/brown/core/pen.html#Pen.cap_style">permalink</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/pen.py#L106">view source</a>
+    </span>
+
+    </p>
+    <div class="body">
+        
+        <div class="details"><p>        This style has no effect on closed paths.</p></div>
         
         
         
@@ -661,7 +724,7 @@
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/core/pen.html#Pen.from_existing">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/pen.py#L44">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/pen.py#L55">view source</a>
     </span>
 
     </p>

@@ -36,7 +36,7 @@
         <ul>
             
                 
-    <li id="toc-link-to-current-page">
+    <li >
         <a href="/docs/0.0.1.dev0/api/brown/core.html">core</a>
     </li>
     
@@ -202,7 +202,7 @@
                 <a href="/docs/0.0.1.dev0/api/brown/core/pen_cap_style.html">pen_cap_style</a>
             </li>
         
-            <li >
+            <li id="toc-link-to-current-page">
                 <a href="/docs/0.0.1.dev0/api/brown/core/pen_join_style.html">pen_join_style</a>
             </li>
         
@@ -492,121 +492,132 @@
             <div id="page-body">
                 
 
-<h1>brown.core</h1>
-<h3>The most fundamental building blocks of brown</h3>
-<p>This package contains most of the classes central to <code><a href="/docs/0.0.1.dev0/api/brown.html">brown</a></code>, including basic graphic primitives (<code><a href="/docs/0.0.1.dev0/api/brown/core/path.html#Path">Path</a></code>, <code><a href="/docs/0.0.1.dev0/api/brown/core/text.html#Text">Text</a></code>, etc), document layout primitives, SMuFL music font binding logic, and higher-level notation primitives such as <code><a href="/docs/0.0.1.dev0/api/brown/core/staff.html#Staff">Staff</a></code> and <code><a href="/docs/0.0.1.dev0/api/brown/core/chordrest.html#Chordrest">Chordrest</a></code>.</p>
+    <h1 id="page-title">brown<wbr>.core<wbr>.pen_join_style</h1>
+
+    <a id="show-inherited-toggle" href="javascript:void(toggleShowInheritence())"></a>
+
+    
+
+    
+
+    
+
+    
+
+    
+        <h3 class="major-section-title">classes</h3>
+        
+            <div class="class"
+         id="PenJoinStyle">
+        <div class="class-name-wrapper">
+            
+    <span class="permalink-and-source">
+        <a href="/docs/0.0.1.dev0/api/brown/core/pen_join_style.html#PenJoinStyle">permalink</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/pen_join_style.py#L4">view source</a>
+    </span>
+
+            <h2>
+                <span class="class-name">PenJoinStyle</span>
+                
+                    (<code>Enum</code>)
+                
+            </h2>
+        </div>
+        <p class="summary"><p>Styles controlling the shape of line joints on a pen stroke.</p></p>
+        
+            <p class="details"><p>    See also http://doc.qt.io/qt-5.9/qt.html#PenJoinStyle-enum
+    </p></p>
+        
+        
+        
+        
+            
+                <h4 class="major-section-title">enumerations</h4>
+            
+            <div class="major-section">
+                
+                    <div class="attribute"
+         id="PenJoinStyle.BEVEL">
+    <p>
+        <span class="important-name">BEVEL</span>:
+        <span class="type"></span>
+        &mdash;<span class="summary">The triangular notch between the two lines is filled.</span>
+        
+    <span class="permalink-and-source">
+        <a href="/docs/0.0.1.dev0/api/brown/core/pen_join_style.html#PenJoinStyle.BEVEL">permalink</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/pen_join_style.py#L11">view source</a>
+    </span>
+
+    </p>
+    <div class="body">
+        
+        <div class="details"></div>
+        
+        
+        
+    </div>
+</div>
+                
+                    <div class="attribute"
+         id="PenJoinStyle.MITER">
+    <p>
+        <span class="important-name">MITER</span>:
+        <span class="type"></span>
+        &mdash;<span class="summary">The outer edges of the lines are extended to meet at an angle.</span>
+        
+    <span class="permalink-and-source">
+        <a href="/docs/0.0.1.dev0/api/brown/core/pen_join_style.html#PenJoinStyle.MITER">permalink</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/pen_join_style.py#L14">view source</a>
+    </span>
+
+    </p>
+    <div class="body">
+        
+        <div class="details"></div>
+        
+        
+        
+    </div>
+</div>
+                
+                    <div class="attribute"
+         id="PenJoinStyle.ROUND">
+    <p>
+        <span class="important-name">ROUND</span>:
+        <span class="type"></span>
+        &mdash;<span class="summary">A circular arc between the two lines is filled.</span>
+        
+    <span class="permalink-and-source">
+        <a href="/docs/0.0.1.dev0/api/brown/core/pen_join_style.html#PenJoinStyle.ROUND">permalink</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/pen_join_style.py#L17">view source</a>
+    </span>
+
+    </p>
+    <div class="body">
+        
+        <div class="details"></div>
+        
+        
+        
+    </div>
+</div>
+                
+            </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
 
 
-
-    <h3>modules</h3>
-    <ul>
+    </div>
         
-            <li><a href="/docs/0.0.1.dev0/api/brown/core/accidental.html">brown.core.accidental</a></li>
-        
-            <li><a href="/docs/0.0.1.dev0/api/brown/core/auto_new_line.html">brown.core.auto_new_line</a></li>
-        
-            <li><a href="/docs/0.0.1.dev0/api/brown/core/bar_line.html">brown.core.bar_line</a></li>
-        
-            <li><a href="/docs/0.0.1.dev0/api/brown/core/beam.html">brown.core.beam</a></li>
-        
-            <li><a href="/docs/0.0.1.dev0/api/brown/core/brace.html">brown.core.brace</a></li>
-        
-            <li><a href="/docs/0.0.1.dev0/api/brown/core/brown.html">brown.core.brown</a></li>
-        
-            <li><a href="/docs/0.0.1.dev0/api/brown/core/brush.html">brown.core.brush</a></li>
-        
-            <li><a href="/docs/0.0.1.dev0/api/brown/core/brush_pattern.html">brown.core.brush_pattern</a></li>
-        
-            <li><a href="/docs/0.0.1.dev0/api/brown/core/chordrest.html">brown.core.chordrest</a></li>
-        
-            <li><a href="/docs/0.0.1.dev0/api/brown/core/clef.html">brown.core.clef</a></li>
-        
-            <li><a href="/docs/0.0.1.dev0/api/brown/core/document.html">brown.core.document</a></li>
-        
-            <li><a href="/docs/0.0.1.dev0/api/brown/core/dynamic.html">brown.core.dynamic</a></li>
-        
-            <li><a href="/docs/0.0.1.dev0/api/brown/core/flag.html">brown.core.flag</a></li>
-        
-            <li><a href="/docs/0.0.1.dev0/api/brown/core/flowable.html">brown.core.flowable</a></li>
-        
-            <li><a href="/docs/0.0.1.dev0/api/brown/core/font.html">brown.core.font</a></li>
-        
-            <li><a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html">brown.core.graphic_object</a></li>
-        
-            <li><a href="/docs/0.0.1.dev0/api/brown/core/hairpin.html">brown.core.hairpin</a></li>
-        
-            <li><a href="/docs/0.0.1.dev0/api/brown/core/horizontal_spanner.html">brown.core.horizontal_spanner</a></li>
-        
-            <li><a href="/docs/0.0.1.dev0/api/brown/core/invisible_object.html">brown.core.invisible_object</a></li>
-        
-            <li><a href="/docs/0.0.1.dev0/api/brown/core/key_signature.html">brown.core.key_signature</a></li>
-        
-            <li><a href="/docs/0.0.1.dev0/api/brown/core/layout_controller.html">brown.core.layout_controller</a></li>
-        
-            <li><a href="/docs/0.0.1.dev0/api/brown/core/ledger_line.html">brown.core.ledger_line</a></li>
-        
-            <li><a href="/docs/0.0.1.dev0/api/brown/core/multi_staff_object.html">brown.core.multi_staff_object</a></li>
-        
-            <li><a href="/docs/0.0.1.dev0/api/brown/core/music_char.html">brown.core.music_char</a></li>
-        
-            <li><a href="/docs/0.0.1.dev0/api/brown/core/music_font.html">brown.core.music_font</a></li>
-        
-            <li><a href="/docs/0.0.1.dev0/api/brown/core/music_text.html">brown.core.music_text</a></li>
-        
-            <li><a href="/docs/0.0.1.dev0/api/brown/core/new_line.html">brown.core.new_line</a></li>
-        
-            <li><a href="/docs/0.0.1.dev0/api/brown/core/notehead.html">brown.core.notehead</a></li>
-        
-            <li><a href="/docs/0.0.1.dev0/api/brown/core/object_group.html">brown.core.object_group</a></li>
-        
-            <li><a href="/docs/0.0.1.dev0/api/brown/core/octave_line.html">brown.core.octave_line</a></li>
-        
-            <li><a href="/docs/0.0.1.dev0/api/brown/core/page.html">brown.core.page</a></li>
-        
-            <li><a href="/docs/0.0.1.dev0/api/brown/core/page_supplier.html">brown.core.page_supplier</a></li>
-        
-            <li><a href="/docs/0.0.1.dev0/api/brown/core/paper.html">brown.core.paper</a></li>
-        
-            <li><a href="/docs/0.0.1.dev0/api/brown/core/path.html">brown.core.path</a></li>
-        
-            <li><a href="/docs/0.0.1.dev0/api/brown/core/path_element.html">brown.core.path_element</a></li>
-        
-            <li><a href="/docs/0.0.1.dev0/api/brown/core/path_element_type.html">brown.core.path_element_type</a></li>
-        
-            <li><a href="/docs/0.0.1.dev0/api/brown/core/ped_and_star.html">brown.core.ped_and_star</a></li>
-        
-            <li><a href="/docs/0.0.1.dev0/api/brown/core/pedal_line.html">brown.core.pedal_line</a></li>
-        
-            <li><a href="/docs/0.0.1.dev0/api/brown/core/pen.html">brown.core.pen</a></li>
-        
-            <li><a href="/docs/0.0.1.dev0/api/brown/core/pen_cap_style.html">brown.core.pen_cap_style</a></li>
-        
-            <li><a href="/docs/0.0.1.dev0/api/brown/core/pen_join_style.html">brown.core.pen_join_style</a></li>
-        
-            <li><a href="/docs/0.0.1.dev0/api/brown/core/pen_pattern.html">brown.core.pen_pattern</a></li>
-        
-            <li><a href="/docs/0.0.1.dev0/api/brown/core/repeating_music_text_line.html">brown.core.repeating_music_text_line</a></li>
-        
-            <li><a href="/docs/0.0.1.dev0/api/brown/core/rest.html">brown.core.rest</a></li>
-        
-            <li><a href="/docs/0.0.1.dev0/api/brown/core/rhythm_dot.html">brown.core.rhythm_dot</a></li>
-        
-            <li><a href="/docs/0.0.1.dev0/api/brown/core/slur.html">brown.core.slur</a></li>
-        
-            <li><a href="/docs/0.0.1.dev0/api/brown/core/spanner.html">brown.core.spanner</a></li>
-        
-            <li><a href="/docs/0.0.1.dev0/api/brown/core/staff.html">brown.core.staff</a></li>
-        
-            <li><a href="/docs/0.0.1.dev0/api/brown/core/staff_object.html">brown.core.staff_object</a></li>
-        
-            <li><a href="/docs/0.0.1.dev0/api/brown/core/stem.html">brown.core.stem</a></li>
-        
-            <li><a href="/docs/0.0.1.dev0/api/brown/core/text.html">brown.core.text</a></li>
-        
-            <li><a href="/docs/0.0.1.dev0/api/brown/core/time_signature.html">brown.core.time_signature</a></li>
-        
-    </ul>
-
+    
 
 
             </div>

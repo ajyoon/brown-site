@@ -199,6 +199,14 @@
             </li>
         
             <li >
+                <a href="/docs/0.0.1.dev0/api/brown/core/pen_cap_style.html">pen_cap_style</a>
+            </li>
+        
+            <li >
+                <a href="/docs/0.0.1.dev0/api/brown/core/pen_join_style.html">pen_join_style</a>
+            </li>
+        
+            <li >
                 <a href="/docs/0.0.1.dev0/api/brown/core/pen_pattern.html">pen_pattern</a>
             </li>
         
@@ -515,10 +523,7 @@
                 
             </h2>
         </div>
-        <p class="summary"><p>Interface for a generic drawing pen controlling path outline appearance.</p></p>
-        
-            <p class="details"><p>    Currently only solid colors are supported.
-    </p></p>
+        <p class="summary"><p>Interface for a pen controlling path outline appearance.</p></p>
         
         
         
@@ -528,12 +533,13 @@
     <p>
         <span class="important-name">__init__</span>
         
-            <code>(brown_object, color, thickness, pattern)</code>
+            <code>(brown_object, color, thickness, pattern,
+                 join_style, cap_style)</code>
         
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/interface/pen_interface.html#PenInterface.__init__">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/interface/pen_interface.py#L14">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/interface/pen_interface.py#L11">view source</a>
     </span>
 
     </p>
@@ -557,16 +563,27 @@
             <div class="type-details-list">
                 
                     <div class="arg">
-                        <p><p>color <code>(<a href="/docs/0.0.1.dev0/api/brown/utils/color.html#Color">Color</a>)</code>: The color for the pen</p></p>
+                        <p><p>brown_object <code>(<a href="/docs/0.0.1.dev0/api/brown/core/pen.html#Pen">Pen</a>)</code>: The object this interface belongs to.</p></p>
                     </div>
                 
                     <div class="arg">
-                        <p><p>thickness <code>(<a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit">Unit</a>)</code>: The stroke thickness of the pen</p></p>
+                        <p><p>color <code>(<a href="/docs/0.0.1.dev0/api/brown/utils/color.html#Color">Color</a>)</code>:</p></p>
                     </div>
                 
                     <div class="arg">
-                        <p><p>pattern <code>(<a href="/docs/0.0.1.dev0/api/brown/core/pen_pattern.html#PenPattern">PenPattern</a> or int enum value)</code>: The stroke pattern.
-                Defaults to a solid line.</p></p>
+                        <p><p>thickness <code>(<a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit">Unit</a>)</code>:</p></p>
+                    </div>
+                
+                    <div class="arg">
+                        <p><p>pattern <code>(<a href="/docs/0.0.1.dev0/api/brown/core/pen_pattern.html#PenPattern">PenPattern</a>)</code>:</p></p>
+                    </div>
+                
+                    <div class="arg">
+                        <p><p>join_style <code>(<a href="/docs/0.0.1.dev0/api/brown/core/pen_join_style.html#PenJoinStyle">PenJoinStyle</a>)</code>:</p></p>
+                    </div>
+                
+                    <div class="arg">
+                        <p><p>cap_style <code>(<a href="/docs/0.0.1.dev0/api/brown/core/pen_cap_style.html#PenCapStyle">PenCapStyle</a>)</code>:</p></p>
                     </div>
                 
             </div>
@@ -595,7 +612,7 @@
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/interface/pen_interface.html#PenInterface.color">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/interface/pen_interface.py#L32">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/interface/pen_interface.py#L33">view source</a>
     </span>
 
     </p>
@@ -618,7 +635,7 @@
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/interface/pen_interface.html#PenInterface.thickness">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/interface/pen_interface.py#L48">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/interface/pen_interface.py#L49">view source</a>
     </span>
 
     </p>
@@ -641,7 +658,53 @@
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/interface/pen_interface.html#PenInterface.pattern">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/interface/pen_interface.py#L63">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/interface/pen_interface.py#L64">view source</a>
+    </span>
+
+    </p>
+    <div class="body">
+        
+        <div class="details"><p>        This setter propagates changes to the underlying Qt object.
+        </p></div>
+        
+        
+        
+    </div>
+</div>
+                
+                    <div class="property"
+         id="PenInterface.join_style">
+    <p>
+        <span class="important-name">join_style</span>:
+        <span class="type"><code><a href="/docs/0.0.1.dev0/api/brown/core/pen_join_style.html#PenJoinStyle">PenJoinStyle</a></code></span>
+        &mdash;<span class="summary"> The joint style.</span>
+        
+    <span class="permalink-and-source">
+        <a href="/docs/0.0.1.dev0/api/brown/interface/pen_interface.html#PenInterface.join_style">permalink</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/interface/pen_interface.py#L78">view source</a>
+    </span>
+
+    </p>
+    <div class="body">
+        
+        <div class="details"><p>        This setter propagates changes to the underlying Qt object.
+        </p></div>
+        
+        
+        
+    </div>
+</div>
+                
+                    <div class="property"
+         id="PenInterface.cap_style">
+    <p>
+        <span class="important-name">cap_style</span>:
+        <span class="type"><code><a href="/docs/0.0.1.dev0/api/brown/core/pen_cap_style.html#PenCapStyle">PenCapStyle</a></code></span>
+        &mdash;<span class="summary"> The cap style.</span>
+        
+    <span class="permalink-and-source">
+        <a href="/docs/0.0.1.dev0/api/brown/interface/pen_interface.html#PenInterface.cap_style">permalink</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/interface/pen_interface.py#L91">view source</a>
     </span>
 
     </p>
