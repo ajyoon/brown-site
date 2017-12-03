@@ -533,7 +533,7 @@
     <p>
         <span class="important-name">__init__</span>
         
-            <code>(family_name, size, weight=1, italic=False)</code>
+            <code>(family_name, size, weight=None, italic=False)</code>
         
         
     <span class="permalink-and-source">
@@ -559,7 +559,10 @@
                     </div>
                 
                     <div class="arg">
-                        <p><p>weight <code>(float)</code>: The font weight, where 1 is normal</p></p>
+                        <p><p>weight <code>(int)</code>: The font weight on a 0-100 scale, where 50 is normal,
+                lower numbers are lighter, and higher are darker.
+                If <code>None</code> (the default), the system default font weight
+                will be used.</p></p>
                     </div>
                 
                     <div class="arg">
@@ -662,7 +665,7 @@
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/core/font.html#Font.ascent">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/font.py#L61">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/font.py#L64">view source</a>
     </span>
 
     </p>
@@ -701,7 +704,7 @@
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/core/font.html#Font.descent">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/font.py#L70">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/font.py#L73">view source</a>
     </span>
 
     </p>
@@ -755,7 +758,7 @@
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/core/font.html#Font.deriving">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/font.py#L29">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/font.py#L32">view source</a>
     </span>
 
     </p>
@@ -887,7 +890,7 @@
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/core/font.html#Font.bounding_rect_of">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/font.py#L85">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/font.py#L88">view source</a>
     </span>
 
     </p>
