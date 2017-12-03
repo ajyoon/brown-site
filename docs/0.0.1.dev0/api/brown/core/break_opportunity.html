@@ -66,7 +66,7 @@
                 <a href="/docs/0.0.1.dev0/api/brown/core/break_hint.html">break_hint</a>
             </li>
         
-            <li >
+            <li id="toc-link-to-current-page">
                 <a href="/docs/0.0.1.dev0/api/brown/core/break_opportunity.html">break_opportunity</a>
             </li>
         
@@ -178,7 +178,7 @@
                 <a href="/docs/0.0.1.dev0/api/brown/core/page_supplier.html">page_supplier</a>
             </li>
         
-            <li id="toc-link-to-current-page">
+            <li >
                 <a href="/docs/0.0.1.dev0/api/brown/core/paper.html">paper</a>
             </li>
         
@@ -500,7 +500,7 @@
             <div id="page-body">
                 
 
-    <h1 id="page-title">brown<wbr>.core<wbr>.paper</h1>
+    <h1 id="page-title">brown<wbr>.core<wbr>.break_opportunity</h1>
 
     <a id="show-inherited-toggle" href="javascript:void(toggleShowInheritence())"></a>
 
@@ -516,415 +516,36 @@
         <h3 class="major-section-title">classes</h3>
         
             <div class="class"
-         id="Paper">
+         id="BreakOpportunity">
         <div class="class-name-wrapper">
             
     <span class="permalink-and-source">
-        <a href="/docs/0.0.1.dev0/api/brown/core/paper.html#Paper">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/paper.py#L5">view source</a>
+        <a href="/docs/0.0.1.dev0/api/brown/core/break_opportunity.html#BreakOpportunity">permalink</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/break_opportunity.py#L1">view source</a>
     </span>
 
             <h2>
-                <span class="class-name">Paper</span>
+                <span class="class-name">BreakOpportunity</span>
                 
             </h2>
         </div>
-        <p class="summary"><p>A description of a type of paper to base <code><a href="/docs/0.0.1.dev0/api/brown/core/page.html#Page">Page</a></code>s on.</p></p>
+        <p class="summary"><p>A <code><a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject">GraphicObject</a></code> mixin which indicates a break can be performed here.</p></p>
         
-            <p class="details"><p>Construct and return a PaperInterface based on this Paper.</p><p>        Returns: PaperInterface
-        </p></p>
+            <p class="details"><p>    Some notational constructs are well suited to be placed at line
+    or page breaks, for example bar lines or grand pauses. Such classes
+    should subclass this mixin so the flowable container can know this.</p><p>    This mixin is only useful when used inside a <code><a href="/docs/0.0.1.dev0/api/brown/core/flowable.html#Flowable">Flowable</a></code>.
+    </p></p>
         
         
         
-            <div>
-                <div class="method"
-     id="Paper.__init__">
-    <p>
-        <span class="important-name">__init__</span>
         
-            <code>(width, height,
-                 margin_top, margin_right,
-                 margin_bottom, margin_left,
-                 gutter=None)</code>
         
         
-    <span class="permalink-and-source">
-        <a href="/docs/0.0.1.dev0/api/brown/core/paper.html#Paper.__init__">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/paper.py#L9">view source</a>
-    </span>
-
-    </p>
-    <div class="body">
-        <p class="summary"><p>
-</p></p>
         
         
-            <h4>arguments:</h4>
-            <div class="type-details-list">
-                
-                    <div class="arg">
-                        <p><p>width <code>(<a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit">Unit</a>)</code>: The paper width.</p></p>
-                    </div>
-                
-                    <div class="arg">
-                        <p><p>height <code>(<a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit">Unit</a>)</code>: The paper height.</p></p>
-                    </div>
-                
-                    <div class="arg">
-                        <p><p>margin_top <code>(<a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit">Unit</a>)</code>: The paper top margin.</p></p>
-                    </div>
-                
-                    <div class="arg">
-                        <p><p>margin_right <code>(<a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit">Unit</a>)</code>: The paper right margin.</p></p>
-                    </div>
-                
-                    <div class="arg">
-                        <p><p>margin_bottom <code>(<a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit">Unit</a>)</code>: The paper bottom margin.</p></p>
-                    </div>
-                
-                    <div class="arg">
-                        <p><p>margin_left <code>(<a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit">Unit</a>)</code>: The paper left margin.</p></p>
-                    </div>
-                
-                    <div class="arg">
-                        <p><p>gutter <code>(<a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit">Unit</a>)</code>: The paper gutter.</p></p>
-                    </div>
-                
-            </div>
         
         
         
-        <p class="details"></p>
-        
-        
-    </div>
-</div>
-            </div>
-        
-        
-        
-        
-            <h4 class="major-section-title">properties</h4>
-            <div class="major-section">
-                
-                    <div class="property"
-         id="Paper.width">
-    <p>
-        <span class="important-name">width</span>:
-        <span class="type"><code><a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit">Unit</a></code></span>
-        &mdash;<span class="summary"> The page width</span>
-        
-    <span class="permalink-and-source">
-        <a href="/docs/0.0.1.dev0/api/brown/core/paper.html#Paper.width">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/paper.py#L50">view source</a>
-    </span>
-
-    </p>
-    <div class="body">
-        
-        <div class="details"></div>
-        
-        
-        
-    </div>
-</div>
-                
-                    <div class="property"
-         id="Paper.height">
-    <p>
-        <span class="important-name">height</span>:
-        <span class="type"><code><a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit">Unit</a></code></span>
-        &mdash;<span class="summary"> The page height</span>
-        
-    <span class="permalink-and-source">
-        <a href="/docs/0.0.1.dev0/api/brown/core/paper.html#Paper.height">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/paper.py#L59">view source</a>
-    </span>
-
-    </p>
-    <div class="body">
-        
-        <div class="details"></div>
-        
-        
-        
-    </div>
-</div>
-                
-                    <div class="property"
-         id="Paper.margin_top">
-    <p>
-        <span class="important-name">margin_top</span>:
-        <span class="type"><code><a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit">Unit</a></code></span>
-        &mdash;<span class="summary"> The top margin</span>
-        
-    <span class="permalink-and-source">
-        <a href="/docs/0.0.1.dev0/api/brown/core/paper.html#Paper.margin_top">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/paper.py#L68">view source</a>
-    </span>
-
-    </p>
-    <div class="body">
-        
-        <div class="details"></div>
-        
-        
-        
-    </div>
-</div>
-                
-                    <div class="property"
-         id="Paper.margin_right">
-    <p>
-        <span class="important-name">margin_right</span>:
-        <span class="type"><code><a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit">Unit</a></code></span>
-        &mdash;<span class="summary"> The right margin</span>
-        
-    <span class="permalink-and-source">
-        <a href="/docs/0.0.1.dev0/api/brown/core/paper.html#Paper.margin_right">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/paper.py#L77">view source</a>
-    </span>
-
-    </p>
-    <div class="body">
-        
-        <div class="details"></div>
-        
-        
-        
-    </div>
-</div>
-                
-                    <div class="property"
-         id="Paper.margin_bottom">
-    <p>
-        <span class="important-name">margin_bottom</span>:
-        <span class="type"><code><a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit">Unit</a></code></span>
-        &mdash;<span class="summary"> The bottom margin</span>
-        
-    <span class="permalink-and-source">
-        <a href="/docs/0.0.1.dev0/api/brown/core/paper.html#Paper.margin_bottom">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/paper.py#L86">view source</a>
-    </span>
-
-    </p>
-    <div class="body">
-        
-        <div class="details"></div>
-        
-        
-        
-    </div>
-</div>
-                
-                    <div class="property"
-         id="Paper.margin_left">
-    <p>
-        <span class="important-name">margin_left</span>:
-        <span class="type"><code><a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit">Unit</a></code></span>
-        &mdash;<span class="summary"> The left margin</span>
-        
-    <span class="permalink-and-source">
-        <a href="/docs/0.0.1.dev0/api/brown/core/paper.html#Paper.margin_left">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/paper.py#L95">view source</a>
-    </span>
-
-    </p>
-    <div class="body">
-        
-        <div class="details"></div>
-        
-        
-        
-    </div>
-</div>
-                
-                    <div class="property"
-         id="Paper.gutter">
-    <p>
-        <span class="important-name">gutter</span>:
-        <span class="type"><code><a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit">Unit</a></code></span>
-        &mdash;<span class="summary"> The page gutter.</span>
-        
-    <span class="permalink-and-source">
-        <a href="/docs/0.0.1.dev0/api/brown/core/paper.html#Paper.gutter">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/paper.py#L104">view source</a>
-    </span>
-
-    </p>
-    <div class="body">
-        
-        <div class="details"><p>        TODO: Gutter support is not fully implemented.
-        </p></div>
-        
-        
-        
-    </div>
-</div>
-                
-                    <div class="property"
-         id="Paper.live_width">
-    <p>
-        <span class="important-name">live_width</span>:
-        <span class="type"></span>
-        &mdash;<span class="summary">The printable width of the page</span>
-        
-    <span class="permalink-and-source">
-        <a href="/docs/0.0.1.dev0/api/brown/core/paper.html#Paper.live_width">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/paper.py#L116">view source</a>
-    </span>
-
-    </p>
-    <div class="body">
-        
-        <div class="details"></div>
-        
-        
-            <p class="read-only-notice">
-                read-only.
-            </p>
-        
-        
-    </div>
-</div>
-                
-                    <div class="property"
-         id="Paper.live_height">
-    <p>
-        <span class="important-name">live_height</span>:
-        <span class="type"></span>
-        &mdash;<span class="summary">The printable height of the page</span>
-        
-    <span class="permalink-and-source">
-        <a href="/docs/0.0.1.dev0/api/brown/core/paper.html#Paper.live_height">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/paper.py#L122">view source</a>
-    </span>
-
-    </p>
-    <div class="body">
-        
-        <div class="details"></div>
-        
-        
-            <p class="read-only-notice">
-                read-only.
-            </p>
-        
-        
-    </div>
-</div>
-                
-            </div>
-        
-        
-        
-            <h4 class="major-section-title">class methods</h4>
-            <div class="major-section">
-                
-                    <div class="method"
-     id="Paper.from_template">
-    <p>
-        <span class="important-name">from_template</span>
-        
-            <code>(template)</code>
-        
-        
-    <span class="permalink-and-source">
-        <a href="/docs/0.0.1.dev0/api/brown/core/paper.html#Paper.from_template">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/paper.py#L34">view source</a>
-    </span>
-
-    </p>
-    <div class="body">
-        <p class="summary"><p>Construct a Paper object from a set of pre-configured paper types.
-</p></p>
-        
-        
-            <h4>arguments:</h4>
-            <div class="type-details-list">
-                
-                    <div class="arg">
-                        <p><p>template <code>(str)</code>: Name of the Paper template (case-sensitive)</p></p>
-                    </div>
-                
-            </div>
-        
-        
-            <div class="returns">
-                <h4>returns:</h4>
-                <div class="type-details-list">
-                    
-                        <p><code><a href="/docs/0.0.1.dev0/api/brown/core/paper.html#Paper">Paper</a></code></p>
-                    
-                </div>
-            </div>
-        
-        
-        <p class="details"><p>
-</p></p>
-        
-        
-            
-
-    <div class="inherited-note">
-        inherited from
-        <a href="/docs/0.0.1.dev0/api/brown/core/paper.html#Paper.from_template">
-            Paper
-        </a>
-    </div>
-
-
-        
-    </div>
-</div>
-                
-            </div>
-        
-        
-        
-        
-        
-            <h4 class="major-section-title">methods</h4>
-            <div class="major-section">
-                
-                    <div class="method"
-     id="Paper.make_rotation">
-    <p>
-        <span class="important-name">make_rotation</span>
-        
-            <code>()</code>
-        
-        
-    <span class="permalink-and-source">
-        <a href="/docs/0.0.1.dev0/api/brown/core/paper.html#Paper.make_rotation">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/paper.py#L156">view source</a>
-    </span>
-
-    </p>
-    <div class="body">
-        <p class="summary"><p>Create a 90 degree clockwise rotation of this <code><a href="/docs/0.0.1.dev0/api/brown/core/paper.html#Paper">Paper</a></code>.
-</p></p>
-        
-        
-        
-            <div class="returns">
-                <h4>returns:</h4>
-                <div class="type-details-list">
-                    
-                        <p><code><a href="/docs/0.0.1.dev0/api/brown/core/paper.html#Paper">Paper</a></code></p>
-                    
-                </div>
-            </div>
-        
-        
-        <p class="details"><p>
-        The <code><a href="/docs/0.0.1.dev0/api/brown/core/paper.html#Paper.gutter">gutter</a></code> field is not changed in this new <code><a href="/docs/0.0.1.dev0/api/brown/core/paper.html#Paper">Paper</a></code>.</p></p>
-        
-        
-    </div>
-</div>
-                
-            </div>
         
         
 

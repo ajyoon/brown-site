@@ -62,7 +62,7 @@
                 <a href="/docs/0.0.1.dev0/api/brown/core/brace.html">brace</a>
             </li>
         
-            <li >
+            <li id="toc-link-to-current-page">
                 <a href="/docs/0.0.1.dev0/api/brown/core/break_hint.html">break_hint</a>
             </li>
         
@@ -110,7 +110,7 @@
                 <a href="/docs/0.0.1.dev0/api/brown/core/font.html">font</a>
             </li>
         
-            <li id="toc-link-to-current-page">
+            <li >
                 <a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html">graphic_object</a>
             </li>
         
@@ -500,7 +500,7 @@
             <div id="page-body">
                 
 
-    <h1 id="page-title">brown<wbr>.core<wbr>.graphic_object</h1>
+    <h1 id="page-title">brown<wbr>.core<wbr>.break_hint</h1>
 
     <a id="show-inherited-toggle" href="javascript:void(toggleShowInheritence())"></a>
 
@@ -516,90 +516,26 @@
         <h3 class="major-section-title">classes</h3>
         
             <div class="class"
-         id="GraphicObject">
+         id="BreakHint">
         <div class="class-name-wrapper">
             
     <span class="permalink-and-source">
-        <a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/graphic_object.py#L12">view source</a>
+        <a href="/docs/0.0.1.dev0/api/brown/core/break_hint.html#BreakHint">permalink</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/break_hint.py#L5">view source</a>
     </span>
 
             <h2>
-                <span class="class-name">GraphicObject</span>
+                <span class="class-name">BreakHint</span>
                 
-                    (<code>ABC</code>)
+                    (<code><a href="/docs/0.0.1.dev0/api/brown/core/invisible_object.html#InvisibleObject">InvisibleObject</a></code>, <code><a href="/docs/0.0.1.dev0/api/brown/core/break_opportunity.html#BreakOpportunity">BreakOpportunity</a></code>)
                 
             </h2>
         </div>
-        <p class="summary"><p>An abstract graphic object.</p></p>
-        
-            <p class="details"><p>    All classes in <code>core</code> which have the ability to be displayed
-    should be subclasses of this.</p><p>    A single GraphicObject can have multiple graphical representations,
-    calculated at render-time. If the object's ancestor is a Flowable,
-    it will be rendered as a flowable object, capable of being wrapped around
-    lines.</p><p>    The position of this object is relative to that of its parent.
-    Each GraphicObject has another GraphicObject for a parent, except
-    <code><a href="/docs/0.0.1.dev0/api/brown/core/page.html#Page">Page</a></code> objects, whose parent is always the global <code><a href="/docs/0.0.1.dev0/api/brown/core/document.html#Document">Document</a></code>.</p><p>    For convenience, the parent may be initialized to None to indicate
-    the first page of the document.</p><p>    To place objects directly in the scene on pages other than the first,
-    simply set the parent to the desired page, accessed through the
-    global document with <code>brown.document.pages[n]</code>
-    </p><p>Render the object and all its children.</p><p>        Returns: None
-        </p><p>Add an object to <code>self.children</code>.</p><p>        Args:
-            child (GraphicObject): The object to add</p><p>        Returns: None
-        </p><p>Remove an object from <code>self.children</code>.</p><p>        Args:
-            child (GraphicObject): The object to remove</p><p>        Returns: None
-        </p><p>Render the object to the scene, dispatching partial rendering calls
-        when needed if an object flows across a break in the flowable.</p><p>        Returns: None
-        </p><p>Render the entire object.</p><p>        This is used to render all objects outside of <code><a href="/docs/0.0.1.dev0/api/brown/core/flowable.html#Flowable">Flowable</a></code>s,
-        as well as those inside flowables when they fit completely in
-        one span of the flowable.</p><p>        This method should create a GraphicInterface and store it in
-        <code>self.interfaces</code>.</p><p>        Args:
-            pos (Point): The rendering position in document space for drawing.
-            dist_to_line_start (Unit): If in a <code><a href="/docs/0.0.1.dev0/api/brown/core/flowable.html#Flowable">Flowable</a></code>,
-                the x-axis distance from the active <code><a href="/docs/0.0.1.dev0/api/brown/core/new_line.html#NewLine">NewLine</a></code>s beginning.
-                Otherwise, this is always <code>None</code>. Subclasses may use this
-                information to perform basic position modifications at
-                render time, though in most cases this field can be ignored.
-            local_start_x (Unit): If this object is in a flowable, the local
-                starting position of this drawing segment.</p><p>        Returns: None</p><p>        Note: All GraphicObject subclasses should implement this
-              for correct rendering.
-        </p><p>Render the beginning of the object up to a stopping point.</p><p>        For use in flowable containers when rendering an object that
-        crosses a line or page break. This function should render the
-        beginning portion of the object up to the break.</p><p>        This method should create a GraphicInterface and store it in
-        <code>self.interfaces</code>.</p><p>        Args:
-            local_start_x (Unit): The local starting position of this
-                drawing segment.
-            start (Point): The starting point in document space for drawing.
-            stop (Point): The stopping point in document space for drawing.
-            dist_to_line_start (Unit): The x-axis distance from the active
-                <code><a href="/docs/0.0.1.dev0/api/brown/core/new_line.html#NewLine">NewLine</a></code>s beginning. Subclasses may use this
-                information to perform basic position modifications at
-                render time, though in most cases this field can be ignored.</p><p>        Returns: None</p><p>        Note: All GraphicObject subclasses whose <code>length</code> can
-              be nonzero must implement this method.
-        </p><p>Render the continuation of an object after a break.</p><p>        For use in flowable containers when rendering an object that
-        crosses a line or page break. This function should render the
-        ending portion of an object after a break.</p><p>        This method should create a GraphicInterface and store it in
-        <code>self.interfaces</code>.</p><p>        Args:
-            local_start_x (Unit): The local starting position of this
-                drawing segment.
-            start (Point): The starting point in document space for drawing.
-            stop (Point): The stopping point in document space for drawing.</p><p>        Returns: None</p><p>        Note: All GraphicObject subclasses whose <code>length</code> can
-              be nonzero must implement this method.
-        </p><p>
-        Render the continuation of an object after a break and before another.</p><p>        For use in flowable containers when rendering an object that crosses
-        two breaks. This function should render the portion of the object
-        surrounded by breaks on either side.</p><p>        This method should create a GraphicInterface and store it in
-        <code>self.interfaces</code>.</p><p>        Args:
-            local_start_x (Unit): The local starting position of this
-                drawing segment.
-            start (Point): The starting point in document space for drawing.
-            stop (Point): The stopping point in document space for drawing.</p><p>        Returns: None</p><p>        Note: All GraphicObject subclasses whose <code>length</code> can
-              be nonzero must implement this method.
-        </p></p>
+        <p class="summary"><p>A standalone invisible break opportunity.</p></p>
         
         
         
-            <div>
+            <div class="inherited">
                 <div class="method"
      id="GraphicObject.__init__">
     <p>
@@ -661,10 +597,12 @@
         
         
         
-            <h4 class="major-section-title">properties</h4>
-            <div class="major-section">
-                
-                    <div class="property"
+        
+            <div class="inherited">
+                <h4 class="major-section-title">inherited properties</h4>
+                <div class="major-section">
+                    
+                        <div class="property"
          id="GraphicObject.interfaces">
     <p>
         <span class="important-name">interfaces</span>:
@@ -691,10 +629,21 @@
             </p>
         
         
+            
+
+    <div class="inherited-note">
+        inherited from
+        <a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject.interfaces">
+            GraphicObject
+        </a>
+    </div>
+
+
+        
     </div>
 </div>
-                
-                    <div class="property"
+                    
+                        <div class="property"
          id="GraphicObject.pos">
     <p>
         <span class="important-name">pos</span>:
@@ -713,10 +662,21 @@
         
         
         
+            
+
+    <div class="inherited-note">
+        inherited from
+        <a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject.pos">
+            GraphicObject
+        </a>
+    </div>
+
+
+        
     </div>
 </div>
-                
-                    <div class="property"
+                    
+                        <div class="property"
          id="GraphicObject.x">
     <p>
         <span class="important-name">x</span>:
@@ -735,10 +695,21 @@
         
         
         
+            
+
+    <div class="inherited-note">
+        inherited from
+        <a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject.x">
+            GraphicObject
+        </a>
+    </div>
+
+
+        
     </div>
 </div>
-                
-                    <div class="property"
+                    
+                        <div class="property"
          id="GraphicObject.y">
     <p>
         <span class="important-name">y</span>:
@@ -757,10 +728,21 @@
         
         
         
+            
+
+    <div class="inherited-note">
+        inherited from
+        <a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject.y">
+            GraphicObject
+        </a>
+    </div>
+
+
+        
     </div>
 </div>
-                
-                    <div class="property"
+                    
+                        <div class="property"
          id="GraphicObject.length">
     <p>
         <span class="important-name">length</span>:
@@ -784,10 +766,21 @@
             </p>
         
         
+            
+
+    <div class="inherited-note">
+        inherited from
+        <a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject.length">
+            GraphicObject
+        </a>
+    </div>
+
+
+        
     </div>
 </div>
-                
-                    <div class="property"
+                    
+                        <div class="property"
          id="GraphicObject.pen">
     <p>
         <span class="important-name">pen</span>:
@@ -806,10 +799,21 @@
         
         
         
+            
+
+    <div class="inherited-note">
+        inherited from
+        <a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject.pen">
+            GraphicObject
+        </a>
+    </div>
+
+
+        
     </div>
 </div>
-                
-                    <div class="property"
+                    
+                        <div class="property"
          id="GraphicObject.brush">
     <p>
         <span class="important-name">brush</span>:
@@ -832,10 +836,21 @@
         
         
         
+            
+
+    <div class="inherited-note">
+        inherited from
+        <a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject.brush">
+            GraphicObject
+        </a>
+    </div>
+
+
+        
     </div>
 </div>
-                
-                    <div class="property"
+                    
+                        <div class="property"
          id="GraphicObject.parent">
     <p>
         <span class="important-name">parent</span>:
@@ -855,10 +870,21 @@
         
         
         
+            
+
+    <div class="inherited-note">
+        inherited from
+        <a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject.parent">
+            GraphicObject
+        </a>
+    </div>
+
+
+        
     </div>
 </div>
-                
-                    <div class="property"
+                    
+                        <div class="property"
          id="GraphicObject.children">
     <p>
         <span class="important-name">children</span>:
@@ -877,10 +903,21 @@
         
         
         
+            
+
+    <div class="inherited-note">
+        inherited from
+        <a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject.children">
+            GraphicObject
+        </a>
+    </div>
+
+
+        
     </div>
 </div>
-                
-                    <div class="property"
+                    
+                        <div class="property"
          id="GraphicObject.descendants">
     <p>
         <span class="important-name">descendants</span>:
@@ -906,10 +943,21 @@
             </p>
         
         
+            
+
+    <div class="inherited-note">
+        inherited from
+        <a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject.descendants">
+            GraphicObject
+        </a>
+    </div>
+
+
+        
     </div>
 </div>
-                
-                    <div class="property"
+                    
+                        <div class="property"
          id="GraphicObject.ancestors">
     <p>
         <span class="important-name">ancestors</span>:
@@ -934,10 +982,21 @@
             </p>
         
         
+            
+
+    <div class="inherited-note">
+        inherited from
+        <a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject.ancestors">
+            GraphicObject
+        </a>
+    </div>
+
+
+        
     </div>
 </div>
-                
-                    <div class="property"
+                    
+                        <div class="property"
          id="GraphicObject.flowable">
     <p>
         <span class="important-name">flowable</span>:
@@ -960,10 +1019,21 @@
             </p>
         
         
+            
+
+    <div class="inherited-note">
+        inherited from
+        <a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject.flowable">
+            GraphicObject
+        </a>
+    </div>
+
+
+        
     </div>
 </div>
-                
-                    <div class="property"
+                    
+                        <div class="property"
          id="GraphicObject.page_index">
     <p>
         <span class="important-name">page_index</span>:
@@ -993,17 +1063,30 @@ True
             </p>
         
         
+            
+
+    <div class="inherited-note">
+        inherited from
+        <a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject.page_index">
+            GraphicObject
+        </a>
+    </div>
+
+
+        
     </div>
 </div>
-                
+                    
+                </div>
             </div>
         
         
         
-            <h4 class="major-section-title">class methods</h4>
-            <div class="major-section">
-                
-                    <div class="method"
+            <div class="inherited">
+                <h4 class="major-section-title">inherited class methods</h4>
+                <div class="major-section">
+                    
+                        <div class="method"
      id="GraphicObject.map_between_items">
     <p>
         <span class="important-name">map_between_items</span>
@@ -1063,17 +1146,19 @@ True
         
     </div>
 </div>
-                
+                    
+                </div>
             </div>
         
         
         
         
         
-            <h4 class="major-section-title">methods</h4>
-            <div class="major-section">
-                
-                    <div class="method"
+            <div class="inherited">
+                <h4 class="major-section-title">inherited methods</h4>
+                <div class="major-section">
+                    
+                        <div class="method"
      id="GraphicObject.descendants_of_class_or_subclass">
     <p>
         <span class="important-name">descendants_of_class_or_subclass</span>
@@ -1100,10 +1185,21 @@ True
         </p></p>
         
         
+            
+
+    <div class="inherited-note">
+        inherited from
+        <a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject.descendants_of_class_or_subclass">
+            GraphicObject
+        </a>
+    </div>
+
+
+        
     </div>
 </div>
-                
-                    <div class="method"
+                    
+                        <div class="method"
      id="GraphicObject.descendants_of_exact_class">
     <p>
         <span class="important-name">descendants_of_exact_class</span>
@@ -1130,10 +1226,21 @@ True
         </p></p>
         
         
+            
+
+    <div class="inherited-note">
+        inherited from
+        <a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject.descendants_of_exact_class">
+            GraphicObject
+        </a>
+    </div>
+
+
+        
     </div>
 </div>
-                
-                    <div class="method"
+                    
+                        <div class="method"
      id="GraphicObject.first_ancestor_of_class_or_subclass">
     <p>
         <span class="important-name">first_ancestor_of_class_or_subclass</span>
@@ -1177,10 +1284,21 @@ True
         If none can be found, returns <code>None</code>.</p></p>
         
         
+            
+
+    <div class="inherited-note">
+        inherited from
+        <a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject.first_ancestor_of_class_or_subclass">
+            GraphicObject
+        </a>
+    </div>
+
+
+        
     </div>
 </div>
-                
-                    <div class="method"
+                    
+                        <div class="method"
      id="GraphicObject.first_ancestor_of_exact_class">
     <p>
         <span class="important-name">first_ancestor_of_exact_class</span>
@@ -1225,11 +1343,22 @@ True
         If none can be found, returns <code>None</code>.</p></p>
         
         
+            
+
+    <div class="inherited-note">
+        inherited from
+        <a href="/docs/0.0.1.dev0/api/brown/core/graphic_object.html#GraphicObject.first_ancestor_of_exact_class">
+            GraphicObject
+        </a>
+    </div>
+
+
+        
     </div>
 </div>
-                
+                    
+                </div>
             </div>
-        
         
 
 
