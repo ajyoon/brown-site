@@ -585,8 +585,7 @@
                 
             </h2>
         </div>
-        <p class="summary"><p>
-    A fundamental base unit acting as a common ground for unit conversions.</p></p>
+        <p class="summary"><p>An immutable graphical distance with a unit.</p></p>
         
             <p class="details"><p>    Unit objects enable easy conversion from one unit to another and
     convenient operations between them.</p><p>    Common operators (<code>+</code>, <code>-</code>, <code>/</code>, etc.) are supported between them.
@@ -605,7 +604,9 @@
 Traceback (most recent call last):
 ...
 TypeError: unsupported operand type(s) for +: 'int' and '<a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Inch">Inch</a>'
-</code></pre>Return this value as a float in base unit values.</p><p>        Returns: float
+</code></pre>    Warning: <code><a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit">Unit</a></code> objects are immutable. Any attempts to modify them
+        in place will result in much sadness.
+    </p><p>Return this value as a float in base unit values.</p><p>        Returns: float
         </p><p>Assert the near-equality of two units.</p><p>        <ul><li><i>For testing purposes only.*</i>
 </li></ul>
         Almost-equality is determined according to the base unit float
@@ -629,7 +630,7 @@ TypeError: unsupported operand type(s) for +: 'int' and '<a href="/docs/0.0.1.de
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit.__init__">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/utils/units.py#L45">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/utils/units.py#L47">view source</a>
     </span>
 
     </p>
@@ -674,7 +675,7 @@ TypeError: unsupported operand type(s) for +: 'int' and '<a href="/docs/0.0.1.de
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit.CONVERSION_RATE">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/utils/units.py#L39">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/utils/units.py#L41">view source</a>
     </span>
 
     </p>
@@ -707,7 +708,7 @@ TypeError: unsupported operand type(s) for +: 'int' and '<a href="/docs/0.0.1.de
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit.from_existing">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/utils/units.py#L72">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/utils/units.py#L74">view source</a>
     </span>
 
     </p>
@@ -771,7 +772,7 @@ TypeError: unsupported operand type(s) for +: 'int' and '<a href="/docs/0.0.1.de
             
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/utils/units.html#GraphicUnit">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/utils/units.py#L206">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/utils/units.py#L208">view source</a>
     </span>
 
             <h2>
@@ -799,7 +800,7 @@ TypeError: unsupported operand type(s) for +: 'int' and '<a href="/docs/0.0.1.de
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit.__init__">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/utils/units.py#L45">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/utils/units.py#L47">view source</a>
     </span>
 
     </p>
@@ -844,7 +845,7 @@ TypeError: unsupported operand type(s) for +: 'int' and '<a href="/docs/0.0.1.de
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit.CONVERSION_RATE">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/utils/units.py#L39">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/utils/units.py#L41">view source</a>
     </span>
 
     </p>
@@ -890,7 +891,7 @@ TypeError: unsupported operand type(s) for +: 'int' and '<a href="/docs/0.0.1.de
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit.from_existing">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/utils/units.py#L72">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/utils/units.py#L74">view source</a>
     </span>
 
     </p>
@@ -954,7 +955,7 @@ TypeError: unsupported operand type(s) for +: 'int' and '<a href="/docs/0.0.1.de
             
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Inch">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/utils/units.py#L216">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/utils/units.py#L218">view source</a>
     </span>
 
             <h2>
@@ -979,7 +980,7 @@ TypeError: unsupported operand type(s) for +: 'int' and '<a href="/docs/0.0.1.de
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit.__init__">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/utils/units.py#L45">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/utils/units.py#L47">view source</a>
     </span>
 
     </p>
@@ -1024,7 +1025,7 @@ TypeError: unsupported operand type(s) for +: 'int' and '<a href="/docs/0.0.1.de
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit.CONVERSION_RATE">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/utils/units.py#L39">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/utils/units.py#L41">view source</a>
     </span>
 
     </p>
@@ -1070,7 +1071,7 @@ TypeError: unsupported operand type(s) for +: 'int' and '<a href="/docs/0.0.1.de
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit.from_existing">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/utils/units.py#L72">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/utils/units.py#L74">view source</a>
     </span>
 
     </p>
@@ -1134,7 +1135,7 @@ TypeError: unsupported operand type(s) for +: 'int' and '<a href="/docs/0.0.1.de
             
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Mm">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/utils/units.py#L221">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/utils/units.py#L223">view source</a>
     </span>
 
             <h2>
@@ -1159,7 +1160,7 @@ TypeError: unsupported operand type(s) for +: 'int' and '<a href="/docs/0.0.1.de
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit.__init__">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/utils/units.py#L45">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/utils/units.py#L47">view source</a>
     </span>
 
     </p>
@@ -1204,7 +1205,7 @@ TypeError: unsupported operand type(s) for +: 'int' and '<a href="/docs/0.0.1.de
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit.CONVERSION_RATE">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/utils/units.py#L39">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/utils/units.py#L41">view source</a>
     </span>
 
     </p>
@@ -1250,7 +1251,7 @@ TypeError: unsupported operand type(s) for +: 'int' and '<a href="/docs/0.0.1.de
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit.from_existing">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/utils/units.py#L72">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/utils/units.py#L74">view source</a>
     </span>
 
     </p>
@@ -1314,7 +1315,7 @@ TypeError: unsupported operand type(s) for +: 'int' and '<a href="/docs/0.0.1.de
             
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Meter">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/utils/units.py#L226">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/utils/units.py#L228">view source</a>
     </span>
 
             <h2>
@@ -1339,7 +1340,7 @@ TypeError: unsupported operand type(s) for +: 'int' and '<a href="/docs/0.0.1.de
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit.__init__">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/utils/units.py#L45">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/utils/units.py#L47">view source</a>
     </span>
 
     </p>
@@ -1384,7 +1385,7 @@ TypeError: unsupported operand type(s) for +: 'int' and '<a href="/docs/0.0.1.de
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit.CONVERSION_RATE">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/utils/units.py#L39">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/utils/units.py#L41">view source</a>
     </span>
 
     </p>
@@ -1430,7 +1431,7 @@ TypeError: unsupported operand type(s) for +: 'int' and '<a href="/docs/0.0.1.de
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit.from_existing">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/utils/units.py#L72">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/utils/units.py#L74">view source</a>
     </span>
 
     </p>

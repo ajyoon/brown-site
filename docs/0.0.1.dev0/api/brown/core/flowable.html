@@ -521,7 +521,7 @@
             
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/core/flowable.html#Flowable">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/flowable.py#L9">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/flowable.py#L10">view source</a>
     </span>
 
             <h2>
@@ -541,6 +541,10 @@
     majority of objects will be placed inside it.
     </p><p>Generate automatic layout controllers.</p><p>        The generated controllers are stored in <code>self.layout_controllers</code>
         in sorted order according to ascending x position</p><p>        Warning: This overwrites the contents of self.layout_controllers</p><p>        Returns: None
+        </p><p>Find the <code>BreakOpporunity</code> closest to the left a local x position.</p><p>        Args:
+            local_x(Unit): an x-axis position in the flowable space.</p><p>        Returns:
+            BreakOpportunity or None: the closest <code>BreakOpporunity</code> to the left
+                of the given point, or <code>None</code> if none exists.
         </p></p>
         
         
@@ -551,12 +555,13 @@
     <p>
         <span class="important-name">__init__</span>
         
-            <code>(pos, width, height, y_padding=None)</code>
+            <code>(pos, width, height,
+                 y_padding=Mm(5), break_threshold=Mm(5))</code>
         
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/core/flowable.html#Flowable.__init__">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/flowable.py#L25">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/flowable.py#L26">view source</a>
     </span>
 
     </p>
@@ -585,15 +590,21 @@
                     </div>
                 
                     <div class="arg">
-                        <p><p>width <code>(<a href="/docs/0.0.1.dev0/api/brown/utils/units.html#GraphicUnit">GraphicUnit</a>)</code>: length of the flowable</p></p>
+                        <p><p>width <code>(<a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit">Unit</a>)</code>: length of the flowable</p></p>
                     </div>
                 
                     <div class="arg">
-                        <p><p>height <code>(<a href="/docs/0.0.1.dev0/api/brown/utils/units.html#GraphicUnit">GraphicUnit</a>)</code>: height of the flowable</p></p>
+                        <p><p>height <code>(<a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit">Unit</a>)</code>: height of the flowable</p></p>
                     </div>
                 
                     <div class="arg">
-                        <p><p>y_padding <code>(<a href="/docs/0.0.1.dev0/api/brown/utils/units.html#GraphicUnit">GraphicUnit</a>)</code>: The min gap between flowable sections</p></p>
+                        <p><p>y_padding <code>(<a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit">Unit</a>)</code>: The vertical gap between flowable sections</p></p>
+                    </div>
+                
+                    <div class="arg">
+                        <p><p>break_threshold <code>(<a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit">Unit</a>)</code>: The maximum distance the flowable will
+                shorten a line to allow a break to occur on a
+                <code><a href="/docs/0.0.1.dev0/api/brown/core/break_opportunity.html#BreakOpportunity">BreakOpportunity</a></code></p></p>
                     </div>
                 
             </div>
@@ -622,7 +633,7 @@
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/core/flowable.html#Flowable.length">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/flowable.py#L44">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/flowable.py#L50">view source</a>
     </span>
 
     </p>
@@ -659,7 +670,7 @@
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/core/flowable.html#Flowable.height">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/flowable.py#L49">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/flowable.py#L55">view source</a>
     </span>
 
     </p>
@@ -681,13 +692,38 @@
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/core/flowable.html#Flowable.y_padding">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/flowable.py#L58">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/flowable.py#L64">view source</a>
     </span>
 
     </p>
     <div class="body">
         
         <div class="details"></div>
+        
+        
+        
+    </div>
+</div>
+                
+                    <div class="property"
+         id="Flowable.break_threshold">
+    <p>
+        <span class="important-name">break_threshold</span>:
+        <span class="type"><code><a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit">Unit</a></code></span>
+        &mdash;<span class="summary"> The threshold for <code><a href="/docs/0.0.1.dev0/api/brown/core/break_opportunity.html#BreakOpportunity">BreakOpportunity</a></code>-aware line breaks.</span>
+        
+    <span class="permalink-and-source">
+        <a href="/docs/0.0.1.dev0/api/brown/core/flowable.html#Flowable.break_threshold">permalink</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/flowable.py#L73">view source</a>
+    </span>
+
+    </p>
+    <div class="body">
+        
+        <div class="details"><p>        This is the maximum distance the flowable will shorten a line to allow
+        a break to occur on a <code><a href="/docs/0.0.1.dev0/api/brown/core/break_opportunity.html#BreakOpportunity">BreakOpportunity</a></code>.</p><p>        If set to <code><a href="/docs/0.0.1.dev0/api/brown/utils/units.html#Unit">Unit</a>(0)</code> (or in an equivalent unit), <code><a href="/docs/0.0.1.dev0/api/brown/core/break_opportunity.html#BreakOpportunity">BreakOpportunity</a></code>s
+        will be entirely ignored during layout.
+        </p></div>
         
         
         
@@ -703,7 +739,7 @@
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/core/flowable.html#Flowable.layout_controllers">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/flowable.py#L67">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/flowable.py#L89">view source</a>
     </span>
 
     </p>
@@ -1249,7 +1285,7 @@ True
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/core/flowable.html#Flowable.map_to_canvas">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/flowable.py#L122">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/flowable.py#L160">view source</a>
     </span>
 
     </p>
@@ -1295,7 +1331,7 @@ True
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/core/flowable.html#Flowable.dist_to_line_start">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/flowable.py#L136">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/flowable.py#L174">view source</a>
     </span>
 
     </p>
@@ -1341,7 +1377,7 @@ True
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/core/flowable.html#Flowable.dist_to_line_end">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/flowable.py#L147">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/flowable.py#L185">view source</a>
     </span>
 
     </p>
@@ -1387,7 +1423,7 @@ True
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/core/flowable.html#Flowable.last_break_at">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/flowable.py#L158">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/flowable.py#L196">view source</a>
     </span>
 
     </p>
@@ -1433,7 +1469,7 @@ True
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/core/flowable.html#Flowable.last_break_index_at">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/flowable.py#L171">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/flowable.py#L209">view source</a>
     </span>
 
     </p>
@@ -1479,7 +1515,7 @@ True
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/core/flowable.html#Flowable.pos_in_flowable_of">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/flowable.py#L192">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/flowable.py#L230">view source</a>
     </span>
 
     </p>
@@ -1502,7 +1538,7 @@ True
                 <h4>returns:</h4>
                 <div class="type-details-list">
                     
-                        <p><p><code><a href="/docs/0.0.1.dev0/api/brown/utils/point.html#Point">Point</a></code>: A non-paged point relative to the flowable flowable.</p></p>
+                        <p><p><code><a href="/docs/0.0.1.dev0/api/brown/utils/point.html#Point">Point</a></code>: A non-paged point relative to the flowable.</p></p>
                     
                 </div>
             </div>
@@ -1525,7 +1561,7 @@ True
         
     <span class="permalink-and-source">
         <a href="/docs/0.0.1.dev0/api/brown/core/flowable.html#Flowable.map_between_locally">permalink</a>
-        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/flowable.py#L214">view source</a>
+        <a href="https://github.com/ajyoon/brown/blob/master/brown/core/flowable.py#L252">view source</a>
     </span>
 
     </p>
